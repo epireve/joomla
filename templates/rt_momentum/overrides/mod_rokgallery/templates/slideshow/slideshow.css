@@ -1,0 +1,33 @@
+.rg-ss-container {margin: 0;}
+.rg-ss-slice-container {position: relative;overflow:hidden;}
+.rg-ss-slice-list {margin: 0;padding: 0;list-style: none;}
+.rg-ss-slice-list li .rg-ss-slice, .rg-ss-slice-list li .rg-ss-info  {display: none;}
+.rg-ss-slice-list li:first-child .rg-ss-slice, .rg-ss-slice-list li:first-child .rg-ss-info {display: block;}
+.rg-ss-slice {position: absolute;top: 0;left: 0;}
+.rg-ss-slice a {display: block;}
+.rg-ss-info {position: absolute;top: 20%;left: 5%;z-index: 5;}
+.rg-ss-title {display: block;font-size: 500%;line-height: 100%;}
+.rg-ss-caption {display: block;font-size: 140%;line-height: 100%;text-indent: 20px;font-weight: normal;}
+.rg-ss-navigation-container {position: relative;user-select: none;-webkit-user-select: none;-moz-user-select: none;}
+.rg-ss-scroller-container {position: relative;padding: 10px 20px;user-select: none;-webkit-user-select: none;-moz-user-select: none;}
+.rg-ss-thumb-scroller {overflow: hidden;}
+.arrows-enabled .rg-ss-thumb-scroller {margin: 0 32px;padding: 10px 0;user-select: none;-webkit-user-select: none;-moz-user-select: none;}
+.rg-ss-thumb-list {list-style: none;margin: 0;padding: 0;width: 10000px;}
+.rg-ss-thumb-list li {float: left;}
+.rg-ss-thumb {margin: 0 14px;vertical-align: middle;cursor: pointer;transition: border 0.2s linear;-webkit-transition: border 0.2s linear;-moz-transition: border 0.2s linear;-o-transition: border 0.2s linear;user-select: none;-webkit-user-select: none;-moz-user-select: none;}
+.rg-ss-arrow-left, .rg-ss-arrow-right {position: absolute;top: 0;bottom: 0;width: 40px;cursor: pointer;transition: background-color 0.2s linear;display: none;}
+.arrows-enabled .rg-ss-arrow-left, .arrows-enabled .rg-ss-arrow-right {display: block;}
+.rg-ss-arrow-left {left: 0;}
+.rg-ss-arrow-right {right: 0;}
+.rg-ss-arrow-left span, .rg-ss-arrow-right span {display: block;width: 9px;height: 17px;position: absolute;top: 50%;margin-top: -9px;cursor: pointer;background-repeat: no-repeat;}
+.rg-ss-arrow-left span {left: 15px;background-position: -23px 0;}
+.rg-ss-arrow-right span {right: 15px;background-position: 0 0;}
+.rg-ss-controls.onhover {opacity: 0;transition: opacity 0.2s linear;-webkit-transition: opacity 0.2s linear;-moz-transition: opacity 0.2s linear;-o-transition: opacity 0.2s linear;}
+.rg-ss-controls .next, .rg-ss-controls .prev {position: absolute;z-index: 5;width: 27px;height: 27px;top: 50%;margin-top: -13px;cursor: pointer;border-radius: 13px;background-repeat: no-repeat;transition: background-color 0.2s linear;-webkit-transition: background-color 0.2s linear;-moz-transition: background-color 0.2s linear;-o-transition: background-color 0.2s linear;}
+.rg-ss-controls .next {right: 15px;background-position: 10px 5px;}
+.rg-ss-controls .next:hover {background-position: 10px -19px;}
+.rg-ss-controls .prev {left: 15px;background-position: -15px 5px;}
+.rg-ss-controls .prev:hover {background-position: -15px -19px;}
+.rg-ss-slice-container:hover .rg-ss-controls.onhover {opacity: 1.0;}
+.rg-ss-loader {height: 5px;position: relative;z-index: 100;position: absolute;width: 100%;bottom: 0;left: 0;opacity: 0.6;}
+.rg-ss-progress {height: 7px;width: 0px;opacity: 0.8;margin: -1px 0;}

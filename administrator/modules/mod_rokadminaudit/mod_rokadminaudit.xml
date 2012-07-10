@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" method="upgrade" client="administrator">
+	<name>RokAdminAudit</name>
+	<creationDate>December 20, 2011</creationDate>
+	<author>RocketTheme, LLC</author>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2011 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>2.2</version>
+	<description>MC_RAA_ROKADMINAUDIT_DESC</description>
+	<files>
+		<filename module="mod_rokadminaudit">mod_rokadminaudit.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl/</folder>
+		<folder>language/</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="limit" type="text" default="5" label="MC_RAA_ENTRIES_LIMIT" description="MC_RAA_ENTRIES_LIMIT_DESC" />
+				<field name="detail_filter" type="list" default="low" label="MC_RAA_DETAIL_FILTER" description="">
+					<option value="low">MC_RAA_LOW</option>
+					<option value="medium">MC_RAA_MEDIUM</option>
+					<option value="high">MC_RAA_HIGH</option>
+				</field>
+				<field name="enableGravatar" type="radio" default="1" label="MC_RAA_ENABLE_GRAVATAR" description="MC_RAA_ENABLE_GRAVATAR_DESC">
+					<option value="0">MC_RAA_NO</option>
+					<option value="1">MC_RAA_YES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

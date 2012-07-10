@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Events">
+		<message>
+			<![CDATA[
+				Events view
+			]]>
+		</message>
+		<options var="task">
+ 			<default name="All Events" msg="Displays all events from the site" />
+			<option value="myevents" name="- My Events" msg="Displays events from specific users" />
+			<option value="pastevents" name="- Past Events" msg="Displays past events" />
+			<option value="import" name="- Import Events" msg="Import events layout" />
+			<option value="myinvites" name="- Pending Invitations" msg="Displays invitations from other users" />
+			<option value="search" name="- Search Events" msg="Search for event layout" />
+			<option value="create" name="- Create Event" msg="Creating event layout" />
+ 		</options>
+	</view>
+	<state>
+		<name>Events Layout</name>
+		<description>Events listings layout</description>
+	</state>
+</metadata>

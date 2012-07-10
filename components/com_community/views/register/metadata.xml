@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Register">
+		<message>
+			<![CDATA[
+				Register view
+			]]>
+		</message>
+		<options var="task">
+		    <option value="register" name="Register" msg="Register user" />
+		</options>
+	</view>
+	<state>
+		<name>Registration Layout</name>
+		<description>Displays the registration form</description>
+	</state>
+</metadata>

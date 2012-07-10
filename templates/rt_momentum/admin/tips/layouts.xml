@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<gantrytips>
+	
+	<tip label="Top Position" id="top"><![CDATA[Use the layout slider to select the desired column distribution (width) used for the <strong>Top Position.</strong> The active value will be highlighted in blue and underlined. The <strong>Force Positions</strong> attribute causes all the Top positions to be displayed. If there is no module published in a position, then a blank space is left. The position count controls the number of forced positions.]]></tip>
+	
+	<tip label="Header Position" id="header"><![CDATA[Use the layout slider to select the desired column distribution (width) used for the <strong>Header Position.</strong> The active value will be highlighted in blue and underlined. The <strong>Force Positions</strong> attribute causes all the Header positions to be displayed. If there is no module published in a position, then a blank space is left. The position count controls the number of forced positions.]]></tip>
+	
+	<tip label="Navigation Position" id="navigation"><![CDATA[Use the layout slider to select the desired column distribution (width) used for the <strong>Navigation Position.</strong> The active value will be highlighted in blue and underlined. The <strong>Force Positions</strong> attribute causes all the Header positions to be displayed. If there is no module published in a position, then a blank space is left. The position count controls the number of forced positions.]]></tip>
+	
+	<tip label="Showcase Position" id="showcase"><![CDATA[Use the layout slider to select the desired column distribution (width) used for the <strong>Showcase Position.</strong> The active value will be highlighted in blue and underlined. The <strong>Force Positions</strong> attribute causes all the Showcase positions to be displayed. If there is no module published in a position, then a blank space is left. The position count controls the number of forced positions.]]></tip>
+	
+	<tip label="Feature Position" id="feature"><![CDATA[Use the layout slider to select the desired column distribution (width) used for the <strong>Feature Position.</strong> The active value will be highlighted in blue and underlined. The <strong>Force Positions</strong> attribute causes all the Feature positions to be displayed. If there is no module published in a position, then a blank space is left. The position count controls the number of forced positions.]]></tip>
+	
+	<tip label="Utility Position" id="utility"><![CDATA[Use the layout slider to select the desired column distribution (width) used for the <strong>Utility Position.</strong> The active value will be highlighted in blue and underlined. The <strong>Force Positions</strong> attribute causes all the Utility positions to be displayed. If there is no module published in a position, then a blank space is left. The position count controls the number of forced positions.]]></tip>
+	
+	<tip label="MainTop Position" id="maintop"><![CDATA[Use the layout slider to select the desired column distribution (width) used for the <strong>MainTop Position.</strong> The active value will be highlighted in blue and underlined. The <strong>Force Positions</strong> attribute causes all the MainTop positions to be displayed. If there is no module published in a position, then a blank space is left. The position count controls the number of forced positions.]]></tip>
+	
+	<tip label="MainBody Position" id="mainbodyPosition"><![CDATA[Use the layout slider to select the desired column distribution (width) used for the <strong>MainBody Position.</strong> The active value will be highlighted in blue and underlined. You can also use the slider to decide on which side of the MainBody you would like to display the <strong>Sidebar Positions.</strong>]]></tip>
+
+	<tip label="MainBottom Position" id="mainbottom"><![CDATA[Use the layout slider to select the desired column distribution (width) used for the <strong>MainBottom Position.</strong> The active value will be highlighted in blue and underlined. The <strong>Force Positions</strong> attribute causes all the MainBottom positions to be displayed. If there is no module published in a position, then a blank space is left. The position count controls the number of forced positions.]]></tip>
+
+	<tip label="Bottom Position" id="bottom"><![CDATA[Use the layout slider to select the desired column distribution (width) used for the <strong>Bottom Position.</strong> The active value will be highlighted in blue and underlined. The <strong>Force Positions</strong> attribute causes all the Bottom positions to be displayed. If there is no module published in a position, then a blank space is left. The position count controls the number of forced positions.]]></tip>
+
+	<tip label="Footer Position" id="footer"><![CDATA[Use the layout slider to select the desired column distribution (width) used for the <strong>Footer Position.</strong> The active value will be highlighted in blue and underlined. The <strong>Force Positions</strong> attribute causes all the Footer positions to be displayed. If there is no module published in a position, then a blank space is left. The position count controls the number of forced positions.]]></tip>
+	
+	<tip label="Copyright Position" id="copyright"><![CDATA[Use the layout slider to select the desired column distribution (width) used for the <strong>Copyright Position.</strong> The active value will be highlighted in blue and underlined. The <strong>Force Positions</strong> attribute causes all the Header positions to be displayed. If there is no module published in a position, then a blank space is left. The position count controls the number of forced positions.]]></tip>
+
+</gantrytips>

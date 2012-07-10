@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Applications">
+		<message>
+			<![CDATA[
+				Applications view
+			]]>
+		</message>
+	</view>
+	<state>
+		<name>Applications Layout</name>
+		<description>Application listings layout</description>
+	</state>
+</metadata>

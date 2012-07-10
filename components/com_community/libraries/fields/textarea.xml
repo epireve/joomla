@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="readonly" type="radio" default="0" label="Read Only" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="min_char" type="text" default="" label="Minimum Character" description="" />
+		<param name="max_char" type="text" default="" label="Maximum Character" description="" />
+		<param name="rows" type="text" default="2" label="Visible Rows" description="" />
+		<param name="cols" type="text" default="2" label="Visible Width" description="" />
+		<param name="style" type="text" default="" label="Style Atrribute" description="" />
+	</params>
+</config>

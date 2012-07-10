@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<params addpath="/components/com_xipt/elements">
+	<param name="creategroup_limit" type="text" default="" label="COM_XIPT_TOTAL_GROUP_JOIN_LIMIT_LABEL" description="COM_XIPT_NO_OF_TOTAL_GROUP_JOIN_MAXIMUM_LIMIT_DESC" />
+	<param name="group_category" type="groupcategory" addall="true" default="" label="COM_XIPT_GROUP_CATEGARIES_LABEL" description="COM_XIPT_GROUP_CATEGORY_TO_APPLY_DESC" />
+</params>
+</config>

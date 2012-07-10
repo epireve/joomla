@@ -1,0 +1,285 @@
+/* Import default template CSS */
+@import url("../../default/css/style.css");
+
+/* Here we will override / add classes to use in our new template */
+
+body #community-wrap div.profile-main {
+	margin: 0 190px 0 0;
+}
+body #community-wrap div.profile-right {
+	width: 176px;
+	float: right;
+}
+#community-wrap #my-profile-toolbar{display:inline-block;width:100%}
+#community-wrap #my-profile-toolbar div{background:#eee;border:1px solid #ccc;padding:5px 10px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}
+
+body #community-wrap div.welcometext {
+	font-size: 1.8em;
+	font-weight: normal;
+	letter-spacing: -1px;
+	margin: 0 0 5px;
+}
+body #community-wrap #profile-status{border:0}
+body #community-wrap #profile-status,
+#community-wrap #profile-new-status,
+#community-wrap #my-profile-toolbar{margin-bottom:10px}
+
+#community-wrap #profile-new-status {
+ 	-moz-border-radius: 5px;
+ 	-webkit-border-radius: 5px;
+ 	background-color: #eee;
+ 	border: solid 1px #ccc;
+}
+
+body #community-wrap #profile-header {
+	margin: 10px 0;
+}
+body #community-wrap #profile-header ul.actions {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 33%;
+	float: left;
+}
+body #community-wrap #profile-header ul.actions li {
+	padding: 0 0 0 17px;
+	margin: 5px 3px 5px 0 !important;
+	display: block;
+	float: left;
+	width: 85%;
+	background: none;
+	font-size: 90%;
+	height: 10px;
+	line-height: 10px;
+	text-align: left;
+}
+body #community-wrap #profile-header ul.actions li.profile {
+    background: transparent url(../images/icon_10px.gif) no-repeat 0 0;
+}
+body #community-wrap #profile-header ul.actions li.avatar {
+    background: transparent url(../images/icon_10px.gif) no-repeat 0 -10px;
+}
+body #community-wrap #profile-header ul.actions li.privacy {
+	background: transparent url(../images/icon_10px.gif) no-repeat 0 -20px;
+}
+body #community-wrap #profile-header ul.actions li.apps {
+    background: transparent url(../images/icon_10px.gif) no-repeat 0 -30px;
+}
+body #community-wrap #profile-header ul.actions li.group {
+    background: transparent url(../images/icon_10px.gif) no-repeat 0 -40px;
+}
+body #community-wrap #profile-header ul.actions li.photo {
+    background: transparent url(../images/icon_10px.gif) no-repeat 0 -50px;
+}
+body #community-wrap #profile-header ul.actions li.write {
+    background: transparent url(../images/icon_10px.gif) no-repeat 0 -60px;
+}
+body #community-wrap #profile-header ul.actions li.inbox {
+    background: transparent url(../images/icon_10px.gif) no-repeat 0 -70px;
+}
+body #community-wrap #profile-header ul.actions li.invite {
+    background: transparent url(../images/icon_10px.gif) no-repeat 0 -80px;
+}
+body #community-wrap #user-profile-toolbar {}
+
+body #community-wrap div.js-box-grey {
+	padding: 5px 10px;
+	background: #eee;
+	border: solid 1px #ccc;
+	text-align: center;
+}
+body #community-wrap #my-profile-notification {
+	padding: 10px;
+	border: solid 1px #d57f7f;
+	color: #CF3738;
+	background: #fde4e4;
+	margin: 0 auto 10px;
+	text-align: center;
+	width: 90%;
+}
+body #community-wrap #my-profile-notification a {
+    color: #CF3738;
+    margin: 0 10px;
+}
+body #community-wrap div.ccontent-avatar {
+	padding: 6px 0 6px 10px;
+	width: 80%;
+}
+body #community-wrap div.ccontent {
+	padding: 6px;
+}
+
+#community-wrap .infoGroup {
+	float: left;
+	width: 33%;
+}
+#community-wrap .infoGroup .infoGroup {
+	float: none;
+	width: auto;
+	padding: 5px;
+}
+#community-wrap ul.profile-right-info {
+	margin: 10px 0 0;
+	padding: 0;
+	list-style: none;
+}
+#community-wrap ul.profile-right-info li {
+	background: none;
+	padding: 0;
+	line-height: normal;
+}
+#community-wrap ul.profile-right-info li.infoDesc {
+	margin: 0 0 10px 0 !important;
+}
+body #community-wrap ul.profile-right-info li.infoGroupTitle {
+	font-size: 140%;
+	font-weight: bold;
+}
+body #community-wrap div.ctitle {
+	margin: 0 0 10px;
+}
+body #community-wrap div#user-info-button {
+	height: 51px;
+	text-align: center;
+	margin: 0 0 20px;
+}
+body #community-wrap div#user-info-button .user-green {
+	width: 19%;
+	height: 51px;
+	background: transparent url(../images/user-info-button.gif) no-repeat 0 0;
+	display: block;
+	float: left;
+	margin: 0 5px 0 0;
+}
+body #community-wrap div#user-info-button .user-green-inner {
+    /*width: 90px;*/
+	height: 51px;
+	background: transparent url(../images/user-info-button.gif) no-repeat 100% -51px;
+}
+body #community-wrap div#user-info-button .user-blue {
+	width: 19%;
+	height: 51px;
+	background: transparent url(../images/user-info-button.gif) no-repeat 0 -102px;
+	display: block;
+	float: left;
+	margin: 0 5px 0 0;
+}
+body #community-wrap div#user-info-button .user-blue-inner {
+    /*width: 90px;*/
+	height: 51px;
+	background: transparent url(../images/user-info-button.gif) no-repeat 100% -153px;
+}
+body #community-wrap div#user-info-button .user-grey {
+	width: 19%;
+	height: 51px;
+	background: transparent url(../images/user-info-button.gif) no-repeat 0 -204px;
+	display: block;
+	float: left;
+	margin: 0 5px 0 0;
+}
+body #community-wrap div#user-info-button .user-grey-inner {
+   /*width: 90px;*/
+	height: 51px;
+	background: transparent url(../images/user-info-button.gif) no-repeat 100% -255px;
+}
+body #community-wrap div#user-info-button .user-orange {
+	width: 19%;
+	height: 51px;
+	background: transparent url(../images/user-info-button.gif) no-repeat 0 -306px;
+	display: block;
+	float: left;
+	margin: 0 5px 0 0;
+}
+body #community-wrap div#user-info-button .user-orange-inner {
+    /*width: 90px;*/
+	height: 51px;
+	background: transparent url(../images/user-info-button.gif) no-repeat 100% -357px;
+}
+body #community-wrap div#user-info-button .user-red {
+	width: 19%;
+	height: 51px;
+	background: transparent url(../images/user-info-button.gif) no-repeat 0 -408px;
+	display: block;
+	float: left;
+	margin: 0 5px 0 0;
+}
+body #community-wrap div#user-info-button .user-red-inner {
+    /*width: 90px;*/
+	height: 51px;
+	background: transparent url(../images/user-info-button.gif) no-repeat 100% -459px;
+}
+
+body #community-wrap div#user-info-button .number {
+	padding: 3px 0 0;
+	font-size: 200%;
+	color: #fff;
+	line-height: 120%;
+	font-weight: bold;
+	text-align: center;
+}
+body #community-wrap div#user-info-button .text {
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	font-size: 110%;
+	margin-top: -5px;
+}
+body #community-wrap div#user-info-button a {
+	text-decoration: none;
+	outline-style: none;
+}
+
+body #community-wrap div.notice {
+	background: #CDEFA6;
+	border: 1px solid #9BCC54;
+	color: #648434;
+	text-align: center;
+	margin: 10px 0;
+}
+
+body #community-wrap .profile-action {
+	display: inline;
+}
+
+body #community-wrap div.newsfeed-content-hidden
+{
+
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	
+	padding: 6px;
+	background:#f4f5f6;
+	border: none;
+	margin-top:10px;
+	margin-bottom:10px;
+	display:none;
+}
+
+
+
+/*
+ ******************************************************************************
+ * TinyMCE Fixes 
+ */
+body #community-wrap table.mceLayout {
+	margin-bottom: 10px;
+}
+body #community-wrap table.mceLayout tr td {
+	padding: 0;
+}
+body #community-wrap table.mceLayout tr.mceFirst td {
+	padding-top: 2px;
+}
+body #community-wrap .mceToolbar td,
+body #community-wrap table.mceLayout tr.mceLast td {
+	padding: 0;
+}
+body #community-wrap .defaultSkin .mceIframeContainer {
+	border-right: 1px solid #ccc;
+}
+#community-wrap .profile-avatar{margin:0 0 10px}
+#community-wrap .profile-likes,
+#community-wrap .profile-video{display:inline-block;width:100%}
+#community-wrap .profile-video{padding-bottom:10px;margin-bottom:10px;border-bottom:1px dotted #ccc}
+#community-wrap .profile-likes{margin-bottom:10px;}
+#community-wrap .profile-likes #like-container{float:left}

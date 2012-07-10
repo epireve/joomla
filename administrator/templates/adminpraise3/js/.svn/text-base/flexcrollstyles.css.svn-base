@@ -1,0 +1,81 @@
+/* Scroll Bar Master Styling Starts Here */
+/* All comments can be freely removed from the css */
+
+.scrollgeneric {
+line-height: 1px;
+font-size: 1px;
+position: absolute;
+top: 0; left: 0;
+}
+
+.vscrollerbase {
+width: 11px;
+background-color: white;
+-moz-border-radius:99px;
+-webkit-border-radius:99px;
+border-radius:99px;
+-moz-box-shadow:2px 0 3px #CCC inset;
+-webkit-box-shadow:2px 0 3px #CCC inset;
+box-shadow:2px 0 3px #CCC inset;
+}
+.vscrollerbar {
+width: 10px;
+-moz-border-radius:99px;
+-webkit-border-radius:99px;
+border-radius:99px;
+-moz-box-shadow:0 0 1px #666;
+-webkit-box-shadow:0 0 1px #666;
+box-shadow:0 0 1px #666;
+}
+.hscrollerbase {
+height: 10px;
+background-color: white;
+}
+.hscrollerbar {
+height: 10px;
+background-color: black;
+-moz-border-radius:99px;
+-webkit-border-radius:99px;
+border-radius:99px;
+-moz-box-shadow:0 -1px 1px #666;
+-webkit-box-shadow:0 -1px 1px #666;
+box-shadow:0 -1px 1px #666;
+}
+
+.scrollerjogbox {
+width: 10px;
+height: 10px;
+top: auto; left: auto;
+bottom: 0px; right: 0px;
+background-color: gray;
+}
+
+/* Scrollbar Themes */
+.theme1 .vscrollerbar {
+background: #C5C3B9; /* old browsers */
+background: -moz-linear-gradient(left, #E1DFDA 0%, #C5C3B9 100%); /* firefox */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#E1DFDA), color-stop(100%,#C5C3B9)); /* webkit */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E1DFDA', endColorstr='#C5C3B9',GradientType=1 );
+border:1px solid #C5C3B9;
+}
+.theme2 .vscrollerbar {
+background: #2F2E33; /* old browsers */
+background: -moz-linear-gradient(left, #5E5D5B 0%, #2F2E33 100%); /* firefox */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#5E5D5B), color-stop(100%,#2F2E33)); /* webkit */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5E5D5B', endColorstr='#2F2E33',GradientType=1 );
+border:1px solid #2F2E33;
+}
+.theme3 .vscrollerbar {
+background: #999B9B; /* old browsers */
+background: -moz-linear-gradient(left, #CACDCE 0%, #999B9B 100%); /* firefox */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#CACDCE), color-stop(100%,#999B9B)); /* webkit */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CACDCE', endColorstr='#999B9B',GradientType=1 );
+border:1px solid #999B9B;
+}
+.theme4 .vscrollerbar {
+background: #999B9B; /* old browsers */
+background: -moz-linear-gradient(left, #CACDCE 0%, #999B9B 100%); /* firefox */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#CACDCE), color-stop(100%,#999B9B)); /* webkit */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CACDCE', endColorstr='#999B9B',GradientType=1 );
+border:1px solid #999B9B;
+}

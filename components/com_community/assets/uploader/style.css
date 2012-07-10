@@ -1,0 +1,177 @@
+/* -- Form Styles ------------------------------- */
+#community-wrap form {	
+	margin: 0;
+	padding: 0;
+}
+
+#community-wrap #btnBrowse .swfupload {
+	position: absolute;
+	top: 0;
+	left: 0;
+        z-index: 10;
+}
+
+#community-wrap div.fieldset
+{
+	border:  1px solid #afe14c;
+	margin: 20px 0;
+	padding: 5px 20px;
+}
+
+#community-wrap div.fieldset span.legendTitle
+{
+	background-color: #FFF;
+	border: 0px;
+	text-decoration: underline;
+	font-weight: 700;
+	font-size: 14px;
+	color: #000;
+}
+
+#community-wrap div.flash
+{
+	margin: 20px 5px;
+	border-color: #EEE;
+	-moz-border-radius-topleft : 5px;
+	-webkit-border-top-left-radius : 5px;
+    -moz-border-radius-topright : 5px;
+    -webkit-border-top-right-radius : 5px;
+    -moz-border-radius-bottomleft : 5px;
+    -webkit-border-bottom-left-radius : 5px;
+    -moz-border-radius-bottomright : 5px;
+    -webkit-border-bottom-right-radius : 5px;
+
+}
+
+#community-wrap input,
+#community-wrap select,
+#community-wrap textarea {
+	border-width: 1px; 
+	margin-bottom: 10px;
+	padding: 2px 3px;
+}
+
+
+
+#community-wrap input[disabled]{ border: 1px solid #ccc } /* FF 2 Fix */
+
+
+#community-wrap label { 
+	width: 150px; 
+	text-align: right; 
+	display:block;
+	margin-right: 5px;
+}
+
+#community-wrap #btnSubmit { margin: 0 0 0 155px ; }
+
+/* -- Table Styles ------------------------------- */
+#community-wrap td {
+	font: 10pt Helvetica, Arial, sans-serif;
+	vertical-align: top;
+}
+
+#community-wrap .progressWrapper {
+	overflow: hidden;
+}
+
+#community-wrap .progressContainer {
+	margin: 5px;
+	padding: 4px;
+	border: solid 1px #E8E8E8;
+	background-color: #F7F7F7;
+	overflow: hidden;
+}
+/* Message */
+#community-wrap .message
+{
+	margin: 1em 0;
+	background-color: #FFFFCC;
+	overflow: hidden;
+}
+
+/* Error */
+#community-wrap .red
+{
+	border: solid 1px #B50000;
+	background-color: #FFEBEB;
+}
+
+/* Current */
+#community-wrap .green
+{
+	border: solid 1px #DDF0DD;
+	background-color: #EBFFEB;
+}
+
+/* Complete */
+#community-wrap .blue
+{
+	border: solid 1px #CEE2F2;
+	background-color: #F0F5FF;
+}
+
+#community-wrap .progressName
+{
+	font-size: 8pt;
+	font-weight: 700;
+	color: #555;
+	width: 323px;
+	height: 14px;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#community-wrap .progressBarInProgress,
+#community-wrap .progressBarComplete,
+#community-wrap .progressBarError {
+	font-size: 0;
+	width: 0%;
+	height: 4px;
+	background-color: #74d467;
+	margin-top: 2px;
+}
+
+#community-wrap .progressBarComplete {
+	width: 100%;
+	background-color: #3f8536;
+	visibility: hidden;
+}
+
+#community-wrap .progressBarError {
+	width: 100%;
+	background-color: red;
+	visibility: hidden;
+}
+
+#community-wrap .progressBarStatus
+{
+	margin-top: 2px;
+	width: 337px;
+	font-size: 7pt;
+	font-family: Arial;
+	text-align: left;
+	white-space: nowrap;
+}
+
+#community-wrap a.progressCancel {
+	font-size: 0;
+	display: block;
+	height: 14px;
+	width: 14px;
+	background-image: url(cancelbutton.gif);
+	background-repeat: no-repeat;
+	background-position: -14px 0px;
+	float: right;
+}
+
+#community-wrap a.progressCancel:hover {
+	background-position: 0px 0px;
+}
+
+
+/* -- SWFUpload Object Styles ------------------------------- */
+#community-wrap .swfupload {
+	vertical-align: top;
+}

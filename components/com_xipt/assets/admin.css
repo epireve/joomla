@@ -1,0 +1,298 @@
+/**
+* @Copyright Ready Bytes Software Labs Pvt. Ltd. (C) 2010- author-Team Joomlaxi
+* @license GNU/GPL http://www.gnu.org/copyleft/gpl.html
+**/
+
+#toolbar-unhook{
+	background-image:  url(images/icon-unhook.png);
+	background-repeat:no-repeat;
+	background-position: top center;
+	}
+	
+#toolbar-aboutus{
+	 background-image:  url(images/icon-aboutus.png);
+	 background-repeat:no-repeat;
+	 background-position: top center;
+	 }
+	 
+.icon-48-xipt{
+	background-image:  url(images/home.png);
+	background-repeat:no-repeat;
+	}
+
+.icon-48-setup{
+	background-image:  url(images/setup.png);
+	background-repeat:no-repeat;
+	}
+
+.icon-48-settings{
+	background-image:  url(images/jspt-settings.png);
+	background-repeat:no-repeat;
+	}
+
+.icon-48-profiletypes{
+	background-image:  url(images/profiletypes.png);
+	background-repeat:no-repeat;
+	}
+	
+.icon-48-configuration{
+	background-image:  url(images/jspt-config.png);
+	background-repeat:no-repeat;
+	}
+	
+.icon-48-aclrules{
+	background-image:  url(images/aclrules.gif);
+	background-repeat:no-repeat;
+	}
+	
+.icon-48-profilefields{
+	background-image:  url(images/profilefields.gif);
+	background-repeat:no-repeat;
+	}
+	
+.icon-48-applications{
+	background-image:  url(images/applications.gif);
+	background-repeat:no-repeat;
+	}
+	
+.icon-48-jstoolbar{
+	background-image:  url(images/jstoolbar.png);
+	background-repeat:no-repeat;
+	}
+	
+/* CSS for Joomla1.6 */
+
+fieldset.adminform { /* General use */
+	margin: 5px;
+	overflow: hidden;
+	}
+	
+.hasTip, .admintable td.key { /* Key text - General use */
+	background-color: #F6F6F6;
+	border-bottom: 1px solid #E9E9E9;
+	border-right: 1px solid #E9E9E9;
+	color: #666666;
+	font-size: 12px;
+	font-weight: bold;
+	margin-right: 5px;
+	padding-right: 5px;
+	width: 150px;
+	}
+	
+label.radiobtn-no, label.radiobtn-yes, label.radiobtn-joomla, label.radiobtn-jomsocial, .radiobtn-owner, .radiobtn-visitor, .radiobtn-both{ /* Value text */
+	clear:none;
+	padding-right:5px;
+	}
+		
+label[class="radiobtn-select box"], label[class="radiobtn-radio options"]{
+	clear:none;
+	padding-right:	5px;
+	}
+	
+label[class="radiobtn-both, plan and profiletype"], label[class="radiobtn-only plan"], label[class="radiobtn-only profiletype"]{
+	clear:none;
+	padding-right:	5px;
+	}
+	
+.radiobtn-public , .radiobtn-member, .radiobtn-friend, .radiobtn-self {
+	clear:none;
+	padding-right:	5px;
+}
+
+.admintable td .radiobtn-no, .admintable td .radiobtn-yes, .admintable td .radiobtn-show, .admintable td .radiobtn-hide, .admintable td .radiobtn-sidebar, .admintable td label[class="radiobtn-main content"]{ /* Value text */
+	clear:none;
+	padding-right:2px;
+	}
+/******** XiptParameter *********/
+
+/* common css for all entites */
+#JSPT .xippElements {
+    overflow: hidden;
+    width: 100%;
+}
+#JSPT .elementColumn {
+    float: left;
+    overflow: hidden;
+    width: 49%;
+}
+#JSPT .elementParams {
+    margin: 2px auto auto;
+    overflow: hidden;
+    width: 100%;
+}
+#JSPT .paramTitle {
+    background-color: #F0F0F0;
+    border-bottom: 1px solid #E9E9E9;
+    border-right: 1px solid #E9E9E9;
+    color: #666666;
+    float: left;
+    font-weight: bold;
+    padding: 5px 3px 3px;
+    text-align: right;
+    width: 140px;
+}
+#JSPT .paramValue {
+    float: left;
+    line-height: 22px;
+    margin-left: 1%;
+/*    width: 45%;*/
+}
+#JSPT .paramValue input {
+    float: left;
+    margin-top: 3px;
+}
+#JSPT .paramValue select {
+    float: left;
+    margin-top: 3px;
+}
+#JSPT .paramValue label {
+    clear: none;
+    float: left;
+    margin: 0;
+    min-width: 0;
+}
+
+#JSPT .paramlist_key{
+	background: #f0f0f0;
+}
+
+#JSPT .xiParameter {
+}
+#JSPT .xiRow {
+    margin: 2px auto auto;
+    overflow: hidden;
+    width: 100%;
+}
+#JSPT .xiCol {
+    float: left;
+}
+#JSPT .xiColKey {
+    background-color: #F0F0F0;
+    border-bottom: 1px solid #E9E9E9;
+    border-right: 1px solid #E9E9E9;
+    color: #666666;
+    float: left;
+    font-weight: bold;
+    padding: 5px 3px 3px;
+    text-align: right;
+    width: 140px;
+}
+#JSPT .xiColKey label {
+    clear: none;
+    float: none;
+    margin: 0;
+    min-width: 0;
+}
+#JSPT .xiColValue {
+    float: left;
+    line-height: 22px;
+    margin-left: 1%;
+}
+#JSPT .xiColDescription {
+    color: #666666;
+    float: left;
+    font-weight: bold;
+    line-height: 22px;
+    text-decoration: underline;
+}
+#JSPT .xiColValue input {
+    float: left;
+    margin-top: 3px;
+}
+#JSPT .xiColValue select {
+    float: left;
+    margin-bottom: 0;
+    margin-top: 3px;
+}
+#JSPT .xiColValue label {
+    clear: none;
+    float: left;
+    margin: 0 2px;
+    min-width: 0;
+}
+
+#JSPT .paramlist tr td{
+	margin: 2px 0 0; 
+}
+
+
+.hasTip{
+background-color:#F0F0F0;
+border-bottom:0px;
+border-right:0px;
+text-align: right;
+color:#666666;
+font-size:12px;
+font-weight:bold;
+margin-right:2px;
+padding-right:2px;
+width:135px
+}
+/********** JSConfiguration **************/
+
+#content-box fieldset {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#FDFDFD none repeat scroll 0 0;
+}
+
+#config-document td {
+float:left;
+vertical-align:top;
+}
+fieldset.adminform {
+margin:5px;
+overflow:hidden;
+}
+.admintable td.key {
+background-color:#F6F6F6;
+color:#666666;
+font-size:12px;
+font-weight:bold;
+margin-right:5px;
+margin-top: 5px;
+padding-right:5px;
+width:150px;
+}
+.admintable td.key + td {
+}
+.admintable td .radiobtn-no, .admintable td .radiobtn-yes, .admintable td .radiobtn-show, .admintable td .radiobtn-hide, .admintable td .radiobtn-sidebar, .admintable td label[class="radiobtn-main content"] {
+clear:none;
+padding-right:5px;
+}
+#page-media td.key + td div {
+float:left;
+}
+#config-document #page-antispam td {
+float:none;
+}
+#page-groups td {
+float:none;
+}
+#page-events td {
+float:none;
+}
+#page-privacy td {
+float:none;
+}
+#page-privacy .privacyfriends input, #page-privacy .privacyprofile input, #page-privacy .privacyphotos input {
+float:none;
+margin:5px;
+}
+#page-network td {
+float:none;
+}
+#page-integrations td {
+float:none;
+}
+table.admintable td label {
+clear:none;
+display:inline;
+min-width:0;
+}
+
+/*****Joomla 17 hack for ordering images*****/
+span.uparrow,span.downarrow{
+background-repeat:no-repeat;
+}

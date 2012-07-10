@@ -1,0 +1,8 @@
+#rok-stats ul {margin:15px 0;padding:0;list-style:none;}
+#rok-stats li {padding:5px 0 4px 23px;margin:0;border-top:1px solid #f5f5f5;background-image:url(rokuserstats-icons.png);background-repeat:no-repeat;}
+#rok-stats li.down {background-position:0 7px;}
+#rok-stats li.none {background-position:0 -52px;}
+#rok-stats li.up {background-position:0 -23px;}
+#rok-stats li:first-child {border-top:0;}
+#rok-stats span.desc {display:block;}
+#rok-stats span.value {float:right;display:block;font-weight:bold;}

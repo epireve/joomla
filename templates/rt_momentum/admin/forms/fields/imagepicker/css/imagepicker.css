@@ -1,0 +1,12 @@
+.group-colorchooser .group-label, .group-selectbox .group-label {margin:0 10px 0 0;width:55px;}
+.bg-button {background: url(../images/button.png) 0 0 no-repeat;height:32px;font-size: 14px;line-height:32px;text-shadow: 1px 1px 1px #fff;cursor: pointer;display:block;float:left;text-decoration:none;outline:0;}
+.bg-button-right {background: url(../images/button.png) 100% -64px no-repeat;height:32px;margin-left:9px;display:block;float:left;padding-right: 9px;}
+a.bg-button span {color: #21759B;}
+a.bg-button:hover {background-position: 0 -32px;text-decoration:none;}
+a.bg-button:hover .bg-button-right {background-position: 100% -96px;}
+.backgroundpicker-img {float: left;margin-right: 10px;padding:2px;border: 2px solid #ddd;}
+.backgroundpicker .bg-button {margin-top:0;}
+.bg-button-clear {margin-left: 10px;}
+.backgroundpicker-infos {position: absolute; left: 70px; top: 40px;color:#666;font-size:13px;}
+.background-enabled span.chain-label, .background-image span.chain-label {margin-bottom: 10px;}
+.mediadropdown {float: left;margin: 4px 0 0 10px;}

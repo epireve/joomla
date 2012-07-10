@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Videos">
+		<message>
+			<![CDATA[
+				Videos's view
+			]]>
+		</message>
+		<options var="task">
+ 			<default name="All Videos" msg="Displays all videos from the site" />
+			<option value="myvideos" name="- My Videos" msg="Displays recent videos from specific user" />
+			<option value="search" name="- Search Videos" msg="Search for videos layout" />
+ 		</options>
+	</view>
+	<state>
+		<name>Videos Layout</name>
+		<description>Videos listings</description>
+	</state>
+</metadata>

@@ -1,0 +1,181 @@
+/**
+ * @package		JomSocial
+ * @subpackage 	Template 
+ * @copyright 	(C) 2011 by Slashes & Dots Sdn Bhd - All rights reserved!
+ * @license		GNU/GPL, see LICENSE.php
+ *
+ *
+ * style.reset.css - this is the core file that resets a lot of elements within #community-wrap
+ */
+
+/**
+ * COMMUNITY :ELEMENT STANDARD STYLING
+ * standart styling for all html elements in JomSocial application
+ * this section also included HTML-fix to support JomSocial application
+ */
+#community-wrap div,
+#community-wrap dl,
+#community-wrap dt,
+#community-wrap dd,
+#community-wrap ul,
+#community-wrap ol,
+#community-wrap li,
+#community-wrap h1,
+#community-wrap h2,
+#community-wrap h3,
+#community-wrap h4,
+#community-wrap h5,
+#community-wrap h6,
+#community-wrap pre,
+#community-wrap form,
+#community-wrap fieldset,
+#community-wrap input,
+#community-wrap textarea,
+#community-wrap p,
+#community-wrap blockquote,
+#community-wrap th,
+#community-wrap td { 
+	margin:0;
+	padding:0;
+
+}
+#community-wrap table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+#community-wrap fieldset {
+	overflow:hidden;
+	border-left:outset;
+}
+#community-wrap img { 
+	border:0;
+	background: none;
+}
+#community-wrap address,
+#community-wrap caption,
+#community-wrap cite,
+#community-wrap code,
+#community-wrap dfn,
+#community-wrap em,
+#community-wrap strong,
+#community-wrap th,
+#community-wrap var {
+	font-style:normal;
+	font-weight:normal;
+}
+#community-wrap strong {
+	font-weight: bold;
+}
+#community-wrap ol,
+#community-wrap ul {
+	list-style:none;
+	padding: 0px;
+	margin: 0px;
+}
+#community-wrap caption,
+#community-wrap th {
+	text-align:left;
+}
+#community-wrap h1,
+#community-wrap h2,
+#community-wrap h3,
+#community-wrap h4,
+#community-wrap h5,
+#community-wrap h6 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+#community-wrap q:before,
+#community-wrap q:after {
+	content:'';
+}
+#community-wrap abbr,
+#community-wrap acronym {
+	border:0;
+}
+#community-wrap hr {
+	height:1px;
+	}
+#community-wrap legend {
+	font-size:1.3em;
+	color:#666;
+	overflow:hidden;
+	}
+#community-wrap ul.pagination {
+	margin:15px auto;padding:10px 0;
+	}
+#community-wrap .inputbox,
+#community-wrap textarea,
+#community-wrap select {
+	padding:2px;
+	font: 1em/1 Arial, Helvetica, sans-serif;
+	}
+#community-wrap textarea {
+	height:110px;
+	width:100%;
+	}
+#community-wrap .relative{
+	position:relative;
+	}
+#community-wrap .clr,
+#cWindowContent .clr{
+	clear:both;
+	height:0;
+	overflow:hidden;
+	font-size:0;
+	line-height:0;
+	}
+#community-wrap .clrfix {
+	clear:none;
+	}
+#community-wrap .clrfix:after {
+	display:block;
+	visibility:hidden;
+	clear:both;
+	height:0;
+	content:" ";
+	font-size:0;
+	}
+
+#community-wrap textarea {
+	border: 1px solid #ddd;
+	background-color: #fff;
+}
+#community-wrap input:focus,
+#community-wrap textarea:focus {
+	border-color: #333;
+}
+#community-wrap .cResetList,
+#cWindowContent .cResetList,
+#community-wrap .cResetList li {
+	background:none;
+	border:none;
+	list-style:none;
+	list-style-image:none;
+	line-height:normal;
+	margin:0;
+	padding:0;
+	clear:none;
+	}
+
+#community-wrap ul li a {
+	font-size: inherit;
+	line-height: inherit;
+}
+/**
+ * COMMUNITY :RESET BORDER STYLE
+ * removing all borders in #cWindowContent table
+ */
+#cWindowContent table,#cWindowContent tbody,#cWindowContent tr,#cWindowContent td{border:0}
+
+
+
+
+

@@ -1,0 +1,65 @@
+/**
+ * @package   Momentum Template - RocketTheme
+ * @version   1.3 October 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+/* Logo */
+body.rtl #rt-logo-surround {float: right;}
+body.rtl #rt-logo {margin: -8px -20px 0 0;}
+
+/* Navigation */
+.logo-enabled-1.rtl #rt-navigation {margin-left: 0;margin-right: 180px;}
+
+/* Side Menus */
+body.rtl .module-content ul.menu li li a span, body.rtl .module-content ul.menu li li .separator, body.rtl .module-content ul.menu li li .item span {padding: 4px 25px 4px 10px;}
+body.rtl .module-content ul.menu .image img {float: right;}
+body.rtl .module-content ul.menu .item.image {padding-left: inherit;padding-right: 8px;}
+body.rtl .module-content ul.menu ul {padding: 10px 15px 15px 0;}
+body.rtl .module-content ul.menu li a span, body.rtl .module-content ul.menu li .separator, body.rtl .module-content ul.menu li .item span {background-position: 98% -388px;}
+body.rtl .module-content ul.menu li.parent li a span, body.rtl .module-content ul.menu li.parent li .item span, body.rtl .module-content ul.menu li.parent li .separator span {background-position: 98% -794px;}
+body.rtl .module-content ul.menu li.parent li.active > a > span, body.rtl .module-content ul.menu li.parent li.active > .item > span, body.rtl .module-content ul.menu li.parent li.active > .separator > span {background-position: 98% -1305px;}
+
+/* Buttons and Inputs */
+body.rtl .rokchecks, body.rtl .rokradios {padding: 3px 18px 3px 0;}
+body.rtl .rokradios {background-position: 100% 4px;}
+body.rtl .rokradios-active {background-position: 100% -146px;}
+body.rtl .rokchecks {background-position: 100% -295px;}
+body.rtl .rokchecks-active {background-position: 100% -446px;}
+
+/* Branding */
+body.rtl #rocket {float: left;}
+
+/* Content Top - Content Bottom */
+body.rtl #rt-content-top .ribbon .module-title, body.rtl #rt-content-bottom .ribbon .module-title {padding-left: 0;padding-right: 35px;background-position: 100% 2px;}
+body.rtl #rt-content-top .rt-omega .ribbon, body.rtl #rt-content-bottom .rt-omega .ribbon {margin: 0 20px 0 -30px;}
+
+/* Module Variations */
+body.rtl .title1 h2.title {padding: 0 18px 0 0;}
+body.rtl .title1 .module-title {background-position: 100% -394px;}
+body.rtl .title2 .accent {right: 13px;left: auto;}
+
+/* Copyright */
+body.rtl .copytext {text-align: right;}
+
+/* Breadcrumbs */
+body.rtl span.breadcrumbs a, body.rtl span.no-link {float: right;}
+body.rtl span.breadcrumbs img, body.rtl #rt-breadcrumbs img[src $="arrow.png"] {float: right;}
+
+/* Login Form - Horizontal */
+body.rtl #rt-header #form-login .readon, body.rtl .horizontal #form-login .readon {left: 0;right: inherit;}
+body.rtl #rt-header #form-login-username, body.rtl .horizontal #form-login-username {float: right;margin-left: 15px;margin-right: 0;}
+
+/* Popup Module Feature */
+body.rtl #rt-popuplogin p {float: right;}
+body.rtl #rt-popuplogin p:first-child {margin-right: 0;margin-left: 10px;}
+body.rtl #rt-popuplogin .readon {float: left;}
+body.rtl #rt-popuplogin ul li {margin-right: 0;margin-left: 10px;}
+
+/* Custom Content */
+body.rtl .image-block-surround {float: right;margin-right: 0;margin-left: 15px;}
+body.rtl .number-image {float: right;margin-right: 0;margin-left: 15px;}
+body.rtl .number-image-text {margin: 0 -5px -8px 0;}
+body.rtl .component-content .multicolumns .module-title {margin: 0 -35px 20px 10px;}

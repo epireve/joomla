@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jomsocial>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<component>com_community</component>
+	<rules>
+		<rule>
+			<name>Add Application</name>
+			<description>Give points when registered user add new application.</description>
+			<action_string>application.add</action_string>
+			<publish>true</publish>
+			<points>0</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Remove Application</name>
+			<description>Deduct points when registered user remove application.</description>
+			<action_string>application.remove</action_string>
+			<publish>true</publish>
+			<points>0</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Upload Photo</name>
+			<description>Give points when registered user upload photos.</description>
+			<action_string>photo.upload</action_string>
+			<publish>true</publish>
+			<points>0</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Add New Group</name>
+			<description>Give points when registered user created new group.</description>
+			<action_string>group.create</action_string>
+			<publish>true</publish>
+			<points>3</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Add New Group's Discussion</name>
+			<description>Give points when registered user created new discussion on group.</description>
+			<action_string>group.discussion.create</action_string>
+			<publish>true</publish>
+			<points>2</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Leave Group</name>
+			<description>Deduct points when registered user leave a group.</description>
+			<action_string>group.leave</action_string>
+			<publish>true</publish>
+			<points>-1</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Approve Friend Request</name>
+			<description>Give points to both parties when registered user approved friend request.</description>
+			<action_string>friends.request.approve</action_string>
+			<publish>true</publish>
+			<points>1</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Add New Photo Album</name>
+			<description>Give points when registered user added new photo album.</description>
+			<action_string>album.create</action_string>
+			<publish>true</publish>
+			<points>1</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Post Group Wall</name>
+			<description>Give points when registered user post wall on group.</description>
+			<action_string>group.wall.create</action_string>
+			<publish>true</publish>
+			<points>1</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Join Group</name>
+			<description>Give points when registered user joined a group.</description>
+			<action_string>group.join</action_string>
+			<publish>true</publish>
+			<points>1</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Reply Group's Discussion</name>
+			<description>Give points when registered user replied on group's discussion.</description>
+			<action_string>group.discussion.reply</action_string>
+			<publish>true</publish>
+			<points>1</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Post Wall</name>
+			<description>Give points when registered user post a wall on profile.</description>
+			<action_string>profile.wall.create</action_string>
+			<publish>true</publish>
+			<points>1</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Profile Status Update</name>
+			<description>Give points when registered user update their profile status.</description>
+			<action_string>profile.status.update</action_string>
+			<publish>true</publish>
+			<points>1</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Profile Update</name>
+			<description>Give points when registered user update their profile.</description>		
+			<action_string>profile.save</action_string>
+			<publish>true</publish>
+			<points>1</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Update group</name>
+			<description>Give points when registered user update the group.</description>		
+			<action_string>group.updated</action_string>
+			<publish>true</publish>
+			<points>1</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Upload group avatar</name>
+			<description>Give points when registered user upload avatar to group.</description>		
+			<action_string>group.avatar.upload</action_string>
+			<publish>true</publish>
+			<points>0</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Create Group's News</name>
+			<description>Give points when registered user add group's news.</description>		
+			<action_string>group.news.create</action_string>
+			<publish>true</publish>
+			<points>1</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Post Wall for photos</name>
+			<description>Give points when registered user post wall at photos.</description>		
+			<action_string>photos.wall.create</action_string>
+			<publish>true</publish>
+			<points>1</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Remove Friend</name>
+			<description>Deduct points to both parties when registered user remove a friend.</description>		
+			<action_string>friends.remove</action_string>
+			<publish>true</publish>
+			<points>0</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Upload profile avatar</name>
+			<description>Give points when registered user upload profile avatar.</description>		
+			<action_string>profile.avatar.upload</action_string>
+			<publish>true</publish>
+			<points>0</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Update privacy</name>
+			<description>Give points when registered user updated privacy.</description>		
+			<action_string>profile.privacy.update</action_string>
+			<publish>true</publish>
+			<points>0</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Reply Messages</name>
+			<description>Give points when registered user reply a message.</description>		
+			<action_string>inbox.message.reply</action_string>
+			<publish>true</publish>
+			<points>0</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Send Messages</name>
+			<description>Give points when registered user send a message.</description>		
+			<action_string>inbox.message.send</action_string>
+			<publish>true</publish>
+			<points>0</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Remove Group member</name>
+			<description>Deduct points when registered user remove a group memeber.</description>		
+			<action_string>group.member.remove</action_string>
+			<publish>true</publish>
+			<points>0</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Delete news</name>
+			<description>Deduct points when registered user remove a news.</description>		
+			<action_string>group.news.remove</action_string>
+			<publish>true</publish>
+			<points>0</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Remove Wall</name>
+			<description>Deduct points to original poster when registered user remove a wall.</description>		
+			<action_string>wall.remove</action_string>
+			<publish>true</publish>
+			<points>0</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Remove Photo album</name>
+			<description>Deduct points when registered user remove a photo album.</description>		
+			<action_string>album.remove</action_string>
+			<publish>true</publish>
+			<points>0</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Remove photos</name>
+			<description>Deduct points when registered user remove a photo.</description>		
+			<action_string>photo.remove</action_string>
+			<publish>true</publish>
+			<points>0</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Remove video</name>
+			<description>Deduct points when user remove a video.</description>		
+			<action_string>video.remove</action_string>
+			<publish>true</publish>
+			<points>-1</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Add video</name>
+			<description>Add points when user adds a video.</description>		
+			<action_string>video.add</action_string>
+			<publish>true</publish>
+			<points>1</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Add Event</name>
+			<description>Add points when user created new event.</description>		
+			<action_string>events.create</action_string>
+			<publish>true</publish>
+			<points>1</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Upload Event Avatar</name>
+			<description>Add points when user upload new avatar.</description>
+			<action_string>events.avatar.upload</action_string>
+			<publish>true</publish>
+			<points>1</points>
+			<access_level>1</access_level>
+		</rule>
+	</rules>
+</jomsocial>

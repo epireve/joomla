@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>Bubble</name>
+	<version>2.2.4</version>
+	<creationDate>March 2011</creationDate>
+	<author>JomSocial Team</author>
+	<authorEmail>support@azrul.com</authorEmail>
+	<authorUrl>http://www.jomsocial.com</authorUrl>
+	<copyright>Copyright 2008 - 2011 by Slashes &amp; Dots Sdn Bhd. All rights reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>Bubble template for JomSocial</description>
+	<files>
+	</files>
+	<params>
+		<param type="spacer" default="Frontpage" />
+		<param name="showsearch" type="list" default="1" label="Show search box" description="">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+			<option value="2">Members Only</option>
+		</param>
+		<param name="showlatestgroups" type="list" default="1" label="Show latest group" description="">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+			<option value="2">Members Only</option>
+		</param>
+		<param name="showlatestphotos" type="list" default="1" label="Show new photos" description="">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+			<option value="2">Members Only</option>
+		</param>
+		<param name="showonline" type="list" default="1" label="Show who's online" description="">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+			<option value="2">Members Only</option>
+		</param>
+		<param name="showlatestmembers" type="list" default="1" label="Show recent members" description="">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+			<option value="2">Members Only</option>
+		</param>
+		<param name="showlatestvideos" type="list" default="1" label="Show recent videos" description="">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+			<option value="2">Members Only</option>
+		</param>
+		<param name="frontpage_latest_events" type="list" default="1" label="Show latest events" description="">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+			<option value="2">Members Only</option>
+		</param>
+		<param name="showmembercount" type="radio" default="1" label="Show members count" description="">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+		<param type="spacer" default="Groups" />
+		<param name="sidebarTotalDiscussions" type="text" default="5" size="3" label="Number of discussions on sidebar" description="" />
+		<param name="groupsPhotosPosition" type="radio" default="1" label="Groups photo album position" description="">
+			<option value="content">Main content</option>
+			<option value="js_groups_side_bottom">Sidebar</option>
+		</param>
+		<param name="groupsVideosPosition" type="radio" default="1" label="Groups video position" description="">
+			<option value="content">Main content</option>
+			<option value="js_groups_side_bottom">Sidebar</option>
+		</param>
+		<param name="groupsEventPosition" type="radio" default="1" label="Groups event position" description="">
+			<option value="content">Main content</option>
+			<option value="js_groups_side_bottom">Sidebar</option>
+		</param>
+		<param type="spacer" default="Applications" />
+		<param name="appsShowAuthor" type="radio" default="1" label="Show plugin author" description="">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+	</params>
+</install>

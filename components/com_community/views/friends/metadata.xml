@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Friends">
+		<message>
+			<![CDATA[
+				Friends view
+			]]>
+		</message>
+		<options var="task">
+ 			<default name="All Friends" msg="Displays all friends for the user" />
+			<option value="invite" name="- Invite Friends" msg="Invite friends view" />
+			<option value="sent" name="- Sent Friends Request" msg="Displays a list of friend requests the user made." />
+			<option value="pending" name="- Pending Approval" msg="Displays a list of users awaiting for their friend request." />
+ 		</options>
+	</view>
+	<state>
+		<name>Friends Layout</name>
+		<description>Friend listings layout</description>
+	</state>
+</metadata>

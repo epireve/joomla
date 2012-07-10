@@ -1,0 +1,8 @@
+/**
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+#rok-quicklinks ul{margin:15px 0 0;padding:0;list-style:none;display:block;overflow:hidden}#rok-quicklinks a{display:block;float:left;padding:10px;border:1px solid #fff;width:75px;height:68px}
+#rok-quicklinks a:hover{text-decoration:none}#rok-quicklinks li{float:left;display:block;text-align:center}#rok-quicklinks li img{margin-bottom:3px}#rok-quicklinks li strong{font-size:12px;font-weight:normal}
+.rok-quicklinks-customize{position:absolute;top:10px;right:15px}

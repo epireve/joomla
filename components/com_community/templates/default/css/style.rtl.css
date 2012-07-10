@@ -1,0 +1,147 @@
+@charset "utf-8";
+/**
+ * COMMUNITY RTL
+ */
+body #community-wrap .cThumbList{margin:0 0 0 -5px}
+body #community-wrap .cThumbList li{float:right;padding:0 0 4px 4px;}
+
+
+body #community-wrap .latest-events .jsEvDate,
+body #community-wrap .video-thumb,
+body div.cFeed-item .newsfeed-avatar,
+body #community-wrap div.mini-profile-avatar
+{float:right !important}
+
+body #community-wrap #cToolbarNav.cToolbar ul#cToolbarNavList li#toolbar-item-logout
+{float:left !important}
+
+body #community-wrap #cToolbarNav.cToolbar ul#cToolbarNavList div {right:0;left:auto !important}
+body #community-wrap #cToolbarNav.cToolbar ul#cToolbarNavList li div a {width:160px;text-align:right}
+
+body #community-wrap .app-box-menus
+{left:-10px;right:auto}
+body #community-wrap .latest-events .jsDetail{margin:0 45px 0 0 !important}
+body #community-wrap .cFeed-item .newsfeed-content {margin:0 70px 0 10px}
+body #community-wrap .cFeed-item .newsfeed-favicon {right:45px;left:auto}
+body #community-wrap div.cFeed-item .newsfeed-date {left:0 !important; right:auto !important}
+body #community-wrap .cFeed-item .newsfeed-content-top {margin:0 0 0 65px !important}
+body #community-wrap .cFeed-item .newsfeed-content-hidden{float:right}
+body #community-wrap .cFeed-item .newsfeed-content-hidden .video-thumb{padding:0 !important;margin-left:8px}
+
+body #community-wrap div.profile-box .profile-likes{right:auto;left:8px}
+body #community-wrap #profile-header ul.actions li {text-align:right;padding:0 17px 0 0}
+body #community-wrap #profile-header ul.actions li.profile	{background: transparent url(../images/icon_10px.gif) no-repeat right 0;}
+body #community-wrap #profile-header ul.actions li.avatar	{background: transparent url(../images/icon_10px.gif) no-repeat right -10px;}
+body #community-wrap #profile-header ul.actions li.privacy	{background: transparent url(../images/icon_10px.gif) no-repeat right -20px;}
+body #community-wrap #profile-header ul.actions li.apps		{background: transparent url(../images/icon_10px.gif) no-repeat right -30px;}
+body #community-wrap #profile-header ul.actions li.group	{background: transparent url(../images/icon_10px.gif) no-repeat right -40px;}
+body #community-wrap #profile-header ul.actions li.photo	{background: transparent url(../images/icon_10px.gif) no-repeat right -50px;}
+body #community-wrap #profile-header ul.actions li.write	{background: transparent url(../images/icon_10px.gif) no-repeat right -60px;}
+body #community-wrap #profile-header ul.actions li.inbox	{background: transparent url(../images/icon_10px.gif) no-repeat right -70px;}
+body #community-wrap #profile-header ul.actions li.invite	{background: transparent url(../images/icon_10px.gif) no-repeat right -80px;}
+body #community-wrap #profile-header ul.actions li.video	{background: transparent url(../images/icon_10px.gif) no-repeat right -90px;}
+body #community-wrap #profile-header ul.actions li.events	{background: transparent url(../images/icon_10px.gif) no-repeat right -100px;}
+
+body #community-wrap .video-remove {right:auto;left:7px}
+body #community-wrap .icon-online-overlay, #community-wrap .icon-offline-overlay {right:auto;left:0;text-align:left}
+body .jsFriendRespond{right:auto;left:8px}
+body .jsFriendAction {left:auto;right:90px}
+body .jsFriendAction span{float:right}
+
+body #community-wrap .submenu li {float:right}
+body #community-wrap ul.submenu li.action {float:left}
+
+body #community-wrap #cToolbarNav.cToolbar ul#cToolbarNavList li {float:right !important}
+
+body #community-wrap div.groups-news-title {background:url("../images/action/icon-announcement.png") no-repeat right 0;padding:0 25px 3px 40px}
+body #community-wrap .groups-news-meta, 
+body #community-wrap .group-discussion-author, 
+body #community-wrap .group-discussion-introtext,
+body #community-wrap div.groups-news-text
+{margin:0 25px 5px 0}
+
+body #community-wrap .group-discussion-title{background:url("../images/action/icon-discussion.png") no-repeat right 3px;padding:0 25px 5px 30%;}
+body #community-wrap .group-discussion-replies{right:auto;left:0}
+
+body #community-group-side-events .event-date{float:right}
+body #community-group-side-events .event-detail{margin:0 60px 0 0}
+
+body #community-wrap .group-menus li a,
+body #community-wrap .event-menus li a {padding:8px 30px 8px 0;}
+
+body #community-wrap .group-menus .group-edit-avatar,
+body #community-wrap .event-menus .event-edit-avatar {
+	background: url(../images/action/icon-image-edit.png) right 6px no-repeat;
+	}
+body #community-wrap .group-menus .group-edit-info,
+body #community-wrap .event-menus .event-edit-info {
+	background: url(../images/action/icon-pencil-go.png) right 5px no-repeat;
+	}
+body #community-wrap .group-menus .group-delete,
+body #community-wrap .event-menus .event-delete {
+	background: url(../images/action/icon-cross.png) right 6px no-repeat;
+	}
+body #community-wrap .group-menus .group-print,
+body #community-wrap .event-menus .event-print {
+	background: url(../images/action/icon-printer.png) right 6px no-repeat;
+	}
+body #community-wrap .group-menus .group-export-ical,
+body #community-wrap .event-menus .event-export-ical {
+	background: url(../images/action/icon-ical.png) 2px right no-repeat;
+	}
+body #community-wrap .group-menus .group-join,
+body #community-wrap .event-menus .event-join {
+	background: url(../images/action/icon-arrow-join.png) right 5px no-repeat;
+	}
+body #community-wrap .group-menus .group-leave,
+body #community-wrap .event-menus .event-leave {
+	background: url(../images/action/icon-door-out.png) right 5px no-repeat;
+	}
+body #community-wrap .group-menus .group-invite-friend,
+body #community-wrap .event-menus .event-invite-friend {
+	background: url(../images/action/icon-group-go.png) right 5px no-repeat;			
+	}
+body #community-wrap .event-menus .event-copy {
+	background: url(../images/action/icon-event-copy.png) right 5px no-repeat;			
+	}
+
+body #community-wrap .event-menus .event-invite-email,
+body #community-wrap a.community-invite-email {
+	background: url(../images/action/icon-email-go.png) right 5px no-repeat;		
+	}
+
+body #community-wrap .group-menus .group-add-bulletin {
+	background: url(../images/action/icon-buletin-add.png) right 5px no-repeat;	
+	}
+body #community-wrap .group-menus .group-add-discussion {
+	background: url(../images/action/icon-discussion-add.png) right 5px no-repeat;	
+	}
+body #community-wrap .group-menus .group-add-photo {
+	background: url(../images/action/icon-camera.png) right 5px no-repeat;	
+	}
+body #community-wrap .group-menus .group-add-album {
+	background: url(../images/action/icon-album-add.png) right 5px no-repeat;	
+	}
+body #community-wrap .group-menus .group-add-video {
+	background: url(../images/action/icon-video-add.png) right 5px no-repeat;	
+	}
+body #community-wrap .group-menus .group-unpublish {
+	background: url(../images/action/icon-group-unpublish.png) right 5px no-repeat;	
+	}
+body #community-wrap .group-menus .group-create-event {
+	background: url(../images/action/icon-add-event.png) right 5px no-repeat;	
+	}
+body #community-wrap .community-invite {
+	background: url(../images/action/icon-invite.png) right 5px no-repeat;
+	}
+
+body .community-events-results-left,
+body .community-groups-results-left {float:right}
+
+body .community-events-results-right,
+body .community-groups-results-right {margin:10px 90px 10px 10px;}
+
+body .album-actions{margin-right:8px}
+body #community-wrap .album-cover {float:right !important}
+
+body #community-wrap div.cFeed-item .newsfeed-remove {right:auto;left:0;width:12px}

@@ -1,0 +1,79 @@
+/**
+ * @package   Momentum Template - RocketTheme
+ * @version   1.3 October 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+/* Reminder:  320 / 480 */
+body {word-wrap: break-word;}
+body .rt-container {background: transparent;}
+body h1 {border-bottom: 0;}
+a {-webkit-transition: color 0 ease-out;}
+body.rt-normal #form-login .inputbox, body.rt-flipped #form-login .inputbox {width: 100px !important;}
+body.rt-normal #rt-header #form-login-remember, body.rt-flipped #rt-header #form-login-remember {position:relative;margin-top:10px;top:0;}
+body .rt-navigation-bar {background: transparent;}
+body #rt-menu {margin-top: 0 !important;}
+body #rt-menu .rt-container {padding-bottom: 5px;}
+body #rt-menu {margin: 0 -5px;}
+body #rt-left-menu, body #rt-right-menu, body #rt-menu ul.menu li.active a {background: transparent !important;}
+body #rt-menu ul.menu li a {border-bottom: 0 !important;}
+body #rt-menu .root .separator {display:block; padding: 0 10px;border-bottom: 0 !important;line-height:2em;font-weight:bold;font-style:italic;}
+body #rt-menu .root a, body #rt-menu .root .item {text-shadow:0 -1px 0 rgba(0, 0, 0, 0.8) !important;color:rgba(255, 255, 255, 0.9) !important;}
+body .logo-block {margin:0 auto 20px;padding: 0 10px 10px;}
+body #rt-header {padding: 0 !important;}
+body #rt-topbar {margin: 0 0 30px;}
+body #rt-logo-surround {margin: 0 -5px;float: none;width: 104%;height:60px;}
+body .component-content .rt-article {margin: 0 10px 35px !important;}
+body.rt-normal #rt-bg-image, body.rt-flipped #rt-bg-image {-webkit-background-size: 360px auto;}
+body.rt-right #rt-bg-image, body.rt-left #rt-bg-image {-webkit-background-size: 480px auto;}
+body .cols4 .rg-gm-slice-list li {width: 50%;}
+body #rt-footer-surround {margin: 0 10px;}
+body #rt-container-bg {margin-top: 100px;}
+body .page-overlay-light .component-block {box-shadow: none !important;-webkit-box-shadow: none !important;}
+
+/* Logo - DARK */
+body.primary-overlay-dark #rt-menu {background-image: url(../images/overlays/dark/diag-lines2.png) !important;background-repeat: repeat !important;}
+
+/* Logo - LIGHT */
+body.primary-overlay-light #rt-menu {background-image: url(../images/overlays/light/diag-lines2.png) !important;background-repeat: repeat !important}
+
+body .rt-block {padding: 2px;}
+body #rt-page-surround {margin: 0;padding: 0 5px 25px 5px;}
+body #rt-bg-image {left: 0;margin-left: 0;top:80px;}
+body.rt-normal #rt-bg-image, body.rt-flipped #rt-bg-image {width: 100%;}
+body.rt-right #rt-bg-image, body.rt-left #rt-bg-image {width: 100%;}
+
+body #developed-by a, body #powered-by a {margin: 0 auto;height: 26px;vertical-align: middle;}
+#rt-menu a:hover {color: #fff;}
+body #rt-menu ul.menu li.active a, body #rt-menu ul.menu li.active a:hover, body #rt-menu ul.menu li.active a span, body #rt-menu ul.menu li.active a:hover span {text-shadow:0 -1px 0 rgba(0, 0, 0, 1) !important;}
+body #rt-menu .root.active .item  span {color: rgba(255, 255, 255, 0.2) !important;}
+body .component-content .rt-articleinfo {background: none;border-radius: 0;}
+
+body #rt-header #form-login ul {position:relative;top:0;margin-top:10px;}
+#form-login fieldset p {margin:0;}
+
+body #developed-by a {height: 16px;}
+#rocket {float: none;}
+
+/* Joomla */
+body .weblinks .rt-joomla-table img {width: 16px;height: 16px;}
+.component-content .edit img {display: none;}
+
+/* Demo Content */
+.rt-demo-map, .rt-demo-prices {float:none;}
+.rt-demo-location, .rt-demo-register {margin-left: 0;}
+.rt-demo-map div {text-align: center}
+.rt-demo-prices {width: auto;}
+.rt-demo-prices h3, .rt-demo-location h3 {font-size: 200%;margin-top: 50px;}
+.rt-demo-title {font-size: 25px;}
+.rt-demo-title br {display: none;}
+.rt-normal .rt-demo-price, .rt-flipped .rt-demo-price {font-size: 50px;margin-right:10px;}
+.rt-normal .rt-demo-header .headline, .rt-flipped .rt-demo-header .headline {font-size: 400%;}
+.rt-left .rt-demo-header .headline, .rt-right .rt-demo-header .headline {font-size: 700%;}
+.rt-normal .rt-demo-header .rt-demo-count, .rt-flipped .rt-demo-header .rt-demo-count {width: 75px;}
+.rt-normal .rt-demo-header .rt-demo-count span, .rt-flipped .rt-demo-header .rt-demo-count span {font-size: 45px;}
+.rt-normal .rt-demo-header .rt-demo-button, .rt-flipped .rt-demo-header .rt-demo-button {padding-left: 0;}
+.rt-normal .rt-demo-button span, .rt-flipped .rt-demo-button span {font-size: 18px !important;}
+.rt-demo-button > div:last-child {margin-right:0;}

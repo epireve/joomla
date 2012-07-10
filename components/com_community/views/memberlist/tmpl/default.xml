@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Standard Article Layout">
+		<message>
+			<![CDATA[STANDARD ARTICLE LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>Memberlist</name>
+		<description>This will list down users from the list</description>
+		<url addpath="/administrator/components/com_community/elements">
+			<param name="listid" type="memberlist" default="0" label="Select list" description="Select the list to use" />
+		</url>
+		<params>
+		</params>
+	</state>
+</metadata>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<install type="template" version="1.5.0" client="administrator" method="upgrade">
+	<name>AdminPraise3</name>
+	<creationDate>2/09/2011</creationDate>
+	<author>AdminPraise</author>
+	<authorEmail>support@adminpraise.com</authorEmail>
+	<authorUrl>http://www.adminpraise.com</authorUrl>
+	<copyright>Copyright Pixel Praise LLC</copyright>
+	<license>Copyright Pixel Praise LLC</license>
+	<version>Beta 0.3.0</version>
+	<description>AdminPraise3 for Joomla! 1.5 by 
+&lt;a href=&quot;http://www.adminpraise.com&quot; target=&quot;_blank&quot;&gt;AdminPraise.com&lt;/a&gt;, a &lt;a href=&quot;http://www.adminpraise.com/joomla/admin-templates.php&quot; target=&quot;_blank&quot;&gt;Joomla Admin Templates&lt;/a&gt; &amp; &lt;a href=&quot;http://www.adminpraise.com/joomla/admin-extensions.php&quot; target=&quot;_blank&quot;&gt;Joomla Admin Extensions&lt;/a&gt; Developer&lt;br&gt;
+	&lt;a href=&quot;http://www.adminpraise.com/documentation/templates/adminpraise-3.php&quot; target=&quot;_blank&quot;&gt;AdminPraise3 Documentation PLEASE READ!&lt;/a&gt;
+	</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>apraise3.php</filename>
+		<filename>cpanel.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>head.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>login.php</filename>
+		<filename>params.ini</filename>
+		<filename>template_thumbnail.png</filename>
+		
+		<folder>administrator</folder>
+		<folder>css</folder>
+		<folder>help</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>lib</folder>
+		<folder>modules</folder>
+		<folder>parameter</folder>
+		
+	</files>
+	<languages folder="language/">
+		<language tag="en-GB">en-GB/en-GB.tpl_adminpraise3.ini</language>
+	</languages>
+	<administration>
+		<languages folder="administrator/language/">
+			<language tag="en-GB">en-GB/en-GB.tpl_adminpraise3.ini</language>
+		</languages>
+	</administration>
+	<positions>
+		<position>apadmin</position>
+		<position>apsuperadmin</position>
+		<position>aptop</position>
+		<position>apbottom</position>
+		<position>apside</position>
+		<position>apfooter</position>
+		<position>apfoot1</position>
+		<position>apfoot2</position>
+		<position>apfoot3</position>
+		<position>apfoot4</position>
+		<position>menu</position>
+		<position>submenu</position>
+		<position>toolbar</position>
+		<position>title</position>
+		<position>status</position>
+		<position>icon</position>
+		<position>cp_shell</position>
+		<position>cpanel</position>
+		<position>debug</position>
+	</positions>
+	<params addpath="/administrator/templates/adminpraise3/parameter/element">
+		<param name="creditSpacer" type="spacer" label="" description="" default=" " />
+		<param name="themeSpacer" type="spacer" label="" description="" default="Themes" />
+		
+		<param name="templateTheme" type="list" default="theme1" label="Global Theme" description="Choose a theme">
+			<option value="theme1">Theme 1 - Beige</option>
+			<option value="theme2">Theme 2 - Dark</option>
+			<option value="theme3">Theme 3 - Gray</option>
+			<option value="theme4">Theme 4 - White</option>
+		</param>
+		<param name="@themes" type="themes" label="Preview Theme" description="Choose your personal theme (seen by only you)" default="templateTheme" resetlink="true" />
+		
+		<param name="fallbackTemplate" type="admintemplate" default="" label="Fallback Template" description="Pick the fallback template for defined components" />
+		<param name="fallbackComponents" type="text" size="40" label="Fallback Components" description="Fallback components will use the fallback template" default="" />
+		
+		<param name="layoutSpacer" type="spacer" label="" description="" default="Layout" />
+		<param name="showAvatar" type="list" label="SHOW AVATAR" description="AVATARDESC" default="0">
+			<option value="0">No</option>
+			<option value="gravatar">Gravatar</option>
+			<option value="k2">K2</option>
+			<option value="jomsocial">JomSocial</option>
+			<option value="cb">Community Builder</option>
+		</param>
+		
+		<param name="showBreadCrumbs" type="radio" default="1" label="Show Breadcrumbs" description="Enable/Disable Breadcrumbs">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showQuickAdd" type="radio" default="1" label="Show Quick Add" description="Enable/Disable Quick Add">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showMyEditor" type="radio" default="1" label="Show My Editor" description="Enable/Disable My Editor">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showComponentList" type="radio" default="1" label="Show Component List" description="Enable/Disable Component List">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showSideComponentList" type="radio" default="1" label="Show Side Component List" description="Enable/Disable Side Component List">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showBottomComponentList" type="radio" default="1" label="Show Bottom Component List" description="Enable/Disable Bottom Component List">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showChildren" type="radio" default="0" label="Show Component Children" description="Show children links on hover">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showFootMods" type="radio" default="0" label="Show Footer Modules" description="Show footer modules (apfoot1-4)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showSubmenu" type="radio" default="0" label="Show Submenu" description="Show menu under main top menu">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showStatusBar" type="radio" default="0" label="Show Status Bar" description="Show menu under main top menu">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="altToolbar" type="radio" default="0" label="Show Alternate Toolbar" description="Show alternate toolbar">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+
+		<param name="fontSize" type="text" size="20" label="Tablature Font Size" description="Font size for data in tables" default="" />
+
+		<param name="menuSpacer" type="spacer" label="" description="" default="Menu Visibility" />
+		<param name="menusAcl" type="list" label="MENUS ACCESS" description="PARAMADMINACCESSLEVEL" default="23">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="sectionsAcl" type="list" label="SECTIONS ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="categoriesAcl" type="list" label="CATEGORIES ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="articlesAcl" type="list" label="ARTICLES ACCESS" description="PARAMADMINACCESSLEVEL" default="23">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="componentsAcl" type="list" label="COMPONENTS ACCESS" description="PARAMADMINACCESSLEVEL" default="24">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="modulesAcl" type="list" label="MODULES ACCESS" description="PARAMADMINACCESSLEVEL" default="24">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="pluginsAcl" type="list" label="PLUGINS ACCESS" description="PARAMADMINACCESSLEVEL" default="24">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="templatesAcl" type="list" label="TEMPLATES ACCESS" description="PARAMADMINACCESSLEVEL" default="25">
+			<option value="0">Hide</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="installAcl" type="list" label="INSTALL ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="usersAcl" type="list" label="USERS ACCESS" description="PARAMADMINACCESSLEVEL" default="24">
+			<option value="0">Hide</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="adminAcl" type="list" label="ADMIN ACCESS" description="PARAMADMINACCESSLEVEL" default="25">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="componentSpacer" type="spacer" label="" description="" default="Component Menus" />
+		<param name="flexicontentAcl" type="list" label="FLEXICONTENT ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="jseblodAcl" type="list" label="jSeblod ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="joomailerAcl" type="list" label="JOOMAILER ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="k2Acl" type="list" label="K2 ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="kunenaAcl" type="list" label="KUNENA ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="ninjaboardAcl" type="list" label="NINJABOARD ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="phocagalleryAcl" type="list" label="PHOCAGALLERY ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="projectforkAcl" type="list" label="PROJECTFORK ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="sobi2Acl" type="list" label="SOBI2 ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="sobiproAcl" type="list" label="SOBIPRO ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="tiendaAcl" type="list" label="TIENDA ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="virtuemartAcl" type="list" label="VIRTUEMART ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="zooAcl" type="list" label="Zoo ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="customSpacer" type="spacer" label="" description="" default="Custom Link 1" />
+		<param name="custom1Acl" type="radio" label="CUSTOM ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="custom1Name" type="text" size="40" label="CUSTOM NAME" description="PARAMLINKNAME" default="" />
+		<param name="custom1Link" type="text" size="40" label="CUSTOM URL" description="PARAMLINKURL" default="" />
+		<param name="customSpacer" type="spacer" label="" description="" default="Custom Link 2" />
+		<param name="custom2Acl" type="radio" label="CUSTOM ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="custom2Name" type="text" size="40" label="CUSTOM NAME" description="PARAMLINKNAME" default="" />
+		<param name="custom2Link" type="text" size="40" label="CUSTOM URL" description="PARAMLINKURL" default="" />
+		<param name="customSpacer" type="spacer" label="" description="" default="Custom Link 3" />
+		<param name="custom3Acl" type="radio" label="CUSTOM ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="custom3Name" type="text" size="40" label="CUSTOM NAME" description="PARAMLINKNAME" default="" />
+		<param name="custom3Link" type="text" size="40" label="CUSTOM URL" description="PARAMLINKURL" default="" />
+		<param name="customSpacer" type="spacer" label="" description="" default="Custom Link 4" />
+		<param name="custom4Acl" type="radio" label="CUSTOM ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="custom4Name" type="text" size="40" label="CUSTOM NAME" description="PARAMLINKNAME" default="" />
+		<param name="custom4Link" type="text" size="40" label="CUSTOM URL" description="PARAMLINKURL" default="" />
+		<param name="customSpacer" type="spacer" label="" description="" default="Custom Link 5" />
+		<param name="custom5Acl" type="radio" label="CUSTOM ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="custom5Name" type="text" size="40" label="CUSTOM NAME" description="PARAMLINKNAME" default="" />
+		<param name="custom5Link" type="text" size="40" label="CUSTOM URL" description="PARAMLINKURL" default="" />
+		<param name="customSpacer" type="spacer" label="" description="" default="Custom Link 6" />
+		<param name="custom6Acl" type="radio" label="CUSTOM ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="custom6Name" type="text" size="40" label="CUSTOM NAME" description="PARAMLINKNAME" default="" />
+		<param name="custom6Link" type="text" size="40" label="CUSTOM URL" description="PARAMLINKURL" default="" />
+		<param name="customSpacer" type="spacer" label="" description="" default="Custom Link 7" />
+		<param name="custom7Acl" type="radio" label="CUSTOM ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="custom7Name" type="text" size="40" label="CUSTOM NAME" description="PARAMLINKNAME" default="" />
+		<param name="custom7Link" type="text" size="40" label="CUSTOM URL" description="PARAMLINKURL" default="" />
+		<param name="customSpacer" type="spacer" label="" description="" default="Custom Link 8" />
+		<param name="custom8Acl" type="radio" label="CUSTOM ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="custom8Name" type="text" size="40" label="CUSTOM NAME" description="PARAMLINKNAME" default="" />
+		<param name="custom8Link" type="text" size="40" label="CUSTOM URL" description="PARAMLINKURL" default="" />
+		<param name="customSpacer" type="spacer" label="" description="" default="Custom Link 9" />
+		<param name="custom9Acl" type="radio" label="CUSTOM ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="custom9Name" type="text" size="40" label="CUSTOM NAME" description="PARAMLINKNAME" default="" />
+		<param name="custom9Link" type="text" size="40" label="CUSTOM URL" description="PARAMLINKURL" default="" />
+		<param name="customSpacer" type="spacer" label="" description="" default="Custom Link 10" />
+		<param name="custom10Acl" type="radio" label="CUSTOM ACCESS" description="PARAMADMINACCESSLEVEL" default="0">
+			<option value="0">Hide</option>
+			<option value="23">Manager</option>
+			<option value="24">Administrator</option>
+			<option value="25">Super Administrator</option>
+		</param>
+		<param name="custom10Name" type="text" size="40" label="CUSTOM NAME" description="PARAMLINKNAME" default="" />
+		<param name="custom10Link" type="text" size="40" label="CUSTOM URL" description="PARAMLINKURL" default="" />
+	</params>
+</install>

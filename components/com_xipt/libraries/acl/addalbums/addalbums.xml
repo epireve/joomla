@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<params>
+	<param name="addalbums_limit" type="text" default="" label="COM_XIPT_TOTAL_CREATE_ALBUM_LIMIT_LABEL" description="COM_XIPT_NO_OF_TOTAL_ALBUM_CREATE_MAXIMUM_LIMIT_DESC" />
+</params>
+</config>

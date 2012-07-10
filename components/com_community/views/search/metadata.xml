@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Search">
+		<message>
+			<![CDATA[
+				Search view
+			]]>
+		</message>
+		<options var="task">
+ 			<default name="Standard Search" msg="Standard Search Form" />
+			<option value="advancesearch" name="- Advance Search" msg="Displays an advance user search form" />
+ 		</options>
+	</view>
+	<state>
+		<name>Search Layout</name>
+		<description>Search users</description>
+	</state>
+</metadata>

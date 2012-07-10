@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<gantrytips>
+	
+	<tip label="Gantry Cache" id="cache"><![CDATA[The Gantry Framework includes a powerful Cache function. It caches the data and can greatly improve performance of the Gantry powered Joomla site.]]></tip>
+	
+	<tip label="Gantry GZipper" id="gzipper"><![CDATA[The Gantry GZipper is a built-in compression and combination system that will ensure all Gantry CSS and JS files are combined and compressed to provide optimal performance. CSS and JS files outside of Gantry will not be included.]]></tip>
+	
+	<tip label="Input Styling" id="inputstyling"><![CDATA[The input styling provides a custom look for form elements such as checkboxes and radiobuttons. You can use the exclusions settings if you wish to enable the Input Styling throughout the site but keep it disabled for certain forms.]]></tip>
+	
+	<tip label="Inline JS File" id="file-inline-js-enabled"><![CDATA[Enable or Disable Inline JS File creation.]]></tip>
+	
+	<tip label="Display Component" id="component-enabled"><![CDATA[Turning this off stops the content component from displaying on the frontpage. Mainbody module positions are unaffected. This can be useful if you would like to build your homepage from modules only.]]></tip>
+	
+	<tip label="Display Mainbody" id="mainbody-enabled"><![CDATA[Turning this off stops the component, content top and bottom module positions, and sidebars from displaying on the homepage. All mainbody elements will be disabled.]]></tip>
+	
+	<tip label="RTL Support" id="rtl-enabled"><![CDATA[The RTL setting allows you to enable Right-to-Left support in the gantry core. The Gantry template will be switched to RTL automatically as soon as a RTL language is detected.]]></tip>
+	
+	<tip label="Build Title Spans" id="buildspans-enabled"><![CDATA[Title spans enable custom CSS styling for the first word of the titles, with this setting enabled the first word of a title can be colored and styled differently to the second word and the rest of the title.]]></tip>
+	
+	<tip label="Module Overlays" id="moduleoverlays-enabled"><![CDATA[Allow support for ?tp=1 functionality on the frontend. It is advisable to turn this off on production servers.]]></tip>
+	
+	<tip label="Page Suffix" id="pagesuffix-enabled"><![CDATA[This will automatically put a class on the body tag in the format of <b>menu-{menu alias}</b>, for example <b>menu-home</b> is the class shown by default on the homepage.  You can use this to add specific styling on specific pages.]]></tip>
+	
+	<tip label="RT Typography" id="typography"><![CDATA[This setting allows you to enable/disable the built-in custom RocketTheme extended typography. If you do not intend to use any extended RocketTheme typography styles on your site, disabling this option can increase performance by reducing the amount of CSS and images that load.]]></tip>
+	
+	<tip label="RT Extensions" id="extensions"><![CDATA[This setting allows you to enable/disable the built-in custom styling for RocketTheme extensions for this template. If you do not intend to use any RocketTheme extensions on your site, disabling this option can increase performance by reducing the amount of CSS and images that load.]]></tip>
+	
+	<tip label="Menu-less Pages" id="inactive"><![CDATA[Certain pages on a Joomla site that are not linked to a menu item, will only show modules that are published to all pages. You can select a menu item to use as a basis for displaying modules in these situations.]]></tip>
+	
+	<tip label="IE6 Redirect" id="ie6splash-enabled"><![CDATA[This setting allows you to enable/disable the redirect to a customizable IE6 splash page.]]></tip>
+	
+</gantrytips>

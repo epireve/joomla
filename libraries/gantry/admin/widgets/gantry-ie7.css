@@ -1,0 +1,24 @@
+/**
+ * @version   3.2.11 September 8, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+
+#hack-panel {position:relative;}
+.panelform {zoom: 1;}
+.gantry-field.text-field .wrapper {margin-left: 30px !important;}
+#gantry-tabs li, #gantry-tabs li span {zoom: 1;}
+#gantry-tabs li span {display:block;}
+#gantry-tabs .presets-involved, #gantry-tabs .overrides-involved, #gantry-tabs .menuitems-involved {float: left;}
+.mini-grid, .mini-container, .miniatures, .presets-badge, .wrapper  {zoom:1;position: relative;}
+#gantry-tabs .menuitems-involved span {position:relative;zoom:1;margin-top: -5px;height:15px;line-height:15px;}
+.presets-badge .number {top:0;}
+body #menu-assignment .menu-links {margin: 0 0 0 9px !important;width: 48% !important;}
+.g-title, .g-inner {position:relative;z-index:100;}
+.selectbox-wrapper, .selectbox-dropdown {z-index:3000;}
+#diagnostic {position: relative;z-index:10;zoom:1;overflow:hidden;}
+#diagnostic .g-title {z-index:10;zoom:1;}
+.paramlist_key input[type=checkbox] {left: 0;position: absolute;display:none;}
+.paramlist_value .menuitems-patch {top: 0 !important;}
+.group-overlays {height:40px;}

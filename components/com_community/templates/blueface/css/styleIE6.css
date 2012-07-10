@@ -1,0 +1,156 @@
+img { -ms-interpolation-mode: bicubic; }
+
+/* Tooltips */
+
+.application-group-avatars li a {
+	text-decoration: none;
+}
+
+#community-wrap ul#featurelist {
+	width: 80%;
+}
+
+/*
+#community-wrap div.greybox {
+	float: left;
+	display: block;
+}
+#community-wrap div.greybox {
+	overflow: hidden;
+}
+#community-wrap div.greybox div div div.introduction {
+	margin: 0 200px 0 0;
+	padding: 30px 0 0 70px;
+}
+*/
+
+
+body #community-wrap .frontpage-right {
+	/* Peek-a-boo bug */
+	position: relative;
+	zoom: 1;
+}
+
+body #community-wrap .frontpage-main {
+	/* Peek-a-boo bug */
+	position: relative;
+	zoom: 1;
+}
+
+body #community-wrap #cToolbarNav {
+	/* Toolbar-submenu being positioned absolute, inherits z-index from parent container */
+	z-index: 1000;
+}
+body #community-wrap #cToolbarNav ul#community-toolbar {
+	float: none !important;
+}
+body #community-wrap #cToolbarNav ul#community-toolbar li.toolbar-item {
+	/* Toolbar-items are 3px off grid from bottom */
+	position: relative;
+	top: 3px;
+}
+
+body #community-wrap .app-box,
+body #community-wrap .app-box-content {
+	/* Content dissapears after collapsing and expanding again */
+	position: relative;
+	zoom: 1;
+}
+
+body #community-wrap div#community-groups-wrap {
+	/* Peek-a-boo bug */
+	position: relative;
+	zoom: 1;
+}
+
+body #community-wrap .group-info .clabel {
+	margin-left: -150px;
+}
+
+body #community-wrap .group-right {
+	position: relative;
+}
+
+body #community-wrap .group-menu {
+	padding-top: 5px;
+}
+
+body #community-wrap .wall-coc-avatar {
+	margin-left: -40px;	
+}
+
+body #community-wrap .video-container {
+	position: relative;
+	zoom: 1;
+}
+
+/* cWindow PNG */
+#cWindow #cwin_close_btn:link,
+#cWindow #cwin_close_btn:visited {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='components/com_community/assets/window/dialog/closebox-normal.png'), sizingMethod='scale');
+}
+#cWindow #cwin_close_btn:hover {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='components/com_community/assets/window/dialog/closebox-hover.png'), sizingMethod='scale');
+}
+#cWindow.dialog {}
+#cWindow.dialog #cwin_close_btn:link,
+#cWindow.dialog #cwin_close_btn:visited {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='components/com_community/assets/window/dialog/closebox-normal.png'), sizingMethod='scale');
+}
+#cWindow #cwin_close_btn:hover {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='components/com_community/assets/window/dialog/closebox-hover.png'), sizingMethod='scale');
+}
+#cWindow.warning #cwin_close_btn:link,
+#cWindow.warning #cwin_close_btn:visited {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='components/com_community/assets/window/warning/closebox-normal.png'), sizingMethod='scale');
+}
+#cWindow.warning #cwin_close_btn:hover {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='components/com_community/assets/window/warning/closebox-hover.png'), sizingMethod='scale');
+}
+#cWindow.error #cwin_close_btn:link,
+#cWindow.error #cwin_close_btn:visited {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='components/com_community/assets/window/error/closebox-normal.png'), sizingMethod='scale');
+}
+#cWindow.error #cwin_close_btn:hover {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='components/com_community/assets/window/error/closebox-hover.png'), sizingMethod='scale');
+}
+#cWindow #cwin_tl {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='components/com_community/assets/window/tl.png'), sizingMethod='scale');
+}
+#cWindow #cwin_tm {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='components/com_community/assets/window/ie/tm.png'), sizingMethod='crop');
+}
+#cWindow #cwin_tr {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='components/com_community/assets/window/tr.png'), sizingMethod='scale');
+}
+#cWindow #cwin_bl {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='components/com_community/assets/window/bl.png'), sizingMethod='scale');
+}
+#cWindow #cwin_bm {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='components/com_community/assets/window/ie/bm.png'), sizingMethod='crop');
+}
+#cWindow #cwin_br {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='components/com_community/assets/window/br.png'), sizingMethod='scale');
+}
+#cWindow #cwin_ml {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='components/com_community/assets/window/ie/ml.png'), sizingMethod='crop');
+}
+#cWindow #cwin_mr {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='components/com_community/assets/window/ie/mr.png'), sizingMethod='crop');
+}

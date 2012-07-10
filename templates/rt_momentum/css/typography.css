@@ -1,0 +1,129 @@
+/**
+ * @package   Momentum Template - RocketTheme
+ * @version   1.3 October 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+ 
+/* Content Boxes */
+.contentbox1, .contentbox2, .contentbox3, .contentbox4 {padding: 15px;margin-bottom: 15px;border-radius: 3px;}
+
+/* Quote Styles */
+blockquote {padding: 5px 0 0 35px;}
+blockquote p {padding: 0 35px 5px 0;font-size: 15px;}
+.blockquote, .typography-style-dark blockquote {background: url(../images/typography/dark/quote-l.png) 0 0 no-repeat;}
+.typography-style-light blockquote {background: url(../images/typography/light/quote-l.png) 0 0 no-repeat;}
+.blockquote p, .typography-style-dark blockquote p {background: url(../images/typography/dark/quote-r.png) 100% 100% no-repeat;}
+.typography-style-light blockquote p {background: url(../images/typography/light/quote-r.png) 100% 100% no-repeat;}
+blockquote.alignleft {width: 30%;float: left;margin: 25px 25px 25px 0;}
+blockquote.alignright {width: 30%;float: right;margin: 25px 0 25px 25px;}
+blockquote.alignleft p, blockquote.alignright p {background: none;padding: 0;}
+
+/* Pre/Code Styles */
+pre {overflow: auto;padding: 17px 15px;margin-bottom: 15px;font-size: 11px;line-height: 17px;cursor: text;}
+pre, .typography-style-dark pre {background: #222;border: 1px solid #333;}
+.typography-style-light pre {background: #fafafa;border: 1px solid #eaeaea;color: #555;}
+pre.lines, .typography-style-dark pre.lines {background: #151515 url(../images/typography/dark/pre-lines.png) 50% 0;border: none;transition: background-color 0.3s linear;}
+pre.lines:hover, .typography-style-dark pre.lines:hover {background-color: #202020;}
+.typography-style-light pre.lines {background: #eaeaea url(../images/typography/light/pre-lines.png) 50% 0;border: none;color: #333;}
+
+/* Emphasis Styles*/
+em.italic {font-style: italic;font-weight: bold;}
+em.bold {font-size: 120%;font-weight: bold;line-height: 145%;font-style: normal;}
+em.bold2 {font-size: 135%;font-weight: bold;line-height: 120%;font-style: normal;}
+em.normal {font-style: normal;}
+em.nobold {font-weight: normal;}
+em.highlight {font-style: normal;padding: 2px 5px;border-radius: 4px;text-shadow: none;}
+em.highlight.white {background: #fff;color: #000;}
+.typography-style-light em.highlight.white {background: #ddd;color: #000;}
+em.highlight.black {background: #000;color: #fff;}
+em.highlight.green {background: #74924A;color: #fff;}
+em.highlight.yellow {background: #D69839;color: #fff;}
+em.highlight.blue {background: #488AAD;color: #fff;}
+em.highlight.red {background: #BD5151;color: #fff;}
+.rt-upper {text-transform: uppercase;}
+.rt-center {text-align: center;}
+.rt-justify {text-align: justify;}
+
+/* Drop Caps */
+p.dropcap {overflow: hidden;}
+p.dropcap:first-letter {font-size: 300%;margin: 0 5px 0 0;line-height: 110%;float: left;display: inline-block;}
+p.dropcap2:first-letter, p.dropcap4:first-letter, p.dropcap6:first-letter {font-size: 30px;margin: 0 10px 10px 0;line-height: 30px;float: left;display: inline-block;border-radius: 30px;padding: 5px 10px;}
+p.dropcap3:first-letter, p.dropcap5:first-letter, p.dropcap7:first-letter  {font-size: 30px;margin: 0 10px 10px 0;line-height: 30px;float: left;display: inline-block;padding: 4px 8px;}
+p.dropcap2:first-letter {background: #333;}
+.typography-style-light p.dropcap2:first-letter {background: #555;color: #fff;}
+p.dropcap3:first-letter {background: #333;border: 1px solid rgba(255,255,255,0.1);}
+.typography-style-light p.dropcap3:first-letter {background: #555;color: #fff;border: 1px solid #fff;}
+p.dropcap4:first-letter {background: #ddd;color: #555;}
+p.dropcap5:first-letter {background: #ddd;color: #555;border: 1px solid rgba(255,255,255,0.3);}
+
+/* Inset Styles */
+span.inset-left {float: left;margin-right: 20px;}
+span.inset-right {float: right;margin-left: 20px;}
+span.inset-right-title, span.inset-left-title {display: block;font-size: 100%;font-weight: bold;}
+span.inset-left, span.inset-right {display: block;padding: 10px;width: 20%;font-size: 100%;font-style: italic;margin-top: 15px;position: relative;text-align: justify; margin-bottom: 15px;}
+
+/* List and Text Styles - Icons */
+ul.list-icon {padding: 0;margin: 0 0 15px 0;background: none;}
+ul.list-icon li {list-style: none;padding: 0 0 0 24px;margin: 0 0 5px 0;background-repeat: no-repeat;}
+ul.list-icon li a {font-size: 100%;line-height: 1.7em;}
+.text-icon {display: inline-block;line-height: 20px;font-size: 110%;background-repeat: no-repeat;padding-left: 24px;}
+span.email, span.phone, span.quote, span.cart, span.rss, span.tags, span.write, span.info, span.sound, .email li, .phone li, .quote li, .cart li, .rss li, .tags li, .write li, .info li, .sound li {background-image: url(../images/typography/dark/icon-set1.png);}
+.typography-style-light span.email, .typography-style-light span.phone, .typography-style-light span.quote, .typography-style-light span.cart, .typography-style-light span.rss, .typography-style-light span.tags, .typography-style-light span.write, .typography-style-light span.info, .typography-style-light span.sound, .typography-style-light .email li, .typography-style-light .phone li, .typography-style-light .quote li, .typography-style-light .cart li, .typography-style-light .rss li, .typography-style-light .tags li, .typography-style-light .write li, .typography-style-light .info li, .typography-style-light .sound li {background-image: url(../images/typography/light/icon-set1.png);}
+span.rightarrow, span.leftarrow, span.circlearrow, span.downarrow, span.uparrow, span.person, span.calendar, span.doc, span.bulb, .rightarrow li, .leftarrow li, .circlearrow li, .downarrow li, .uparrow li, .person li, .calendar li, .doc li, .bulb li {background-image: url(../images/typography/dark/icon-set2.png);}
+.typography-style-light span.rightarrow, .typography-style-light span.leftarrow, .typography-style-light span.circlearrow, .typography-style-light span.downarrow, .typography-style-light span.uparrow, .typography-style-light span.person, .typography-style-light span.calendar, .typography-style-light span.doc, .typography-style-light span.bulb, .typography-style-light .rightarrow li, .typography-style-light .leftarrow li, .typography-style-light .circlearrow li, .typography-style-light .downarrow li, .typography-style-light .uparrow li, .typography-style-light .person li, .typography-style-light .calendar li, .typography-style-light .doc li, .typography-style-light .bulb li {background-image: url(../images/typography/light/icon-set2.png);}
+span.twitter, span.youtube, span.skype, span.facebook, span.like, span.video, span.dropbox, span.vimeo, span.paypal, .twitter li, .youtube li, .skype li, .facebook li, .like li, .video li, .dropbox li, .vimeo li, .paypal li {background-image: url(../images/typography/dark/icon-set3.png);}
+.typography-style-light span.twitter, .typography-style-light span.youtube, .typography-style-light span.skype, .typography-style-light span.facebook, .typography-style-light span.like, .typography-style-light span.video, .typography-style-light span.dropbox, .typography-style-light span.vimeo, .typography-style-light span.paypal, .typography-style-light .twitter li, .typography-style-light .youtube li, .typography-style-light .skype li, .typography-style-light .facebook li, .typography-style-light .like li, .typography-style-light .video li, .typography-style-light .dropbox li, .typography-style-light .vimeo li, .typography-style-light .paypal li {background-image: url(../images/typography/light/icon-set3.png);}
+.text-icon.email, .text-icon.rightarrow, .text-icon.twitter, .email li, .rightarrow li, .twitter li {background-position: 0 4px;}
+.text-icon.phone, .text-icon.leftarrow, .text-icon.youtube, .phone li, .leftarrow li, .youtube li {background-position: 0 -296px;}
+.text-icon.quote, .text-icon.circlearrow, .text-icon.skype, .quote li, .circlearrow li, .skype li {background-position: 0 -596px;}
+.text-icon.cart, .text-icon.downarrow, .text-icon.facebook, .cart li, .downarrow li, .facebook li {background-position: 0 -896px;}
+.text-icon.rss, .text-icon.uparrow, .text-icon.like, .rss li, .uparrow li, .like li {background-position: 0 -1196px;}
+.text-icon.tags, .text-icon.person, .text-icon.video, .tags li, .person li, .video li {background-position: 0 -1496px;}
+.text-icon.write, .text-icon.calendar, .text-icon.dropbox, .write li, .calendar li, .dropbox li {background-position: 0 -1796px;}
+.text-icon.info, .text-icon.doc, .text-icon.vimeo, .info li, .doc li, .vimeo li {background-position: 0 -2096px;}
+.text-icon.sound, .text-icon.bulb, .text-icon.paypal, .sound li, .bulb li, .paypal li {background-position: 0 -2396px;}
+
+/* Standard List Styles */
+ul.checkmark, ul.circle-checkmark, ul.square-checkmark, ul.circle-small, ul.circle, ul.circle-large, ul.triangle-small, ul.triangle, ul.triangle-large, ul.bullet {margin: 0 0 25px 0;padding: 0;}
+ul.checkmark li, ul.circle-checkmark li, ul.square-checkmark li, ul.circle-small li, ul.circle li, ul.circle-large li, ul.triangle-small li, ul.triangle li, ul.triangle-large li, ul.bullet li {list-style-type: none;padding: 0 0 0 30px;position: relative;font-size: 120%;margin-bottom: 8px;}
+ul.checkmark li a, ul.circle-checkmark li a, ul.square-checkmark li a, ul.circle-small li a, ul.circle li a, ul.circle-large li a, ul.triangle-small li a, ul.triangle li a, ul.triangle-large li {font-size: 100%;line-height: 1.7em;}
+ul.checkmark li:after {content:"";display:block;width: 4px;height: 8px;border-color: #fff;border-style: solid;border-width: 0 3px 3px 0;position:absolute;left: 14px;top: 3px;-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-o-transform: rotate(45deg);}
+ul.circle-checkmark li:before {content:"";display: block;border-color: #fff;border-style: solid;border-width: 9px;border-radius: 9px;height: 0;width: 0;position: absolute;left: 7px;top: 1px;}
+ul.circle-checkmark li:after {content:"";display:block;width: 3px;height: 6px;border-color: #000;border-width: 0 2px 2px 0;border-style: solid;position:absolute;left: 14px;top: 5px;-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-o-transform: rotate(45deg);}
+.typography-style-light ul.circle-checkmark li:after {border-color: #fff;}
+ul.square-checkmark li:before {content:"";display: block;border-color: #fff;border-width: 7px;border-style: solid;height: 0;width: 0;position: absolute;left: 9px;top: 3px;}
+ul.square-checkmark li:after {content:"";display:block;width: 3px;height: 6px;border-color: #000;border-width: 0 2px 2px 0;border-style: solid;position:absolute;left: 14px;top: 9px;margin-top: -4px;-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-o-transform: rotate(45deg);}
+.typography-style-light ul.square-checkmark li:after {border-color: #fff;}
+ul.triangle-small li:after {content:"";display:block;width: 0;height: 0;border-color: transparent transparent transparent #fff;border-style: solid;border-width: 3px;position:absolute;left: 18px;top: 7px;}
+ul.triangle li:after {content:"";display:block;width: 0;height: 0;border-color: transparent transparent transparent #fff;border-style: solid;border-width: 4px;position:absolute;left: 17px;top: 6px;}
+ul.triangle.green li:after {border-color: transparent transparent transparent #74924A;}
+ul.triangle.yellow li:after {border-color: transparent transparent transparent #D69839;}
+ul.triangle.red li:after {border-color: transparent transparent transparent #BD5151;}
+ul.triangle.blue li:after {border-color: transparent transparent transparent #488AAD;}
+ul.triangle.white li:after {border-color: transparent transparent transparent #fff;}
+.typography-style-light ul.triangle.white li:after {border-color: transparent transparent transparent #ddd;}
+ul.triangle.black li:after {border-color: transparent transparent transparent #000;}
+ul.triangle-large li:after {content:"";display:block;width: 0;height: 0;border-color: transparent transparent transparent #fff;border-style: solid;border-width: 6px;position:absolute;left: 15px;top: 4px;}
+ul.circle-small li:after {content:"";display:block;width: 0;height: 0;border-color: #fff;border-style: solid;border-width: 2px;border-radius: 2px;position:absolute;left: 16px;top: 8px;}
+ul.circle li:after {content:"";display:block;width: 0;height: 0;border-color: #fff;border-style: solid;border-width: 3px;border-radius: 3px;position:absolute;left: 15px;top: 7px;}
+ul.circle-large li:after {content:"";display:block;width: 0;height: 0;border-color: #fff;border-style: solid;border-width: 5px;border-radius: 5px;position:absolute;left: 12px;top: 5px;}
+ul.circle.green li:after, ul.checkmark.green li:after {border-color: #74924A;}
+ul.circle.yellow li:after, ul.checkmark.yellow li:after {border-color: #D69839;}
+ul.circle.red li:after, ul.checkmark.red li:after {border-color: #BD5151;}
+ul.circle.blue li:after, ul.checkmark.blue li:after {border-color: #488AAD;}
+ul.circle.white li:after, ul.checkmark.white li:after {border-color: #fff;}
+.typography-style-light ul.circle.white li:after, .typography-style-light ul.checkmark.white li:after {border-color: #ddd;}
+ul.circle.black li:after, ul.checkmark.black li:after {border-color: #000;}
+ul.bullet li {background-position: 15px 7px;background-repeat: no-repeat;}
+
+/* Notice/System Styles */
+.approved, .attention, .alert, .notice {padding: 10px 10px 10px 45px;border-radius: 6px;font-weight: bold;background-position: 10px 50%;background-repeat: no-repeat;}
+#system-message dd ul {border-radius: 6px;background-repeat: no-repeat;background-position: 10px 50%;}
+.approved a, .attention a, .alert a, .notice a {color: #000 !important;text-decoration: underline;}
+.approved a:hover, .attention a:hover, .alert a:hover, .notice a:hover {color: #fff !important;text-shadow: none;}
+.approved {background-color: #74924A;background-image: url(../images/typography/dark/approved.png);color: #232F12;text-shadow: 1px 1px 1px rgba(255,255,255,0.3);border-top: 1px solid rgba(255,255,255,0.3);}
+.attention, #system-message dd.notice ul {background-color: #D69839; background-image: url(../images/typography/dark/attention.png);color: #5A3800;text-shadow: 1px 1px 1px rgba(255,255,255,0.3);border-top: 1px solid rgba(255,255,255,0.3);}
+.alert, #system-message dd.error ul {background-color: #BD5151; background-image: url(../images/typography/dark/alert.png);color: #4C1818;text-shadow: 1px 1px 1px rgba(255,255,255,0.3);border-top: 1px solid rgba(255,255,255,0.3);}
+.notice, #system-message dd ul {background-color: #488AAD; background-image: url(../images/typography/dark/notice.png);color: #133548;text-shadow: 1px 1px 1px rgba(255,255,255,0.3);border-top: 1px solid rgba(255,255,255,0.3);}

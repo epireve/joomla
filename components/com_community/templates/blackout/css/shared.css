@@ -1,0 +1,787 @@
+/* Resetting Template Styles */
+body #community-wrap div {
+	margin: 0;
+}
+
+body #community-wrap a:link {
+	color: #f00;
+}
+body #community-wrap a:hover {
+	text-decoration: underline;
+}
+body #community-wrap a:visited {
+    text-decoration: underline;
+    color: 900;
+}
+
+.clrfix {
+	overflow: hidden;
+}
+.clrfix:after {
+	display: block; 
+	visibility: hidden; 
+	clear: both; 
+	height: 0; 
+	content: " "; 
+}
+
+/**
+ * Shared Styling
+ */
+
+
+/** SUBMENU TOOLBAR **/
+body #community-wrap div.submenu-l {
+	background: #333;
+	margin: 0 0 10px;
+	height: 26px;
+}
+body #community-wrap div.submenu-l div.submenu-r {
+	background: #333;
+	height: 26px;
+}
+body #community-wrap div.submenu-l div.submenu-r ul.submenu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 26px;
+}
+body #community-wrap div.submenu-l div.submenu-r ul.submenu li {
+	list-style-type: none;
+	background: none;
+	float: left;
+	line-height: 26px;
+	font-weight: 800;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+body #community-wrap div.submenu-l div.submenu-r ul.submenu li a {
+	height: 12px;
+	border-right: 1px solid #ccc;
+	padding: 0 15px;
+	padding: 0 15px;
+	text-decoration: none;
+	font-size: 11px;
+	color: #fff;
+}
+body #community-wrap div.submenu-l div.submenu-r ul.submenu li a.active:link,
+body #community-wrap div.submenu-l div.submenu-r ul.submenu li a.active:visited,
+body #community-wrap div.submenu-l div.submenu-r ul.submenu li a.active:hover {
+	height: 12px;
+	border-right: 1px solid #ccc;
+	padding: 0 15px;
+	text-decoration: underline;
+	color: #fc0;
+}
+body #community-wrap .sort-bar {
+	padding: 5px;
+	border: 0;
+	background-color: #333;
+	text-align: right;
+	margin-bottom: 10px;
+}
+/* Mini Profile. Used in friend listing */
+body #community-wrap div.mini-profile {
+	background: transparent;
+	border: 1px solid #333;
+	border-bottom: 0;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+body #community-wrap div.mini-profile-avatar {
+	float: left;
+	margin: 0;
+	padding: 5px;
+}
+body #community-wrap div.mini-profile-details {
+	margin: 0 10px 0 90px;
+	position: relative;
+	padding: 10px 0 0;
+}
+body #community-wrap div.mini-profile-avatar a img.avatar {
+	margin: 0;
+}
+/* Standard Avatar List */
+body #community-wrap ul.avatar-list {
+	margin: 0;
+	padding: 0pt;
+	list-style: none;
+}
+body #community-wrap ul.avatar-list li.avatar-list-item {
+	display: inline;
+	padding: 0;
+	background: none;
+	margin: 0 3px 0 0;
+}
+body #community-wrap ul.avatar-list li.avatar-list-item a {
+	text-decoration: none;
+}
+body #community-wrap img.avatar,
+body #community-wrap a img.avatar {
+	margin: 0 0 5px;
+	border: solid 1px #2c2e35;
+	outline-style: none;
+}
+body #community-wrap a:hover img.avatar {
+	border: solid 1px #999;
+}
+
+/* Friend List */
+body #community-wrap ul.normal-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body #community-wrap ul.normal-list li.normal-list-item {
+	background: none;
+	display: block;
+	float: left;
+	padding: 0;
+	border-bottom: 1px solid #333;
+	width: 100%;
+}
+body #community-wrap ul.normal-list li.normal-list-item a.remove:link,
+body #community-wrap ul.normal-list li.normal-list-item a.remove:hover {
+	top: 30px;
+}
+body #community-wrap ul.normal-list li.normal-list-item a.approve:link,
+body #community-wrap ul.normal-list li.normal-list-item a.approve:hover {
+	top: 10px;
+}
+body #community-wrap ul.normal-list li.normal-list-item div.mini-profile-details div.friend-name {
+	font-weight: 700;
+	font-size: 130%;
+	margin: 0 0 5px;
+	letter-spacing: -1px;
+}
+body #community-wrap ul.normal-list li.normal-list-item div.mini-profile-details div.friend-status {
+	height: 14px;
+	line-height: 12px;
+}
+body #community-wrap ul.normal-list li.normal-list-item div.mini-profile-details {
+	margin: 0 10px 0 90px;
+	position: relative;
+	padding: 5px 0 0;
+}
+body #community-wrap ul.normal-list li.normal-list-item div.mini-profile-actions {
+	margin: 0 10px 0 90px;
+	position: relative;
+	padding: 10px 0 0;
+}
+body #community-wrap ul.normal-list li.normal-list-item div.photo-actions {
+	margin: 0 10px 0 90px;
+	position: relative;
+	padding: 0;
+}
+/* Standard Filter Links */
+body #community-wrap div.filterlink {
+	text-align: right;
+	float: left;
+	width: 100%;
+	line-height: 16px;
+	height: 16px;
+	margin: 5px 0 10px;
+	position: relative;
+	background: #333;
+	padding: 3px 0;
+}
+body #community-wrap div.filterlink a {
+	margin: 0 10px;
+	text-decoration: none;
+	float: right;
+}
+body #community-wrap div.filterlink a.active-state {
+	font-weight: 700;
+	color: #fff;
+}
+body #community-wrap div.filterlink div.loading {
+	float: right;
+	/* We get the loading image from asset folder */
+	background: transparent url(../../../assets/wait.gif) no-repeat 0 0;
+	height: 11px;
+	width: 50px;
+	display: none;
+	margin: 3px 0 0;
+}
+body #community-wrap .ctitle {
+	font-weight: 700;
+}
+body #community-wrap div.feed-item {
+	padding: 4px 0;
+	margin: 0 0 5px;
+	border-bottom: 1px solid #333;
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+body #community-wrap a.remove:link,
+body #community-wrap a.remove:visited {
+	height: 16px;
+	width: 16px;
+	line-height: 16px;
+	background: transparent url(../images/remove.gif) no-repeat 0 0;
+	right: 5px;
+	top: 5px;
+	text-indent: -9999em;
+	outline-style: none;
+	display: block;
+}
+body #community-wrap a.approve:link,
+body #community-wrap a.approve:visited {
+	height: 16px;
+	width: 16px;
+	line-height: 16px;
+	background: transparent url(../images/approve.gif) no-repeat 0 0;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	text-indent: -9999em;
+	outline-style: none;
+}
+body #community-wrap a.remove:hover {
+	background: transparent url(../images/remove.gif) no-repeat 0 -16px;
+	text-decoration: none;
+}
+body #community-wrap a.approve:hover {
+	background: transparent url(../images/approve.gif) no-repeat 0 -16px;
+	text-decoration: none;
+}
+body #community-wrap a.remove span {
+	height: 0;
+	text-indent: -9999em;
+	width: 0;
+	visibility: hidden;
+}
+
+/* Standard Module Block */
+body #community-wrap div.module-block {
+	margin: 0 0 20px;
+}
+
+/* Other Styling That Are Rarely Used */
+body #community-wrap .float-left {
+	float: left;
+}
+body #community-wrap .float-right {
+	float: right;
+}
+body #community-wrap .pos-rel {
+	position: relative;
+}
+body #community-wrap .clr {
+	clear: both;
+	height: 0;
+	line-height: 0;
+}
+body #community-wrap .no-indent {
+	text-indent: 0;
+}
+body #community-wrap .altrow1 {
+	background: transparent;
+	padding: 3px;
+}
+body #community-wrap .altrow2 {
+	background: #1e1f24;
+	padding: 3px;
+}
+/** drag **/
+body #community-wrap td.dragHandle {
+	cursor: move;
+}
+body #community-wrap .showDragHandle {
+	background: transparent url(../images/drag.gif) no-repeat;
+	background-position: center center;
+	cursor: move;
+}
+
+/**
+ * Unordered list for displaying avatars
+ **/
+body #community-wrap ul.community-avatar-list li {
+	background: transparent none;
+	display: inline;
+	line-height: 200%;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 0;
+	padding: 6px 6px 0px 0px;
+}
+body #community-wrap ul.community-avatar-list li img {
+	padding: 0;
+}
+
+
+/**
+ * All small 16x16 icons please use these classes
+ * we will use it for all templates
+ */
+.icon-user,
+.icon-calendar,
+.icon-remove,
+.icon-write,
+.icon-group,
+.icon-leave,
+.icon-online,
+.icon-offline,
+.icon-add-friend,
+.icon-remove-friend,
+.icon-approve,
+.icon-unapprove,
+.icon-discuss,
+.icon-wall,
+.icon-edit,
+.icon-replies,
+.icon-bubble,
+.icon-photos,
+.icon-report,
+.icon-blog,
+.icon-videos,
+.icon-edit2,
+.icon-save,
+.icon-bookmark
+{
+	line-height: 16px;
+	margin: 10px 10px 0 0;
+	padding: 1px 3px 1px 20px;
+	display: inline;
+}
+.icon-waitingapproval
+{
+	line-height: 15px;
+	margin: 10px 10px 0 0;
+	padding: 3px 3px 3px 20px;
+	color: #666;
+}
+.icon-user {
+	background: transparent url(../images/icons-16x16.gif) no-repeat 0 2px;
+}
+.icon-calendar {
+	background: transparent url(../images/icons-16x16.gif) no-repeat 0 -20px;
+}
+.icon-remove {
+	background: transparent url(../images/icons-16x16.gif) no-repeat 0 -37px;
+}
+.icon-group {
+	background: transparent url(../images/icons-16x16.gif) no-repeat 0 -58px;
+}
+.icon-write {
+	background: transparent url(../images/icons-16x16.gif) no-repeat 0 -118px;
+}
+.icon-join {
+	background: transparent url(../images/icons-16x16.gif) no-repeat 0 -100px;
+}
+.icon-leave {
+	background: transparent url(../images/icons-16x16.gif) no-repeat 0 -80px;
+}
+.icon-online {
+	background: transparent url(../images/icons-16x16.gif) no-repeat 0 -138px;
+}
+.icon-offline {
+	background: transparent url(../images/icons-16x16.gif) no-repeat 0 -158px;
+}
+.icon-add-friend {
+	background: transparent url(../images/icons-16x16.gif) no-repeat 0 -180px;
+}
+.icon-remove-friend {
+	background: transparent url(../images/icons-16x16.gif) no-repeat 0 -200px;
+}
+.icon-approve {
+	background: transparent url(../images/icons-16x16.gif) no-repeat 0 -218px;
+}
+.icon-unapprove {
+	background: transparent url(../images/icons-16x16.gif) no-repeat 0 -37px;
+}
+.icon-waitingapproval {
+    background: transparent url(../images/icons-16x16.gif) no-repeat 0 -238px;
+}
+.icon-discuss {
+    background: transparent url(../images/icons-16x16.gif) no-repeat 0 -256px;
+}
+.icon-wall {
+    background: transparent url(../images/icons-16x16.gif) no-repeat 0 -276px;
+}
+.icon-edit {
+    background: transparent url(../images/icons-16x16.gif) no-repeat 0 -337px;
+}
+.icon-replies {
+    background: transparent url(../images/icons-16x16.gif) no-repeat 0 -297px;
+}
+.icon-bubble {
+    background: transparent url(../images/icons/bubble.gif) no-repeat 0 3px;
+}
+.icon-photos {
+    background: transparent url(../images/icons-16x16.gif) no-repeat 0 -360px;
+}
+.icon-videos {
+    background: transparent url(../images/icons-16x16.gif) no-repeat 0 -398px;
+}
+.icon-blog {
+	background: transparent url(../images/icons-16x16.gif) no-repeat 0 -340px;
+}
+.icon-report {
+    background: transparent url(../images/icons-16x16.gif) no-repeat 0 -377px;
+}
+.icon-edit2 {
+    background: transparent url(../images/icons-16x16.gif) no-repeat 0 -419px;
+}
+.icon-save {
+    background: transparent url(../images/icons-16x16.gif) no-repeat 0 -440px;
+}
+.icon-bookmark {
+	background: transparent url(../images/icons-16x16.gif) no-repeat 0 -460px;
+}
+/* Form elements */
+#cWindow #cWindowContentWrap {
+	background: #353535;
+	color: #ddd;
+}
+body #cWindowContentOuter {
+
+}
+body #cWindowContent {
+
+}
+body #cWindowContent .success {
+	color: green;	
+}
+body #cWindowContent .failed {
+	color: red;
+}
+body #cWindowContent img {
+	border: 0;
+}
+body #cWindowContent dl {
+	margin: 0;
+	padding: 0;
+}
+body #cWindowContent .col-left {
+	width: 23%;
+	line-height: 25px;
+	text-indent: 10px;
+	font-size: 11px;
+	font-weight: 700;
+	color: #666;
+	margin: 0 0 5px;
+	float: left;
+	display: block;
+	clear: both;
+	padding: 0;
+}
+body #cWindowContent .col-right {
+	float: left;
+	display: block;
+	width: 70%;
+	line-height: 22px;
+	margin: 0 0 5px;
+	padding: 0;
+}
+body #cWindowContent .col-right .text {
+	width: 100%;
+}
+body #cWindowContent div.loginform label,
+body #cWindowContent div.loginform input {
+	margin: 0;
+}
+body #cWindowContent .composeForm {
+	padding: 20px 10px;
+}
+body #writeMessageForm .receiverList #selections {
+	width: 140px;
+}
+body #writeMessageForm textarea.inputbox {
+	margin: 0;
+}
+/* table for form elements */
+body #community-wrap .formtable,
+body #cWindow .formtable {
+	width: 100%;
+}
+body #community-wrap .formtable td,
+body #community-wrap .admintable td,
+body #cWindow .formtable td,
+body #cWindow .admintable td {
+	padding: 5px;
+	vertical-align: top;
+}
+body #community-wrap .formtable td.key,
+body #community-wrap .admintable td.paramlist_key,
+body #community-wrap td.listkey,
+body #community-wrap td.paramlist_key,
+body #cWindow .formtable td.key,
+body #cWindow .admintable td.paramlist_key {
+	font-weight: bold;
+	text-align: right;
+	width: 130px;
+}
+body #cWindow .formtable td.key {
+	width: 70px;
+}
+body #community-wrap td.listvalue,
+body #community-wrap td.paramlist_value,
+body #community-wrap .formtable td.value,
+body #community-wrap .admintable td.paramlist_value,
+body #cWindow .formtable td.value,
+body #cWindow .admintable td.paramlist_value {
+
+}
+body #community-wrap tr.noLabel td.key,
+body #community-wrap tr.noLabel td.paramlist_key,
+body #cWindow tr.noLabel td.key,
+body #cWindow tr.noLabel td.paramlist_key {
+	border: none;
+	background: none;
+}
+body #community-wrap tr.hidden td,
+body #cWindow tr.hidden td {
+	display: none;
+}
+body #cWindow .label {
+	color: #ddd;
+}
+body #cWindow .inputbox {
+	width: 90%;
+}
+body #cWindow .receiverContainer {
+	color: #fff;
+}
+body #cWindow .receiverContainer .small {
+	color: #ccc;
+}
+body #cWindow .receiverContainer img {
+	padding: 3px;
+	border: solid 1px #888;
+}
+body #cWindow #addFriendContainer {
+	
+}
+body #cWindow #addFriendContainer p {
+	margin-bottom: 10px;
+}
+body #cWindow #addFriendContainer .inputbox {
+ 	width: 80%;
+ 	vertical-align: top;
+ 	height: 52px;
+}
+
+
+
+
+
+
+
+
+/** Inbox Styling **/
+body #community-wrap .inbox-read {
+	background: none;
+}
+body #community-wrap .inbox-read a.subject {
+	color: #666;
+}
+body #community-wrap .inbox-read .small {
+	color: #999;
+}
+body #community-wrap .inbox-unread {
+	background: #2c2e35;
+}
+body #community-wrap .inbox-unread a.subject,
+body #community-wrap .inbox-unread .small {
+	font-weight: 700;
+}
+body #community-wrap .inbox-list img {
+	border: 0;
+}
+
+/** Wall Styling **/
+body #community-wrap div.wall-entry {
+	position: relative;
+	padding: 10px;
+	border: solid 1px #333;
+	margin: 0 0 5px;
+}
+body #community-wrap div.wall-entry div.title {
+	padding: 0 0 5px;
+	font-weight: 700;
+	margin: 0 0 5px;
+}
+body #community-wrap div.wall-entry div.avatar {
+	float: left;
+	height: 64px;
+	width: 64px;
+}
+body #community-wrap div.wall-entry div.content {
+	margin: 0 0 0 75px;
+}
+
+
+body #community-wrap .ctitle {
+	font-size: 100%;
+	font-weight: 700;
+	color: #fff;
+	border-bottom: solid 1px #333;
+	/* padding: 10px 0; */
+}
+body #community-wrap .ctitle h2 {
+	margin: 0;
+	padding: 0;
+}
+body #community-wrap .clabel {
+	line-height: 150%;
+	float: left;
+	width: 150px;
+}
+body #community-wrap .cdata {
+	margin: 0 0 0 160px;
+	line-height: 150%;
+}
+
+
+/* Overwrite Styling */
+/*
+body #community-wrap #application-group ul.application-group-avatars li {
+	padding: 0 5px 0 0;
+}
+*/
+body #community-wrap ul.application-group-avatars {
+    margin: 0pt;
+	padding: 0pt;
+	list-style: none;
+}
+body #community-wrap ul.application-group-avatars li {
+    display: inline;
+	padding: 0;
+	background: none;
+	margin: 0 3px 0 0 !important;
+}
+body #community-wrap .apps-entry {
+	border-bottom: solid 1px #333;
+	margin: 5px 0;
+}
+body #community-wrap div.submenu-l div.submenu-r ul.submenu li.no-right-border a {
+	border-right: 0;
+}
+
+
+body #community-wrap ul.avatar-list {
+	margin: 0;
+	padding: 0pt;
+	list-style: none;
+}
+body #community-wrap ul.avatar-list li,
+body #community-wrap ul.avatar-list li.avatar-list-item {
+	display: inline;
+	padding: 0;
+	background: none;
+	margin: 0 3px 0 0;
+}
+body #community-wrap ul.avatar-list li.first {
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding-bottom: 20px;
+}
+body #community-wrap ul.avatar-list .title {
+	font-weight: 700;
+	font-size: 160%;
+	margin-bottom: 10px;
+}
+body #community-wrap ul.avatar-list .title a {
+	text-decoration: none;
+}
+body #community-wrap ul.avatar-list .desc-title {
+	font-size: 90%;
+	text-align: left;
+	line-height: normal;
+	border-bottom: 1px solid #ccc;
+	padding: 2px 0;
+	margin: 0 0 5px;
+	font-weight: 700;
+}
+body #community-wrap ul.avatar-list .desc-details {
+	color: #666;
+	text-align: left;
+}
+body #community-wrap .tag-new {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	background: transparent url(../images/tag-new.gif) no-repeat 0 0;
+}
+body #community-wrap ul.avatar-list li a {
+	text-decoration: none;
+}
+
+
+/*
+ ******************************************************************************
+ * TinyMCE Fixes 
+ */
+body #community-wrap table.mceLayout {
+	margin-bottom: 10px;
+}
+body #community-wrap table.mceLayout tr td {
+	padding: 0;
+}
+body #community-wrap table.mceLayout tr.mceFirst td {
+	padding-top: 2px;
+}
+body #community-wrap .mceToolbar td,
+body #community-wrap table.mceLayout tr.mceLast td {
+	padding: 0;
+}
+body #community-wrap .defaultSkin .mceIframeContainer {
+	border-right: 1px solid #ccc;
+}
+
+
+
+/*
+ ******************************************************************************
+ * Inbox
+ */
+#community-wrap div.inbox-toolbar {
+	border: 1px solid #333;
+	padding: 3px;
+}  
+
+#community-wrap div.inbox-read {
+	border-bottom: 1px solid #333;
+	padding: 3px;
+	position: relative;
+}
+
+#community-wrap div.inbox-message-heading {
+	border-bottom: 1px solid #333;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+#community-wrap .avatar.avatar-message-view {
+	float: left;
+	width: 50px;
+	margin: 10px 0 0;
+}
+
+#community-wrap #inbox-messages .inbox-message-view {
+	border-bottom: 1px solid #333;
+	margin-bottom: 20px;
+	padding: 0 0 10px;
+}
+
+#community-wrap .inbox-reply {
+
+}
+
+	#community-wrap .inbox-reply #replybox {
+	 	width: 98%;
+	 	height: 50px;
+	 	margin-bottom: 10px;
+	 	background: #111;
+	 	color: #ccc;
+	 	border: solid 1px #444;
+	 	padding: 3px;
+	}

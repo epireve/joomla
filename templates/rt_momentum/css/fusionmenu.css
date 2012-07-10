@@ -1,0 +1,76 @@
+/**
+ * @package   Momentum Template - RocketTheme
+ * @version   1.3 October 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+/* Global */
+.menutop {z-index:1;}
+.menutop li {height: auto;margin: 0;padding: 0;position: relative;list-style: none;}
+.menutop em {font-size: 80%;font-weight: normal;display: block;font-style: normal;}
+.menutop li .item, .menutop li.active .item {display: block;margin: 0;text-decoration: none;float: none;width: auto;}
+.menutop li .fusion-submenu-wrapper {float: none;left: -999em;position: absolute;z-index: 500;}
+.menutop li:hover li ul, .menutop li.sfHover li ul {top: -999em;}
+.menutop li:hover ul, .menutop li.sfHover ul {top: 0;}
+
+/* Root Items */
+.menutop {list-style: none;margin: 0;padding: 0;position: relative;display: inline-block;}
+.menutop li.root {float: left;margin: 0 0 0 1px;padding: 0;transition: background-color 0.3s linear;}
+.menutop li.root > .item {white-space: nowrap;display: block;font-size: 1.5em;z-index: 100;cursor: pointer;position: relative;padding: 0;margin: 0;outline: none;font-weight: normal;letter-spacing: 1px;}
+.menutop li.root > span.item {cursor: default;}
+.menutop li.root .subtext {line-height: 24px;}
+.menutop li.root > .item span {display: block;outline: none;padding: 0 10px;height: 45px;line-height: 45px;width: auto;}
+.menutop li.parent.root .item span .daddyicon, .menutop li.root .daddy.item .daddyicon {width: 12px;height: 9px;position: absolute;right: -7px;margin-left: -3px;bottom: 18px;padding: 0;background-position: 0 -801px;background-repeat: no-repeat;}
+.menutop li.parent.root {padding: 0 15px 0 0;}
+.menutop li.root > .subtext span {padding: 0 10px;line-height: 35px;}
+.menutop li.root > .item em {font-size: 10px;display: block;font-style: normal;line-height: 100%;text-align: left;text-transform: none;letter-spacing: normal;margin-top: -8px;}
+.menutop li.root > .item img {margin: 12px 10px 12px 0px;}
+.menutop li.root > .f-submenu-pad {padding: 0;}
+.menutop li.active.root > .item span, .menutop li.root:hover > .item span, .menutop li.f-mainparent-itemfocus > .item span {background-position: 50% 100%;background-repeat: no-repeat;}
+
+/* Dropdown Surrounds */
+.menutop .f-submenu-pad {padding: 0 6px;}
+.menutop ul {padding: 0;margin: 0;float: left;}
+.menutop .drop-bot {height: 1px;overflow: hidden;clear: both;}
+.menutop .fusion-submenu-wrapper {height: auto !important;padding: 0;box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);}
+
+/* Dropdown Items */
+.menutop ul li {display: block;background-position: 6px 17px;background-repeat: no-repeat;}
+.menutop ul li > .item {padding: 15px 15px 15px 25px;height: auto;display: block;font-size: 16px;line-height: 100%;font-weight: normal;letter-spacing: normal;}
+.menutop ul li > .item:hover span, .menutop ul li.active > .item span, .menutop ul li.f-menuparent-itemfocus > .item span {margin: 0;}
+.menutop li > .bullet {padding-left: 10px;}
+.menutop li .item img {float: left;margin: 0px 6px 0px 0;vertical-align: top;}
+.menutop li > .item span {padding: 0;display: block;width: auto;}
+.menutop ul li .nolink span {display: block;}
+.menutop li a.item {cursor: pointer;}
+.menutop li span.item {cursor: default;outline: none;}
+.menutop ul li .subtext em {line-height: 14px;}
+.menutop ul li > .fusion-modules.item:hover {background: none;}
+.menutop ul .readon span {width: auto;}
+.menutop ul li > .daddy span {background-position: 100% 2px;background-repeat: no-repeat;}
+
+/* No JS */
+.menutop li.root:hover > .fusion-submenu-wrapper {top: 71px;left: 0;}
+.menutop ul li:hover > .fusion-submenu-wrapper {left: 180px;top: -5px;}
+
+/* Fusion JS */
+.fusion-js-container {display: block;height: 0;left: 0;overflow: visible;position: absolute;top: 0;z-index: 600000!important;background: transparent !important;}
+.fusion-js-subs {display: none;margin: 0;overflow: hidden;padding: 0;position: absolute;}
+
+/* Grouped & Modules */
+.fusion-grouped {padding-bottom: 10px;padding-left: 15px;}
+.fusion-grouped ol {padding: 0;}
+.menutop .fusion-grouped ol li .item {padding: 4px 15px;}
+.fusion-grouped ol li span {font-size: 11px;padding-left: 10px;}
+.menutop .fusion-grouped ol li {margin-left: 0;padding: 0;background-image: none;}
+.menutop .type-module ol {padding: 0;background-image: none;}
+.menutop .type-module ol li {padding: 0;}
+.menutop .type-module ol li .fusion-modules {background: none;}
+.menutop .type-module ol li .fusion-module {padding: 0;background: none;overflow: hidden;}
+.menutop .fusion-module, .menutop .fusion-modules, .menutop .fusion-grouped {display: block;}
+.menutop .fusion-module em {display: inline;font-size: inherit;font-style: italic;}
+.menutop .fusion-module a {font-size: inherit;line-height: 130%;}
+.menutop .fusion-module p {line-height: 160%;}
+.menutop ul li.grouped-parent > .daddy span {background: none;}
+.fusion-module.module-padding {padding: 10px;}

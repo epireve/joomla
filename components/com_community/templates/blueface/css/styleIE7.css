@@ -1,0 +1,16 @@
+ul.application-group-avatars a {
+	text-decoration: none;
+}
+img.avatar { -ms-interpolation-mode: bicubic; }
+
+body #community-wrap div.greybox div div div h1 {
+	line-height: 30px;
+}
+
+#community-wrap .wall-coc-form textarea {
+ 	margin: 0 0 0 -68px;
+}
+
+body #community-wrap div.video-item{
+	width: 48%;
+}

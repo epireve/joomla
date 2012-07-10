@@ -1,0 +1,20 @@
+body #community-wrap h2.app-box-title {
+	margin: 0;
+}
+body #community-wrap div.profile-right h2.app-box-title {
+	margin: 0 0 10px;
+}
+body #community-wrap div.greybox a#joinButton {
+	height: 60px;
+}
+body #community-wrap div.greybox div.joinbutton {
+	height: 100px;
+	margin: 0;
+	display: block;
+}
+body #community-wrap div.column-right {
+	right: 20px;
+}
+body #community-wrap div.column-main {
+	position: relative;
+}

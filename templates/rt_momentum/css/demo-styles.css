@@ -1,0 +1,119 @@
+/**
+ * @package   Momentum Template - RocketTheme
+ * @version   1.3 October 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+ 
+/* Frontpage */
+body .rt-fimg1 {margin-left: -23px !important;}
+.rotator-text {margin-left: 25%;width: 60%;color: #fff;}
+.rotator-line1 {display: block;font-size: 140%;margin-bottom: 5px;padding-left: 5px;text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);}
+.rotator-line2 {display: block;font-size: 92px;line-height: 90px;letter-spacing: -12px;font-weight: bold;text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.6);margin-left: 5%;}
+.rotator-line3 {display: block;text-align: right;font-size: 140%;padding-right: 5px;text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);}
+#rt-slideshow .title-highlight .rg-ss-title .title-1 {background: url(../images/overlays/global/dark-60.png);display: inline-block;line-height: 80%;margin: -10px -10px 2px -10px;padding: 15px 10px 0 10px;}
+#rt-slideshow .title-highlight .rg-ss-title .title-2 {background: url(../images/overlays/global/dark-40.png);display: inline-block;line-height: 80%;margin: 0 -10px 2px -10px;padding: 15px 10px 0 10px;}
+#rt-slideshow .title-highlight .rg-ss-caption {background: url(../images/overlays/global/dark-60.png);display: inline-block;margin: 0 -10px -10px -10px;padding: 5px 10px;}
+.oct11-home #rt-main-column .block-shadow {margin-bottom: 15px;}
+.oct11-home .component-block .rokgallery-wrapper {margin-bottom: -20px !important;}
+
+/* Menu Styles */
+.menu-preset {width: 128px;float: left;margin: 0 12px 12px;text-align: center;line-height: 20px;font-family: Helvetica,Arial,sans-serif;}
+.menu-preset span {box-shadow: 3px 3px 3px rgba(0,0,0,0.2);}
+.menutop li .menu-preset > a > span {display:block;width:128px;height:100px;background:url(../../../images/stories/demo/menu/menu-presets.png);padding:0;margin:0;cursor:pointer;}
+.preset2 > a > span {background-position: -138px 0 !important;}
+.preset3 > a > span {background-position: -276px 0 !important;}
+.preset4 > a > span {background-position: -0 -100px !important;}
+.preset5 > a > span {background-position: -138px -100px !important;}
+.preset6 > a > span {background-position: -276px -100px !important;}
+
+/* Custom Grid */
+.rt-demo-grid-2, .rt-demo-grid-3, .rt-demo-grid-4, .rt-demo-grid-5, .rt-demo-grid-6, .rt-demo-grid-7 {float: left;margin-left: 10px;margin-right: 10px;}
+.rt-grid-4 .rt-block .rt-demo-grid-2 {width: 90px;}
+.rt-grid-8 .rt-demo-grid-2 {width: 90px;}
+.rt-grid-9 .rt-demo-grid-2 {width: 120px;}
+.rt-grid-6 .rt-block .rt-demo-grid-3 {width: 190px;}
+.rt-grid-8 .rt-demo-grid-3 {width: 175px;}
+.rt-grid-9 .rt-demo-grid-3 {width: 200px;}
+.rt-grid-8 .rt-demo-grid-4 {width: 270px;}
+.rt-grid-9 .rt-demo-grid-4 {width: 313px;}
+.rt-grid-8 .rt-demo-grid-6 {width: 440px;}
+.rt-demo-grid-alpha {margin-left: 0;}
+.rt-demo-grid-omega {margin-right: 0;margin-left: 0;}
+
+/* Tutorials */
+.ext-list {line-height: 30px;margin-bottom: 5px;}
+.rt-install1-j15, .rt-install1-j17, .rt-install2-j15, .rt-install2-j17 {position: absolute;}
+.rt-install1-j15 {bottom: 2px;left: 130px;font-size: 50%;}
+.rt-install1-j17 {bottom: 2px;left: 425px;font-size: 50%;}
+.rt-install2-j15 {top: 222px;left: 42px;font-size: 70%;color: #0B55C4;}
+.rt-install2-j17 {bottom: 3px;left: 345px;font-size: 70%;color: #025A8D;}
+.rt-install2-j17a {background: #c00;color: #fff;padding: 2px 4px;}
+
+/* Standard Inline Structural Adjustments */
+body .floatleft {float: left;margin-right: 15px;margin-left: 0;}
+body .floatright {float: right;margin-left: 15px;margin-right: 0;}
+body .normalfont, body .normalfont li {font-size: 100% !important;}
+body .nobold, body .nobold li {font-weight: normal !important;}
+body .nomargintop, body .nomargintop .rt-block, body ul.nomargintop {margin-top: 0 !important;}
+body .nomarginbottom, body .nomarginbottom .rt-block, body ul.nomarginbottom {margin-bottom: 0 !important;}
+body .nomarginleft, body .nomarginleft .rt-block, body ul.nomarginleft {margin-left: 0;}
+body .nomarginright, body .nomarginright .rt-block, body ul.nomarginright {margin-right: 0;}
+body .nopaddingtop, body .nopaddingtop .rt-block, body ul.nopaddingtop {padding-top: 0 !important;}
+body .nopaddingbottom, body .nopaddingbottom .rt-block, body ul.nopaddingbottom {padding-bottom: 0 !important;}
+body .nopaddingleft, body .nopaddingleft .rt-block, body ul.nopaddingleft {padding-left: 0;}
+body .nopaddingright, body .nopaddingright .rt-block, body ul.nopaddingright {padding-right: 0;}
+.floatnone {float: none !important;}
+.clearnone {clear: none !important;}
+.floatleftlast {float: left;margin-right: 0;}
+.floatrightlast {float: right;margin-left: 0;}
+.noimage {display: none;visibility: hidden;}
+body .smallmarginbottom {margin-bottom: 5px !important;}
+body .smallmargintop {margin-top: 5px !important;}
+body .medmarginbottom {margin-bottom: 10px !important;}
+body .medmargintop {margin-top: 10px !important;}
+body .largemarginbottom {margin-bottom: 15px !important;}
+body .largemargintop {margin-top: 15px !important;}
+body .smallmarginleft {margin-left: 5px !important;}
+body .smallmarginright {margin-right: 5px !important;}
+body .medmarginleft {margin-left: 10px !important;}
+body .medmarginright {margin-right: 10px !important;}
+body .largemarginleft {margin-left: 15px !important;}
+body .largemarginright {margin-right: 15px !important;}
+body .smallpaddingbottom {padding-bottom: 5px !important;}
+body .smallpaddingtop {padding-top: 5px !important;}
+body .medpaddingbottom {padding-bottom: 10px !important;}
+body .medpaddingtop {padding-top: 10px !important;}
+body .largepaddingbottom {padding-bottom: 15px !important;}
+body .largepaddingtop {padding-top: 15px !important;}
+body .smallpaddingleft {padding-left: 5px !important;}
+body .smallpaddingright {padding-right: 5px !important;}
+body .medpaddingleft {padding-left: 10px !important;}
+body .medpaddingright {padding-right: 10px !important;}
+body .largepaddingleft {padding-left: 15px !important;}
+body .largepaddingright {padding-right: 15px !important;}
+body .rt-relative {position: relative;}
+
+/* RTL Stuff */
+body.rtl .floatleft {float: right;margin-right: 0;margin-left: 15px;}
+body.rtl .floatright {float: left;margin-left: 0;margin-right: 15px;}
+body.rtl .nomarginleft, body.rtl .nomarginleft .rt-block, body.rtl ul.nomarginleft {margin-right: 0;}
+body.rtl .nomarginright, body.rtl .nomarginright .rt-block, body.rtl ul.nomarginright {margin-left: 0;}
+body.rtl .nopaddingleft, body.rtl .nopaddingleft .rt-block, body.rtl ul.nopaddingleft {padding-right: 0;}
+body.rtl .nopaddingright, body.rtl .nopaddingright .rt-block, body.rtl ul.nopaddingright {padding-left: 0;}
+body.rtl .floatleftlast {float: right;margin-left: 0;}
+body.rtl .floatrightlast {float: left;margin-right: 0;}
+body.rtl .smallmarginleft {margin-right: 5px;}
+body.rtl .smallmarginright {margin-left: 5px;}
+body.rtl .medmarginleft {margin-right: 10px;}
+body.rtl .medmarginright {margin-left: 10px;}
+body.rtl .largemarginleft {margin-right: 15px;}
+body.rtl .largemarginright {margin-left: 15px;}
+body.rtl .smallpaddingleft {padding-right: 5px;}
+body.rtl .smallpaddingright {padding-left: 5px;}
+body.rtl .medpaddingleft {padding-right: 10px;}
+body.rtl .medpaddingright {padding-left: 10px;}
+body.rtl .largepaddingleft {padding-right: 15px;}
+body.rtl .largepaddingright {padding-left: 15px;}
+body.rtl .rt-demo-grid-2, body.rtl .rt-demo-grid-3, body.rtl .rt-demo-grid-4, body.rtl .rt-demo-grid-5, body.rtl .rt-demo-grid-6, body.rtl .rt-demo-grid-7 {float: right;}

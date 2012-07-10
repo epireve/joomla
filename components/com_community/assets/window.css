@@ -1,0 +1,497 @@
+/* CSS Document */
+#cWindow {
+	position: absolute;
+	z-index: 10000;
+	display: block;
+}
+#cWindow.new {
+	display: none;
+}
+#cWindow #cwin_close_btn:link,
+#cWindow #cwin_close_btn:visited {
+	height: 30px;
+	width: 30px;
+	text-indent: -9999px;
+	outline-style: none;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	/*background-image: url(window/dialog/closebox-normal.png);*/
+	margin: 0;
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+}
+#cWindow #cwin_close_btn:hover {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	/*background-image: url(window/dialog/closebox-hover.png);*/
+}
+#cWindow  #cwin_logo {
+	color: #FFFFFF;
+	font-weight:bold;
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 8px;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+/**
+ * Old code, using few images
+ */
+
+/*
+#cWindow  #cwin_tl {
+	width: 20px;
+	height: 20px;
+	background: transparent url(window/tl.png) no-repeat top left;
+	float: left;
+}
+#cWindow #cwin_tm {
+	background: transparent url(window/bm.png) no-repeat top left;
+	float: left;
+	height: 20px;
+}
+#cWindow #cwin_tr {
+	background: transparent url(window/tr.png) no-repeat top right;
+	float: left;
+	width: 20px;
+	height: 20px;
+}
+#cWindow #cwin_ml {
+	width: 20px;
+	background: transparent url(window/rm.png) no-repeat top left;
+	float: left;
+	height: 560px;
+}
+#cWindow #cwin_mr {
+	width: 20px;
+	background: transparent url(window/rm.png) no-repeat top right;
+    height: 560px;
+	float: left;
+}
+#cWindow #cwin_bl {
+	width: 20px;
+	height: 20px;
+	background: transparent url(window/bl.png) no-repeat bottom left;
+	float: left;
+}
+#cWindow #cwin_bm {
+	background: transparent url(window/bm.png) no-repeat bottom left;
+	float: left;
+	height: 20px;
+}
+#cWindow #cwin_br {
+	width: 20px;
+	height: 20px;
+	background: transparent url(window/br.png) no-repeat bottom right;
+	float: left;
+}
+*/
+
+/** 
+ * We use CSS Sprite for images
+ * less request, save bandwidth :)
+ */
+#cWindow #cwin_tl,
+#cWindow #cwin_tr,
+#cWindow #cwin_bl,
+#cWindow #cwin_br,
+#cWindow #cwin_tm,
+#cWindow #cwin_bm,
+#cWindow #cwin_ml,
+#cWindow #cwin_mr,
+#cWindow #cwin_close_btn,
+#cWindow #cwin_logo {
+	background: transparent url(window/bg-sprited.png) no-repeat 0 0;
+} 
+
+#cWindow #cwin_tl,
+#cWindow #cwin_tr,
+#cWindow #cwin_bl,
+#cWindow #cwin_br,
+#cWindow #cwin_ml,
+#cWindow #cwin_mr {
+	width: 20px;
+}
+
+#cWindow #cwin_tl,
+#cWindow #cwin_tr,
+#cWindow #cwin_bl,
+#cWindow #cwin_br,
+#cWindow #cwin_tm,
+#cWindow #cwin_bm {
+	height: 20px;
+}
+
+#cWindow #cwin_tl,
+#cWindow #cwin_tr,
+#cWindow #cwin_bl,
+#cWindow #cwin_br,
+#cWindow #cwin_tm,
+#cWindow #cwin_bm,
+#cWindow #cwin_ml,
+#cWindow #cwin_mr {
+	float: left;
+}
+
+#cWindow #cwin_logo {
+	background-position: 100% 100%;
+	overflow: hidden;
+} 
+
+#cWindow #cwin_tl {
+	background-position: -53px 0;
+}
+#cWindow #cwin_tm {
+	background-position: -80px 0;
+}
+#cWindow #cwin_tr {
+	background-position: 100% 0;
+}
+#cWindow #cwin_ml {
+	background-position: 0 -40px;
+	background-repeat:repeat-y;
+	height: 560px;
+}
+#cWindow #cwin_mr {
+	background-position: -20px -40px;
+	background-repeat:repeat-y;
+    height: 560px;
+}
+#cWindow #cwin_bl {
+	background-position: -53px -20px;
+}
+#cWindow #cwin_bm {
+	background-position: -80px -20px;
+}
+#cWindow #cwin_br {
+	background-position: 100% -20px;
+}
+
+
+
+
+
+
+
+body #cwin-wait,
+#cWindow #cwin-wait {
+	width: 43px;
+	height: 11px;
+	background: transparent url(window/wait.gif) no-repeat;
+	display: none;
+}
+#cWindowContentOuter {
+	float: left;
+	overflow: hidden;
+	position: relative;
+	background: #fff;
+}
+#cWindowContentTop {
+	height: 30px;
+	background: #333333;
+	overflow: hidden;
+}
+#cWindowContentWrap {
+	overflow: auto;
+	background:	#ffffff;
+	position: relative;
+}
+#cWindowContentWrap.resizing {
+	overflow: hidden;
+}
+#cWindowContent.resizing {
+	overflow: hidden;
+	position: absolute;
+}
+#cWindowContent {
+	/* position: relative; */ 
+	padding: 10px;
+	margin:0px;
+	font-size: 12px;
+}
+#cWindowContent .success {
+	color: green;	
+}
+#cWindowContent .failed {
+	color: red;
+}
+#cWindowContentWrap.loading {
+	background-image: url(window/wait.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#cWindowAction {
+	/* window/wait.gif (43px x 11px) */
+	background: #CCC url(window/wait.gif) no-repeat -43px -11px;
+	height: 30px;
+	/* bottom: 0; */
+	text-align: right;
+	position: absolute;
+	width: 100%;
+	left: 0;
+}
+
+#cWindowAction.loading {
+	background-position: 10px 10px;
+}
+
+
+#cWindowAction .button {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #CCC;
+	height: 21px;
+	margin-top: 4px;
+	margin-right: 5px;
+	background: #333;
+	border: 1px outset #888;
+	cursor: pointer;
+}
+
+#cWindowAction .button:hover {
+	background: #333;
+	border: 1px outset #888;
+	color: #FFF;
+}
+
+body #cWindowAction input,
+body #cWindowAction textarea,
+body #cWindowAction select,
+body #cWindowAction label {
+	margin: 0 0 5px;
+}
+
+#cWindowContent dl {
+	margin: 0;
+	padding: 0;
+}
+#cWindowContent .col-left {
+	width: 23%;
+	line-height: 25px;
+	text-indent: 10px;
+	font-size: 11px;
+	font-weight: 700;
+	color: #666;
+	margin: 0 0 5px;
+	float: left;
+	display: block;
+	clear: both;
+	padding: 0;
+}
+#cWindowContent .col-right {
+	float: left;
+	display: block;
+	width: 70%;
+	line-height: 22px;
+	margin: 0 0 5px;
+	padding: 0;
+}
+#cWindowContent .col-right .text {
+	width: 100%;
+}
+#cWindowContent .composeForm {
+	padding: 20px 10px;
+}
+
+#cWindow.dialog {}
+#cWindow.dialog #cwin_close_btn:link,
+#cWindow.dialog #cwin_close_btn:visited {
+	background-position: -60px -40px;
+	background-color: #333333;
+}
+#cWindow.dialog #cwin_close_btn:hover {
+	background-position: -60px -69px;
+}
+
+/* Warning Styles */
+#cWindow.warning {}
+#cWindow.warning #cWindowContentTop {
+	height: 30px;
+	background: #993;
+	border-bottom: solid 1px #660;
+}
+#cWindow.warning #cwin_logo {
+	height: 30px;
+	margin: 0 0 0 3px;
+	padding: 0 0 0 32px;
+
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #fff;
+	
+	background-position: -60px -161px;
+}
+#cWindow.warning #cwin_close_btn:link,
+#cWindow.warning #cwin_close_btn:visited {
+	background-color: #993;
+	background-position: -120px -39px;
+}
+#cWindow.warning #cwin_close_btn:hover {
+	background-position: -120px -68px;
+}
+
+/* Error Styles */
+#cWindow.error {}
+#cWindow.error #cWindowContentTop {
+	height: 30px;
+	background: #930;
+	border-bottom: solid 1px #600;
+}
+#cWindow.error #cwin_logo {
+	height: 30px;
+	margin: 0 0 0 3px;
+	padding: 0 0 0 32px;
+
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #fff;
+	
+	background-position: -60px -132px;
+}
+#cWindow.error #cwin_close_btn:link,
+#cWindow.error #cwin_close_btn:visited {
+	background-color: #930;
+	background-position: -90px -39px;
+}
+#cWindow.error #cwin_close_btn:hover {
+	background-position: -90px -68px;
+}
+
+/* Blank Styles*/
+#cWindow.blank {}
+#cWindow.blank #cWindowContent {
+	padding: 0;
+}
+#cWindow.blank #cwin_close_btn:link,
+#cWindow.blank #cwin_close_btn:visited {
+	background-position: -60px -40px;
+	background-color: #333333;
+}
+#cWindow.blank #cwin_close_btn:hover {
+	background-position: -60px -69px;
+}
+
+/**
+ * Avoid this style override by template style
+ */ 
+#cWindow .video-provider {
+	background: transparent;
+	float: left;
+	line-height: 150%;
+	list-style-type: disc;
+	margin: 0;
+	padding: 0;
+	width: 48%;
+}
+
+
+/**
+ * We need to reset most of HTML element for cWindow
+ * because some template define it, it'll break the layout
+ */
+
+#cWindow h1,
+#cWindow h2,
+#cWindow h3,
+#cWindow h4,
+#cWindow h5,
+#cWindow h6,
+#cWindow p {
+	margin: 0;
+	padding: 0;
+}
+
+#cWindow p {
+	font-size: 12px;
+	line-height: 14px;
+}
+
+#cWindow h2 {
+	margin: 0 0 20px;
+}
+
+#cWindow ul li {
+	line-height: normal;
+} 
+
+
+/* cWindow initial width & height */
+#cWindow {
+	width: 490px;
+	height: 170px;
+	top: 0;
+}
+
+#cWindow #cWindowContentOuter {
+	width: 450px;
+	height: 130px;
+}
+
+#cWindow #cwin_tm,
+#cWindow #cwin_bm {
+	width: 450px;
+}
+
+#cWindow #cwin_ml,
+#cWindow #cwin_mr {
+	height: 130px;
+}
+
+#cWindow #cWindowContentWrap {
+	height: 100px;
+}
+
+/* Forms in cWindow */
+#cWindow .cWindowForm {
+	width: 100%;
+}
+#cWindow .cWindowForm td {
+	padding: 5px;
+	vertical-align: top;
+}
+#cWindow td.cWindowFormKey {
+	font-weight: bold;
+	text-align: right;
+	width: 130px;
+	/* border-bottom: 1px solid #EEEEEE; */
+}
+#cWindow td.cWindowFormVal {
+}
+#cWindow tr.noLabel td.cWindowFormKey {
+	border: none;
+	background: none;
+}
+#cWindow tr.hidden td {
+	display: none;
+}
+.subject { border-bottom: 2px solid #aaa; font-weight: bold; padding: 2px 1px; }
+.inbox-read .subject, .inbox-unread .subject { border: none; padding: 0; }
+.inbox-unread .small { padding: 0; margin: 0; line-height: 14px; }
+.inbox-unread td { vertical-align: top; }
+.mini-profile { border-bottom: 1px dotted #bbb; padding: 5px 5px 2px !important; }
+
+
+body #community-wrap .inbox-read td, 
+body #community-wrap .inbox-unread td {
+    vertical-align: top;
+    }
+#cWindowContent input,
+#cWindowContent textarea {
+	color: #000000;
+	border: 1px inset #CCCCCC;
+}
+#cWindowContent input[type=checkbox] {
+	margin-right: 4px;
+}

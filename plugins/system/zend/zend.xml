@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - Zend Lib</name>
+	<author>JomSocial Team</author>
+	<creationDate>March 2011</creationDate>
+	<copyright>Copyright (C) 2005 - 2011</copyright>
+	<license>New BSD</license>
+	<authorEmail>support@jomsocial.com</authorEmail>
+	<authorUrl>http://www.jomsocial.com</authorUrl>
+	<version>1.11.4</version>
+	<description>
+		<![CDATA[
+			<h2>Successfully installed Zend Framework for Joomla Package 10</h2>
+			<p>Zend Framework has a bunch of nice PHP classes, making development faster</p>
+		]]>
+	</description>
+	<package>10</package>
+	<scriptfile>zend.php</scriptfile>
+	<files>
+		<filename plugin="zend">zend.php</filename>
+		<folder>Zend</folder>
+	</files>
+	<params/>
+</install>

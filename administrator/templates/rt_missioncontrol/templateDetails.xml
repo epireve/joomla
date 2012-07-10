@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.7//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
+<extension type="template" version="1.7" client="administrator" method="upgrade" >
+	<name>rt_missioncontrol</name>
+	<creationDate>December 20, 2011</creationDate>
+	<author>RocketTheme, LLC</author>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2011 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>2.2</version>
+	<description>MC_TEMPLATE_DESC</description>
+    <updateservers>
+		<server type="collection" priority="1" name="Extension Update Site">http://updates.rockettheme.com/joomla16/updates.xml</server> <!-- useful for single extensions -->
+	</updateservers>
+	<files>
+		<filename>index.php</filename>
+		<filename>component.php</filename>
+		<filename>cpanel.php</filename>
+		<filename>login.php</filename>
+        <filename>template_thumbnail.png</filename>
+        <folder>ajax-models</folder>
+		<folder>css</folder>
+        <folder>fields</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+        <folder>language</folder>
+        <folder>lib</folder>
+		<folder>overrides</folder>
+	</files>
+	<positions>
+		<position>menu</position>
+		<position>submenu</position>
+		<position>toolbar</position>
+		<position>title</position>
+		<position>status</position>
+		<position>icon</position>
+		<position>cp_shell</position>
+		<position>cpanel</position>
+		<position>dashboard</position>
+		<position>sidebar</position>
+		<position>debug</position>
+	</positions>
+	<config addfieldpath="/administrator/templates/rt_missioncontrol/fields">
+		<fields name="params">
+			<fieldset name="basic">
+				
+				<field name="updatecheck" label="MC_UPDATE_CHECK" type="updatecheck"></field>
+				<field name="logoupload" type="logoupload" label="MC_HEADER_LOGO" description="MC_HEADER_LOGO_DESC"></field>
+				<field name="adminTitle" type="text" default="Joomla Administrator" label="MC_ADMIN_TITLE" description="MC_ADMIN_TITLE_DESC"></field>
+				<field name="templateWidth" type="list" default="variable" label="MC_TEMPLATE_WIDTH" description="MC_TEMPLATE_WIDTH_DESC">
+					<option value="960">MC_WIDTH_960</option>
+					<option value="1080">MC_WIDTH_1080</option>
+				    <option value="1200">MC_WIDTH_1200</option>
+                    <option value="variable">MC_WIDTH_VAR</option>
+				</field>
+				<field name="dashboard" type="textarea" rows="6" cols="45" default="MissionControl is a brand-new take on the Joomla Administrator template.  Primary objectives during development were clean modern design, optimal usability, configurable colors and logo, and enhanced functionality via optimizations and new extensions." label="MC_DASHBOARD_TEXT" description="MC_DASHBOARD_TEXT_DESC" />
+				<field name="menuwidth" type="list" default="small" label="MC_MENU_WIDTH" description="MC_MENU_WIDTH_DESC">
+					<option value="small">MC_SMALL</option>
+					<option value="med">MC_MEDIUM</option>
+					<option value="large">MC_LARGE</option>
+				</field>
+				<field name="extendmenu" type="radio" default="off" label="MC_EXTENDED_MENU" description="MC_EXTENDED_MENU_DESC">
+					<option value="off">MC_NO</option>
+					<option value="on">MC_YES</option>
+				</field>
+				<field name="enableGravatar" type="radio" default="1" label="MC_ENABLE_GRAVATAR" description="MC_ENABLE_GRAVATAR_DESC">
+					<option value="0">MC_NO</option>
+					<option value="1">MC_YES</option>
+				</field>
+				<field name="enableSessionBar" type="radio" default="1" label="MC_ENABLE_SESSION_BAR" description="MC_ENABLE_SESSION_BAR_DESC">
+					<option value="0">MC_NO</option>
+					<option value="1">MC_YES</option>
+				</field>
+				<field name="enableTransitions" type="radio" default="enabled" label="MC_ENABLE_TRANSITIONS" description="MC_ENABLE_TRANSITIONS_DESC">
+					<option value="disabled">MC_NO</option>
+					<option value="enabled">MC_YES</option>
+				</field>
+				<field name="enableQuickEditor" type="radio" default="1" label="MC_ENABLE_QUICKEDITOR" description="MC_ENABLE_QUICKEDITOR_DESC">
+					<option value="0">MC_NO</option>
+					<option value="1">MC_YES</option>
+				</field>
+				<field name="enableViewSite" type="radio" default="1" label="MC_ENABLE_VIEWSITE" description="MC_ENABLE_VIEWSITE_DESC">
+					<option value="0">MC_NO</option>
+					<option value="1">MC_YES</option>
+				</field>
+				<field name="enableQuickCheckin" type="radio" default="0" label="MC_ENABLE_QUICKCHECKIN" description="MC_ENABLE_QUICKCHECKIN_DESC">
+					<option value="0">MC_NO</option>
+					<option value="1">MC_YES</option>
+				</field>
+				<field name="enableQuickCacheClean" type="radio" default="1" label="MC_ENABLE_QUICKCACHECLEAN" description="MC_ENABLE_QUICKCACHECLEAN_DESC">
+					<option value="0">MC_NO</option>
+					<option value="1">MC_YES</option>
+				</field>
+				<field name="enableFancyHeaders" type="radio" default="fancy" label="MC_ENABLE_FANCYHEADERS" description="MC_ENABLE_FANCYHEADERS_DESC">
+					<option value="simple">MC_NO</option>
+					<option value="fancy">MC_YES</option>
+				</field>
+				
+				<field name="showhelp" type="radio" default="1" label="MC_SHOW_HELP_MENU" description="MC_SHOW_HELP_MENU_DESC">
+					<option value="0">MC_NO</option>
+					<option value="1">MC_YES</option>
+				</field>
+				<field name="showhelpbutton" type="radio" default="1" label="MC_SHOW_HELP_BUTTON" description="MC_SHOW_HELP_BUTTON_DESC">
+					<option value="0">MC_NO</option>
+					<option value="1">MC_YES</option>
+				</field>
+				<field name="showlangmenu" type="radio" default="1" label="MC_SHOW_LANG_MENU" description="MC_SHOW_LANG_MENU_DESC">
+					<option value="0">MC_NO</option>
+					<option value="1">MC_YES</option>
+				</field>
+				<field name="body_text_color" type="colorchooser" default="#333333" label="MC_BODY_TEXT" description="" />
+				<field name="body_link_color" type="colorchooser" default="#4486BA" label="MC_BODY_LINK" description="" />
+				<field name="header_bg_color" type="colorchooser" default="#333333" label="MC_HEADER_BG" description="" />
+				<field name="header_text_color" type="colorchooser" default="#CCCCCC" label="MC_HEADER_TEXT" description="" />
+				<field name="header_link_color" type="colorchooser" default="#FFFFFF" label="MC_HEADER_LINK" description="" />
+				<field name="header_shadow_color" type="colorchooser" default="#000000" label="MC_HEADER_SHADOW" description="" />
+				<field name="tab_bg_color" type="colorchooser" default="#4D4D4D" label="MC_TAB_BG" description="" />
+				<field name="tab_text_color" type="colorchooser" default="#FFFFFF" label="MC_TAB_TEXT" description="" />
+				<field name="special_bg_color" type="colorchooser" default="#C62D2D" label="MC_SPECIAL_BG" description="" />
+				<field name="special_text_color" type="colorchooser" default="#FFFFFF" label="MC_SPECIAL_TEXT" description="" />
+				<field name="active_bg_color" type="colorchooser" default="#4F9BD8" label="MC_ACTIVE_BG" description="" />
+				<field name="active_text_color" type="colorchooser" default="#FFFFFF" label="MC_ACTIVE_TEXT" description="" />
+				<field name="hover_bg_color" type="colorchooser" default="#88B719" label="MC_HOVER_BG" description="" />
+				<field name="hover_text_color" type="colorchooser" default="#FFFFFF" label="MC_HOVER_TEXT" description="" />
+			</fieldset>
+            <fieldset name="advanced">
+			    <field name="blacklist" type="componentblacklist" label="MC_COMPONENT_BLACKLIST" description="MC_COMPONENT_BLACKLIST_DESC"/>
+                <field name="blackliststyle" type="templatestyles" label="MC_BLACKLIST_STYLE" description="MC_BLACKLIST_STYLE_DESC"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>        

@@ -1,0 +1,53 @@
+/**
+ * @package   Momentum Template - RocketTheme
+ * @version   1.3 October 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+ 
+/* Core */
+body, h1, h2, h3, h4, h5 {-webkit-text-rendering: optimizeLegibility;}
+
+/* Shadows */
+.page-overlay-dark .block-shadow, .page-overlay-dark .component-block {-webkit-box-shadow: 4px 4px 0 rgba(0,0,0,0.8);}
+.page-overlay-light .block-shadow, .page-overlay-light .component-block, .basic .inputbox, .basic #form-login .inputbox, .basic #rokajaxsearch .inputbox {-webkit-box-shadow: 4px 4px 0 rgba(0,0,0,0.1);}
+.inputbox, #form-login .inputbox, #com-form-login .inputbox, #josForm .inputbox, .component-content .search_result .inputbox, .component-content .contact .inputbox, .component-content .user input#email, .component-content .user input#name, .component-content .user input#username, .component-content .user input#password, .component-content .user input#passwd, .component-content .user input#password2, #rokajaxsearch .inputbox {-webkit-box-shadow: 4px 4px 0 rgba(0,0,0,0.2);} 
+.page-content-dark .rg-detail-img-bg, .page-content-dark .rg-grid-view .rg-grid-thumb, .page-content-dark .rg-list-view .rg-list-thumb {-webkit-box-shadow: 3px 3px 0 #222;}
+.page-content-dark .rg-grid-view .rg-grid-thumb:hover, .page-content-dark .rg-list-view .rg-list-thumb:hover {-webkit-box-shadow: 3px 3px 0 #222;}
+.page-content-dark .rg-grid-view .rg-grid:hover {-webkit-box-shadow: 4px 4px 0 #222;}
+.page-content-dark .rg-grid-view .tag, .page-content-dark .rg-grid-view .tag, .page-content-dark .rg-detail-slicetag .tag, .page-content-dark .rg-detail-filetag .tag {-webkit-box-shadow: 2px 2px 0 #222;}
+.page-content-light .rg-detail-img-bg, .page-content-light .rg-grid-view .rg-grid-thumb, .page-content-light .rg-list-view .rg-list-thumb {-webkit-box-shadow: 3px 3px 0 #ddd;}
+.page-content-light .rg-grid-view .rg-grid-thumb:hover, .page-content-light .rg-list-view .rg-list-thumb:hover {-webkit-box-shadow: 3px 3px 0 #bbb;}
+.page-content-light .rg-grid-view .rg-grid:hover {-webkit-box-shadow: 4px 4px 0 #ddd;}
+.page-content-light .rg-grid-view .tag, .page-content-light .rg-list-view .tag, .page-content-light .rg-detail-slicetag .tag, .page-content-light .rg-detail-filetag .tag {-webkit-box-shadow: 2px 2px 0 #ddd;}
+.page-content-dark .module-content .rg-gm-slice {-webkit-box-shadow: 3px 3px 0 #222;}
+.page-content-light .module-content .rg-gm-slice {-webkit-box-shadow: 3px 3px 0 #ddd;}
+.primary-overlay-dark .roknewspager-li .roknewspager-h3, .primary-overlay-light .roknewspager-li .roknewspager-h3 {-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.2);}
+body #roksearch_results, .menutop .fusion-submenu-wrapper {-webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);}
+
+/* Transitions */
+a, .readon span, .readon .button {-webkit-transition: color 0.2s linear;}
+.menutop li.root, .rt-splitmenu .menutop li, .roknewspager .roknewspager-h3, .roknewspager .roknewspager-div, .readon, #rokajaxsearch .inputbox, .readon {-webkit-transition: background-color 0.2s linear;}
+body .roknewspager-next, body .roknewspager-prev {-webkit-transition: opacity 0.2s linear;}
+body .roknewspager-toggle-active, body .roknewspager-toggle, body ul.roknewspager-numbers li {-webkit-transition: opacity 0.2s linear;}
+.roktabs-wrapper .roktabs-links ul li span {-webkit-transition: color 0.2s ease-out;}
+.rg-grid-view .rg-grid .rg-grid-thumb-img {-webkit-transition: opacity 0.2s linear;}
+.rg-grid-view .rg-grid-thumb, .rg-list-view .rg-list-thumb {-webkit-transition: box-shadow 0.2s linear;}
+.menutop li.root, pre.lines, .typography-style-dark pre.lines {-webkit-transition: background-color 0.3s linear;}
+.component-content .rt-article-icons .icon {-webkit-transition: background-color 0.3s ease-out;}
+#form-login ul li a, #com-form-login ul li a, ul.rt-more-articles li a, .rt-section-list ul li a, ul.mostread li a, ul.latestnews li a, .weblinks ul li a, #rt-popuplogin ul li a,ul.newsfeed li a {-webkit-transition: background-position-x 0.2s linear;}
+
+/* Demo Presets */
+.menu-preset span {-webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.2);}
+body .menutop .type-module ol li .fusion-module {overflow: visible;}
+.menu-preset a span {-webkit-transition: all 0.3s ease-in-out;-webkit-animation-iteration-count: 1;position:relative;z-index:3000;-webkit-transform: scale(1); cursor:pointer;}
+.menu-preset a:hover span {-webkit-transition: all 0.3s ease-in-out;-webkit-animation-iteration-count: 1;position:relative;z-index:3000;-webkit-transform: scale(1.1); cursor:pointer;}
+
+/* Additional Fixes */
+input:-webkit-autofill {background-color: transparent !important;}
+.roktabs-wrapper .roktabs-links ul li span {-webkit-user-select: none;}
+
+/* load transition */
+#rt-transition.rt-hidden {opacity: 0;}
+#rt-transition.rt-visible {opacity: 1;-webkit-transition: opacity 0.4s ease-in;transition: opacity 0.4s ease-in;}

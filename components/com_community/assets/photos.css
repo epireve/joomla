@@ -1,0 +1,401 @@
+/* 
+   #cGallery
+   New photo gallery structure to accomodate phototags.
+   
+   z-index table
+   6100 - photoViewport
+   6200 - photoDisplay
+   6300 - photoTags
+   6400 - photoActions
+   6500 - photoLoad
+
+   During tagMode, photoTags & photoActions swap z-indexes,
+   while photoActions remain hidden.
+*/
+#cGallery {
+    padding: 0 0 20px 0;
+    }
+#cGallery .photoViewport {
+	position: relative;
+	z-index: 10;
+	margin: 10px 0;
+}
+
+#cGallery .photoDisplay {
+	position: relative;
+	z-index: 6200;
+}
+
+
+#cGallery .photoImage {
+	position: relative;
+	visibility: hidden;
+}
+
+#cGallery #like-container {margin: 7px 7px 0 0;}
+
+/* IE */
+#cGallery .photoViewport.tagMode .photoImage {
+	/* border: 1px dashed #222; */
+}
+
+#cGallery .photoTags {
+	position: absolute;
+	z-index: 6300;
+	margin-top: 1px;
+}
+
+#cGallery .photoViewport.tagMode .photoTags {
+	z-index: 6400; /* Swap place with .photoActions */
+
+	/* IE */
+	background: url('photos/blank.gif');
+}
+
+#cGallery .photoTag {
+	position: absolute;
+	z-index: 6600;
+	opacity: 0; filter: alpha(opacity=0);
+
+	border: 4px solid #FFF;	
+	border: 4px solid rgba(255,255,255,0.6);
+	
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+		
+	/* IE */
+	background: url('photos/blank.gif');
+}
+
+#cGallery .photoTag.show,
+#cGallery .photoTag.showForce,
+#cGallery .photoTag.showLabel {
+	z-index: 6610;
+	opacity: 1; filter: none;
+}
+
+#cGallery .photoTag.showLabel {
+	border: none;
+}
+
+#cGallery .photoTag.showLabel .photoTagBorder {
+	display: none;	
+}
+
+#cGallery .photoViewport.tagMode .photoTag {
+	opacity: 0; filter: alpha(opacity=0);
+}
+
+#cGallery .photoViewport.tagMode .photoTag.showForce {
+	z-index: 6630;
+	opacity: 1; filter: none;
+}
+
+#cGallery .photoTag.new {
+	z-index: 6620;
+	opacity: 1 !important; filter: none !important;
+	border: 4px solid #FFF !important;	
+	border: 4px solid rgba(255,255,255,0.6) !important;
+}
+
+#cGallery .photoTag.new:hover .photoTagBorder {
+	display: block !important;
+}
+
+#cGallery .photoTag.new .photoTagLabel {
+	display: none;
+}
+
+#cGallery .photoTag:hover .photoTagLabel,
+#cGallery .photoTagLabel {
+	position: absolute;
+	z-index: 6640;
+	bottom: -10px;
+	width: 100%;
+	text-align: center;
+}
+
+#cGallery .photoTagLabel span {
+	background: #222;
+	font-size: 12px;
+	padding: 3px 5px;
+	color: #fff;
+	display: inline-block;
+	border: 1px outset #222;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+
+#cGallery .photoTagActions {
+	position: absolute;
+	display: none;
+	border:1px dashed #fff;
+	width: 150px;
+	text-align: center;
+}
+
+#cGallery .photoTagAction {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin: 0;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	z-index: 6640;
+}
+
+#cGallery .photoTagAction._select {
+	position: absolute;
+
+	background: #222;
+	font-size: 12px;
+	color: white;	
+	padding: 3px 5px;
+	border: 1px outset #222;
+	margin-top: 5px;
+
+	white-space: nowrap;
+}
+
+#cGallery .photoTagAction._select:hover {
+	text-decoration: underline;
+}
+
+#cGallery .photoTagAction._cancel {
+	background: url(window/dialog/closebox-normal.png) no-repeat;
+	height: 30px;
+	width: 30px;
+	
+	position: absolute;
+	top: -15px;
+	right: -15px;
+
+	text-indent: -9999px;
+}
+
+#cGallery .photoTagAction._cancel::-moz-focus-inner {
+	border: none;
+}
+
+#cGallery .photoActions {
+	position: absolute;
+	z-index: 6400;
+}
+
+#cGallery .photoViewport.tagMode .photoActions {
+	z-index: 6300; /* Swap place with .photoTags */
+	display: none;
+}
+
+#cGallery .photoAction {
+	background-image: url(photos/arrow.gif);
+	background-color: transparent;
+	background-repeat: no-repeat;
+
+	height: 60px;
+	padding: 0 5px;
+	position: absolute;
+	cursor: pointer;
+	
+	opacity: 0.5;
+	
+	position: absolute;
+	z-index: 6000;
+}
+
+#cGallery .photoAction:hover {
+	opacity: 1;
+}
+
+#cGallery .photoAction img {
+	background-image: url(photos/arrow.gif);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	padding: 5px;
+	height: 50px;
+	width: 50px;
+}
+
+#cGallery .photoAction._prev {
+	background-position: left 0px;
+	padding-left: 35px;
+	margin-left: 15px;
+}
+
+#cGallery .photoAction._prev img {
+	background-position: right -120px;
+}
+
+#cGallery .photoAction._next {
+	background-position: right -60px;
+	padding-right: 35px;
+	margin-right: 15px;
+}
+
+#cGallery .photoAction._next img {
+	background-position: left -180px;
+}
+
+#cGallery .photoLoad {
+	position: absolute;
+	background: url(wait.gif) no-repeat center transparent;
+	width: 43px;
+	height: 11px;
+	z-index: 6500;
+}
+
+
+
+/*
+	photoCaption
+ */
+#cGallery .photoCaption {
+	margin: 10px 0;	
+}
+#cGallery .photoCaptionText {
+	position: relative;
+	padding: 0;
+	height: auto;
+	border: none;
+}
+#cGallery .photoCaptionText.editable {
+	background: url('pencil.png') no-repeat center left;
+	padding-left: 15px;
+}
+#cGallery .photoCaptionText.editable:hover {
+	text-decoration: underline;
+}
+#cGallery .photoCaptionText.editing {
+	border: 1px inset #CCCCCC;
+	padding: 2px;
+	text-decoration: none;
+	padding-left: 15px;
+}
+#cGallery .photoCaptionText.editing:hover {
+	text-decoration: none;
+}
+#cGallery div.photoCaptionAction {
+    display:inline-block;
+    height:30px;
+    margin-left:10px;
+    margin-top:-6px;
+    position:relative;
+    width:30px;
+}
+#cGallery .photoCaptionInput {
+	display: none;
+}
+
+#cGallery .photoCaptionAction._save,
+#cGallery .photoCaptionAction._cancel {
+	display: none;
+}
+
+#cGallery .photoCaption.editMode {}
+
+#cGallery .photoCaption.editMode .photoCaptionText {
+	display: none;
+}
+
+#cGallery .photoCaption.editMode .photoCaptionInput {
+	display: inline;
+}
+
+#cGallery .photoCaption.editMode .photoCaptionAction._edit {
+	display: none;
+}
+
+#cGallery .photoCaption.editMode .photoCaptionAction._save,
+#cGallery .photoCaption.editMode .photoCaptionAction._cancel {
+	display: inline;
+}
+
+#cGallery .photoTagFriendsAction {
+	display: none;
+}
+
+#cGallery .photoTagInstructions {
+	background: #FFFFCC;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 30px 0 10px;
+	position: relative;
+	font-size: 12px;
+	border: 1px solid #E5E5E5;
+	display: none;
+	margin-top: 10px;
+}
+
+#cGallery .photoTagInstructionsAction {
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	height: 26px;
+	line-height: 11px;
+	font-size: 11px;
+	margin: 0;
+}
+
+#cGallery .photoTextTagAction {
+	text-transform: lowercase;
+}
+
+
+#cGallery .photoTagSelectFriend {
+	display: none;
+}
+
+#cGallery .uploadedBy {
+	float: right;	
+}
+
+#cGallery .image_thumb:hover {
+	cursor:pointer;
+	cursor:hand;
+}
+
+#cWindow .photoTagFriend.hide,
+#cWindow .photoTagFriend.tagged {
+	display: none;
+}
+
+#cWindow .photoTagFriendFilters {
+	margin-bottom: 8px;
+}
+
+#cWindow .photoTagFriendFilter {
+	width: 98%;
+}
+
+#cWindow .photoTagFriends {
+	height: 185px;
+	overflow-y: auto;
+}
+#cWindow .photoTagFriend {
+	cursor: pointer;	
+}
+#cWindow .photoTagFriend:hover span {
+	text-decoration: underline;
+}
+
+/* Stop RocketTheme's input styling feature from replacing
+   our radio buttons on "Select A Person" cWindow with theirs! */
+
+#cWindow .photoTagFriend.rokradios {
+	background: none !important;
+	line-height: auto !important;
+	padding: 0 !important;
+}
+#cWindow .photoTagFriend.rokradios input {
+	display: inline !important;
+	position: relative !important;
+	left: 0 !important;
+}
+
+.photo_slider {background-color:black;position:relative;width:100%;overflow:hidden;}

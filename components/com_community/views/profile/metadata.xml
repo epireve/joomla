@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Profile">
+		<message>
+			<![CDATA[
+				Profile view
+			]]>
+		</message>
+		<options var="task">
+ 			<default name="Profile" msg="User's current profile" />
+			<option value="uploadAvatar" name="- Modify Profile Picture" msg="Allows user to modify their profile picture" />
+			<option value="linkVideo" name="- Modify Profile Video" msg="Allows user to modify their profile video" />
+			<option value="edit" name="- Edit Profile" msg="Allows user to modify their profile" />
+			<option value="editDetails" name="- Edit Details" msg="Allows user to modify their account information" />
+			<option value="privacy" name="- Edit Privacy" msg="Allows user to modify their account privacy details" />
+			<option value="preferences" name="- Edit Preferences" msg="Allows user to modify their account preferences" />
+			<option value="editPage" name="- Edit My Page" msg="Allows user to reorganize and maange applications for their profile" />
+ 		</options>
+	</view>
+	<state>
+		<name>Profile Layout</name>
+		<description>Users own profile layout</description>
+	</state>
+</metadata>

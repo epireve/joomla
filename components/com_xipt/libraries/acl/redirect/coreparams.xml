@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params addpath="/administrator/components/com_xipt/elements" >
+		<param name="core_profiletype" type="profiletypes" addnone="true" addall="true" default="" label="COM_XIPT_PROFILETYPE_TO_APPLY_LABLE" description="COM_XIPT_PROFILETYPE_TO_APPLY_DESC" />
+		<param name="core_display_message" type="editor" size="50" default="YOU_ARE_NOT_ALLOWED_TO_ACCESS_THIS_RESOURCE" label="COM_XIPT_DISPLAY_MESSAGE_WHEN_VIOLATING_RULE_LABLE" description="COM_XIPT_DISPLAY_MESSAGE_WHEN_VIOLATING_RULE_DESC" />
+		<param name="core_redirect_url" type="text" size="50" default="index.php?option=com_community" label="COM_XIPT_REDIRECT_URL_WHEN_VIOLATING_RULE_LABLE" description="COM_XIPT_REDIRECT_URL_WHEN_VIOLATING_RULE_DESC" />
+	</params>
+</config>

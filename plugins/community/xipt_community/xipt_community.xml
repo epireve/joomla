@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<install version="1.6" type="plugin" group="community" method="upgrade">
+  <name>JSPT Community Plugin</name>
+  <version>3.3.745</version>
+  <creationDate>Nov 2009</creationDate>
+  <author>Team Joomlaxi</author>
+  <authorEmail>shyam@joomlaxi.com</authorEmail>
+  <authorUrl>http://www.joomlaxi.com/</authorUrl>
+  <copyright>@Joomlaxi</copyright>
+  <license>GNU GPL v2.0</license>
+  <description>JSPT Community Plugin</description>
+  <files>  	
+	<filename plugin="xipt_community">xipt_community.php</filename>
+  </files>
+</install>

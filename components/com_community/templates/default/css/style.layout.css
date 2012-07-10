@@ -1,0 +1,637 @@
+/**
+* @package JomSocial
+* @subpackage Template
+* @copyright (C) 2011 by Slashes & Dots Sdn Bhd - All rights reserved!
+* @license GNU/GPL, see LICENSE.php
+*
+*
+* style.layout.css - Contains layout-styles (global)
+*/
+
+/**
+* COMMUNITY :#community-wrap
+* main ID that hold core JomSocial all togather
+* this class is reusable across the JomSocial application
+*/
+
+/* display:inline-block + width:100% was
+used to cope with uncleared floats that
+often is present in various Joomla! templates.
+
+Without it,contents within #community-wrap
+may get pulled down to the line where the
+uncleared float element ends.
+
+The css property combination above inherits
+the width of the parent container IRRESPECTIVE
+of the padding value of the parent container.
+
+Therefore,if you are experiencing issues where
+#community-wrap appears wider than the width
+provided by its parent container,you may either:- Add margin-left & margin-right
+with the value taken from the
+padding value of the parent container.
+
+- Replace display:inline-block;with display:block;(If you are certain uncleared floats won't appear)
+
+- Set a fixed width (Usually parent width - parent padding)
+*/
+#community-wrap {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	min-height: 450px;
+	min-width: 650px;
+	margin: 0 0 30px;
+	position: relative;
+}
+
+/* q-tip */
+body .qtip a,
+body .qtip a:link,
+body .qtip a:visited,
+body .qtip a:hover,
+body .qtip a:active {
+	color: #F3F3F3 !important;
+	text-decoration: none;
+	background: none;
+}
+#community-wrap .cFormTips {
+	font-style: italic;
+	text-align: center;
+	font-size: 11px;
+	padding: 3px;
+	color: #999;
+}
+
+
+#community-wrap iframe,
+#community-wrap iframe * {
+	position: relative;
+	z-index: 1
+}
+.cHidden {display: none;}
+.jsAbs {
+	position: absolute
+}
+.jsRel {
+	position: relative
+}
+.jsFull {
+	width: 100% !important
+}
+.jsLft {
+	float: left
+}
+.jsRgt {
+	float: right
+}
+.jsFlNo {
+	float: none
+}
+.jsLft,
+.jsRgt,
+.jsDisIn {
+	display: inline-block
+}
+.jsDisBl {
+	display: block
+}
+.jsReset {
+	padding: 0;
+	margin: 0
+}
+
+#community-wrap a,
+#community-wrap a:link,
+#community-wrap a:visited {
+	text-decoration: none;
+}
+
+#community-wrap .cMeta {
+	color: #999;
+}
+
+/**
+* COMMUNITY :.cLayout
+* .cMain :Fluid width for main section
+* .cSidebar :Fixed width for sidebar
+* this class is reusable across the JomSocial.com application
+*/
+body #community-wrap .cLayout {
+	position: relative;
+	width: 100%;
+}
+body #community-wrap .cMain {
+	margin-right: 235px;
+}
+body #community-wrap .cSidebar {
+	width: 220px;
+	float: right;
+}
+body #community-wrap .cRow {
+	margin: 0 0 30px;
+}
+body #community-wrap .cSidebar-SmallText {
+	line-height: 1.3;
+	word-wrap:break-word;
+	color: #999;
+}
+
+
+/**
+* COMMUNITY :CONTENT TITLE
+* this class is reusable across the JomSocial application
+*/
+body #community-wrap div.ctitle {
+	font-weight: 700;;
+	border-bottom: 2px solid #eee;
+	margin-bottom: 8px;
+}
+body #community-wrap div.ctitle h2 {
+	font-size: 16px;
+	padding: 3px 0;
+}
+
+
+/**
+* COMMUNITY :.cModule
+* this class is reusable across the JomSocial application
+*/
+#community-wrap .cModule {
+	border: 1px solid #ddd;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin: 0 0 15px;
+	padding: 5px;
+}
+#community-wrap .cModule h3 {
+	border-bottom: 1px solid #ddd;
+	color: #4E6221;
+	font-size: 100% !important;
+	text-shadow: none;
+	margin: 0 0 3px;
+	padding: 3px 0;
+	font-weight: bold !important;
+}
+#community-wrap .cModule h3 + .app-box-content {
+	margin-top: 2px;
+}
+#community-wrap .cModule h4 {
+	border-bottom: 1px dotted #ccc;
+	color: #333;
+	font-size: 90%;
+	font-weight: 700;
+	margin: 0;
+	padding: 0 0 5px;
+}
+#community-wrap .cModule fieldset {
+	background: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+/* for empty contents */
+#community-wrap .cModule .empty {
+	color: #888;
+	padding: 10px;
+	text-align: center;
+	font-size: .9em;
+}
+
+#community-wrap .cModule input[type=text],
+#community-wrap .cModule input[type=password],
+#community-wrap .cModule textarea {
+	padding: 4px;
+	width: 198px;
+	
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/*
+* COMMUNITY :SYSTEM MESSAGE
+* this class is reusable across the JomSocial application
+*/
+body #community-wrap div.info,
+body #community-wrap div.error,
+body #community-wrap div.warning {
+	font-weight: 700;
+	margin: 0 0 10px;
+	padding: 10px
+}
+body #community-wrap div.error {
+	color: #C00;
+	background: #E6C0C0;
+	border-bottom: 3px solid #DE7A7B;
+	border-top: 3px solid #DE7A7B
+}
+body #community-wrap div.info {
+	background: #C3D2E5;
+	color: #05B;
+	background-color: #C3D2E5;
+	border-bottom: 3px solid #84A7DB;
+	border-top: 3px solid #84A7DB
+}
+body #community-wrap div.warning {
+	color: #C00;
+	background: #EFE7B8;
+	border-bottom: 3px solid #F0DC7E;
+	border-top: 3px solid #F0DC7E
+}
+body #community-wrap div.info a.friend {
+	background: url(../images/action/icon-user-add.png) no-repeat scroll 0 0 transparent;
+	font-weight: 700;
+	padding: 2px 0 2px 22px
+}
+#community-wrap .com-invitation-msg {
+	background: url(../images/action/icon-invite-32.png) 10px 7px no-repeat #FDFCDC;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+	padding: 5px 5px 5px 60px
+}
+#community-wrap .com-invite-info {
+	padding-bottom: 5px
+}
+
+/*
+* COMMUNITY : .small / small
+* intended to define this classes once
+* this class is reusable across the JomSocial application
+*/
+body #community-wrap .small,
+body #community-wrap small {
+	font-size: 90%! important
+}
+body #community-wrap .small {
+	margin: 0;
+}
+
+
+/**
+* COMMUNITY :THUMBNAIL LISTING STYLE
+*
+* use in:* New members (Frontpage)
+* Who's Online (Frontpage)
+* New Photos (Frontpage)
+* Latest Groups (Frontpage)
+* Friend list (Profile)
+* Members (Groups)
+* Guest (Event)
+*/
+#community-wrap .cThumbList {
+	margin: 0px -2px;
+}
+#community-wrap .cThumbList li {
+	float: left;
+	display: inline-block;
+	padding: 2px 1px 1px 2px;
+}
+#community-wrap .cThumbList li a {
+	display: block;
+}
+
+
+/**
+* ----------------------------------------------------------------------------------------------------------
+* .cAvatar class groups
+* This is the new (2.4) class to control the size of any avatar directly from the CSS (as opposed to the hard-coded ones previously)
+* @since 2.4.0
+* ----------------------------------------------------------------------------------------------------------
+*/
+/* Avatar sizes. Default = 42px; Small = 32px; Large = 64px */
+#community-wrap .cAvatar,
+#community-wrap .cAvatar img {
+	width: 42px;
+	height: auto;
+}
+#community-wrap .cAvatar-Small,
+#community-wrap .cAvatar-Small img {
+	width: 32px;
+	height: auto;
+}
+#community-wrap .cAvatar-Large,
+#community-wrap .cAvatar-Large img {
+	width: 64px;
+	height: auto;
+}
+#community-wrap .cAvatar-sidebar,
+#community-wrap .cAvatar-sidebar img {
+	width: 50px;
+	height: auto;
+}
+
+/* get rid of possible hover bug */
+#community-wrap .cAvatar a {
+	float: left;
+	display: block;
+}
+
+/*
+* COMMUNITY : ADD REMOVE BUTTON
+* this class is reusable across the JomSocial application
+*/
+body #community-wrap a.remove,
+body #community-wrap a.block {
+	background: transparent url(../images/remove-button.gif) no-repeat 0 0;
+	display: block;
+	float: right;
+	height: 12px;
+	outline-style: none;
+	text-indent: -9999px;
+	width: 12px
+}
+body #community-wrap a.remove {
+	background: transparent url(../images/icons/delete.png) no-repeat 0 0;
+	height: 16px;
+	width: 16px;
+}
+body #community-wrap a.add {
+	background: transparent url(../images/add-button.gif) no-repeat 0 0;
+	display: inline-block;
+	height: 16px;
+	line-height: 16px;
+	outline-style: none;
+	padding: 0 0 0 20px
+}
+body #community-wrap a.add:hover {
+	background: transparent url(../images/add-button.gif) no-repeat 0 -16px
+}
+
+
+
+/*
+* COMMUNITY : AUTOCOMPLETE CUSTOM STYLE
+*/
+
+body div.cInbox-ACResult,
+.ac_results li {
+	text-decoration: none !important;
+	line-height: 32px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+body div.cInbox-ACResult img {
+	width: 32px;
+	height: auto;
+	display: block;
+	float: left;
+	margin-right: 4px;
+}
+body .ac_results {
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+	color: #666;
+}
+
+body .ac_results strong {
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+body .ac_over {
+	background-color: #404040;
+	color: #eee;
+	text-shadow: -1px -1px 0px rgba(0,0,0,0.5);
+}
+
+#community-wrap .cAutoComplete-Wrap {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 2px;
+	margin-right: 6px;
+}
+#community-wrap .cAutoComplete-Item {
+	float: left;
+	margin: 2px;
+	padding: 4px 12px 4px 4px;
+	position: relative;
+	border: 1px solid #ddd;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background: url("../images/cButtonbg.png") repeat-x scroll 0 100% #F9F9F9;
+	text-shadow: 1px 1px 0px #fff;
+}
+#community-wrap .cAutoComplete-Input {
+	margin: 2px;
+	float: left;
+}
+#community-wrap .cAutoComplete-Input input {
+	padding: 4px;
+	line-height: 24px;
+	height: 24px;
+	display: block;
+	background-color: #fff;
+}
+#community-wrap .cAutoComplete-Input input:focus {
+	background-color: #fffeef;
+}
+
+#community-wrap .cAutoComplete-Avatar img {
+	width: 24px; height: auto; display: block;
+}
+#community-wrap .cAutoComplete-Avatar {
+	float: left;
+	margin-right: 6px;
+}
+#community-wrap .cAutoComplete-Name {
+	float: left;
+	line-height: 24px;
+}
+#community-wrap .cAutoComplete-Delete {
+	position: absolute;
+	right: 2px;
+	top: -2px;
+	color: #aaa;
+	font-size: 11px;
+}
+#community-wrap .cAutoComplete-Delete:hover,
+#community-wrap .cAutoComplete-Delete:focus,
+#community-wrap .cAutoComplete-Delete:active {
+	color: #f00;
+	background-color: transparent;
+}
+#community-wrap .cAutoComplete-Input input {
+	padding: 4px;
+	width: 180px;
+	border: 0px none !important;
+}
+
+
+
+
+/*
+ * COMMUNITY: cNotice - Global noticebox style
+ */
+#community-wrap .cNotice {
+	background-color: #f1f1f1;
+	text-align: center;
+	padding: 15px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+#community-wrap .cNotice-Notice {
+	margin-bottom: 10px;
+}
+
+#community-wrap .cNotice-Actions {
+	width: 230px;
+	margin: 0px auto;
+	position: relative;
+}
+
+#community-wrap .cNotice-Actions .loading-icon {
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+
+#community-wrap .cNotice-Footer {
+	margin-top: 8px;
+}
+
+#community-wrap .cNotice-App {
+	margin: 0 0 10px 0;
+}
+
+
+/*
+ * COMMUNITY: cButton - Global button style
+ * cButton-Colored = will match current theme style (same with the toolbar style)
+ */
+#community-wrap button.cButton,
+#community-wrap input.cButton {
+	display: block;
+	min-width: 150px;
+	background: #f9f9f9 url('../images/cButtonbg.png') repeat-x 0 100%;
+	padding: 5px 10px;
+	text-align: center;
+	font: 700 13px/18px Arial, Helvetica, Sans-serif;
+	border: 1px solid #999;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+	color: #333;
+	text-shadow: 1px 1px 0px #fff;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#community-wrap button.cButton:hover,
+#community-wrap input.cButton:hover {
+	border-color: #555;
+	background: #f9f9f9 url('../images/cButtonbg.png') repeat-x 0 100% !important;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+	color: #000 !important;
+}
+
+/* This class must be used together with cButton */
+#community-wrap button.cButton-Colored,
+#community-wrap input.cButton-Colored {
+	background: #7C9D35 url('../images/cButtonbg-c.png') repeat-x 0 100%;
+	color: #fff;
+	text-shadow: -1px -1px 0px rgba(0,0,0,0.2);
+	border-color: #647F29;
+}
+
+.cButtonToolbar a.cToolbarBtn-Colored:hover,
+#community-wrap button.cButton-Colored:hover,
+#community-wrap input.cButton-Colored:hover {
+	border-color: #7C9D35 !important;
+	background: #445917 !important;
+	color: #fff !important;
+}
+
+#community-groups-wrap .cButton {
+	width: 170px;
+}
+
+#community-wrap .cButton-Center {
+	margin: 0px auto;
+}
+
+
+
+
+/* .cCategories (used in <ul>)
+ * Global sidebar-located categories list
+ * Meant to be used in a cModule container
+ * Works across all JomSocial application
+ * @since 2.4.0
+ */
+#community-wrap .cCategories {}
+#community-wrap .cCategories li a {
+	display: block;
+	padding: 4px;
+	position: relative;
+}
+#community-wrap .cCategories li + li {
+
+}
+#community-wrap .cCategories .cCount {
+	font-size: 11px;
+	margin-left: 4px;
+	padding: 1px 3px 0;
+	line-height: 1;
+	font-weight: bold;
+	background-color: #999;
+	color: #fff;
+	
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+
+/* cForms (used in <ol>)
+ * Global JomSocial forms layout class
+ * HTML structure example:
+    <ul class="cResetList cForms cForms-3col">
+		<li>
+			<label>Label</label>
+			<div class="cForms-Field">
+				** fields, text, images, etc. This container can contain almost everything
+				<div class="clr"></div>
+			</div>
+			<div class="clr"></div>
+		</li>
+	</ul>
+	
+ * Useable across all JomSocial application
+ * @since 2.4.0
+ */
+
+#community-wrap .cForms {
+	margin: 10px 0;
+}
+#community-wrap .cForms li {
+	position: relative;
+	min-height: 24px;
+}
+#community-wrap .cForms li + li {
+	margin-top: 8px;
+}
+#community-wrap .cForms label {
+	width: 137px;
+	font-weight: 700;
+	text-align: right;
+	display: block;
+	line-height: 24px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#community-wrap .cForms .cForms-Field {
+	margin: 0 0 0 145px;
+}
+
+#cWindowContent .textarea-wrap textarea {width:100%;}

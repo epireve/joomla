@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: metadata.xml 8178 2009-11-17 02:00:47Z Team JoomlaXi $ -->
+<metadata>
+		<layout 
+			title="COM_XIPT_DEFAULT_LAYOUT"
+			option="com_xipt"
+			>
+		<message>
+			<![CDATA[COM_XIPT_DEFAULT_LAYOUT_DESC]]>
+		</message>
+	</layout>
+<!-- For Joomla 1.5 -->
+	<state>
+		<name>Default Layout</name>
+		<description>Through this link you will be able to redirect user to registration page withot going on Profile Type selection page.</description>
+		<url addpath="/components/com_xipt/elements">
+		<param name="ptypeid" type="profiletypes" addnone="true" default="-1" label="PROFILETYPE" description="PROFILETYPE.DESC" />
+		<param name="reset" type="radio" default="false">
+			<option value="true"><![CDATA[COM_XIPT_TRUE]]></option>
+			<option value="false"><![CDATA[COM_XIPT_FALSE]]></option>
+		</param>
+		</url>
+	</state>
+
+<!-- for joomla 1.6-->
+
+<!-- Add fields to the parameters object for the layout. -->
+	<fields name="request" >
+<!-- Basic options. -->
+		<fieldset name="request" 
+				  addfieldpath="/components/com_xipt/form"
+				  label="Basic Parameters">
+			<field name="ptypeid" 
+				  type="profiletypes"
+				  default="-1" 
+				  label="COM_XIPT_SELECT_DEFAULT_PROFILE_TYPE" 
+				  description="COM_XIPT_PROFILETYPE.DESC"	
+				/>
+			<field name="reset"  
+				   type="radio" 
+				   default="false"
+				   label="COM_XIPT_RESET"
+				   description="COM_XIPT_RESET.DES">
+			
+				<option value="true"><![CDATA[COM_XIPT_TRUE]]></option>
+				<option value="false"><![CDATA[COM_XIPT_FALSE]]></option>
+			</field>
+		</fieldset>		
+	</fields>
+
+</metadata>

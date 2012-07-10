@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<params addpath="/components/com_xipt/elements">
+	<param name="createvent_limit" type="text" default="" label="COM_XIPT_TOTAL_EVENT_CREATE_LIMIT_LABEL" description="COM_XIPT_NO_OF_TOTAL_EVENT_CREATE_MAXIMUM_LIMIT_DESC" />
+	<param name="event_category" type="eventcategory" addall="true" default="" label="COM_XIPT_EVENT_CATEGARIES_LABEL" description="COM_XIPT_EVENT_CATEGORY_TO_APPLY_DESC" />
+</params>
+</config>

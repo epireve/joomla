@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="user" method="upgrade">
+	<name>User - Jomsocial User</name>
+	<author>JomSocial</author>
+	<creationDate>March 2011</creationDate>
+	<copyright>Copyright 2008 - 2010 by Slashes &amp; Dots Sdn Bhd. All rights reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@jomsocial.com</authorEmail>
+	<authorUrl>http://www.jomsocial.com</authorUrl>
+	<version>2.4.1</version>
+	<description>JomSocial user login plugin. This plugin is responsible to create or destroy the cookies correctly.</description>
+	<files>
+		<filename plugin="jomsocialuser">jomsocialuser.php</filename>
+	</files>
+	<params>
+		<param name="delete_jommla_contact" type="list" default="0" label="Delete Joomla User's Contact Details" description="If you enable this option, the Joomla contact details for the particular user which you wish to delete will also be removed.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="delete_jommla_contact" type="list" default="0" label="Delete Joomla User's Contact Details" description="If you enable this option, the Joomla contact details for the particular user which you wish to delete will also be removed.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Frontpage">
+		<message>
+			<![CDATA[
+				Jom Social Front page view
+			]]>
+		</message>
+		<options var="task">
+ 			<default name="Home" msg="Jomsocial frontpage" />
+ 		</options>
+	</view>
+	<state>
+		<name>JomSocial Frontpage</name>
+		<description>Frontpage for JomSocial</description>
+	</state>
+</metadata>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<install version="1.6" type="plugin" group="system" method="upgrade">
+  <name>JSPT System Plugin</name>
+  <version>3.3.745</version>
+  <creationDate>Oct 2009</creationDate>
+  <author>Team Joomlaxi</author>
+  <authorEmail>shyam@joomlaxi.com</authorEmail>
+  <authorUrl>http://www.joomlaxi.com/</authorUrl>
+  <copyright>@Joomlaxi</copyright>
+  <license>GNU GPL v2.0</license>
+  <description>JSPT System Plugin</description>
+  <files>  	
+	<filename plugin="xipt_system">xipt_system.php</filename>
+  </files>
+</install>

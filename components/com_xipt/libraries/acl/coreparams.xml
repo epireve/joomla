@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params addpath="/components/com_xipt/elements" >
+		<param name="core_profiletype" type="profiletypes" addall="true" default="" label="COM_XIPT_PROFILETYPE_TO_APPLY_LABLE" description="COM_XIPT_PROFILETYPE_TO_APPLY_DESC" />
+		<param name="core_display_message" type="editor" size="50" default="COM_XIPT_YOU ARE NOT ALLOWED TO ACCESS THIS RESOURCE" label="COM_XIPT_DISPLAY_MESSAGE_WHEN_VIOLATING_RULE_LABLE" description="COM_XIPT_DISPLAY_MESSAGE_WHEN_VIOLATING_RULE_DESC" />
+		
+		<param name="force_to_redirect" type="xiradio" label="COM_XIPT_FORCE_TO_REDIRECT" default="0" description="COM_XIPT_FORCE_TO_REDIRECT_URL_WHEN_VIOLATING_RULE_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>	
+		</param>
+		
+		<param name="core_redirect_url" type="text" size="50" default="index.php?option=com_community" label="COM_XIPT_REDIRECT_URL_WHEN_VIOLATING_RULE_LABLE" description="COM_XIPT_REDIRECT_URL_WHEN_VIOLATING_RULE_DESC" />
+	</params>
+</config>

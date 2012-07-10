@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <subfields name="roknavmenu-themes">
+        <fieldset name="gantry-splitmenu">
+            <field name="roknavmenu_splitmenu_enable_current_id" type="radio" default="0" label="Enable Active ID"
+                   description="Joomla's default menu uses an Active ID that can cause CSS invalidation.  It is not used by the splitmenu.">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </field>
+        </fieldset>
+    </subfields>
+</form>

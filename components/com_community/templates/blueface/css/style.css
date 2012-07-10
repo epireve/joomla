@@ -1,0 +1,215 @@
+/* Import default template CSS as base */
+@import url("../../default/css/style.css");
+
+/* Global color theme change */
+
+/* cModule */
+#community-wrap .cModule {
+	padding: 0px;
+	border: 0px none;
+}
+
+#community-wrap .cModule h3,
+#community-wrap .app-box-header {
+	background: #eceff5;
+	border: 0px none;
+	border-top: 1px solid #94a3c4;
+	padding: 0px 8px;
+	line-height: 25px;
+	height: 25px;
+	color: #095197;
+}
+
+/* apps header */
+#community-wrap .app-box-header .app-box-header {
+	background: transparent;
+	margin: 0 !important;
+	padding: 0;
+	border: 0px none !important;
+}
+
+#community-wrap .app-box-title {
+	color: #095197;
+	line-height: 25px;
+	padding: 0 !important;
+	font-size: 11px;
+}
+
+#community-wrap .app-box-menus {
+	margin: 4px !important;
+}
+
+#community-wrap .app-box-menu-icon, #community-wrap .app-box-menu-icon:focus, #community-wrap .app-box-menu-icon:hover {
+	background-image: url("../images/app-box-menu-icon.png");
+}
+
+#community-wrap .cThumbList li {
+	padding: 3px 2px 3px 4px;
+}
+
+/* Main Toolbar color */
+#community-wrap #jsMenu, #jsMenu {
+	background: #eceff5 url(../images/bar-bg.png) repeat-x 0 100%;
+}
+
+#community-wrap #jsMenu .jsHome,
+#jsMenu .jsHome {
+	background: transparent url(../images/home.png) no-repeat 3px 3px !important;
+}
+
+#community-wrap #jsMenu .jsGlobalsNot,
+#jsMenu .jsGlobalsNot {
+    background: transparent url(../images/noti.png) no-repeat 3px 3px !important;
+}
+
+#community-wrap #jsMenu .jsFriendsNot,
+#jsMenu .jsFriendsNot {
+    background: transparent url(../images/friend.png) no-repeat 2px 0 !important;
+}
+
+#community-wrap #jsMenu .jsMesaggeNot,
+#jsMenu .jsMesaggeNot {
+    background: transparent url(../images/mail.png) no-repeat 3px 3px !important;
+}
+
+#community-wrap #jsMenu .jsLogOff a,
+#jsMenu .jsLogOff a {
+    background: transparent url(../images/power.png) no-repeat 2px 1px !important;
+}
+
+#jsMenu .jsMenuBar li ul {
+	border: 1px solid #637193;
+	border-top: 0px none;
+}
+
+#jsMenu .jsMenuBar li a.active,
+#jsMenu .jsMenuBar li a:focus,
+#jsMenu .jsMenuBar li:hover a:hover,
+#jsMenu .jsMenuBar li ul a:hover,
+#jsMenu .jsMenuBar li ul a:focus {
+	background: #637193;
+}
+#jsMenu .jsMenuBar li li {
+	border-top: 1px solid #637193;
+}
+#jsMenu .jsMenuBar li:hover a {
+	background: #94a3c4;
+}
+#jsMenu .jsIr.isActive {
+	background-color: #637193;
+}
+
+
+
+/* Global Tabs */
+#community-wrap .cTabsBar {
+	border-bottom-color: #94a3c4;
+}
+#community-wrap .cTabsBar ul li a {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border-color: #d3dae8;
+	background-color: #eceff5;
+}
+#community-wrap .cTabsBar ul li:hover a,
+#community-wrap .cTabsBar ul li a:hover {
+	border-color: #94a3c4 !important;
+	background-color: #eceff5 !important;
+}
+
+#community-wrap .cTabsBar ul li.cTabCurrent a {
+	background-color: #fff !important;
+	border-color: #94a3c4 !important;
+	border-bottom-color: #fff !important;
+}
+
+
+/* Profile */
+#community-wrap .profile-avatar {
+	margin: 0px auto 10px;
+	width: 160px;
+	padding: 5px;
+	float: none;
+	background-color: #eceff5;
+	border: 1px solid #d3dae8;
+}
+#community-wrap .profile-avatar a {
+	display: block;
+}
+#community-wrap .profile-avatar img {
+	border: none;
+}
+
+#community-wrap .cBlueface .cProfile-About {
+	width: 34%;
+	float: left;
+}
+
+#community-wrap .cBlueface .cProfile-About + .cProfile-About {
+	width: 33%;
+}
+#community-wrap .cBlueface .cProfile-About h4 {
+	border-bottom: 1px solid #666;
+	margin: 10px;
+}
+
+#community-wrap .cBlueface .cProfile-About dl {
+	margin: 10px;
+}
+
+#community-wrap .cBlueface-table {
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+#community-wrap .cBlueface-table td {
+	border: 1px solid #ccc !important;
+	padding: 10px;
+	background-color: #f6f6f6;
+}
+#community-wrap .cBlueface-table td .number {
+	font-size: 200%;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+#community-wrap .cBlueface-table td a {
+	display: block;
+	color: #095197;
+}
+
+#community-wrap .cBlueface-table td a:hover {
+	background-color: transparent !important;
+	color: #095197;
+}
+
+#community-wrap .cBlueface-table td:hover,
+#community-wrap .cBlueface-table td:hover a,
+#community-wrap .cBlueface-table td:hover a:hover {
+	background-color: #095197 !important;
+	color: #fff !important;
+}
+
+#community-wrap .profile-actions {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 10px 50px;
+}
+
+#community-wrap .profile-actions li {
+	display: inline-block;
+}
+
+
+#community-wrap .joms-latest-activities-container {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	background-color: #ECEFF5;
+	border-color: #94A3C4;
+}
+
+#community-wrap .cModule.searchbox .input_wrap .search_button,
+#community-wrap .cModule.searchbox .input_wrap {
+    background-image: url("../../default/images/searchbox-blue.png");
+}

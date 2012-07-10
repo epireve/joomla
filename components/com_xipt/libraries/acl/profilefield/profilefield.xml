@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params addpath="/components/com_xipt/elements" >
+        <param name="Xiprofiletypes" type="profilefields" default="" label="Profiletypes" description="" />
+        <param name="acl_applicable_to_friend" type="xiradio" size="50" default="0" label="COM_XIPT_APPLICABLE_TO_FRIEND_LABEL" description="COM_XIPT_APPLICABLE_TO_FRIEND_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	 	<param name="acl_applicable_to_self" type="xiradio" size="50" default="0" label="COM_XIPT_APPLICABLE_TO_SELF_LABEL" description="COM_XIPT_APPLICABLE_TO_SELF_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</config>

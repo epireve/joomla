@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site">
+	<name>RokNavMenu</name>
+	<author>RocketTheme, LLC</author>
+	<creationDate>August 1, 2011</creationDate>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2011 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>1.6</version>
+	<description>RocketTheme Customizable Navigation Menu</description>
+
+    <scriptfile>install.script.php</scriptfile>
+	<files>
+		<filename module="mod_roknavmenu">mod_roknavmenu.php</filename>
+		<filename>index.html</filename>
+        <filename>install.script.php</filename>
+		<folder>themes</folder>
+		<folder>lib</folder>
+        <folder>fields</folder>
+	</files>
+    <plugins>
+        <plugin>/lib/RokNavMenuEvents.php</plugin>
+    </plugins>
+	<languages>
+		<language tag="en-GB">en-GB.mod_roknavmenu.ini</language>
+	</languages>
+    <config>
+		<fields name="params">
+			<fieldset name="basic"
+                    addfieldpath="/modules/mod_roknavmenu/fields">
+				<field
+					name="menutype"
+					type="menu"
+					label="MOD_MENU_FIELD_MENUTYPE_LABEL"
+					description="MOD_MENU_FIELD_MENUTYPE_DESC" />
+                <field name="filteringspacer1" type="spacer" hr="true" />
+                <field name="limit_levels" type="list" default="0" label="ROKNAVMENU.LABEL.LIMIT_LEVELS" description="DESC.LIMIT_LEVELS">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+				<field
+					name="startLevel"
+					type="list"
+					default="0"
+					label="MOD_MENU_FIELD_STARTLEVEL_LABEL"
+					description="MOD_MENU_FIELD_STARTLEVEL_DESC"
+				>
+                    <option value="0">0</option>
+					<option value="1">J1</option>
+					<option value="2">J2</option>
+					<option value="3">J3</option>
+					<option value="4">J4</option>
+					<option value="5">J5</option>
+					<option value="6">J6</option>
+					<option value="7">J7</option>
+					<option value="8">J8</option>
+					<option value="9">J9</option>
+					<option value="10">J10</option>
+				</field>
+
+				<field
+					name="endLevel"
+					type="list"
+					default="0"
+					label="MOD_MENU_FIELD_ENDLEVEL_LABEL"
+					description="MOD_MENU_FIELD_ENDLEVEL_DESC"
+					>
+					<option value="0">0</option>
+					<option value="1">J1</option>
+					<option value="2">J2</option>
+					<option value="3">J3</option>
+					<option value="4">J4</option>
+					<option value="5">J5</option>
+					<option value="6">J6</option>
+					<option value="7">J7</option>
+					<option value="8">J8</option>
+					<option value="9">J9</option>
+					<option value="10">J10</option>
+				</field>
+
+				<field
+					name="showAllChildren"
+					type="radio"
+					default="0"
+					label="MOD_MENU_FIELD_ALLCHILDREN_LABEL"
+					description="MOD_MENU_FIELD_ALLCHILDREN_DESC">
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+                <field name="filteringspacer1" type="spacer" hr="true" />
+                <field name="window_open" type="text" default="" label="Target Position" description="PARAMTARGETPOSITION" />
+                <field name="filteringspacer2" type="spacer" default="" label="" description="" />
+                <field name="theme" type="hidden" default="basic"/>
+                <!--<field name="theme" type="themelist" default="/modules/mod_roknavmenu/themes/basic" label="ROKNAVMENU.LABEL.THEME" description="ROKNAVMENU.DESC.THEME" filter="" exclude="" hide_none="true" hide_default="true"/>		-->
+                <!--<field name="theme_options" type="themeparameters" label="ROKNAVMENU.LABEL.THEME_OPTIONS" description="ROKNAVMENU.DESC.THEME_OPTIONS" filter="" exclude="index.html"/>-->
+                <!--<field name="template" type="templateinclude" label="ROKNAVMENU.LABEL.TEMPLATE_CONFIG" description="ROKNAVMENU.DESC.TEMPLATE_CONFIG"/>-->
+                <field name="custom_layout" type="hidden" default="default.php"/>
+                <field name="custom_formatter" type="hidden" default="default.php"/>
+
+                <field name="theme" type="themelist" label="Themes"/>
+                <field name="themeoptions" type="themeoptions" label="Theme Options"/>
+			</fieldset>
+
+			<fieldset
+				name="advanced">
+				<field
+					name="tag_id"
+					type="text"
+					label="MOD_MENU_FIELD_TAG_ID_LABEL"
+					description="MOD_MENU_FIELD_TAG_ID_DESC" />
+
+				<field
+					name="class_sfx"
+					type="text"
+					label="MOD_MENU_FIELD_CLASS_LABEL"
+					description="MOD_MENU_FIELD_CLASS_DESC" />
+
+				<field
+					name="window_open"
+					type="text"
+					label="MOD_MENU_FIELD_TARGET_LABEL"
+					description="MOD_MENU_FIELD_TARGET_DESC" />
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option
+						value="itemid"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

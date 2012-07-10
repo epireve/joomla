@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="multiple" type="radio" default="0" label="Multiple" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="size" type="text" default="" label="Size" description="" />
+		<param name="style" type="text" default="" label="Style Attribute" description="" />
+	</params>
+</config>

@@ -1,0 +1,2039 @@
+<<<<<<< mine
+/**
+ * @package		JomSocial
+ * @subpackage 	Template 
+ * @copyright 	(C) 2011 by Slashes & Dots Sdn Bhd - All rights reserved!
+ * @license		GNU/GPL, see LICENSE.php
+ */
+
+@import url("style.reset.css");
+@import url("style.toolbar.css");
+@import url("style.layout.css");
+@import url("style.stream.css");
+@import url("style.events.css");
+@import url("style.messaging.css");
+@import url("style.old.css");
+@import url("style.themefix.css");=======
+/**
+ * COMMUNITY :#community-wrap
+ * main ID that hold core JomSocial all togather
+ * this class is reusable across the JomSocial application
+ */
+
+/* display:inline-block + width:100% was 
+ used to cope with uncleared floats that
+ often is present in various Joomla! templates.
+
+ Without it,contents within #community-wrap
+ may get pulled down to the line where the
+ uncleared float element ends.
+
+ The css property combination above inherits
+ the width of the parent container IRRESPECTIVE
+ of the padding value of the parent container.
+
+ Therefore,if you are experiencing issues where
+ #community-wrap appears wider than the width
+ provided by its parent container,you may either:- Add margin-left & margin-right 
+ with the value taken from the
+ padding value of the parent container.
+
+ - Replace display:inline-block;with display:block;(If you are certain uncleared floats won't appear)
+
+ - Set a fixed width (Usually parent width - parent padding)
+ */
+#community-wrap{display:inline-block;width:100%;text-align:left;min-height:450px;min-width:650px;margin:0 0 30px;position: relative;}
+
+/*q-tip*/
+body .qtip a, 
+body .qtip a:link, 
+body .qtip a:visited, 
+body .qtip a:hover, 
+body .qtip a:active{color:#F3F3F3 !important;text-decoration:none; background:none;}
+
+#community-wrap iframe,
+#community-wrap iframe *{position:relative;z-index:1}
+.jsAbs{position:absolute}
+.jsRel{position:relative}
+.jsFull{width:100% !important}
+.jsLft{float:left}
+.jsRgt{float:right}
+.jsFlNo{float:none}
+.jsLft,
+.jsRgt,
+.jsDisIn{display:inline-block}
+.jsDisBl{display:block}
+.jsReset{padding:0;margin:0}
+
+/**
+ * COMMUNITY :.cLayout
+ * .cMain :Fluid width for main section 
+ * .cSidebar :Fixed width for sidebar
+ * this class is reusable across the JomSocial.com application 
+ */
+body #community-wrap .cLayout{position:relative;width:100%;}
+body #community-wrap .cMain{margin-right:235px}
+body #community-wrap .cSidebar{width:220px;float:right}
+body #community-wrap .cRow{margin:0 0 30px}
+
+/**
+ * COMMUNITY :.cModule
+ * this class is reusable across the JomSocial application
+ */ 
+#community-wrap .cModule{border:1px solid #ddd;border-bottom:1px solid #ccc;position:relative;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;margin:0 0 15px;padding:5px}
+#community-wrap .cModule h3{border-bottom:1px solid #ddd;color:#4E6221;font-size:12px !important;text-shadow:none;margin:0 0 7px;padding:5px 0; font-weight: bold !important;}
+#community-wrap .cModule h4{border-bottom:1px dotted #ccc;color:#333;font-size:90%;font-weight:700;margin:0;padding:0 0 5px}
+#community-wrap .cModule fieldset{background:none;border:0;margin:0;padding:0}
+
+/**
+ * COMMUNITY :CONTENT TITLE
+ * this class is reusable across the JomSocial application
+ */
+body #community-wrap div.ctitle{font-weight:700;border-bottom:2px solid #ddd;margin:0 0 5px!important;padding:5px 0!important}
+body #community-wrap div.ctitle h2{font-size:120%;font-weight:100;border:none;margin:0;padding:3px 0}
+
+/**
+ * COMMUNITY :ELEMENT STANDARD STYLING
+ * standart styling for all html elements in JomSocial application
+ * this section also included HTML-fix to support JomSocial application
+ */
+#community .relative{position:relative}
+
+#community-wrap .clr,
+#cWindowContent .clr{clear:both;height:0;overflow:hidden;font-size:0;line-height:0}
+#community-wrap .clrfix{clear:none}
+#community-wrap .clrfix:after{display:block;visibility:hidden;clear:both;height:0;content:" ";font-size:0}
+#community-wrap :focus{outline-style:none}
+#community-wrap hr{height:1px}
+#community-wrap fieldset{overflow:hidden;border-left:outset}
+#community-wrap legend{font-size:1.3em;color:#666;overflow:hidden}
+#community-wrap img{background:none}
+/* #community-wrap img:hover{background:inherit !important;border-color:inherit !important} */
+#community-wrap dl,
+#community-wrap dd,
+#community-wrap dt{border:none;background:none;margin:0;padding:0}
+#community-wrap ul.pagination{margin:15px auto;padding:10px 0}
+#community-wrap .inputbox,#community-wrap textarea,#community-wrap select{font:normal 13px/1 Tahoma;padding:2px;}
+textarea{height:110px;width:100%}
+
+/**
+ * COMMUNITY :RESET BORDER STYLE
+ * removing all borders in #cWindowContent table
+ */
+#cWindowContent table,#cWindowContent tbody,#cWindowContent tr,#cWindowContent td{border:0}
+
+/**
+ * COMMUNITY :RESET LIST STYLING
+ * applying reset styling for UL/OL in application. 
+ */
+#community-wrap .cResetList,
+#community-wrap .cResetList li{background:none;border:none;list-style:none;list-style-image:none;line-height:normal;margin:0;padding:0;clear:none}
+
+/**
+ * COMMUNITY :THUMBNAIL LISTING STYLE
+ * 
+ * use in:* New members (Frontpage)
+ * Who's Online (Frontpage)
+ * New Photos (Frontpage)
+ * Latest Groups (Frontpage)
+ * Friend list (Profile)
+ * Members (Groups)
+ * Guest (Event)
+ */
+#community-wrap .cThumbList{margin-right:-10px}
+#community-wrap .cThumbList li{float:left;display:inline-block;padding:0 3px 3px 0}
+
+/**
+ * COMMUNITY :FEATURED LIST
+ * applying styling in video,groups,events,photos,and members
+ */
+#community-wrap .cFeaturedList{margin:0 -5px}
+#community-wrap .cFeaturedList li{width:50%;float:left;display:inline-block}
+#community-wrap .cFeaturedIn{border:1px solid #ccc;margin:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+
+/**
+ * COMMUNITY :3 COLUMN LIST STYLE
+ * 
+ * use in:* All Videos (Categories)
+ * All Groups (Categories)
+ * All Events (Categories)
+ */
+#community-wrap .c3colList li{float:left;display:inline-block;width:33%}
+#community-wrap .c3colList li *{float:left;display:inline-block;}
+
+/**
+ * COMMUNITY :SUBMENU TOOLBAR
+ * this class is reusable across the JomSocial application
+ */
+#community-wrap .cSubmenu{height:25px;background:#eee;border:solid 1px #ccc;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;margin:0 0 10px}
+#community-wrap .submenu{height:25px}
+#community-wrap .submenu li{font-size:11px;float:left;line-height:25px;position:relative}
+#community-wrap .submenu li a,
+#community-wrap .submenu li span{text-decoration:none;height:25px; line-height: 25px; border-right:1px solid #ccc;padding:0 6px}
+#community-wrap .submenu li span{color:#555}
+#community-wrap .cSubmenu li a {color: #095197;}
+#community-wrap .cSubmenu li a:hover {color: #000;text-decoration: underline; background-color: transparent;}
+#community-wrap .submenu li.action{float:right;margin-right:-1px}
+#community-wrap .submenu .action+.action a{border-right:1px solid #ccc!important}
+#community-wrap .submenu li .active{text-decoration:underline;color:#000}
+#community-wrap .hasChildItem{position:relative}
+#community-wrap .hasChildItem li{width:150px;margin:0;padding:5px}
+#community-wrap .submenu li ul li a{border:0}
+#community-wrap .submenu.jsApSbMn li a,
+#community-wrap .submenu.jsApSbMn li span{float:left;display:inline-block;line-height:25px;border-right:1px dotted #aaa;margin:5px}
+#community-wrap .submenu .jsApIcn{padding-left:20px}
+#community-wrap .jsTogSearch{position:absolute;background:#eee;border:1px solid #CACACA;border-top:0;z-index:1000;display:none;top:25px;margin:0;padding:0}
+#community-wrap .jsTogSearch a{border-right:0!important;border-top:1px dotted #ccc;margin-top:5px;float:left;width:100%;padding:3px 0!important}
+#community-wrap .jsTogSearch .inputbox{width:144px!important;font-size:11px!important;border:1px solid #ccc;padding:2px}
+#community-wrap .jsPhRotL{background:url(../images/action/rotateL.png) no-repeat 0 2px}
+#community-wrap .jsPhRotR{background:url(../images/action/rotateR.png) no-repeat 0 2px}
+
+
+/**
+ * COMMUNITY :SUBMENU TOOLBAR FOR IPHONE
+ * this class is reusable across the JomSocial application
+ * Affected files:- toolbar.submenu.iphone.php
+ */
+#community-wrap .submenu-l{height:26px;padding-left:5px;margin:0 0 20px}
+#community-wrap .submenu-r{height:26px}
+#community-wrap .submenu-l .submenu-r ul.submenu{height:26px;list-style:none}
+#community-wrap .submenu-l .submenu-r ul.submenu li{background:none;float:left;font-weight:800;line-height:26px;list-style-type:none}
+
+/*
+ * COMMUNITY :.avatar / .small / small
+ * intended to define this classes once
+ * this class is reusable across the JomSocial application
+ */
+#community-wrap a img.avatar{border:1px solid #ccc;padding:1px}
+#community-wrap a:hover img.avatar{border:1px solid #999}
+body #community-wrap .small,body #community-wrap small{font-size:90%!important}
+body #community-wrap .small {margin: 0;}
+
+/*
+ * COMMUNITY :SYSTEM MESSAGE
+ * this class is reusable across the JomSocial application
+ */
+body #community-wrap div.info,
+body #community-wrap div.error,
+body #community-wrap div.warning{font-weight:700;margin:0 0 10px;padding:10px}
+body #community-wrap div.error{color:#C00;background:#E6C0C0;border-bottom:3px solid #DE7A7B;border-top:3px solid #DE7A7B}
+body #community-wrap div.info{background:#C3D2E5;color:#05B;background-color:#C3D2E5;border-bottom:3px solid #84A7DB;border-top:3px solid #84A7DB}
+body #community-wrap div.warning{color:#C00;background:#EFE7B8;border-bottom:3px solid #F0DC7E;border-top:3px solid #F0DC7E}
+body #community-wrap div.info a.friend{background:url(../images/action/icon-user-add.png) no-repeat scroll 0 0 transparent;font-weight:700;padding:2px 0 2px 22px}
+#community-wrap .com-invitation-msg{background:url(../images/action/icon-invite-32.png) 10px 7px no-repeat #FDFCDC;border:1px solid #ddd;margin-bottom:20px;padding:5px 5px 5px 60px}
+#community-wrap .com-invite-info{padding-bottom:5px}
+
+/*
+ * COMMUNITY :APPLICATION BOX
+ * this class is reusable across the JomSocial application
+ */
+#community-wrap .app-box{float:left;width:100%;margin-bottom:15px;display:inline-block;zoom:1}
+#community-wrap .app-box-header{background:transparent url(../images/app-box-header.png) no-repeat 0 0;height:30px;position:relative;margin:0 10px 10px 0;padding:0 0 0 10px}
+#community-wrap .app-box-header .app-box-header{background-position:100% 0;margin-right:-10px;padding:0 10px 0 0}
+#community-wrap .app-box-header.no-background,#community-wrap .app-box-header.no-background .app-box-header{background:none;padding:0}
+#community-wrap .app-box-title{color:#4E6221;font-weight:700;font-size:12px;line-height:30px;background:none;text-shadow:none;border:none;margin:0;padding:0}
+#community-wrap .app-box-menus{position:absolute;top:0;right:0;margin:7px}
+#community-wrap .app-box-menu{float:right;cursor:pointer;margin-left:5px}
+#community-wrap .app-box-menu-title{display:block;text-indent:-9999px}
+#community-wrap .app-box-menu-icon,
+#community-wrap .app-box-menu-icon:focus,
+#community-wrap .app-box-menu-icon:hover{background-color: transparent; outline:none; background-image:url(../images/app-box-menu-icon.png);background-repeat:no-repeat;height:16px;width:16px;line-height:0;display:block}
+
+#community-wrap .app-box-menu.options .app-box-menu-icon{background-position:0 0}
+
+/*
+ * COMMUNITY :TOGGLE EXPAND / COLLAPSE MENU
+ * this class is reusable across the JomSocial application
+ */
+#community-wrap .app-box-menu.toggle .app-box-menu-icon{background-position:-16px 0}
+#community-wrap .app-box.collapse .app-box-menu.toggle .app-box-menu-icon{background-position:-32px 0}
+#community-wrap .app-box-content{position:relative;zoom:1}
+#community-wrap .app-box-header + .app-box-actions{border-bottom:1px solid #eceff5;padding:4px 0}
+#community-wrap .app-box-header + .app-box-actions.no-border{border:none;padding:4px 0 0}
+#community-wrap .app-box-action{outline:none;padding:0 5px}
+#community-wrap .app-box-footer a.app-box-action{background:none}
+#community-wrap .app-box-actions{text-align:right}
+#community-wrap .app-box-action + .app-box-action{border-left:1px solid #aaa}
+#community-wrap .app-box-action.active{font-weight:700}
+#community-wrap .app-box-footer{border-top:1px solid #ddd;font-size:90%;padding:5px 0 0}
+#community-wrap .cMain .app-box-footer{margin:0}
+#community-wrap div.app-widget .app-box-footer{padding:4px 0!important}
+#community-wrap .app-box-footer a{background:url(../images/app-box-footer-a.png) 0 2px no-repeat;padding-left:10px}
+#community-wrap .app-box-footer a:hover{background:url(../images/app-box-footer-a.png) 0 2px no-repeat !important;color:inherit !important}
+#community-wrap .app-box-footer div.app-box-foot-note{padding-bottom:5px}
+#community-wrap .app-box-footer .no-border{border:none;padding:0}
+#community-wrap .app-box-footer .app-box-info{float:left}
+#community-wrap .app-box.collapse .app-box-actions,
+#community-wrap .app-box.collapse .app-box-footer,
+#community-wrap .app-box.collapse .app-box-content{display:none}
+/*
+ * APPS FIX
+ */
+#community-wrap #application-group li img,
+#community-wrap #application-photo li img{width:45px;height:45px}
+
+/*
+ * COMMUNITY :ADD REMOVE BUTTON
+ * this class is reusable across the JomSocial application
+ */
+body #community-wrap a.remove,
+body #community-wrap a.block{background:transparent url(../images/remove-button.gif) no-repeat 0 0;display:block;float:right;height:12px;outline-style:none;text-indent:-9999px;width:12px}
+body #community-wrap a.remove{background:transparent url(../images/icons/delete.png) no-repeat 0 0; height: 16px; width: 16px;}
+body #community-wrap a.add{background:transparent url(../images/add-button.gif) no-repeat 0 0;display:inline-block;height:16px;line-height:16px;outline-style:none;padding:0 0 0 20px}
+body #community-wrap a.add:hover{background:transparent url(../images/add-button.gif) no-repeat 0 -16px}
+
+/*
+ * COMMUNITY :ACTIVITY STREAM
+ * Affected file
+ - frontpage.index.iphone.php
+ - frontpage.index.php
+ - profile.index.php
+ - activity stream plugin
+
+ * the styling was defined as global (.joms-newsfeed-item) in order to support the element outside (#community-wrap)
+ * updated 13 Dec 2010 by Ross (to support new activity feed style)
+ */
+#community-wrap #activity-stream-container li.ctitle{margin:15px 0 8px!important}
+.joms-newsfeed-item{border-bottom:1px dotted #ccc !important;display:block;margin:0 0 10px;overflow:hidden;padding:8px 0 25px !important;position:relative}
+ #community-wrap li.joms-newsfeed-item{padding:8px 0 2px !important}
+.joms-newsfeed-item .newsfeed-avatar{float:left;width:40px}
+.joms-newsfeed-item .newsfeed-favicon{bottom:3px;position:absolute;right:0;width:20px}
+.no-avatar .newsfeed-favicon{left:2px;top:6px}
+ #community-wrap .joms-newsfeed-item .newsfeed-favicon{left:45px;top:5px}
+ #community-wrap .no-avatar .newsfeed-favicon{left:2px}
+.joms-newsfeed-item .newsfeed-content{margin:0 0 0 50px;padding-left:10px}
+.newsfeed-content a{color:inherit}
+
+.no-avatar .newsfeed-content{margin:0 0 0 25px}
+.joms-newsfeed-item .newsfeed-content-top{margin:0}
+ body #community-wrap .joms-newsfeed-item .newsfeed-content-top{margin:0 20px 6px 0;text-indent:0; line-height: 1.3;word-wrap: break-word;}
+.joms-newsfeed-item .newsfeed-content-hidden{display:none;margin:8px 0px 0 0;padding:5px;background:#f2f2f2; line-height: 1.3}
+.joms-newsfeed-item .newsfeed-quote{background:url(../images/activity-quote.png) 1px 1px no-repeat;padding:0 0 0 20px}
+.joms-newsfeed-item div.newsfeed-content-hidden span div.avatarWrap{background:none;padding-left:0}
+.joms-newsfeed-item div.newsfeed-content-hidden div.newsfeed-quote{background:url(../images/activity-quote.png) 0 0 no-repeat;padding-left:20px}
+.joms-newsfeed-item .newsfeed-meta{padding-bottom: 6px; padding-left:11px;padding-right:20px;position:relative}
+.joms-newsfeed-item .newsfeed-meta img {float:left; margin-right: 6px; margin-top: -1px}
+.joms-newsfeed-item .wall-cmt-loading {float: left; margin-top: 4px; width:16px; height: 11px; display: block; text-indent: -9999px; background: transparent url(../images/mini-loader.gif) no-repeat 0 0}
+.joms-newsfeed-item .wall-cmt-loading-inline {float: right; margin-left: 8px;}
+.joms-newsfeed-item .newsfeed-meta.small,li.joms-newsfeed-item .newsfeed-meta a{color:#888}
+.joms-newsfeed-item .newsfeed-meta a:hover{color:#555}
+ body #community-wrap li.joms-newsfeed-item .newsfeed-meta{margin-bottom:-8px;margin: 6px 0 0 -10px;}
+.joms-newsfeed-item .newsfeed-location{background:url(../images/as-location.png) no-repeat 0 0;bottom:6px;display:block;height:16px;position:absolute;right:0;text-indent:-9999px;width:15px}
+.joms-newsfeed-item .newsfeed-location:focus,.joms-newsfeed-item .newsfeed-location:hover{background:url(../images/as-location.png) no-repeat 0 0 !important}
+.joms-newsfeed-item .newsfeed-map{display:none;margin:8px 0px 0 0;overflow:hidden;position:relative}
+.joms-newsfeed-item .newsfeed-mapBigger{line-height:1.3;position:absolute;right:0}
+.joms-newsfeed-item .newsfeed-mapBigger a{color:#888;padding-left:12px}
+.joms-newsfeed-item .newsfeed-mapFade{margin-bottom:4px;min-height:150px;position:relative}
+.joms-newsfeed-item .newsfeed-mapFade img{position:absolute;z-index:10}
+.joms-newsfeed-item .newsfeed-mapFiller{height:150px;position:absolute;width:100%;z-index:20}
+.joms-newsfeed-item .newsfeed-mapLoc{display:block;float:left;line-height:1.3;margin-bottom:8px;width:100%;}
+.joms-newsfeed-item .newsfeed-mapLoc span{padding-right:130px;}
+ #community-wrap li.joms-newsfeed-item .newsfeed-remove{display:none;position:absolute;right:0;top:7px}
+ #community-wrap li.joms-newsfeed-item .wallcmt .newsfeed-remove{top:5px;right:5px;}
+ #community-wrap li.joms-newsfeed-item:hover .newsfeed-remove{display:block}
+.joms-newsfeed-item .wall-coc-time{position:absolute;bottom:5px;left:40px;color:#888;}
+.joms-newsfeed-item .wall-coc-remove-link {display: none;}
+.joms-newsfeed-more .loading{background-position:50% 50%!important;height:18px!important;margin:0!important;padding:6px 0!important;width:100%!important}
+ #community-wrap .joms-newsfeed-item .newsfeed-content,#community-wrap .no-avatar .newsfeed-content{margin:0 10px 0 40px}
+ #community-wrap li.joms-newsfeed-item.isMine:hover .newsfeed-date,#community-wrap li.joms-newsfeed-item.isSuperAdmin:hover .newsfeed-date{display:none}
+.joms-newsfeed-more,
+.joms-wall-more{-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;background:#f4f5f6 url(../images/load-more-btn.png) repeat-x 0 0;border:1px solid #ddd;border-radius:4px;margin:15px 10px}
+.joms-newsfeed-more:hover,
+.joms-wall-more:hover{background-position:0 -50px;border-color:#999}
+.joms-newsfeed-more a,
+.joms-wall-more a{display:block;font-weight:700;padding:6px;text-align:center;text-decoration:none}
+.joms-latest-activities-container{background-color:rgb(228,243,243);-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;width:100%;height:40px;border-width:1px;border:1px solid rgb(194,229,229); text-align:center !important;vertical-align: middle;margin: 0px auto -1px auto; text-align: center; vertical-align: middle; line-height: 3em; display:none}
+
+
+/*
+ * VIEW :GROUP + EVENT
+ * this section was dedicated to JomSocial's EVENT and GROUP view
+ * Affected files:- groups.viewgroup.php
+ - events.viewevent.php
+ */
+#community-wrap .jsDetail .small + .small {margin-top: 4px;}
+#community-wrap .group-top,
+#community-wrap .event-top{margin:0 0 20px;overflow:hidden}
+#community-wrap .group-top .group-main,
+#community-wrap .event-top .event-main{margin-left:180px}
+#community-wrap .group-top .group-desc,
+#community-wrap .event-top .event-desc{margin-top:15px}
+#community-wrap .group-top .group-desc h2,
+#community-wrap .event-top .event-desc h2{border:none!important;font-size:13px;font-weight:700;text-decoration:none}
+#community-wrap .group-left,
+#community-wrap .event-left{background:#eee;border:1px solid #ccc;float:left;width:164px}
+#community-wrap .group-avatar,
+#community-wrap .event-avatar{background:#eee;border-bottom:none;float:left;margin:0;padding:2px;position:relative;z-index:1}
+#community-wrap .group-avatar .tag-this,
+#community-wrap .event-avatar .tag-this{height:30px;left:5px;position:absolute;text-indent:-9999px;top:0;width:30px;z-index:100}
+#community-wrap div.cowner{background:url(../images/action/icon-star-1.png) 0 6px no-repeat}
+#community-wrap div.cadmin{background:url(../images/action/icon-star-2.png) 0 6px no-repeat}
+ 
+#community-wrap .group-info,
+#community-wrap .event-info{margin:0;}
+#community-wrap .group-info .cparam,
+#community-wrap .event-info .cparam{padding-left:0;position:relative}
+#community-wrap .group-info .clabel,
+#community-wrap .event-info .clabel{font-weight:700;position:relative;width:100%}
+#community-wrap .group-info .cdata,
+#community-wrap .event-info .cdata{padding-bottom:3px;margin-bottom:3px;}
+#community-wrap .event-info .cinput,
+#community-wrap .group-info .cinput{display:none;}
+
+#community-wrap .event-info .event-created .cdata span{color:#666;display:inline-block;font-weight:700;text-transform:uppercase;width:30px}
+#community-group-side-events .event-title,
+#community-group-side-events .event-loc{line-height:14px}
+#community-group-side-events .event-loc{font-size:11px}
+#community-group-side-events .eventTime{display:none}
+#community-group-side-events .event-date{border:1px solid #bbb;width:50px}
+#community-group-side-events .event-date *{float:left;display:inline;width:100%;}
+#community-group-side-events .event-date img{width:50px;height:auto}
+#community-group-side-events .event-date div+div{border-top:1px solid #bbb;background:#eee;text-align:center;font:700 12px/15px Arial;text-transform:uppercase;}
+#community-group-side-events .event-detail{margin-left:60px}
+#community-group-side-events .cResetList li{padding-bottom:7px}
+#community-group-side-events .cResetList li+li{border-top:1px solid #ddd;padding-top:7px}
+
+/*
+ * VIEW :GROUP'S ANNOUNCEMENT
+ * This section was dedicated to JomSocial's GROUP's announcement section
+ * Affected files:- groups.bulletinlist.php
+ */
+#community-wrap .groups-news-row{position:relative}
+#community-wrap .groups-news-row + .groups-news-row,
+#community-wrap .group-discussion + .group-discussion{border-top:1px solid #ddd;padding-top:5px}
+#community-wrap div.groups-news-title{background:url(../images/action/icon-announcement.png) no-repeat scroll 0 0 transparent;font-size:14px;padding:0 40px 3px 25px}
+#community-wrap .groups-news-meta,
+#community-wrap .group-discussion-author,
+#community-wrap .group-discussion-introtext{color:#888;margin:0 0 5px 25px;padding:0}
+#community-wrap div.groups-news-text{border-top:1px solid #ddd;margin:0 0 5px 25px;padding:5px 0 0}
+#community-wrap div.groups-news-text p{margin:0 0 10px}
+
+/*
+ * VIEW :GROUP'S DISCUSSION
+ * This section was dedicated to JomSocial's GROUP's discussion section
+ * Affected files:- groups.discussionlist.php
+ */ 
+#community-wrap .group-discussion{overflow:hidden;padding:0}
+#community-wrap .group-discussion-title{background:transparent url(../images/action/icon-discussion.png) 0 3px no-repeat;float:none;font-size:14px;font-weight:100!important;margin:0;padding:0 30% 5px 25px;position:relative;width:auto}
+#community-wrap .group-discussion-replies{font-size:90%;max-width:30%;overflow:hidden;position:absolute;right:0;top:5px}
+#community-wrap .wall-tittle{font-weight:700;padding:0 0 10px}
+
+/*
+ * VIEW :GROUP'S DISCUSSION
+ * This section was dedicated to JomSocial's GROUP's event section
+ * Affected files:- groups.viewgroup.php
+ */
+#community-wrap .jsGroupEvent ul{padding-bottom:10px;} 
+#community-wrap .jsGroupEvent li{padding-top:10px;margin-top:10px;}
+#community-wrap .jsGroupEvent li+li{border-top:1px solid #ddd;}
+#community-wrap .jsGroupEvent .event-img{right:0;top:10px;}
+#community-wrap .jsGroupEvent .avatar{width:40px;height:auto;}
+#community-wrap .jsGroupEvent .event-detail{margin-left:55px;}
+#community-wrap .jsGroupEvent .event-title{font-size:14px;line-height:1.4;padding-right:80px;}
+#community-wrap .jsGroupEvent .event-loc{padding-bottom:5px;}
+#community-wrap .jsGroupEvent .event-type{top:10px;right:0;font-size:10px;text-transform:uppercase;}
+#community-wrap .jsGroupEvent .event-date{border:1px solid #bbb;width:40px;float:left}
+#community-wrap .jsGroupEvent .event-date div{background:#eee;font:700 18px Arial,sans-serif;padding:0px;text-align:center;}
+#community-wrap .jsGroupEvent .event-date div+div{background:#ddd;font-size:80%;padding:3px 0;border-top:1px solid #bbb;}
+
+/*
+ * VIEW :GROUP'S PHOTOS
+ * Affected files:- groups.viewgroup.php (photo album)
+ */
+#community-wrap #community-group-photos img.avatar{height:64px;width:64px}
+#community-wrap #community-group-photos .album-list a{display:inline-block;float:left;margin:0 4px 4px 0}
+
+/*
+ * VIEW :GROUP (ANNOUNCEMENT + DISCUSSION) DETAIL
+ * Affected files:- groups.viewdiscussion (group's discussion)
+ - groups.viewbulletin (group's announcement)
+ */
+#community-wrap #group-discussion-topic,
+#community-wrap #group-buletin-topic{border-bottom:1px solid #ddd;margin-bottom:10px;}
+#community-wrap #group-discussion-topic .author-avatar,
+#community-wrap #group-buletin-topic .author-avatar{float:left;}
+#community-wrap #group-discussion-topic .discussion-detail,
+#community-wrap #group-buletin-topic .buletin-detail{margin-left:80px;}
+#community-wrap #group-discussion-topic .discussion-created,
+#community-wrap #group-buletin-topic .buletin-created{border-bottom:1px solid #ddd;margin-bottom:10px;padding:3px 0 10px 25px;background:url(../images/action/icon-discussion.png) 0 2px no-repeat;font-size:90%;color:#888;}
+#community-wrap #group-buletin-topic .buletin-created{background:url(../images/action/icon-announcement.png) 0 2px no-repeat;}
+#community-wrap #group-discussion-topic .discussion-entry,
+#community-wrap #group-buletin-topic .buletin-entry{margin:0 10px 20px 0;}
+#community-wrap #group-buletin-topic #bulletin-edit-data{border-top:5px solid #eee;padding:10px 0 20px;}
+
+/*
+ * EVENT + GROUP CONTROL
+ *
+ */
+#community-wrap #community-group-action,
+#community-wrap #community-event-action,
+#community-wrap #community-group-admin{background:#eee;}
+#community-wrap #community-group-action h3,
+#community-wrap #community-event-action h3,
+#community-wrap #community-group-admin h3{color:#333;margin-bottom:0;}
+#community-wrap .event-menus,
+#community-wrap .event-menus li{list-style:none;margin:0;padding:0;border:none;background:none;}
+#community-wrap .event-menus li{display:block;}
+#community-wrap .group-menus li a,
+#community-wrap .event-menus li a{font-weight:700;color:#336699;line-height:normal;text-decoration:none;border-bottom:1px solid #ddd;display:block;padding:8px 0 8px 30px;margin:0;}
+#community-wrap .group-menus li a:hover,
+#community-wrap .event-menus li a:hover{color:#003366;text-decoration:underline;}
+#community-wrap .group-menus .important a,
+#community-wrap .event-menus .important a{color:#933;}
+#community-wrap .group-menus .important a:hover,
+#community-wrap .event-menus .important a:hover{color:#900;}
+#community-wrap .group-menus .group-edit-avatar,
+#community-wrap .event-menus .event-edit-avatar{background:url(../images/action/icon-image-edit.png) 2px 6px no-repeat;}
+#community-wrap .group-menus .group-edit-info,
+#community-wrap .event-menus .event-edit-info{background:url(../images/action/icon-pencil-go.png) 2px 5px no-repeat;}
+#community-wrap .group-menus .group-delete,
+#community-wrap .event-menus .event-delete{background:url(../images/action/icon-cross.png) 2px 6px no-repeat;}
+#community-wrap .group-menus .group-print,
+#community-wrap .event-menus .event-print{background:url(../images/action/icon-printer.png) 2px 6px no-repeat;}
+#community-wrap .group-menus .group-export-ical,
+#community-wrap .event-menus .event-export-ical{background:url(../images/action/icon-ical.png) 2px 6px no-repeat;}
+#community-wrap .group-menus .group-join,
+#community-wrap .event-menus .event-join{background:url(../images/action/icon-arrow-join.png) 2px 5px no-repeat;}
+#community-wrap .group-menus .group-leave,
+#community-wrap .event-menus .event-leave{background:url(../images/action/icon-door-out.png) 2px 5px no-repeat;}
+#community-wrap .group-menus .group-invite-friend,
+#community-wrap .event-menus .event-invite-friend,
+#community-wrap .group-menus .community-invite{background:url(../images/action/icon-group-go.png) 2px 5px no-repeat;}
+#community-wrap .event-menus .event-copy{background:url(../images/action/icon-event-copy.png) 2px 5px no-repeat;}
+#community-wrap .event-menus .event-invite-email,
+#community-wrap .group-menus .community-invite-email,
+#community-wrap .event-menus .community-invite-email{background:url(../images/action/icon-email-go.png) 2px 5px no-repeat;}
+#community-wrap .group-menus .group-add-bulletin{background:url(../images/action/icon-buletin-add.png) 2px 5px no-repeat;}
+#community-wrap .group-menus .group-add-discussion{background:url(../images/action/icon-discussion-add.png) 2px 5px no-repeat;}
+#community-wrap .group-menus .group-add-photo{background:url(../images/action/icon-camera.png) 2px 5px no-repeat;}
+#community-wrap .group-menus .group-add-album{background:url(../images/action/icon-album-add.png) 2px 5px no-repeat;}
+#community-wrap .group-menus .group-add-video{background:url(../images/action/icon-video-add.png) 2px 5px no-repeat;}
+#community-wrap .group-menus .group-unpublish{background:url(../images/action/icon-group-unpublish.png) 2px 5px no-repeat;}
+#community-wrap .group-menus .group-create-event{background:url(../images/action/icon-add-event.png) 2px 5px no-repeat;}
+#community-wrap .event-menus .community-invite{background:url(../images/action/icon-invite.png) 2px 5px no-repeat;}
+#community-group-side-photos a img{width:45px;height:45px;margin:0 3px 4px 0;}
+#community-wrap .js_Group-expandLink {cursor:pointer;line-height: 16px; padding-left: 24px; background: transparent url(../images/icons/apps.png) no-repeat 0 -42px; display: block; width: auto; height: 16px}
+
+
+/** EVENT ADMIN LIST **/
+#community-wrap .cThumbList li.event-admin-list{width:100%;list-style-type:none;margin:0;padding:0 0 8px;}
+#community-wrap .cThumbList li a:hover {background-color: transparent;}
+#community-wrap .event-admin-thumb{float:left;width:55px;}
+#community-wrap .event-admin-info{margin-left:55px;}
+#community-wrap #event-admin-name{font-weight:700;}
+#community-wrap #event-admin-is{}
+#community-wrap #event-admin-write{}
+
+/** EVENT RESPOND **/
+#community-wrap #community-event-rsvp-status{background:#e0e0b8;border:1px solid #c1c196}
+#community-wrap #community-event-rsvp-status h3{border-bottom:1px solid #c3c397;}
+#community-wrap #community-event-rsvp-status .app-box-footer{border-top:1px solid #c9c991;margin:7px 5px 0 0;}
+
+/*
+ * GLOBAL :EVENT EMAIL
+ * ::new styling for email invitation for events
+ */
+body #community-wrap .event-email{padding:0 0 30px;}
+body #community-wrap .event-email label{display:block;font-weight:700;}
+body #community-wrap .event-email .instruction{margin-bottom:20px;}
+body #community-wrap .event-email div.event-email-row{padding:5px 0;margin-bottom:10px;width:100%;float:left;display:inline;}
+body #community-wrap .event-email div.event-email-row input{width:480px;}
+body #community-wrap .event-email div.event-email-row textarea{width:100%;}
+#community-wrap .cSubmenu ul.submenu li.instruction{margin-left:5px;}
+#community-wrap .cSubmenu ul.submenu li.back-link{float:right;}
+#community-wrap .cSubmenu ul.submenu li.back-link a{border-right:none !important;border-left:1px solid #ccc;}
+
+/*
+ * VIEW :GROUP LISTING
+ * Affected files:- group.index.php
+ */
+#community-wrap ul.cTextList,
+#community-wrap ul.cTextList li{list-style:none;background:none;padding:0;margin:0;}
+#community-wrap ul.cTextList li{display:block;border-bottom:1px solid #ddd;}
+#community-wrap ul.cTextList li.cDiscussion-list{background:transparent url(../images/action/icon-discussion.png) 0 2px no-repeat;padding:0 5px 5px 25px;margin:0 5px 5px 0;}
+#community-wrap ul.cTextList li.cDiscussion-list a.title{display:block;}
+
+/*
+ * VIEW :GROUP + EVENT LISTING
+ * some shared styling between GROUP and EVENT listing
+ * Affected files:- group.index.php
+ - event.list.php
+ */
+.community-events-results-item,
+.community-groups-results-item{float:left;display:inline;width:100%;padding:0;margin:0 0 10px;position:relative;border:1px solid #ddd;border-bottom:1px solid #ccc;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+.community-groups-results-item a:hover{background:0 !important;color:inherit !important}
+.community-events-results-left,
+.community-groups-results-left{float:left;margin:10px;}
+ .community-events-results-left img.avatar{width:64px;height:64px;}
+ .community-events-results-left .eventDate{font:700 120% Arial;text-align:center !important;text-transform:uppercase;padding:2px;background:#eee;border:1px solid #ddd;border-top:none;}
+.community-events-results-right,
+.community-groups-results-right{float:none !important;margin:10px 10px 10px 90px}
+.community-events-results-right h3,
+.community-groups-results-right h3{margin:0;padding:0;text-indent:0 !important;margin-bottom:5px;}
+#community-wrap .groupName,
+#community-wrap .groupDescription {line-height: 1.3; margin-bottom: 10px;}
+#community-wrap .eventActions,
+#community-wrap .groupActions{margin-top:5px;}
+ #community-wrap .eventActions a span{font-weight:700;}
+
+div#community-wrap span.selected{font-weight:700;text-decoration:underline;}
+div#community-event-info-actions,
+div#community-group-info-actions{display:none;padding:0 0 0 170px;}
+div#community-events-news h3,
+div#community-events-join h3,
+div#community-groups-news h3,
+div#community-groups-join h3{border-bottom:solid 1px;margin:0 0 5px 0;padding:0;width:100%;float:left;}
+input#news-title{width:400px;}
+textarea#news-description{height:200px;width:400px;}
+div#community-groups-news div{padding-top:10px;}
+#community-wrap div.empty{color:#888;padding:0 0 2px 0;}
+div.community-events-action,
+div.community-groups-action{padding-top:10px;text-align:right;}
+
+/*
+ * COMMUNITY :DEFAULT LISTING
+ * 
+ * Affected files:- Friend list
+ - Video list
+ - Latest video (Frontpage)
+ - Search result
+ */
+#community-wrap .cDetailList,
+#community-wrap .cDetailList li{list-style:none;background:none;padding:0;margin:0;line-height:17px;}
+#community-wrap .cDetailList .item{background-image:none;display:block;float:left;list-style-type:none;margin:0 2px 0 0;padding:10px 0;width:100%;}
+#community-wrap .cDetailList .avatarWrap{float:left;width:72px;}
+#community-wrap .cDetailList .avatarWrap a:hover {background-color: transparent;}
+/* Resize all image within photo items*/
+.avatarWrap img,
+.album-cover img,
+.photo-item img{width:64px;height:auto;}
+#community-wrap .cDetailList .avatarWrap.video,
+.avatarWrap.video img{width:90px;margin:2px 10px 2px 0}
+#community-wrap .cDetailList .detailWrap{margin:0 10px 0 75px;}
+ #community-wrap .detailWrap.alpha{margin:0 10px 0 0;color:#666;}
+#community-wrap .cDetailList .detailWrap h4{line-height:100%;margin:0;padding:0 0 10px;}
+#community-wrap .cDetailList .detailWrap .status{height:auto;min-height:25px;}
+#community-wrap .cDetailList .detailWrap .icons{font-size:90%;padding:5px 0 0;}
+#community-wrap .cDetailList .cActivityAction{float:right;margin-top:20px;} 
+#community-wrap .cDetailList .cActivityAction a{background:#ececec;border:solid 1px #ccc;color:#666;font-size:90%;padding:2px 5px;text-decoration:none;}
+#community-wrap .cDetailList .cActivityAction a:hover{background:#fcc;border:solid 1px #c99;color:#633;}
+
+/*
+ * Latest group listing 
+ */
+#community-wrap .cModule.latest-groups{}
+#community-wrap .cModule.latest-groups li.featured{text-align:center;margin:0 4px 0 0;width:208px;}
+#community-wrap .cModule.latest-groups li.featured a{width:100%;float:left;display:inline-block;margin:0 0 10px;}
+#community-wrap .cModule.latest-groups li.featured a img{float:none;display:block;margin:0 auto;}
+body #community-wrap .cModule.latest-groups li.featured h3.title{font-size:150% !important;padding:5px 0;margin:0;text-align:center;border:none !important;}
+#community-wrap .cModule.latest-groups li.featured .desc-details{padding:5px 0 10px;margin-bottom:5px;text-align:center;border-bottom:none !important;line-height:1.4;}
+
+/*
+ * COMMUNITY :WALL COMMENT'S FORM
+ * this class is reusable across the JomSocial application
+ */
+ #community-wrap div.wall-comment-view-all-bottom{padding-top:5px;padding-bottom:5px;margin-bottom:10px;}
+#community-wrap #wallForm,
+#community-wrap #community-photo-walls{border-bottom:1px solid #ddd;padding-bottom:20px;margin-bottom:10px;} /* for photo comment styling */
+#community-wrap #wall-message{display:block;min-height:110px;}
+.wall-comment-view-all{position:absolute;top:0px;right:0;}
+.wall-respond-area{position:relative;margin-top:10px;}
+#cProfileWrapper .wall-respond-area{padding-bottom:20px;margin-bottom:10px;border-bottom:1px solid #ddd;}
+
+/*
+ * COMMUNITY :WALL COMMENT ROW
+ * This class is reusable across the JomSocial application
+ * Affected file
+ - wall.content.php
+ */
+#community-wrap div.wallComments{border-bottom:1px solid #ddd;padding:0 0 5px;margin:0 0 10px;}
+body #community-wrap div.ccontent{padding:6px 0 6px 80px;}
+body #community-wrap div.cavatar{float:left;height:45px;width:45px;}
+body #community-wrap div.cavatar img{width:36px;height:36px;}
+body #community-wrap div.ccontent-avatar{margin:0 0 0 44px;padding:0 5px 5px 5px;} 
+#community-wrap div.ccontent-avatar .createby a{font-weight:700;}
+ 
+#community-wrap div.ccontent-avatar .content{margin:5px 0;padding:0;line-height:15px;}
+#community-wrap div.ccontent-avatar .date .createdate{height:20px;background:transparent url(../images/comment_clock.png) left 0px no-repeat;padding:2px 0 0 20px;vertical-align:middle;}
+#community-wrap div.ccontent-avatar .date .remove{font-size:90%;}
+#community-wrap .wall-cocs{font-size:90%;margin:8px 0px 0 0;}
+body #community-wrap div.ccontent div.ccontent-min-height{height:40px;float:right;width:1px;}
+
+/** Comment On Comment **/
+
+/* 32px avatar + 4px padding-left + 4px padding-right */
+#community-wrap .wallcmt{padding:4px;background-color:#f1f1f1;margin-bottom:2px;min-height:12px;position:relative;padding-left:40px;}
+#community-wrap .joms-newsfeed-item .wallcmt{padding-bottom:24px;}
+#community-wrap .joms-newsfeed-item .wallinfo{padding-left:4px;min-height:0;padding-bottom:4px; line-height: 16px;}
+#community-wrap .joms-newsfeed-item .wallnone{display:none;}
+#community-wrap .joms-newsfeed-item .wallicon-comment,
+#community-wrap .joms-newsfeed-item .wallicon-like {padding-left: 24px}
+#community-wrap .joms-newsfeed-item .wallicon-comment {background: #f1f1f1 url(../images/icons/comments.png) no-repeat 4px 4px}
+#community-wrap .joms-newsfeed-item .wallicon-like {background: #f1f1f1 url(../images/icons/thumb_up.png) no-repeat 4px 4px}
+#community-wrap .wallcmt p{margin:0;}
+#community-wrap .wall-coc-avatar{width:32px;position:absolute;top:4px;left:4px;border:none;}
+#community-wrap .wall-coc-form{display:none;}
+#community-wrap .wall-coc-form-actions{text-align:left;}
+#community-wrap a.wall-coc-form-action{float: right; padding: 3px 5px; line-height: 24px; background-color: transparent !important;}
+#community-wrap a.wall-coc-form-action:hover {background-color: transparent !important;}
+#community-wrap .wall-coc-form-actions button{margin-left:5px;margin-top:5px;float: right;}
+#community-wrap .wall-coc-form textarea{float:left;}
+
+/*
+ * COMMUNITY :VIDEO (LISTING)
+ - frontpage.index.php
+ - groups.viewgroup.php
+ - videos.list.php
+ */
+body #community-wrap ul.profile-details li.video{padding-top:3px;}
+body #community-wrap a.icon-videos{background:url("../images/icons/icons-16x16.gif") no-repeat scroll 0 -398px transparent;padding-left:20px;}
+body #community-wrap a.icon-videos-remove{background:url(../images/action/icon-video-remove.png) no-repeat;padding:2px 0 0 23px;font-size:90%;}
+body #community-wrap .video-items{margin:0 -5px;}
+body #community-wrap .video-item{float:left;width:25%;}
+body #community-wrap #latest-videos .video-item,
+body #community-wrap #community-group-videos .video-item,
+body #community-wrap #community-group-side-videos .video-item{float:none;overflow:hidden;display:block;width:auto;}
+
+body #community-wrap .video-item .video-item{float:none;width:auto;position:relative;border:1px solid #ddd;border-bottom:1px solid #ccc;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;margin:5px}
+#community-wrap .video-thumb{float:left;position:relative;padding:10px}
+body #community-wrap .video-thumb img{margin:0!important}
+body #community-wrap .video-thumb-url{display:block;overflow:hidden;position:relative}
+body #community-wrap .video-durationHMS{position:absolute;bottom:10px;left:10px;background:#000;opacity:0.7;color:#FFF;font-size:80%;font-weight:700;padding:0 5px}
+body #community-wrap .video-summary{margin:10px 10px 0}
+body #community-wrap .video-title{overflow:hidden;position:relative;white-space:nowrap;margin:0;padding:0}
+body #community-wrap .video-description{margin:0;padding:0}
+
+/* Video index */
+body #community-wrap .video-index .video-thumb{float:none; margin: 10px auto 0;position:relative;padding:0;}
+body #community-wrap .video-index a:hover{background:inherit !important;color:inherit !important}
+body #community-wrap .video-index .video-thumb-url {padding: 1px; border: 1px solid #ccc;}
+body #community-wrap .video-index .video-thumb-url:hover {border-color: #999;}
+body #community-wrap .video-index * {text-align:center;}
+body #community-wrap .video-index .video-item .video-item {border: 0px none;}
+body #community-wrap .video-index .video-title {white-space:normal; max-height: 32px; overflow: hidden; text-overflow: ellipsis; line-height: 16px;}
+body #community-wrap .video-index .video-durationHMS {bottom: 2px; left: 2px;}
+/* end Video index */
+
+body #cWindow .video-addType{vertical-align:top;width:50%;height:200px;position:relative;padding:10px}
+body #cWindow .video-addType.upload{border-left:1px solid #DDD}
+body #cWindow .video-addType-name{font-weight:700;margin:0;padding:0}
+body #cWindow .video-addType-description{margin:10px 0;padding:0}
+body #cWindow .video-provider{width:49%;float:left;background:none;list-style-type:disc;line-height:150%;margin:0;padding:0}
+body #cWindow .video-uploadRule{background:none;list-style-type:disc;line-height:150%;margin:0;padding:0}
+body #cWindow .video-addType.link .video-action{margin-top:15px}
+body #cWindow .video-addType.upload .video-action{margin-top:20px}
+body #cWindow .video-providers,
+body #cWindow .video-uploadRules{padding-left:15px;margin:0}
+
+body #latest-videos-container li{position:relative}
+body #latest-videos-container li .video-durationHMS{left:4px;bottom:4px}
+
+/*
+ * COMMUNITY :PROFILE / CHANGE PROFILE VIDEO
+ - profile.linkvideo.php
+ - videos.video.php
+ */
+#community-wrap .vidSubmenu{background:#eee;border:solid 1px #ccc;border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;-webkit-border-radius:0 0 3px 3px;margin:0 0 10px}
+#community-wrap .vidSubmenu .submenu{float:left;height:35px;}
+#community-wrap .vidSubmenu .submenu li{line-height:35px;}
+#community-wrap .vidSubmenu .action a{border-left:1px solid #ccc}
+body #community-wrap .video-permalink{position:relative;border-bottom:1px solid #ccc;padding:10px 0}
+body #community-wrap .video-permalink .video-label{width:80px;font-weight:700;height:26px;line-height:26px;position:absolute;left:5px;top:10px}
+body #community-wrap .video-permalink div.video-link{display:block!important;margin:0 8px 0 84px;padding:0}
+body #community-wrap .video-permalink input{width:99%;height:20px;line-height:20px;margin:0;padding:0}
+#community-wrap .video-head{position:relative}
+#community-wrap .video-remove{position:absolute;right:0;top:7px}
+body #community-wrap .video-player{text-align:center;background:#d1d1d1;border-bottom:1px solid #aaa;border-top:1px solid #aaa;padding:15px 0}
+body #community-wrap .video-full .video-summary{height:auto;margin:0;padding:10px}
+body #community-wrap .video-full .video-actions{display:block;margin-top:10px;position:relative}
+#uploadVideo #description{width:100%;height:135px}
+#linkVideo #videoLinkUrl,
+#uploadVideo #videoTitle{width:100%}
+
+/*
+ * COMMUNITY :LIKE DISLIKE
+ */
+#like-container{float:right;height:35px;line-height:24px;margin-right:8px}
+#like-container span{font-size:11px;margin:0;padding:0}
+#like-container .like-button,
+#like-container .unlike-button,
+#like-container .dislike-button,
+#like-container .peepDislike,
+#like-container .peepLike,
+#like-container .meLike,
+#like-container .meDislike{border:1px solid #ccc;display:block;font-weight:700;float:left;background:#fff url(../images/like-button-bg.png) repeat-x 0 0 !important;text-decoration:none;margin:4px 0;padding:0 6px 0 22px}
+#like-container .like-button,
+#like-container .meLike{-moz-border-radius:3px 0 0 3px}
+#like-container .like-button:hover{background-position:0 -24px !important}
+#like-container .dislike-button,
+#like-container .meDislike{-moz-border-radius:0 3px 3px 0;border-left:0 none;background-position:0 -48px !important}
+#like-container .dislike-button:hover{background-position:0 -72px !important}
+#like-container .meLike,
+#like-container .meDislike{background-position:0 -96px !important;color:#fff !important;text-shadow:-1px -1px 0 rgba(0,0,0,0.2)}
+#like-container .meDislike{background-position:0 -120px !important}
+#like-container a:hover{text-decoration:none}
+
+/*
+ * COMMUNITY :MY APPS FIX for WALL COMMENT
+ */
+#community-wrap .cModule .wall-respond-area{margin:0 5px 0 0}
+#community-wrap .app-widget-content .wall-respond-area{padding:10px 0}
+#community-wrap .app-widget-content div.ccontent-avatar{position:relative;margin:0 0 0 43px;padding:0}
+#community-wrap .app-widget-content div.ccontent-avatar .date{width:100%;float:left}
+#community-wrap .app-widget-content div.wall-cocs{margin:5px 0}
+#community-wrap .app-widget-content div.ccontent-avatar .content{margin:0}
+#community-wrap .app-widget-content div.wallComments{margin:0;padding:5px 0}
+#community-wrap .app-widget-content .wallcmt img.wall-coc-avatar{height:24px!important;width:24px!important}
+#community-wrap .app-widget-content div.ccontent-avatar .date .createdate{background:url(../images/comment_clock.png) no-repeat scroll left 0 transparent;display:block;font-size:75%;height:16px;line-height:16px;vertical-align:middle;padding:0 0 0 18px}
+#community-wrap .app-widget-content div.ccontent-avatar .date .remove{position:absolute;top:2px;right:0;background-image:url(../images/remove-button.gif);background-repeat:no-repeat;background-position:0 0;display:block;height:12px;width:12px;outline-style:none;text-indent:-9999px}
+#community-wrap .app-widget-content div.ccontent-avatar .date .remove a{width:12px;height:12px;display:block}
+#community-wrap .app-widget-content div.ccontent-avatar .date .remove:hover{background-position:0 -12px}
+#community-wrap .app-widget-content .wallcmt{padding:4px 4px 4px 32px}
+#community-wrap .app-widget-content .wallComments .createby{background:none;line-height:110%;padding:2px 16px 2px 0}
+#community-wrap .app-widget-content .wallComments img,
+body #community-wrap .app-widget-content div.cavatar{width:32px;height:32px}
+
+/********************************************************************* KICK KICK KICK *********************************************************************/
+
+/** FORM ELEMENTS **/
+body #community-wrap .label,
+body #cWindow .label{font-weight:700;text-align:right}
+body #community-wrap .lblradio,
+body #cWindow .lblradio{display:inline;font-weight:400}
+body #community-wrap .lblradio-block,
+body #cWindow .lblradio-block{display:block;font-weight:400}
+body #community-wrap .inputbox.fullwidth,
+body #cWindow .inputbox.fullwidth{width:98%}
+body #community-wrap .inputbox.halfwidth,
+body #cWindow .inputbox.halfwidth{width:50%}
+body #community-wrap .hints,
+body #cWindow .hints{font-style:italic;line-height:140%}
+label{display:block}
+.selectbox{border:solid 1px #ccc;padding:2px}
+input.fullwidth,
+textarea.fullwidth{width:98%}
+body #community-wrap textarea.replybox{width:98%;height:115px}
+body #community-wrap td.privacy {width:80px;}
+
+/* table for form elements */
+body #community-wrap .formtable,
+body #cWindow .formtable{width:100%}
+body #community-wrap .formtable td,
+body #community-wrap .admintable td,body #cWindow .formtable td,body #cWindow .admintable td{vertical-align:top;padding:5px;border: 0px none;}
+body #community-wrap .formtable .privacy+.value{padding-left:125px}
+body #community-wrap .formtable td.key,
+body #community-wrap .admintable td.paramlist_key,
+body #community-wrap td.listkey,
+body #community-wrap td.paramlist_key,
+body #cWindow .formtable td.key,
+body #cWindow .admintable td.paramlist_key{font-weight:700;text-align:right;width:130px}
+body #community-wrap tr.noLabel td.key,
+body #community-wrap tr.noLabel td.paramlist_key,body #cWindow tr.noLabel td.key,body #cWindow tr.noLabel td.paramlist_key{border:none;background:none}
+body #community-wrap tr.hidden td,
+body #cWindow tr.hidden td{display:none}
+
+/** Standard Application Box Elements **/
+body #community-wrap .appsBoxTitle{font-size:18px;font-weight:700;color:#693}
+body #community-wrap .infoGroupTitle{color:#333;font-weight:700;border-bottom:1px solid #DDD;margin:0 0 10px}
+ #community-wrap .infoTitle{color:#666;font-size:90%}
+ #community-wrap .infoDesc{font-size:90%}
+ #community-wrap .infoDesc a{text-decoration:none}
+ #community-wrap .infoDesc a:hover{text-decoration:underline}
+
+/** Profile **/
+body #community-wrap .profile-addfriend{background:transparent url(../images/user_add.png) no-repeat scroll 0 2px;padding:3px 3px 3px 20px}
+body #community-wrap .profile-message{background:transparent url(../images/Mail_16x16.png) no-repeat scroll 0 2px;padding:3px 3px 3px 20px}
+body #community-wrap .profile-star{background:transparent url(../images/Star_16x16.png) no-repeat scroll 0 2px;padding:3px 3px 3px 20px}
+body #community-wrap .profile-media{background:transparent url(../images/photos.png) no-repeat scroll 0 2px;padding:3px 3px 3px 20px}
+body #community-wrap #profile-info h1{margin-top:8px;margin-bottom:8px}
+
+/** Tables **/
+body #community-wrap div.listing div.avatar{float:right;padding:2px}
+body #community-wrap div.listing div.content{padding:2px}
+body #community-wrap td.info-key{text-align:right;width:120px}
+body #community-wrap div.ccontent table.ccontentTable{margin-left:-60px}
+body #community-wrap table.ccontentTable tr{height:1.6em}
+body #community-wrap table.ccontentTable td{vertical-align:top;padding:0 10px 5px 0}
+body #community-wrap ul.avatar-list{list-style:none;margin:0;padding:0}
+body #community-wrap ul.avatar-list li{display:inline;background:none;margin:0 3px 0 0 !important;padding:0}
+body #community-wrap div.masterhead td.profile{border:none}
+body #community-wrap div.masterhead td{padding:4px}
+body #community-wrap table.grid td,
+body #community-wrap div.listing{border-top:1px solid #CCC;padding:8px}
+
+/** Tiny icons + newsfeed **/
+body #community-wrap div.sprite-favicons{background:transparent url(../images/icons.png) no-repeat scroll 0 0;height:20px;width:20px;float:left;padding:3px}
+body #community-wrap div.created{text-align:right;width:65px;float:right;color:#9ab070;font-weight:700;font-size:11px}
+body #community-wrap img.icon{vertical-align:middle;margin:0!important;padding:0 1px!important}
+body #community-wrap div.news-separator{border:medium none;color:#D8DFEA;height:1px;margin-top:2px;margin-bottom:10px;overflow:hidden}
+#community-wrap a#memberlist-save,
+#community-wrap .communtiy-filter-created{line-height:15px;padding:3px 0 3px 22px}
+#community-wrap a#memberlist-save{background:url(../images/action/icon-window.png) 0 2px no-repeat;margin-left:15px}
+.communtiy-filter-created{background:url(../images/comment_clock.png) 0 2px no-repeat}
+.community-filter-list{margin-bottom:25px}
+
+/*******************************************************************************************/
+
+/* SEND MESSAGE WINDOW STYLE */
+#writeMessageContainer{}
+#writeMessageContainer .receiverContainer{padding:5px;border:solid 1px #ccc;background:#f2fde9;}
+#writeMessageContainer .inputbox{float:right;width:290px;display:block;line-height:normal;}
+/* SEND MESSAGE WINDOW STYLE */
+
+/* ADD NEW FRIEND WINDOW STYLE */
+#addFriendContainer{}
+#addFriendContainer form#addfriend{display:block !important;/* If it's inline from Joomla! template,child elements won't render to cWindow width */
+ position:relative;padding-left:65px !important;margin:5px 0 !important;}
+#addFriendContainer img.avatar{position:absolute;top:0;left:0;width:50px;}
+#addFriendContainer textarea.inputbox{width:100%;height:50px;padding:1px 0;margin:0;}
+/* ADD NEW FRIEND WINDOW STYLE */
+
+/** Message **/
+body #community-wrap div.avatar{float:left;width:50px}
+body #community-wrap div.inbox-toolbar{background:#fff;border:solid 1px #ccc;padding:3px}
+body #community-wrap div.inbox-toolbar a{color:#666;font-size:11px}
+body #community-wrap div.inbox-read{border-bottom:solid 1px #ccc;position:relative;padding:3px}
+body #community-wrap div.inbox-read a.subject{text-decoration:none}
+body #community-wrap div.inbox-unread{background:#f5fdeb;border-bottom:solid 1px #ccc;position:relative;padding:3px}
+body #community-wrap div.inbox-unread a.subject{font-weight:700;text-decoration:none}
+body #community-wrap div.inbox-toolbar .checkbox,
+body #community-wrap div.inbox-message .checkbox{margin:1px 0 0}
+body #community-wrap div.message-body{margin:0 50px}
+body #community-wrap .message-info{font-size:10px;color:#666}
+body #community-wrap .message-subject{text-indent:20px;padding:3px 0}
+body #community-wrap .message-subject a:link{text-decoration:none;font-size:1.3em;font-weight:700}
+body #community-wrap .message-subject a:visited{text-decoration:underline;font-size:1.3em;font-weight:400}
+body #community-wrap .bubble-arrow{background:transparent url(../images/message-arrow.gif) no-repeat top left;float:left;width:100%}
+body #community-wrap .bubble-content{background:#fff;border-top:solid 1px #c5d8e7;border-right:solid 1px #c5d8e7;border-bottom:solid 1px #c5d8e7;width:100%;margin:0 0 0 12px;padding:10px 10px 5px}
+body #community-wrap .avatar-message-view{margin:10px 0 0}
+
+/** Ajax **/
+body #community-wrap div.ajax-wait{background-image:url(../images/wait.gif);width:16px;height:16px;}
+
+/** drag **/
+body #community-wrap td.dragHandle{cursor:move;}
+body #community-wrap .showDragHandle{background-image:url(../images/drag.gif);background-position:center center;background-repeat:no-repeat;cursor:move;}
+
+/**
+ * Unordered list for displaying avatars
+ **/ 
+body #community-wrap ul.community-avatar-list li{background:transparent none repeat scroll 0 0;display:inline;line-height:200%;list-style-image:none;list-style-position:outside;list-style-type:none;margin:0;padding:6px 6px 0px 0px;}
+body #community-wrap ul.community-avatar-list li img{padding:0;}
+
+/**
+ * Show-more link
+ **/
+body #community-wrap div.community-show-more,
+body #community-wrap span.community-show-mores{text-align:right;} 
+
+/*******************************************************************************************/
+/** FRONTPAGE **/
+.app-box .actor-link{width:100%}
+div.groups-news-title,
+span.groups-news-title{background:transparent url(../images/groups_news_title.gif) no-repeat scroll 0 5px;padding:3px 3px 3px 20px}
+body #community-wrap div.greybox{border:solid 1px #ccc;margin:0 0 15px}
+body #community-wrap div.greybox div{border:solid 1px #fff}
+body #community-wrap div.greybox div div{border:none;background:#fff url(../images/greybox.gif) repeat-x top left}
+body #community-wrap div.greybox div div div{background:none}
+body #community-wrap div.greybox div div div h1,body #community-wrap div.greybox div div div h2{margin:0;padding:0}
+body #community-wrap div.greybox div div div h1{letter-spacing:-1px;font-size:32px;line-height:35px;margin:0 0 20px;padding:0 0 10px}
+body #community-wrap div.greybox div div div h2{color:#666;margin:0 0 15px}
+body #community-wrap div.greybox div div div.introduction{margin:0;padding:30px 0 0 70px}
+body #community-wrap div.greybox div div div.loginform{width:200px;float:right;background:transparent url(../images/greybox-separator.gif) no-repeat top left;height:auto;padding:20px 15px 0 30px}
+body #community-wrap div.greybox div div div.loginform input.frontlogin{font-size:16px;font-weight:700;color:#666;width:90%;padding:3px}
+body #community-wrap ul#featurelist{list-style:none;margin:20px 0}
+body #community-wrap ul#featurelist li{font-size:14px;color:#999;background:transparent url(../images/add-button.gif) no-repeat 0 0;line-height:16px;height:16px;font-weight:700;list-style-type:none;list-style-image:none;margin:0 0 5px!important;padding:0 0 0 25px}
+body #community-wrap div.greybox a#joinButton{background:transparent url(../images/join-button-big-empty.gif) no-repeat 0 0;width:278px;height:49px;display:block;outline:none;font-size:19px;font-weight:700;line-height:46px;text-shadow:#333 0 1px 2px;text-align:center;color:#fff;text-decoration:none}
+body #community-wrap div.greybox a#joinButton:hover{background:transparent url(../images/join-button-big-empty.gif) no-repeat 0 -49px;text-decoration:none}
+body #community-wrap div.greybox a#joinButton2{background:transparent url(../images/join-button-big.gif) no-repeat 0 0;width:278px;height:49px;text-indent:-9999px;display:block}
+body #community-wrap div.greybox a#joinButton2:hover{background:transparent url(../images/join-button-big.gif) no-repeat 0 -49px}
+body #community-wrap div.frontColLeft{margin:20px 280px 0 0}
+body #community-wrap div.frontColRight{width:250px;float:right}
+body #community-wrap div.yellowbox h3{color:#7b7948;margin:0 0 10px;padding:0}
+body #community-wrap h3.frontTitle{color:#789539;font-family:"Segoe UI",Arial,Helvetica,sans-serif;font-size:150%;font-weight:700;line-height:100%;margin:0;padding:10px 0}
+body #community-wrap div.rightColContainer{width:230px;height:auto;float:right}
+body #community-wrap div.leftColContainer{margin-right:250px}
+body #community-wrap div.center{padding:0 10px 10px 16px}
+
+/** FRONTPAGE **/
+/*******************************************************************************************/
+
+/*******************************************************************************************/
+/** USER PROFILE **/
+#community-wrap #profile-header ul.actions{list-style:none;width:33%;float:left;background:none;margin:0;padding:0;clear:none}
+#community-wrap #profile-header ul.actions li{background:none;display:block;float:left;width:85%;font-size:90%;height:10px;line-height:10px;text-align:left;border:0;margin:5px 3px 5px 0 !important;padding:0 0 0 17px}
+#community-wrap #profile-header ul.actions li.profile{background:transparent url(../images/icon_10px.gif) no-repeat 0 0}
+#community-wrap #profile-header ul.actions li.avatar{background:transparent url(../images/icon_10px.gif) no-repeat 0 -10px}
+#community-wrap #profile-header ul.actions li.privacy{background:transparent url(../images/icon_10px.gif) no-repeat 0 -20px}
+#community-wrap #profile-header ul.actions li.apps{background:transparent url(../images/icon_10px.gif) no-repeat 0 -30px}
+#community-wrap #profile-header ul.actions li.group{background:transparent url(../images/icon_10px.gif) no-repeat 0 -40px}
+#community-wrap #profile-header ul.actions li.photo{background:transparent url(../images/icon_10px.gif) no-repeat 0 -50px}
+#community-wrap #profile-header ul.actions li.write{background:transparent url(../images/icon_10px.gif) no-repeat 0 -60px}
+#community-wrap #profile-header ul.actions li.inbox{background:transparent url(../images/icon_10px.gif) no-repeat 0 -70px}
+#community-wrap #profile-header ul.actions li.invite{background:transparent url(../images/icon_10px.gif) no-repeat 0 -80px}
+#community-wrap #profile-header ul.actions li.video{background:transparent url(../images/icon_10px.gif) no-repeat 0 -90px}
+#community-wrap #profile-header ul.actions li.events{background:transparent url(../images/icon_10px.gif) no-repeat 0 -100px}
+#community-wrap #profile-header ul.actions a,#community-wrap #profile-header ul.actions a:hover{font-size:100%!important}
+#community-wrap .js-box-grey{padding:0 20px 15px}
+#community-wrap div.mini-profile{border:solid 1px #ccc;position:relative;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;margin:0 0 5px;padding:7px 0!important}
+#community-wrap .jsFriendList .jsFriendRespond{display:none}
+#community-wrap .jsFriendList:hover .jsFriendRespond{display:block}
+body #community-wrap .mini-profile-avatar{float:left;padding:0 10px}
+body #community-wrap .mini-profile-avatar *{float:left;display:inline-block}
+body #community-wrap .mini-profile-details{margin:0 10px 0 90px}
+body #community-wrap .mini-profile-details-status{min-height:18px}
+body #community-wrap .mini-profile-details-action{margin-top:5px}
+body #community-wrap .mini-profile-details-action .jsRgt .jsIcon1{margin-right:0}
+body #community-wrap .mini-profile-details h3.name,body #community-wrap h3.groupName,body #community-wrap h3.eventName{font-size:14px;margin:0;padding:0;}
+body #community-wrap .mini-profile-details div.status{font-size:90%;margin:0;padding:0 0 5px}
+#cWindow div.mini-profile table,#cWindow div.mini-profile table td{vertical-align:top!important}
+.jsFriendAction{left:90px;bottom:8px}
+.jsFriendRespond{right:8px;bottom:8px}
+
+/**
+ * Application listing
+ */
+#community-wrap .app-item{-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;border:solid 1px #ccc;position:relative;margin:0 0 5px;padding:10px 0}
+#community-wrap .app-avatar{float:left;padding:0 0 0 20px}
+#community-wrap .app-item-details{font-size:90%;margin:0 10px 0 100px}
+#community-wrap .app-item-description{margin:0 120px 15px 100px}
+#community-wrap .app-item h3{font-size:120%;margin:0 10px 0 100px;padding:0 0 5px}
+#community-wrap .app-item .added-ribbon{height:16px;line-height:16px;position:absolute;right:0;top:7px;font-size:85%;font-weight:700;color:#fff;text-transform:uppercase;background:transparent url(../images/online.png) no-repeat 0 0;padding:0 5px 0 10px}
+#community-wrap .app-item .added-button{height:20px;line-height:20px;position:absolute;right:10px;top:35px;font-size:85%;font-weight:700;color:#b3ca8f;text-transform:uppercase;background:#e1f4c4;border:solid 1px #b3ca8f;text-decoration:none;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;padding:0 15px}
+#community-wrap .app-item .added-button:hover{border:solid 1px #5d7d3d;color:#5d7d3d}
+#community-wrap .app-item .remove-button{height:20px;line-height:20px;position:absolute;right:10px;top:35px;font-size:85%;font-weight:700;color:#eab3b3;text-transform:uppercase;background:#ffd3d3;border:solid 1px #eab3b3;text-decoration:none;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;padding:0 15px}
+#community-wrap .app-item .remove-button:hover{border:solid 1px #b97a7a;color:#b97a7a}
+#community-wrap .app-item-empty{text-align:center;margin:0 20px}
+
+/* for sortable item */
+#community-wrap #apps-mine .app-item.dragHandle{cursor:move}
+#community-wrap .app-item.dragHandle .app-item-description{margin:0 20px 15px 100px}
+#community-wrap .app-item.dragHandle .app-item-details,#community-wrap .app-item.dragHandle h3{margin:0 20px 0 100px}
+#community-wrap .app-item.onDrag{opacity:0.5;filter:alpha(opacity=50)}
+#community-wrap .app-item.onDrag a{color:#8e58b7}
+
+/* PROFILE ABOUT
+ Affected files:- profile.about.php
+ */
+#community-wrap .profile-right-info{list-style:none;margin:10px 0 0;padding:0}
+#community-wrap .profile-right-info dt{background:none;color:#777;font-size:90%;line-height:normal;padding:0}
+#community-wrap .profile-right-info dd{color:#222;font-size:90%;margin:0 0 10px; word-wrap: break-word;}
+#community-wrap .profile-right-info dd a{text-decoration:none}
+#community-wrap .profile-box{border:solid 1px #ecebeb;position:relative;padding:8px 8px 20px}
+#community-wrap .profile-box .profile-likes{position:absolute;bottom:10px;right:8px;z-index:1}
+#community-wrap .profile-avatar{float:left}
+#community-wrap .profile-avatar img{border:solid 5px #e4e3d1}
+#community-wrap .profile-info{margin:0 0 0 180px}
+
+/* Remove inheritance from Joomla! template */
+body #community-wrap .profile-info .contentheading{border:none!important;height:auto!important;background:none;margin:0;padding:0}
+body #community-wrap .profile-name{font-size:22px;font-weight:700;color:#333;margin:0 0 10px}
+body #community-wrap #profile-status{border-bottom:1px dotted #CCC;line-height:normal;padding:4px 0}
+body #community-wrap #profile-status-edit{float:right;font-size:10px;width:50px;text-align:right;cursor:pointer}
+
+/* USER INFO IN PROFILE PAGE
+ Affected files:- profile.header.php
+ */
+#community-wrap .profile-details .title{font-weight:700;margin:10px 0 0}
+#community-wrap .profile-details .likes{position:absolute;right:0;top:0}
+#community-wrap .profile-likes #like-container{margin-right:0}
+
+/* MINI PROFILE & TOOLBOX
+ Affected files:- groups.miniheader.php
+ - profile.header.php
+ */ 
+#community-wrap div.profile-toolbox-bl{background:url(../images/toolbar/profile-toolbar-bl.gif) no-repeat bottom left #eee;margin:0 0 10px}
+#community-wrap div.profile-toolbox-br{background:url(../images/toolbar/profile-toolbar-br.gif) no-repeat bottom right transparent}
+#community-wrap div.profile-toolbox-tl{background:url(../images/toolbar/profile-toolbar-tl.gif) repeat-x top transparent}
+#community-wrap #miniheader .goLft{float:left;margin:5px}
+#community-wrap #miniheader .profile-toolbox-thumb,
+#community-wrap #miniheader .profile-toolbox-thumb *{float:left;display:inline-block}
+#community-wrap #miniheader .profile-toolbox-thumb a img{background:#fff;border:1px solid #ccc;padding:1px}
+#community-wrap #miniheader .profile-toolbox-thumb a:hover img{border-color:#aaa}
+#community-wrap #miniheader .profile-toolbox-name{color:#555}
+#community-wrap #miniheader .profile-toolbox-meta{margin-left:45px;display:block;line-height:1.3}
+#community-wrap #miniheader .goRgt{float:right;margin:15px 5px 0 0}
+#community-wrap .small-button{display:inline-block;margin-left:8px}
+#community-wrap .small-button li{display:block;float:left;margin:5px 5px 5px 0}
+#community-wrap .small-button.profile{margin-top:5px}
+#community-wrap .small-button.profile li{margin-right:15px}
+#community-wrap .small-button a{background:url(../images/toolbar/toolbar-icon.png) transparent no-repeat !important;display:block;float:left;font-size:11px;text-decoration:none;height:20px;padding:0 0 0 20px;margin:0}
+#community-wrap .small-button .btn-add-friend a{background-position:0 1px !important}
+#community-wrap .small-button .btn-gallery a{background-position:0 -19px !important}
+#community-wrap .small-button .btn-blog a{background-position:0 -39px !important}
+#community-wrap .small-button .btn-favourite a{background-position:0 -59px !important}
+#community-wrap .small-button .btn-videos a{background-position:0 -79px !important}
+#community-wrap .small-button .btn-write-message a{background-position:0 -99px !important}
+#community-wrap .small-button .btn-events a{background-position:0 -119px !important}
+#community-wrap .small-button .btn-members a{background-position:0 -139px !important}
+#community-wrap .small-button .btn-discussions a{background-position:0 -159px !important}
+#community-wrap .small-button a span{display:inline-block;height:13px;line-height:13px;margin:1px 0;padding:3px 4px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+#community-wrap .small-button a:hover span{background-color:#ccc} 
+#community-wrap.on-beez_20 .small-button a:hover,
+#community-wrap.on-beez_20 .miniheader a:hover {background-color: transparent;}
+
+/* PROFILE'S NEW STATUS
+ Affected files:- profile.header.php
+ */ 
+body #community-wrap #profile-new-status{padding:15px 15px}
+body #community-wrap #profile-new-status label{font-weight:700}
+body #community-wrap #profile-new-status textarea#statustext{display:block;border:1px solid #ccc;height:50px;margin:2px 0;padding:4px;}
+body #community-wrap #profile-new-status.inactive textarea#statustext{color:#888}
+body #community-wrap #profile-new-status.inactive #save-status,
+body #community-wrap #profile-new-status.inactive #profile-status-notice{display:none}
+body #community-wrap #community-photo-caption input#captiontext{font-size:16px;color:#999;margin:0 0 0 10px;width:50%;}
+body #community-wrap #community-photo-caption #save-caption{padding:3px 10px;background:#333;color:#fff;font-size:11px;font-weight:700;border:1px solid #666;height:28px;line-height:28px}
+
+#community-wrap a.inbox{background:transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -120px;padding:0 0 0 22px}
+#community-wrap a.friend{background:transparent url(../images/icons/icons-16x16.gif) no-repeat 0 0;padding:0 0 0 22px}
+
+/* GROUPS FORM
+ Affected files:- groups.forms.php
+ - groups.search.php
+ */ 
+#community-groups-wrap span.info{font-size:11px;margin:0 0 10px}
+#community-groups-wrap div textarea{width:45%}
+#community-groups-wrap div span.title{width:20%;float:left}
+#community-groups-wrap div.items{margin-top:10px}
+#community-groups-wrap div.submit{width:70%;text-align:center;margin:30px 0 0}
+#community-groups-wrap div.title{font-weight:700;text-decoration:underline}
+#community-groups-wrap fieldset{background:none;border:1px solid #EEE;float:left;width:50%;padding:8px}
+#community-groups-wrap fieldset legend{color:#999;text-decoration:underline;font-size:12px}
+#community-groups-wrap fieldset div.avatar{width:30%;float:left}
+#community-groups-wrap fieldset div.caption{float:left}
+#community-groups-wrap .upload{margin:20px 0 0}
+#community-groups-wrap .community-groups{border-bottom:1px solid #789539;margin:0 0 10px}
+
+/* PHOTO:ALBUM LIST ITEM 
+ Affected files:- templates/photos.myphotos.php
+ */
+body #community-wrap .albums{margin:0 -5px}
+body #community-wrap .albums a.album-cover-link:hover{background:inherit !important;color:inherit !important}
+body #community-wrap .album{float:left;width:25%;border:none}
+/* body #community-wrap .album .album{position: relative; float:none;width:auto;border:1px solid #ddd;border-bottom:1px solid #ccc;min-height:250px;height:auto!important;overflow:hidden;margin:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px} */
+body #community-wrap .album .album{position: relative; float:none;width:auto;height:auto!important;overflow:hidden;margin:5px;}
+body #community-wrap .album-cover{float:none;margin:10px auto;text-align:center;position:relative; width: 131px;}
+body #community-wrap .album-cover img{width:auto;height:128px;}
+body #community-wrap .album-name{text-overflow: ellipsis; max-height: 48px;overflow: hidden;margin-bottom:4px}
+body #community-wrap .album-summary{margin:8px 8px 0}
+body #community-wrap .album-summary * {text-align: center}
+body #community-wrap .album-actions{display: none;position: absolute; top: 0; right: 0; background: #555;padding: 4px;-moz-border-radius: 0 0 0 4px}
+body #community-wrap .album-actions a {display: block; width: 16px; height: 16px; float: left;text-indent:-9999px}
+body #community-wrap .album-actions a + a {margin-left: 4px}
+body #community-wrap .album-actions a.delete {background: transparent url(../images/icons/delete.png) no-repeat 0 0;}
+body #community-wrap .album-actions a.edit {background: transparent url(../images/icons/page_edit.png) no-repeat 0 0;}
+body #community-wrap .album-actions a.upload {background: transparent url(../images/icons/add.png) no-repeat 0 0;}
+body #community-wrap .album-actions a.featured {background: transparent url(../images/icons/star.png) no-repeat 0 0;}
+body #community-wrap .album-actions a.remove-featured {background: transparent url(../images/icons/star-minus.png) no-repeat 0 0;}
+body #community-wrap .album-actions a.linkprofile {background: transparent url(../images/icons/link_add.png) no-repeat 0 0;}
+body #community-wrap .album-lastupdated{white-space:wrap;}
+body #community-wrap a.album-cover-link {display:block; width:130px;height:130px;margin:0 auto;position:relative;}
+body #community-wrap .cFeaturedOverlay {display: block; width:24px;height:24px;text-indent:-9999px;position:absolute;top:0;left:0;background: transparent url(../images/icons/featured-ribbon.png) no-repeat 0 0}
+
+/* PHOTO:PHOTO LIST ITEM
+ * Affected files:* - templates/photos.album.php
+ */
+
+body #community-wrap .photo-list-item{border:1px solid #CCC;display:inline-block;width:100%;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px; margin-bottom: 10px}
+body #community-wrap .photo-list-item .container{padding:5px}
+body #community-wrap .photo-list-item .photo-item{float:left;position:relative;margin:5px}
+body #community-wrap .photo-list-item .photo-item img{border:1px solid #CCC;margin:0!important;padding:3px}
+body #community-wrap .photo-list-item .photo-item:hover .photo-action,body #community-wrap .photo-list-item .photo-item a{display:block}
+
+/* INBOX:FORM ELEMENT */
+#writeMessageForm .receiverList #selections{width:140px}
+#writeMessageForm textarea.inputbox{margin:0}
+#writeMessageForm td{vertical-align:top}
+
+/* APP BOX:NO ITEM TO DISPLAY */
+div.content-nopost{min-height:22px;line-height:1.1em;margin:0 10px 0 31px}
+div.icon-nopost{float:left;min-height:22px;padding:4px 10px 0 5px}
+
+/* CWINDOW:BLOCK UNREGISTER */
+body #cWindowContent .blockUnregister div.message{background:#fde2e2;border-top:solid 2px #d19393;border-bottom:solid 2px #d19393;padding:5px 10px}
+body #cWindowContent .blockUnregister h3{font-size:15px;color:#333;margin:0 0 10px;padding:0}
+body #cWindowContent div.loginform label,body #cWindowContent div.loginform input{margin:0}
+body #cWindowContent div.loginform .frontlogin{margin:0 0 3px;padding:3px}
+body #cWindowContent .blockUnregister div.loginform,body #cWindowContent .blockUnregister div.right-col{background:transparent url(../images/separator.gif) no-repeat center left;padding-left:10px}
+body #cWindowContent .blockUnregister ul#featurelist{list-style:none;margin:10px 0!important;padding:0}
+body #cWindowContent .blockUnregister ul#featurelist li{font-size:11px;color:#999;background:transparent url(../images/add-button.gif) no-repeat 0 0;line-height:16px;height:16px;margin:0 0 5px!important;padding:0 0 0 25px}
+body #cWindowContent .blockUnregister a#joinButton2{background:transparent url(../images/register-button-small.gif) no-repeat 0 0;width:149px;height:46px;text-indent:-9999px;display:block;outline-style:none;margin:0 auto}
+body #cWindowContent .blockUnregister a#joinButton2:hover{background:transparent url(../images/register-button-small.gif) no-repeat 0 -46px}
+
+/*
+ * GENERAL LINK ICON
+ * All small 16x16 icons please use these classes
+ * we will use it for all templates
+ */
+
+#community-wrap .page-action a{font-size:90%;}
+.icon-user,
+.icon-calendar,
+.icon-remove,
+.icon-write,
+.icon-group,
+.icon-leave,
+.icon-online,
+.icon-offline,
+.icon-add-friend,
+.icon-remove-friend,
+.icon-approve,
+.icon-unapprove,
+.icon-discuss,
+.icon-wall,
+.icon-edit,
+.icon-replies,
+.icon-bubble,
+.icon-photos,
+.icon-report,
+.icon-videos,
+.icon-edit2,
+.icon-save,
+.icon-blog,
+.icon-addfeatured,
+.icon-bookmark,
+.icon-blockuser,
+.icon-block-user,
+.icon-ban,
+.icon-unban{line-height:15px;margin:10px 15px 0 0;padding:3px 3px 3px 20px;display:inline;text-decoration:none;}
+.icon-waitingapproval{line-height:15px;margin:10px 10px 0 0;padding:3px 3px 3px 20px;color:#666;}
+
+.jsIcon1{background:url(../images/icons/jsIcon1.png) no-repeat transparent !important;display:inline-block;font-size:11px;height:16px;line-height:16px;margin:0 15px 0 0;padding:3px 3px 1px 22px}
+.icon-user{background-position:0 0 !important}
+.icon-add-friend{background-position:0 -20px !important}
+.icon-group{background-position:0 -40px !important}
+.icon-photos{background-position:0 -60px !important}
+.icon-videos{background-position:0 -80px !important}
+.icon-discuss{background-position:0 -100px !important}
+.icon-wall{background-position:0 -120px !important}
+.icon-calendar{background-position:0 -140px !important}
+.icon-write{background-position:0 -160px !important}
+.icon-online{background-position:0 -180px !important}
+.icon-offline{background-position:0 -200px !important}
+.icon-approve{background-position:0 -220px !important}
+.icon-waitingapproval{background-position:0 -240px !important}
+.icon-addfeatured{background-position:0 -260px !important}
+.icon-removefeatured{background-position:0 -280px !important}
+.icon-report,.icon-report:focus,.icon-report:hover{background:transparent url(../images/action/icon-alert-big.png) no-repeat 0 2px !important}
+.icon-bubble,.icon-bubble:focus,.icon-bubble:hover{background:transparent url(../images/icons/bubble.gif) no-repeat 0 3px !important}
+.icon-bookmark,.icon-bookmark:focus,.icon-bookmark:hover{background:transparent url(../images/action/share-abstract.png) no-repeat 0 2px !important}
+.icon-blockuser,.icon-blockuser:focus,.icon-blockuser:hover{background:transparent url(../images/action/icon-ban.png) no-repeat 0 2px !important}
+.icon-block-user,.icon-block-user:focus,.icon-block-user:hover{background:transparent url(../images/action/icon-user-block.png) no-repeat 0 2px !important}
+.icon-ban,.icon-ban:focus,.icon-ban:hover{background:transparent url(../images/action/icon-user-block.png) no-repeat 0 3px !important}
+.icon-unban,.icon-unban:focus,.icon-unban:hover{background:transparent url(../images/action/icon-group-go.png) no-repeat 0 3px !important}
+.icon-remove,.icon-remove:focus,.icon-remove:hover,.icon-unapprove,.icon-unapprove:focus,.icon-unapprove:hover{background:transparent url(../images/icons/icons-16x16.gif) no-repeat 0 -37px !important}
+.icon-remove-avatar,.icon-remove-avatar:focus,.icon-remove-avatar:hover{background:transparent url(../images/icons/delete.png) no-repeat 0 !important}
+
+.paramlist_key label.jomTips{margin:0}
+
+body #community-wrap .loading{width:50px;height:11px;background:transparent url(../images/mini-loader.gif) no-repeat 0 0;}
+body #community-wrap div.see-all{font-size:90%;margin:0 0 10px;padding:2px;text-align:right;}
+
+/* Group Invite */
+body #community-wrap ul#friends-list{margin:0px;padding:0px;height:250px;}
+body #community-wrap ul#friends-list li{width:32%;background:none;margin:0 0 5px;padding:3px;list-style:none;float:left;}
+body #community-wrap ul#friends-invited li{background:none;margin:0 0 5px;padding:3px;list-style:none;float:left;}
+body #community-wrap ul#friends-invited li a,
+body #community-wrap ul#friends-list li a{text-decoration:none;font-weight:700;}
+body #community-wrap ul#friends-invited li a:hover,
+body #community-wrap ul#friends-list li a:hover{text-decoration:underline;}
+body #community-wrap ul#friends-list li.friend-list{margin:0 0 10px !important;}
+body #community-wrap ul#friends-list li.friend-list img{border:solid 1px #eee;padding:2px;}
+body #community-wrap ul#friends-list li.friend-list:hover{background:#f2f2f2;}
+
+body #community-wrap ul#friends-list li.friend-list:hover img{border:solid 1px #fff;}
+body #community-wrap ul#friends-invited li img,
+body #community-wrap ul#friends-list li img{float:left;}
+body #community-wrap ul#friends-invited li .friend-name,
+body #community-wrap ul#friends-list li .friend-name{margin:0 0 0 10px;}
+body #community-wrap ul#friends-invited li span.friend-name,
+body #community-wrap ul#friends-list li div.friend-name,
+body #community-wrap ul#friends-invited li div.friend-name{margin:0 0 0 55px;vertical-align:top;}
+body #community-wrap ul#friends-invited li span.friend-name {margin:0;}
+body #community-wrap div#friend-selected-list{border:1px solid gray;padding:5px;overflow:scroll;margin-left:20px;float:left;width:20%;height:250px;margin-top:45px;}
+body #community-wrap ul#friends-invited{margin:0;padding:0;}
+body #community-wrap ul#friends-invited li{font-weight:700;}
+body #community-wrap ul#friends-invited li.friend-list{font-weight:700;padding:0;margin:0 0 5px !important;background:none;width:100%;float:left;display:inline-block;}
+body #community-wrap ul.application-group-avatars{list-style:none;}
+body #community-wrap ul.application-group-avatars li{display:inline;margin:0 3px 0 0 !important;}
+body #community-wrap div.see-all{position:relative;}
+body #community-wrap .loading{display:none;float:right;margin:5px 5px 0 0;}
+#community-wrap .filterlink{padding:0 10px;margin:0 0 10px;text-align:right;}
+#community-wrap .filterlink a {
+    border-right: 1px solid #CCCCCC;
+    font-size: 11px;
+    font-weight: normal;
+    outline: medium none;
+    padding: 0 4px 0 0;
+    text-align: center;
+    text-decoration: none;
+}
+#community-wrap .filterlink .loading {position: absolute; left: 0; top: -2px;}
+#community-wrap .filterlink a:hover{text-decoration:underline;}
+body #community-wrap a.active-state{padding:0 6px;text-decoration:none !important;font-weight:700;}
+
+#community-wrap .cModule .filterlink{padding:0 0px;margin:0 0 6px;text-align:right; float:right;}
+
+/* Standard Avatar List */
+body #community-wrap ul.avatar-list{margin:0;padding:0pt;list-style:none;}
+body #community-wrap ul.avatar-list li,
+body #community-wrap ul.avatar-list li.avatar-list-item{display:inline;padding:0;background:none;margin:0 3px 0 0;}
+body #community-wrap ul.avatar-list li a{text-decoration:none;}
+body #community-wrap ul.avatar-list li.first{width:100%;display:block;text-align:center;padding-bottom:20px;}
+body #community-wrap ul.avatar-list li.first a.avatar-link{display:block;position:relative;}
+body #community-wrap ul.avatar-list .title{font-weight:700;font-size:160%;margin-bottom:10px;}
+body #community-wrap ul.avatar-list .title a{text-decoration:none;}
+body #community-wrap ul.avatar-list .desc-title{font-size:90%;text-align:left;line-height:normal;border-bottom:1px solid #ccc;padding:2px 0;margin:0 0 5px;font-weight:700;}
+body #community-wrap ul.avatar-list .desc-details{color:#666;text-align:left;}
+body #community-wrap .tag-new{position:absolute;top:0;left:0;width:40px;height:40px;background:transparent url(../images/tag-new.gif) no-repeat 0 0;}
+
+body #community-wrap .col-left,
+body #community-wrap .col-right{margin:0;padding:0;}
+body #cWindowContent .button{padding:2px 15px;background:#333 !important;border:solid 1px #666 !important;cursor:pointer;color:#ccc !important;font-size:11px;}
+body #cWindowContent .button:hover{background:#1c1d22 !important;border:solid 1px #666;}
+body #community-wrap div.greybox table{margin:0 0 20px;}
+body #community-wrap div.greybox table td{vertical-align:top;}
+body #community-wrap #profile-edit .inputbox{width:290px;}
+body #community-wrap #profile-edit .select{width:auto;}
+body #community-wrap #profile-edit .validate-custom-date{width:auto;}
+
+
+/*******************************************************************************************/
+body #community-wrap .facebook{background:transparent url(../../../assets/favicon/facebook.gif) no-repeat 0 0;margin:5px 0 0;padding-left:20px;text-decoration:underline;}
+body #community-admin-wrapper{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;margin:0 0 10px;border:solid 1px #ffd5d5;padding:6px 0px;background:#FFEBEB none repeat scroll 0 0;}
+body #community-admin-wrapper a{border:none;text-decoration:none;padding:4px;font-size:11px}
+body #community-admin-wrapper a:hover{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;background-color:#fbc6c6;border:none;text-decoration:none;}
+body #community-admin-wrapper #community-admin-controls,
+body #community-admin-wrapper #community-admin-controls li{background:0;padding:0;margin:0;list-style:none;}
+body #community-admin-wrapper #community-admin-controls li{display:inline;padding:0 0 0 4px;background:none;}
+body #community-admin-wrapper #community-admin-controls li a span{text-decoration:none;}
+body #community-wrap .pos-rel{position:relative;}
+body #community-wrap div.error-box{border:1px solid #FF0000;padding:20px;background-color:#FFEAEA;}
+
+/** Activity stream **/
+#activity-stream-container{margin-bottom:20px;position:relative;zoom:1;}
+body #community-wrap .newsfeed-item{padding:2px 0;margin:0;border-bottom:1px solid #ccc;position:relative;overflow:hidden;display:block;}
+
+.denied-box{padding:15px;border:1px solid #CCCCCC;background:url(../images/greybox.gif) repeat-x top left #fff;}
+
+/*******************************************************************************************/
+/** cFilterBar **/
+/*
+ * Affected files:* - libraries/filterbar.php
+ *
+ */
+body #community-wrap #cFilterBar{position:relative;border:1px solid #EEE;margin-bottom:10px;}
+body #community-wrap #cFilterBar .filterGroup{border:none;padding:4px 6px;}
+body #community-wrap #cFilterBar .filterGroup#cFilterType_Sort{text-align:right;}
+body #community-wrap #cFilterBar .filterGroup#cFilterType_Filter{position:absolute;top:0;left:0;}
+body #community-wrap #cFilterBar .filterGroup a:hover{background:0 !important;color:inherit !important}
+body #community-wrap #cFilterBar .filterName{display:inline;font-size:12px;font-weight:normal;}
+body #community-wrap #cFilterBar .filterOptions,
+body #community-wrap #cFilterBar .filterOption{/* Remove inheritance from Joomla! template */
+ background:none;list-style:none;margin:0;padding:0;}
+body #community-wrap #cFilterBar .filterOptions{display:inline;}
+body #community-wrap #cFilterBar .filterOption{display:inline;font-size:12px;padding-left:2px;}
+body #community-wrap #cFilterBar .active{font-weight:700;}
+/*******************************************************************************************/
+
+body #community-wrap div.featured-items{float:left;display:inline-block;text-align:center;width:150px;padding:10px 5px 10px 0;}
+body #community-wrap div.featured-items a{outline:none;}
+body #community-wrap div.featured-items img.avatar{float:none;width:64px;height:64px;margin:0 auto;}
+
+body #community-wrap div.empty-message{text-align:center;padding:30px;border:solid 2px #c8e1a1;background:#edfed2;margin:20px 0;font-size:110%;color:#455d1e;font-weight:700;}
+
+body #community-wrap div.newsfeed-item div.newsfeed-content-hidden{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;padding:6px;background:#f4f5f6;border:none;margin-top:10px;margin-bottom:10px;display:none;}
+
+#community-wrap .filterlink a.popular-videos{border-right:none;}
+
+div#cWindowContent p{padding:0;margin:0;}
+
+/**
+ * Share this
+ * Social bookmark list
+ */ 
+div#cWindowContent ul.bookmarks-list{list-style:none;background:none;margin:0;padding:0}
+div#cWindowContent ul.bookmarks-list li{list-style:none;margin-bottom:10px;margin-left:0;background:none;float:left;width:33%;padding:0}
+div#cWindowContent ul.bookmarks-list li a{background:transparent url(../images/bookmarks.gif) no-repeat 0 0;text-decoration:none;display:table-cell;line-height:16px;padding-left:20px;color:#666}
+div#cWindowContent ul.bookmarks-list li a:hover{color:#000}
+div#cWindowContent ul.bookmarks-list li a.newsvine{background-position:0 0}
+div#cWindowContent ul.bookmarks-list li a.stumbleupon{background-position:0 -20px}
+div#cWindowContent ul.bookmarks-list li a.technorati{background-position:0 -40px}
+div#cWindowContent ul.bookmarks-list li a.twine{background-position:0 -60px}
+div#cWindowContent ul.bookmarks-list li a.twitter{background-position:0 -80px}
+div#cWindowContent ul.bookmarks-list li a.xanga{background-position:0 -100px}
+div#cWindowContent ul.bookmarks-list li a.ybookmarks{background-position:0 -120px}
+div#cWindowContent ul.bookmarks-list li a.aim{background-position:0 -140px}
+div#cWindowContent ul.bookmarks-list li a.bebo{background-position:0 -160px}
+div#cWindowContent ul.bookmarks-list li a.blinklist{background-position:0 -180px}
+div#cWindowContent ul.bookmarks-list li a.blogmarks{background-position:0 -200px}
+div#cWindowContent ul.bookmarks-list li a.delicious{background-position:0 -220px}
+div#cWindowContent ul.bookmarks-list li a.digg{background-position:0 -240px}
+div#cWindowContent ul.bookmarks-list li a.diigo{background-position:0 -260px}
+div#cWindowContent ul.bookmarks-list li a.facebook{background-position:0 -280px}
+div#cWindowContent ul.bookmarks-list li a.faves{background-position:0 -300px}
+div#cWindowContent ul.bookmarks-list li a.friendster{background-position:0 -320px}
+div#cWindowContent ul.bookmarks-list li a.furl{background-position:0 -340px}
+div#cWindowContent ul.bookmarks-list li a.google{background-position:0 -360px}
+div#cWindowContent ul.bookmarks-list li a.linkedin{background-position:0 -380px}
+div#cWindowContent ul.bookmarks-list li a.live{background-position:0 -400px}
+div#cWindowContent ul.bookmarks-list li a.myspace{background-position:0 -420px}
+div#cWindowContent input.bookmarks-email{width:95%}
+div#cWindowContent textarea.bookmarks-message{width:95%;height:90px}
+
+/*
+ * TinyMCE Fixes 
+ */
+body #community-wrap table.mceLayout{margin-bottom:10px}
+body #community-wrap table.mceLayout tr.mceFirst td{padding-top:2px}
+body #community-wrap .defaultSkin .mceIframeContainer{border-right:1px solid #ccc}
+body #community-wrap table.mceLayout tr td,
+body #community-wrap .mceToolbar td,
+body #community-wrap table.mceLayout tr.mceLast td{padding:0}
+
+/*
+ * Other Fixes
+ */
+
+/* catch this on yoothemes */
+div#cWindowContent form div{margin:0;}
+div#cWindowContent .inputbox{background:#fff;}
+body #community-wrap form div{margin:0;}
+
+/* catch this on ja_purity */
+#community-wrap .radio{padding:0;margin:0;}
+#report-form select#report-predefined{width:280px;}
+#report-form textarea#report-message{height:100px;width:273px;}
+#report-form #report-message-error{display:block;}
+
+body #community-wrap div.inbox-message-heading{margin-bottom:5px;border-bottom:1px solid #eee;padding:5px;}
+
+
+/* pagination container */
+#community-wrap .pagination-container{text-align:center; margin: 16px auto 0 !important;}
+#community-wrap .pagination-container ul {list-style-type: none; padding: 0;}
+#community-wrap .pagination-container li {display: inline-block; padding: 4px 4px;}
+#community-wrap .pagination-container li a {display: block;}
+#community-wrap .pagination-container li span.pagenav {font-weight: bold;}
+
+
+
+/*
+ Page actions
+ */
+#community-wrap .page-actions{margin-bottom:10px;display:block;text-align:right;width:100%;}
+#community-wrap .page-action{display:inline;margin-left:5px;}
+#community-wrap .page-action a{margin:0;outline:none;color:inherit !important}
+
+/*
+ group.created.php
+ */
+#community-wrap ul.linklist{list-style:none;}
+ #community-wrap ul.linklist li{background:transparent url(../images/group_actions.png) no-repeat 0 0;text-indent:22px;height:20px;line-height:16px;margin-bottom:5px;padding:0;}
+ #community-wrap ul.linklist li.upload_avatar{background-position:0 0;}
+ #community-wrap ul.linklist li.add_news{background-position:0 -20px;}
+ #community-wrap ul.linklist li.group_edit{background-position:0 -40px;}
+ #community-wrap ul.linklist li.group_view{background-position:0 -60px;} 
+ #community-wrap ul.linklist li.event_invite{background-position:0 -20px;}
+ #community-wrap ul.linklist li.event_edit{background-position:0 -40px;}
+ #community-wrap ul.linklist li.event_view{background-position:0 -60px;}
+
+/**
+ * new online icon
+ */
+#community-wrap .icon-online-overlay,
+#community-wrap .icon-offline-overlay{height:16px;line-height:16px;padding:0 5px 0 10px;position:absolute;right:0;top:7px;font-size:10px;font-weight:700;color:#fff;text-transform:uppercase;background:transparent url(../images/online.png) no-repeat 0 0;}
+#community-wrap .icon-offline-overlay{background:transparent url(../images/offline.png) no-repeat 0 0;}
+
+
+/** SUBMENU TOOLBAR **/
+
+/**
+ * Searchbox
+ */
+#community-wrap .cModule.searchbox{}
+ #community-wrap .cModule.searchbox .input_wrap{background:transparent url(../images/searchbox.png) no-repeat 0 0;height:26px;padding-left:5px;margin-right:10px;margin-bottom:6px;}
+ #community-wrap .cModule.searchbox .input_wrap .inputbox{background:transparent;border:0;margin:4px 0 0;padding:2px;width:80%;}
+ #community-wrap .cModule.searchbox .input_wrap .inputbox:focus{background:transparent;border:0;}
+ #community-wrap .cModule.searchbox .input_wrap .search_button{background:transparent url(../images/searchbox.png) no-repeat 100% 0;display:block;float:right;height:26px;margin-right:-5px;width:35px;}
+ #community-wrap .cModule.searchbox .input_wrap .search_button span{position:absolute;top:-9999px;height:0;text-indent:-9999px;}
+ #community-wrap .cModule.searchbox .small{text-align:center;} 
+
+#community-wrap #criteriaContainer img.calendar {
+	background-color: #FFFFFF;
+    display: block;
+    float: right;
+    padding: 4px;
+}
+
+/**
+ * Photo uploader
+ */ 
+div#community-wrap #photoupload-container div.upload-form{border:1px solid #eee;margin:0pt 0pt 10px;padding:10px;display:none;}
+div#community-wrap button.upload-photos-button{margin-left:10px;}
+body #community-wrap div.add-new-upload{margin-bottom:15px;}
+body #community-wrap a.add-upload:link,
+body #community-wrap a.add-upload:visited{padding:0 0 0 20px;display:inline;text-indent:0px;}
+body #community-wrap #photoupload-container span.error{font-weight:700;color:red;}
+body #community-wrap #photoupload-container span.success{font-weight:700;color:green;}
+body #community-wrap a.add.add-upload:link{text-indent:20px;width:auto;}
+
+/**
+ * Small edit link user details module
+ */ 
+#community-wrap .edit-this{background:transparent url(../images/edit-profile.png) no-repeat 0 0;height:12px;position:absolute;right:10px;text-indent:-9999px;top:9px;width:13px;}
+#community-wrap .edit-this:hover{background-position:0 -12px;}
+#community-wrap .componentheading {font-size: 24px;}
+ 
+/** fix rt_affinity */
+#body #community-wrap .leftColContainer{overflow:hidden;} 
+
+/** To integrate RT Input Styling **/
+body #community-wrap .button{cursor:pointer;}
+html #community-wrap .rokradios,
+html #community-wrap .rokchecks{cursor:pointer;-moz-user-select:none;}
+html #community-wrap .formtable .value .rokradios,
+html #community-wrap .formtable .value .rokchecks{padding:0 0 0 20px;}
+.on-rt_somaxiom_j15 .cModule.latest-groups li.featured a{float:none !important;display:block !important;}
+body #rt-main #community-wrap .cModule h3.title{font-size:16px !important;line-height:18px;padding:0;margin:0;border:none !important;}
+body #community-wrap ul li a {font-size: 12px; line-height: 13px;}
+
+/* RocketTheme Template Override (Fixes) */
+body #community-wrap.on-rt_tachyon_j15 .video-item .video-thumb {margin: 10px auto;}
+body #community-wrap.on-rt_tachyon_j15 .button {height: 24px;}
+body #community-wrap.on-rt_tachyon_j15 .cModule h3 {font-size: 12px;}
+body #community-wrap.on-rt_tachyon_j15 .event-admin-info {margin-left: 60px; padding-top: 4px;}
+body #community-wrap.on-rt_tachyon_j15 .filterlink a {padding: 0 3px; font-weight: normal; text-align: center; margin-left: -2px;}
+body #community-wrap.on-rt_tachyon_j15 a.active-state {font-weight: bold;}
+
+/* Joomla 1.6 default template override */
+body #community-wrap.on-beez_20 tr,
+body #community-wrap.on-beez_20 td {border: 0px none;}
+
+#cWindowContent {text-align:left;}
+
+/*
+
+Credits to SinisaKrisan.
+http://www.jomsocial.com/webforum/memberlist.php?mode=viewprofile&u=6632
+__________________________________________________________
+Catch this on Gantry based templates
+_________________________________________________________________*/
+#community-wrap .pagination-container .tab{display:inline-block;margin-right:8px;}
+#community-wrap .pagination-container .tab .page-active{background:none;}
+#community-wrap .pagination-container .page-block{display:inline-block;margin-right:4px;font-weight:700;}
+#community-wrap .pagination-container .page-active,.list-footer .page-inactive{padding:0 4px;}
+#community-wrap .pagination-container .page-inactive:hover{cursor:pointer;}
+#community-wrap .pagination-container .rt-results{margin-bottom:5px;}
+/* End of Gantry based templates fix */
+
+#community-wrap .moduletable{padding:0 !important;background:none !important;}
+.jsModulePosition{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;border:3px dashed #999999;background:#CCCCCC;height:80px;line-height:80px;font-family:Consolas;font-size:14px;font-style:italic;font-weight:700;color:#222222;text-align:center;}
+.jsModulePosition#js_profile_side_top{height:80px;line-height:80px;}
+
+/* Jom Social Toolbar */
+body #community-wrap #cToolbarNav{background:transparent url(../images/toolbar/toolbar-bg.gif) no-repeat 0 0;height:50px;margin:0 0 10px;padding:0;}
+body #community-wrap #cToolbarNav ul{list-style:none;line-height:1;}
+body #community-wrap #cToolbarNavInner{background:transparent url(../images/toolbar/toolbar-bg.gif) no-repeat 100% -50px;height:50px;}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li{float:left;background:none;line-height:27px;margin:11px 0 0 3px !important;background:transparent url(../images/toolbar/toolbar-item-off-left.gif) no-repeat top left;list-style-position:outside;list-style-type:none;overflow:visible;/* Fixes templates with overflow:hidden on <li>,e.g. JA_Seleni */}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li a{display:block;padding:0 14px;color:#fff;text-decoration:none;background:transparent url(../images/toolbar/toolbar-item-off-right.gif) no-repeat top right;}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li a:hover{color:#fff;}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active{float:left;background:none;line-height:27px;margin:11px 0 0 3px;background:transparent url(../images/toolbar/toolbar-item-on-left.gif) no-repeat top left;}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active a{display:block;color:#fff;text-decoration:none;background:transparent url(../images/toolbar/toolbar-item-on-right.gif) no-repeat top right;}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active div{background:#789539;}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active div a:link,
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active div a:visited{background:#789539;border-bottom:solid 1px #8cae44;width:90%;}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active div a:hover{background:#97bb48;}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li div{position:absolute;visibility:hidden;margin:0;padding:0;background:transparent;width:150px;z-index:10;overflow:hidden;}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li div a{position:relative;display:block;float:left;margin:0;padding:5px 10px;width:100%;white-space:nowrap;text-align:left;text-decoration:none;background:#444;color:#fff;border-bottom:solid 1px #666;line-height:normal;}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li div a:hover{background:#555;color:#fff;}
+body #community-wrap #cToolbarNav div.toolbar-myname{float:right;height:40px;line-height:40px;font-weight:700;margin-right:20px;}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active div a.has-separator{border-bottom:solid 3px #8cae44;}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li div a.has-separator{border-bottom:solid 3px #666;}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li#toolbar-item-notify{background:transparent url(../images/toolbar/toolbar-item-notify-off-left.gif) no-repeat top left;}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li#toolbar-item-notify a{background:transparent url(../images/toolbar/toolbar-item-notify-off-right.gif) no-repeat top right;}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li#toolbar-item-notify span{font-size:11px;height:27px;line-height:17px;display:block;padding-left:2px;text-decoration:none;color:#FFFFFF;}
+/* End Jom Social Toolbar */
+ 
+
+ 
+ 
+ #community-wrap #cToolbarNav.cToolbar ul#cToolbarNavList li#toolbar-item-logout a#facebook-logout-button{background:url("http://static.ak.fbcdn.net/rsrc.php/zDYYQ/hash/deh9tyqv.png") no-repeat scroll -1px -189px #5F78AB !important;border:1px solid #1A356E !important;color:#FFFFFF !important;display:block !important;font-family:"lucida grande",tahoma,verdana,arial,sans-serif !important;font-weight:700 !important;padding:2px 8px 3px 28px !important;text-shadow:none !important;font-size:11px !important;line-height:15px !important;}
+
+#community-wrap .filterlink a.p-active-profile-activity{border:none;}
+
+body #community-wrap .inbox-read td,
+body #community-wrap .inbox-unread td{vertical-align:middle;}
+
+#community-wrap #event-status label{display:inline;}
+
+/**
+ * Friend suggest
+ */
+body .suggest-friends{padding-top:3em;} 
+ 
+/*
+ * GLOBAL :PHOTO
+ * ::rewrite styling for the photo module
+ */
+body .community-photo-desc{float:left;width:75%;}
+#cGallery .photoDisplay{background:none repeat scroll 0 0 #d1d1d1;border-top:1px solid #aaa;border-bottom:1px solid #aaa;position:relative;z-index:1 !important;}
+#cGallery .photoDisplay img{z-index:1 !important;}
+body #community-wrap #community-photo-walls-title{font-weight:700;padding:10px 0;border-top:1px solid #ddd;margin-top:20px;}
+
+/*
+ * GLOBAL :RESTRICTION
+ * ::styling for restriction page
+ */
+body #community-wrap div.community-restricted{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;background:#ffcccc;border:1px solid #FE8A8A;font-weight:700;padding:15px 20px;width:auto;float:none;display:block;}
+body #community-wrap div.community-restricted-note{background:url(../images/action/icon-smiley-grin.png) 0 9px no-repeat;padding:10px 0 10px 22px;}
+
+/*
+ * GLOBAL :SEARCH
+ * ::rewrite styling for the search result
+ */
+#community-wrap .advance-not-found,
+#community-wrap .event-not-found,
+#community-wrap .group-not-found,
+#community-wrap .people-not-found,
+#community-wrap .video-not-found,
+#community-wrap .community-empty-list,
+#community-wrap .com-notice,
+#cWindow .community-empty-list{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;background:#f5f5d2;border:1px solid #e8decc;font-weight:700;padding:15px 20px;width:auto;float:none;display:block;}
+body #community-wrap .photo-list-item .community-empty-list{border:none;}
+body #community-wrap .albums .community-empty-list{margin:0 5px;}
+body #community-wrap .event-search-form,
+body #community-wrap .group-search-form,
+body #community-wrap .video-search-form{margin:0 0 20px;}
+body #community-wrap .event-search-detail,
+body #community-wrap .group-search-detail,
+body #community-wrap .video-search-detail{border:1px solid #eee;padding:4px;margin:0 0 10px 0;background-color:#f0f0f0;}
+body #community-wrap .search-detail-left{float:left;width:50%;}
+body #community-wrap .search-detail-right{float:right;}
+
+/* advance search criteria really need some attention */
+body #community-wrap .infoGroupTitle{border-bottom:1px solid #DDDDDD;color:#333333;font-size:100%;font-weight:700;margin:0;padding:0 0 10px 2px;}
+body #community-wrap form div#optionContainer{margin-top:10px;}
+body #criteriaContainer .criteria-row{margin:0;padding:10px 0;border-bottom:1px solid #ddd;}
+body #criteriaContainer .criteria-row:hover{background:#f7f7ed;}
+body #optionContainer .criteria-option-btm{margin-top:10px;}
+
+.people-search-form{margin:20px 0;}
+.people-search-form div.labelradio{padding-top:5px;}
+
+body #community-wrap .photo-action{display:none;position:absolute;top:0px;right:0px;padding:5px;background:#333;width:16px;-moz-border-radius: 0 0 0 4px;-webkit-border-radius: 0 0 0 4px;border-radius: 0 0 0 4px;}
+
+/*
+ * GLOBAL :FRIEND SUGGESTION
+ * ::new styling add as friend link on friend suggestion module
+ */
+body #community-wrap span.btn-add-friend a{background:url("../images/toolbar/profile-toolbar-icons.gif") no-repeat scroll 0 0 transparent;padding:0 0 0 20px;margin:0 15px 0 0;}
+
+/*
+ * GLOBAL :FRIEND INVITE FORM
+ * ::new styling for friend invite form
+ */
+body #community-wrap .community-form{padding:0 0 20px;}
+body #community-wrap .community-form-instruction{margin:0 0 10px;}
+body #community-wrap .community-form-row,
+body #community-wrap .community-form-submit{padding:5px 0 5px;}
+body #community-wrap .community-form-row label{font-weight:700;}
+
+/**
+ * COMMUNITY :APPS DRAG & DROP
+ * Affected files:- applications.edit.php (Application/My Application)
+ * this class is reusable across the JomSocial application
+ */
+#community-wrap .joms-apps{}
+#community-wrap .joms-apps .app-position{}
+#community-wrap .joms-apps .app-position.onDrag,
+#community-wrap .joms-apps .app-position.onSave{background:#FFFFDD;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px;border:1px solid #CCCCCC;padding:5px 5px 3px;}
+body #community-wrap .joms-apps .app-position.onDrag{}
+#community-wrap .joms-apps .app-item{background:#FFFFFF;padding:8px;margin:5px 0px;cursor:move;position:relative;}
+#community-wrap .joms-apps .app-placeholder{margin-bottom:5px;border:1px dashed #AAAAAA;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;}
+#community-wrap .joms-apps .app-item.app-core{background:#EEEEEE;cursor:default;}
+#community-wrap .joms-apps .app-item.onDrag{width:200px;opacity:0.5;}
+#community-wrap .joms-apps .app-item.onSave{background-image:url(../images/wait.gif);background-repeat:no-repeat;background-position:center center;border:1px dashed #AAAAAA;opacity:0.5;}
+#community-wrap .joms-apps .app-item .app-action-remove{display:none;}
+#community-wrap .joms-apps .app-item:hover .app-action-remove{display:inline-block;}
+#community-wrap .joms-apps .app-item .app-avatar{display:inline;width:16px;height:16px;padding:0;margin:0 3px 0 0;}
+#community-wrap .joms-apps .app-item:hover .app-avatar{display:none;}
+#community-wrap .joms-apps .app-item.app-core:hover .app-avatar{display:inline;}
+#community-wrap .joms-apps .app-actions{height:25px;}
+#community-wrap .joms-apps .app-actions a{display:inline-block;height:16px;line-height:16px;padding-left:20px;}
+#community-wrap .joms-apps .app-item .app-actions a span{display:none;}
+#community-wrap .joms-apps .app-action-about{background:transparent url(../images/icons/apps.png) 0px -2px no-repeat;}
+#community-wrap .joms-apps .app-action-settings{background:transparent url(../images/icons/apps.png) 0px -42px no-repeat;}
+#community-wrap .joms-apps .app-action-privacy{background:transparent url(../images/icons/apps.png) 0px -22px no-repeat;}
+#community-wrap .joms-apps .app-action-add{background:transparent url(../images/add.png) no-repeat;text-decoration:none;margin-top:5px;}
+#community-wrap .joms-apps .app-action-add:hover{text-decoration:underline;}
+#community-wrap .joms-apps .app-action-remove{background:transparent url(../images/action/icon-delete-remove.png) no-repeat 0 0px;width:14px !important;height:14px !important;margin:1px 4px 1px 1px;padding:0 !important;}
+#community-wrap .joms-apps .app-title{overflow:hidden;white-space:nowrap;margin-right:73px;margin-left:21px;display:block;}
+#community-wrap .joms-apps .app-avatar{position:absolute;top:8px;left:8px;}
+#community-wrap .joms-apps .app-item .app-actions.joms_positionAbsolute{top:8px;right:8px;}
+#community-wrap .joms-apps .app-item .app-actions.joms_floatLeft.joms_positionAbsolute{top:8px;left:8px;}
+#community-wrap .joms-apps .app-action-remove:hover{background:transparent url(../images/action/icon-delete-remove.png) no-repeat 0 -14px;}
+#community-wrap .joms_positionAbsolute{position:absolute;}
+#community-wrap .joms_floatLeft{float:left;}
+#community-wrap .joms_floatRight{float:right;}
+
+#cWindow .app-item{background:none repeat scroll 0 0 #FFFFFF;margin:5px 0;padding:8px;border:1px solid #CCCCCC;position:relative;min-height:48px;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;}
+#cWindow .app-item .app-title{font-size:14px;font-weight:700;margin-left:75px;margin-right:65px;display:block;}
+#cWindow .app-item .app-description{margin-left:75px;margin-right:65px;display:block;}
+#cWindow .app-item .app-avatar{float:left;}
+#cWindow .app-item .app-actions{position:absolute;top:10px;right:10px;}
+#cWindow .app-item .app-action-add{height:20px;line-height:20px;padding:0 15px;font-size:85%;font-weight:700;color:#b3ca8f;text-transform:uppercase;background:#e1f4c4;border:solid 1px #b3ca8f;text-decoration:none;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;float:right;} 
+#cWindow .app-item .app-action-add:hover{border:solid 1px #5d7d3d;color:#5d7d3d;}
+#community-wrap .community-groups-pending-actions,
+#community-wrap .community-events-pending-actions{position:absolute;top:28px;right:10px;}
+#community-wrap .community-groups-pending-actions a,
+#community-wrap .community-events-pending-actions a{display:block;margin:0;}
+#community-wrap .community-invitation-message{padding:10px;display:block;}
+#community-wrap .mini-profile .community-invitation-message{padding:0 10px;display:block;}
+
+/*mark start here*/
+#community-wrap .community-form-validate .invalid{border-color:#FF0000 !important;}
+#cWindowContent #community-invitation-list{padding:0;width:100%;}
+#cWindowContent #community-invitation-list li.invitation-item{background:none;margin:0;padding:3px;border:1px solid #fff;list-style:none;width:30%;margin-right:1%;margin-bottom:10px;float:left;}
+#cWindowContent #community-invitation-list li.invitation-item-invited div.invitation-checkbox{display:block !important;}
+
+/* ikram start here */
+#cWindowContent .head-note{height:20px;line-height:20px;background:#eee;border-bottom:1px solid #ccc;padding:5px 8px;margin:0;}
+#cWindowContent #community-invitation{height:228px;overflow:auto;background:#fff;padding:10px 10px 0;}
+#cWindowContent #community-invitation-list,
+#cWindowContent #community-invitation-list li{list-style:none;background:none;border:none;padding:0;margin:0;}
+#cWindowContent #community-invitation-list li{float:left;margin-right:1%;margin-bottom:5px;width:32%;}
+#cWindowContent .invitation-wrap{border:1px solid #ccc;padding:3px;height:45px;}
+#cWindowContent .invitation-avatar{float:left;width:45px;height:45px;}
+#cWindowContent .invitation-detail{margin-left:50px;}
+#cWindowContent .invitation-name{font-size:12px;line-height:1.1;padding-bottom:3px;max-height:25px;overflow:hidden;}
+#cWindowContent .invitation-check .small{font-size:11px;}
+#cWindowContent .invitation-check label,
+#cWindowContent .invitation-check input{display:inline;float:left;margin-left:0;margin-right:5px;outline:none;font-size:11px;}
+
+#cWindowContent .invitation-check{display:none;}
+#cWindowContent li:hover .invitation-check{display:block;}
+
+#cWindowContent li.invitation-item-invited .invitation-wrap{background:#FFFFCD;border:1px solid #C8D164;}
+#cWindowContent li.invitation-item-invited .invitation-check{display:block;}
+#cWindowContent li:hover .invitation-wrap{background:#eee;border:1px solid #ccc;}
+#cWindowContent .invitation-option{border-top:1px solid #ccc;padding:0 10px;}
+#cWindowContent .invitation-option .option{padding:10px 0 0;}
+#cWindowContent .textarea-label{height:20px;line-height:20px;font-size:12px !important;padding-bottom:5px; position: relative;}
+#cWindowContent .textarea-label-right {position:absolute; line-height: 20px; height: 20px; top: 0; right: 0; text-align: right;}
+#cWindowContent .textarea-wrap{border:1px solid #ccc;background:#fff;padding:5px;margin:0;overflow:hidden;}
+#cWindowContent .textarea-wrap textarea{border:none;background:#fff transparent;overflow:none;margin:0;padding:0;height:60px;font:12px/20px Tahoma,Arial,sans-serif;}
+#cWindowContent .invitation-bg{margin:-10px;background:#eee;padding-bottom:35px;}
+#cWindowContent #invitation-error{position:absolute;bottom:10px;left:0;height:20px;line-height:20px;color:#c00;margin-left:10px;}
+
+body #community-wrap .activity-admin-echo{display:block;float:none;padding:10px;margin:10px 0 10px;background:#eee;border:1px solid #ccc;-moz-border-radius:5px;-webkit-border-radius:5px;}
+body #community-wrap .activity-admin-echo h3{font-size:12px;font-weight:700;margin:0 0 5px;padding:0;}
+body #community-wrap .joms-form-row{width:100%;display:block;float:none !important;margin:10px 0 0;}
+body #community-wrap .joms-form-row-left{float:left;width:25px;}
+body #community-wrap .activity-admin-echo .joms-form-row-left{text-align:center;}
+body #community-wrap .joms-form-row-right{margin-left:35px;display:block;}
+body #community-wrap .joms-form-row-right select{width:80%;}
+body #community-wrap .joms-form-row-right textarea{width:80%;}
+#community-wrap .jsiCalOption .jsiCalSel,body #community-wrap .jsiCalOption label{height:20px;line-height:20px}
+#community-wrap .jsiCalOption li{padding-bottom:3px}
+#community-wrap .jsiCalOption label{padding-left:20px;font-size:12px !important}
+#community-wrap .jsiCalOption input{margin-top:3px}
+#community-wrap .jsiCal li{border:1px solid #bbb;margin-top:5px}
+.jsiCalHead{background:#eee;font-weight:700;line-height:25px;height:25px;border-bottom:1px solid #bbb;}
+.jsiCalHead b{padding:0 5px;}
+.jsiCalHead span{top:6px;left:5px;}
+.jsiCalHead label{padding-left:30px;display:block;height:25px;line-height:25px;font-size:12px !important;}
+.jsiCalDesc{padding:5px;border-bottom:1px solid #bbb;}
+.jsiCalDetail .clrfix{padding:4px 0;}
+.jsiCalLabel{width:160px;padding-left:5px;color:#999;}
+.jsiCalDetail .clrfix+.clrfix{border-top:1px dotted #bbb;}
+.jsiCalData{padding-left:200px;}
+#community-wrap .latest-events ul{margin-bottom:7px}
+#community-wrap .latest-events li+li{padding-top:5px;margin-top:5px;border-top:1px dotted #ccc}
+#community-wrap .latest-events .jsEvDate{border:1px solid #CCCCCC;float:left;text-transform:uppercase;width:36px;}
+#community-wrap .latest-events .jsEvDate div{text-align:center;}
+#community-wrap .latest-events .jsDD{background:none repeat scroll 0 0 #eee;font:700 18px Arial,sans-serif;padding:5px 0;}
+#community-wrap .latest-events .jsMM{background:none repeat scroll 0 0 #ddd;font:700 11px Arial,sans-serif;padding:3px 0;}
+
+#community-wrap .community-album-people{padding:10px 0;width:79%;float:left;}
+#community-wrap .community-album-people a{display:block;float:left;margin:0 4px 4px 0;}
+
+#community-wrap .community-album-viewcount{width:19%;padding:10px 0;float:right;text-align:right;}
+#community-wrap .jsProfileTypeList li+li{border-top:1px dashed #ccc;padding-top:10px;margin-top:10px}
+
+#community-wrap .jsProfileType{background:#f4f4f4;border:1px solid #eee;padding:10px;margin-top:10px;}
+#community-wrap .jsProfileTypeList input{top:3px}
+#community-wrap .jsProfileTypeList li+li input{top:13px}
+#community-wrap .jsProfileTypeList label{display:block;margin-left:25px}
+#community-wrap .jsProfileTypeName{font-size:14px;font-weight:700;height:20px;line-height:20px}
+#community-wrap .jsProfileTypeName sup{font-size:11px;font-weight:100 !important;line-height:0}
+#community-wrap .jsProfileCurr{font-weight:700}
+
+/* Register view */
+#community-wrap .jsPasswordStrength{margin-left:10px;padding:2px 5px;display:inline-block;color:#000;}
+#community-wrap .jsPasswordStrength_1{background-color:#FCB6B1;}
+#community-wrap .jsPasswordStrength_2{background-color:#FCCAB1;}
+#community-wrap .jsPasswordStrength_3{background-color:#FCFBB1;}
+#community-wrap .jsPasswordStrength_4{background-color:#DAFCB1;}
+#community-wrap .jsPasswordStrength_5{background-color:#BCFCB1;}
+
+/*
+ Section:Global Privacy Control
+ By:Ross (ross@jomsocial.com)
+ Added On:December 2nd,2010
+ Description:This is the front-end style and control for the global privacy settings dropdown
+ Dropdown control must be made using <SELECT> dropdown box.
+ This control will be generated with JavaScript on the fly (with safe fallback)
+ There's no limit to the number of items in the drop-down,as it will be traversed and generated.
+ 
+ The only requirement is to follow the HTML template in privacy.php 
+*/
+#community-wrap .js_PriCell {width: 80px;}
+#community-wrap .js_PriContainer,
+#cWindowContentWrap .js_PriContainer{position:relative;z-index:1}
+#community-wrap .js_PrivacyOpen,
+#cWindowContentWrap .js_PrivacyOpen{z-index:10000;}
+#community-wrap .js_PriContainer{margin-left:0px;}
+#community-wrap .js_PriContainerLarge{margin-left:0;margin-top:-4px;}
+#community-wrap .js_PriContainerLarge .js_dropDownChild{display:block;min-width:100px;text-align:left !important;}
+#community-wrap .js_PriDefault,
+#cWindowContentWrap .js_PriDefault,{border:1px solid #ddd;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+ #community-wrap .js_PriDefault .js_PriOption,
+ #cWindowContentWrap .js_PriDefault .js_PriOption{background-image:url('../images/icons-privacy.png');background-repeat:no-repeat;padding-left:22px;}
+#community-wrap .js_dropDownMaster,
+#community-wrap .js_dropDownMaster dd,
+#community-wrap .js_dropDownMaster dt,
+#community-wrap .js_dropDownParent,
+#cWindowContentWrap .js_dropDownMaster,
+#cWindowContentWrap .js_dropDownMaster dd,
+#cWindowContentWrap .js_dropDownMaster dt,
+#cWindowContentWrap .js_dropDownParent{margin:0;padding:0;}
+#community-wrap .js_dropDownMaster,
+#cWindowContentWrap .js_dropDownMaster{border:1px solid transparent;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;background:#fff;position:absolute;}
+ #community-wrap .js_dropDownMaster:hover,
+ #community-wrap .js_Current,
+ #cWindowContentWrap .js_dropDownMaster:hover,
+ #cWindowContentWrap .js_Current{border:1px solid #ccc;cursor:pointer;-moz-box-shadow:0px 2px 2px rgba(0,0,0,0.4);-webkit-box-shadow:0px 2px 2px rgba(0,0,0,0.4);box-shadow:0px 2px 2px rgba(0,0,0,0.4);}
+ #community-wrap .js_dropDownParent,
+ #cWindowContentWrap .js_dropDownParent{list-style-type:none;}
+ #community-wrap .js_dropDownParent li,
+ #cWindowContentWrap .js_dropDownParent li{background-image:none;background-color:transparent;padding:0;margin:0;text-align:left !important;}
+ #community-wrap .js_dropDownParent li a,
+ #community-wrap .js_dropDownMaster dt,
+ #cWindowContentWrap .js_dropDownParent li a,
+ #cWindowContentWrap .js_dropDownMaster dt{display:block;background-image:url('../images/icons-privacy.png');background-repeat:no-repeat;padding:4px 4px 4px 22px;line-height:16px;height:16px;text-decoration:none;white-space:nowrap;}
+ #cWindowContentWrap .js_dropDownParent li a{color:#333;}
+ #community-wrap .js_dropDownParent li a:hover,
+ #cWindowContentWrap .js_dropDownParent li a:hover{background-color:#e1e1e1;}
+ #community-wrap .js_dropDownMaster dt,
+ #cWindowContentWrap .js_dropDownMaster dt{font-weight:700;text-indent:-9999em;min-width:10px;}
+ #community-wrap .js_PriContainerLarge .js_dropDownMaster dt{text-indent:0;min-width:100px;}
+ #community-wrap .js_dropDownMaster dt span,
+ #cWindowContentWrap .js_dropDownMaster dt span{display:block;background:transparent url('../images/pri-arrow.png') no-repeat 50% 50%;width:10px;height:100%;float:right;}
+ #community-wrap .js_dropDownMaster dt strong,
+ #cWindowContentWrap .js_dropDownMaster dt strong{display:block;float:left;}
+ #community-wrap .js_Current dt span,
+ #cWindowContentWrap .js_Current dt span{background:transparent url('../images/pri-arrow-up.png') no-repeat 50% 50%;}
+ #community-wrap .js_dropDownMaster dd,
+ #cWindowContentWrap .js_dropDownMaster dd{display:none;}
+ #community-wrap .js_dropDown-0,
+ #community-wrap .js_dropSelect-0,
+ #community-wrap .js_Pri-0,
+ #cWindowContentWrap .js_dropDown-0,
+ #cWindowContentWrap .js_dropSelect-0,
+ #cWindowContentWrap .js_Pri-0{background-position:0 50%;}
+ #community-wrap .js_dropDown-20,
+ #community-wrap .js_dropSelect-20,
+ #community-wrap .js_Pri-20,
+ #cWindowContentWrap .js_dropDown-20,
+ #cWindowContentWrap .js_dropSelect-20,
+ #cWindowContentWrap .js_Pri-20{background-position:-200px 50%;}
+ #community-wrap .js_dropDown-30,
+ #community-wrap .js_dropSelect-30,
+ #community-wrap .js_Pri-30,
+ #cWindowContentWrap .js_dropDown-30,
+ #cWindowContentWrap .js_dropSelect-30,
+ #cWindowContentWrap .js_Pri-30{background-position:-400px 50%;}
+ #community-wrap .js_dropDown-40,
+ #community-wrap .js_dropSelect-40,
+ #community-wrap .js_Pri-40,
+ #cWindowContentWrap .js_dropDown-40,
+ #cWindowContentWrap .js_dropSelect-40,
+ #cWindowContentWrap .js_Pri-40{background-position:-600px 50%;}
+ 
+ 
+/* ======== Global Privacy Control End ======== */
+#community-wrap #tag-container{background:url('../images/tag.png') 0 top no-repeat;min-height:20px;padding:0 0 10px 20px}
+#community-wrap #activity-stream-container #tag-container{padding:0px 0 0 20px}
+#community-wrap #tag-container .more-tag-hide{display:none}
+#community-wrap #tag-words a,
+#community-wrap #tag-list li{margin:0 2px 2px 0;background:#eee;font-weight:100;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px}
+#community-wrap #tag-list li:hover{background:#d5e3ef}
+#community-wrap #tag-list .highlight{background:#d3e3f0}
+#community-wrap #tag-list .highlight:hover{background:#c8d8e6}
+#community-wrap #tag-words *,
+#community-wrap #tag-form *,
+#community-wrap #tag-list *{display:block;float:left}
+#community-wrap #tag-list li a{height:14px;line-height:14px;text-decoration:none !important;padding:2px 4px;color:#19558d;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+#community-wrap #tag-list .edit-tag{width:100%;margin:5px 0 0}
+#community-wrap #tag-list .edit-tag,
+#community-wrap #tag-list .edit-tag:hover{background:0}
+#community-wrap #tag-list .tag-delete{background:url('../images/remove-mini.png') 0 top;width:2px;height:6px;text-indent:-9999px;margin:4px 4px 0 0}
+#community-wrap #tag-list li:hover .tag-delete{background-color:#fff;-moz-border-radius:5px;-webkit-border-radius:3px;border-radius:3px;opacity:0.7}
+#community-wrap #tag-list li:hover .tag-delete:hover{background-position:bottom}
+#community-wrap #tag-editor{padding-top:10px;border-top:1px solid #ddd}
+#community-wrap #tag-addbox{width:250px}
+#community-wrap #tag-addbox,
+#community-wrap #tag-container .tag-btn{height:16px;font-size:11px;padding:2px 4px;border:1px solid #ccc}
+#community-wrap #tag-container .tag-btn{line-height:16px;font-weight:700;text-decoration:none;padding:2px 7px;display:inline-block;float:left;margin:5px 3px 5px 0;-moz-border-radius:7px;-webkit-border-radius:7px;border-radius:7px;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#eeeeee');background:-webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#eeeeee));background:-moz-linear-gradient(top,#ffffff,#eeeeee)}
+#community-wrap #tag-container .tag-btn.less,
+#community-wrap #tag-container .tag-btn.more{width:16px;padding:2px;text-align:center;font-size:14px;font-family:Arial}
+#community-wrap #tag-container .tag-btn.less{font-size:17px}
+#community-wrap #tag-words{margin-top:5px}
+#community-wrap #tag-words a{background:url('../images/tag-add.png') 4px center no-repeat #d1e1ad;color:#405a04;padding:2px 5px 2px 18px;text-decoration:none}
+#community-wrap #tag-list .tag-delete,
+.tag-editor-container{display:none}
+
+/**
+ * New toolbar menu
+ **/ 
+#jsMenu .jsMenuLft{margin-right:30px; height: 29px;}
+#jsMenu .jsMenuRgt{position:absolute;right:0;top:15px;}
+#jsMenu{background:url('../images/bar-bg.png') bottom repeat-x #d1d1b0;font-size:12px;position:relative;padding:10px 0 6px;margin-bottom:15px;-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;z-index:11}
+#jsMenu .jsIr{display:block;width:19px;height:19px;text-indent:-9999px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;background-color:#e8e8d8}
+#jsMenu .jsIr:hover{background-color:#e8e8d8 !important}
+#jsMenu .jsHome{position:absolute;left:8px;top:13px;background:url('../images/home.png') 3px 3px no-repeat !important;z-index:2}
+#jsMenu .jsMenuBar{margin-left:35px; margin-right: -20px;-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;display:block; float:left;}
+#jsMenu .jsMenuBar ul{text-shadow: 0px 0px 0px transparent !important;}
+#jsMenu .jsMenuBar ul li{float:left;display:inline}
+#jsMenu .jsMenuBar a{display:block;color:#fff;padding:8px;font-weight:700;background:#404040;text-decoration:none;-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;}
+#jsMenu .jsMenuBar a:hover{text-decoration:none; color: #fff !important;}
+#jsMenu .jsMenuBar li{position:relative;margin-right:3px;overflow: visible !important;}
+#jsMenu .jsMenuBar li a.active{background:#647F29;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7c9d35',endColorstr='#647F29');background:-webkit-gradient(linear,left top,left bottom,from(#7c9d35),to(#647F29));background:-moz-linear-gradient(top,#7c9d35,#647F29)}
+#jsMenu .jsMenuBar li ul{display:none;background:#4f661d;border:1px solid #31420D;border-top:0;width:170px;height:auto;position:absolute;left:0;z-index:15;-moz-border-radius:0 0 5px 5px;-webkit-border-radius:0 0 5px 5px;border-radius:0 0 5px 5px}
+#jsMenu .jsMenuBar li ul a{border:0 !important;font-weight:100;font-size:11px;padding:5px;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0}
+#jsMenu .jsMenuBar li:hover a:hover,
+#jsMenu .jsMenuBar li ul a:hover{background:#445917}
+#jsMenu .jsMenuBar li li{width:100%;margin-right:0;border-top: 1px solid #31420D;}
+#jsMenu .jsMenuBar li:hover ul{display:block !important}
+#jsMenu .jsMenuBar li:hover a{background:#4f661d;}
+#jsMenu .jsMenuBar li.no-child a{}
+#jsMenu .jsIr.isActive{background-color:#e2e2c5}
+#jsMenu .jsGlobalsNot{background:url('../images/noti.png') 3px 3px no-repeat !important}
+#jsMenu .jsFriendsNot{background:url('../images/friend.png') 2px 0 no-repeat !important}
+
+#jsMenu+#miniheader{margin-top:-15px}
+#jsMenu .jsMesaggeNot{background:url('../images/mail.png') 3px 3px no-repeat !important}
+#jsMenu .jsLogOff a{background:url('../images/power.png') 2px 1px no-repeat !important;float:right;display:inline-block;margin-right:8px}
+#jsMenu .jsMenuIcon {display: block;left:22px;position:relative;top:4px;height:29px;float:left;z-index:2}
+#jsMenu .jsMenuIcon div{position:relative;float:left;display:inline-block;margin-left:8px}
+#jsMenu .jsMenuIcon span{background-color:#ea0000;position:absolute;left:6px;top:-6px;height:14px;min-width:10px;font:700 10px/14px Arial;color:#fff;text-align:center;padding:0 2px;border-bottom:1px solid #111;display:block;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+
+/*
+ * cFeatured: FEATURED Photo / Video / Member / Group styles
+ */
+#cFeatured {margin:-5px -5px 20px;padding:10px 0}
+#cFeatured .cBoxPad{padding:5px;margin:4px 8px}
+#cFeatured .cBoxBorder {margin: 5px; text-align:center;padding: 10px; position: relative;}
+#cFeatured .cBoxBorderLow {min-height: 160px;}
+#cFeatured .cFeaturedItem{float:left;display:inline-block;position:relative;min-height: 185px;overflow: hidden;}
+#cFeatured.forPeople .cFeaturedItem {min-height: 0;}
+#cFeatured .cFeaturedTitle{margin:5px 0;text-align:center; max-height:48px;overflow:hidden;line-height:16px}
+#cFeatured .cFeaturedTitle a {font-weight: bold}
+#cFeatured.listBy4 .cFeaturedItem{width:25%}
+#cFeatured.listBy2 .cFeaturedItem{width:50%}
+#cFeatured.forGroup .cFeaturedItem{min-height:80px}
+#cFeatured .cFeaturedThumb{float:left;display:inline-block;position:relative;}
+#cFeatured .cBoxBorder .cFeaturedImg {display:block;width:131px;height:130px;position:relative;margin: 0px auto}
+#cFeatured .cFeaturedText{margin-left:80px}
+#cFeatured h3{font-size:100% !important;font-weight:100;line-height:120%;max-height:240%;overflow:hidden;margin:0 !important;padding:0 !important}
+#cFeatured .video-details * {text-align:center;}
+#cFeatured .cFeaturedImgBorder {border:1px solid #ccc; padding: 1px;}
+#cFeatured .cFeaturedImgBorder:hover {border-color: #999;}
+#cFeatured .cFeaturedImgWrap {margin: 0 auto;position:relative;}
+#cFeatured .cFeaturedImgWrap .video-durationHMS {bottom: 1px; left: 1px;}
+#cFeatured .link-removeFeatured{position:absolute;background:url("../images/icons/jsIcon1.png") 0 -280px no-repeat transparent;width:16px;height:20px;bottom:3px;right:9px;display:block;text-indent:-9999px;}
+#community-wrap .creator-views .creator-hint{background:#ffc;color:#555;font-size:11px;padding:5px;display:none;}
+body #community-wrap #cFeatured.forGroup .album-actions,
+body #community-wrap #cFeatured.forPeople .album-actions{right:13px;top:9px}
+body .qtip small{font-size:11px !important;}
+body .qtip hr{height:1px}
+
+
+/*
+ *
+ * New Status Post Box (contains status update, photo post, video post, event post, as well as administrator's post)
+ *
+ */
+#community-wrap .community-status{display:inline-block;width:100%; margin-bottom: 20px;}
+#cProfileWrapper .community-status{padding:10px 0;}
+#cFrontpageWrapper .community-status{padding:0 0 10px 0; margin: 0;}
+#community-wrap .community-status .status-author{width:53px;float:left;}
+#community-wrap .community-status .status-author img{border:1px solid #CCCCCC;padding:1px;width:36px;height:36px;}
+#community-wrap .community-status .status-creator{margin-left:52px;background:#EFEFEF;padding:8px;border:1px solid #CCCCCC;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+#community-wrap .community-status .creators{margin:0;padding:0;list-style:none;display:inline-block;}
+#community-wrap .community-status .creator{overflow: hidden !important; display:inline-block;padding:3px 5px;vertical-align:middle;cursor:pointer;background:none;margin:0;float:left;position:relative;z-index:1;}
+#community-wrap .community-status .creator.stub{font-size:11px;color:#666666;text-transform:uppercase;}
+#community-wrap .community-status .creator.active{border:1px solid #CCCCCC;border-bottom:1px solid #FFFFFF;line-height: 21px; margin-bottom:-1px;background:#FFFFFF;-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;}
+#community-wrap .community-status .creator a{margin:0;}
+#community-wrap .community-status .creator a:hover{background:0 !important;color:inherit !important}
+#community-wrap .community-status .creator .creator-form{}
+#community-wrap .community-status .creator-view{background:#FFFFFF;border:1px solid #CCCCCC;border-bottom:none;display:none;}
+#community-wrap .community-status .creator-view.active{display:block;}
+#community-wrap .community-status .creator-content{padding:0;margin:0;}
+#community-wrap .community-status .creator-content li{display:block;border:none;}
+#community-wrap .community-status .creator-message-container{border:1px solid #CCCCCC;border-top:1px dotted #CCCCCC;background:white;padding:5px;}
+#community-wrap .community-status .creator-message{border:none;margin:0;padding:0;height:37px;}
+#community-wrap .community-status .creator-message.hint{color:#888888;}
+#community-wrap .community-status .creator-actions{position:relative;padding-top:5px;}
+#community-wrap .community-status .creator-loading{background:url("../images/mini-loader.gif") no-repeat scroll 0 50% transparent;height:18px;width:50px;position:absolute;top:10px;left:40px;display:none;}
+#community-wrap .community-status .js_PriContainer{margin-left:0; margin-right: 40px;}
+#community-wrap .community-status .js_dropDownMaster{background:none;}
+#community-wrap .community-status .js_PrivacyOpen .js_dropDownMaster{background:#ffffff;}
+#community-wrap .community-status .button{padding:4px 15px;background:#333 !important;border:solid 1px #666 !important;cursor:pointer;color:#ccc !important;font-size:11px;text-align:right;display:block;float:right;}
+#community-wrap .community-status .button:hover{background:#1c1d22 !important;border:solid 1px #666;}
+/* ---- Subject to change ---- */
+.icon-add{background:url(../images/add.png) 2px 2px no-repeat;padding:3px 3px 3px 20px;}
+.actions{margin-top:5px;text-align:right;}
+/* ---- Subject to change ---- */
+
+/* normal status post */
+#community-wrap .community-status.on-message .creator-message-container {border-top: none;}
+
+/* link post */
+#community-wrap .community-status .link-creator .creator-content li{padding:5px;}
+#community-wrap .community-status .link-creator .creator-content li + li{border-top:1px dotted #CCCCCC;}
+
+/* photo tab */
+#community-wrap .community-status .creator-view.type-photo .creator-preview{padding:5px;padding-top:0;padding-bottom:0;margin:0;list-style:none;}
+#community-wrap .community-status .creator-view.type-photo .creator-preview li {overflow: auto;padding: 10px 5px;}
+#community-wrap .community-status .creator-view.type-photo .creator-preview li img{width:64px;height:64px;padding:2px;border:1px solid #CCCCCC;float: left;margin:0 10px 0 0;}
+#community-wrap .community-status .creator-view.type-photo .creator-preview li .creator-change-photo {display:inline-block;padding:2px 0;}
+#community-wrap .community-status .creator-view.type-photo .creator-photo-filename { font-weight: bold; }
+#community-wrap .community-status .creator-view.type-photo .creator-form{padding:5px;text-align:center;}
+#community-wrap .community-status .creator-view.type-photo .creator-upload-container{padding: 5px 0 10px;text-align:center;}
+
+/* video tab */
+#community-wrap .community-status .creator-view.type-video .creator-form {padding: 15px 5px;text-align:center;}
+#community-wrap .community-status .creator-view.type-video .creator-form .button {display: inline;float:none;}
+#community-wrap .community-status .creator-view.type-video .creator-video-url.hint {color: #888888;}
+#community-wrap .community-status .creator-view.type-video .creator-preview {margin: 0;	padding: 0;	background: none;list-style: none;}
+#community-wrap .community-status .creator-view.type-video .creator-preview li {float: none;width: auto;}
+#community-wrap .community-status .creator-view.type-video .creator-preview li + li {border-top: 1px dotted #CCCCCC;}
+#community-wrap .community-status .creator-view.type-video .creator-preview .video-thumb { padding: 0 10px 10px; }
+#community-wrap .community-status .creator-view.type-video .creator-preview .video-title { font-weight: bold; }
+#community-wrap .community-status .creator-view.type-video .creator-preview label {display: inline;}
+#community-wrap .community-status .creator-view.type-video .creator-preview .creator-change-video {display:block; margin-bottom: 12px;}
+
+/* events tab */
+#community-wrap .community-status .creator-view.type-event .creator-form{padding:15px;}
+
+/* custom tab */
+#community-wrap .community-status .creator-view.type-custom {padding: 15px;border: 1px solid #CCCCCC;}
+
+/* prevents FB button from missing on hover */
+body #community-wrap a.fb_button_medium:hover {background: url("http://static.ak.fbcdn.net/rsrc.php/v1/zL/r/FGFbc80dUKj.png") no-repeat scroll 0 -188px #29447E !important;}>>>>>>> theirs

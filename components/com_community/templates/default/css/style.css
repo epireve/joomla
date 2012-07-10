@@ -1,0 +1,16 @@
+/**
+ * @package		JomSocial
+ * @subpackage 	Template 
+ * @copyright 	(C) 2011 by Slashes & Dots Sdn Bhd - All rights reserved!
+ * @license		GNU/GPL, see LICENSE.php
+ */
+
+@import url("style.reset.css");
+@import url("style.toolbar.css");
+@import url("style.layout.css");
+@import url("style.stream.css");
+@import url("style.events.css");
+@import url("style.messaging.css");
+@import url("style.old.css");
+@import url("style.window.css");
+@import url("style.themefix.css");

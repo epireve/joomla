@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<params>
+	<param name="addvideos_limit" type="text" default="" label="COM_XIPT_TOTAL_VIDEOS_LIMIT_LABEL" description="COM_XIPT_NO_OF_TOTAL_VIDEOS_MAXIMUM_LIMIT_DESC" />
+</params>
+</config>

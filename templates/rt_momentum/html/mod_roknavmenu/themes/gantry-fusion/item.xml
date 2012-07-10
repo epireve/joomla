@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <config>
+        <fields name="params">
+            <fieldset name="fusion" label="Fusion Menu Options" addfieldpath="/templates/rt_momentum/fields">
+                <field name="fusion_item_subtext" type="text" size="30" default="" label="Subtext Line" description="You can put a second line here"/>
+                <field name="fusion_customimage" type="imagelist" default="" label="Menu Image" description="" directory="/templates/rt_momentum/images/icons" exclude="" stripext=""/>
+                <field name="fusion_customclass" type="text" size="30" label="Custom CSS Class" description="A Custom CSS class that can be assigned to this item"/>
+                <field name="fusion_columns" type="list" default="1" label="Columns of Child Items" description="How many columns should display for children of this menu item">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </field>
+                <field name="fusion_distribution" type="radio" default="even" label="Item Distribution" description="You can choose to distribute child items 'evenly', 'in-order' or 'manually'. For example, 7 items in 3 columns distributed evenly is: 3,2,2, in order it's 3,3,1">
+                    <option value="even">Evenly</option>
+                    <option value="inorder">In Order</option>
+                    <option value="manual">Manually</option>
+                </field>
+                <field name="fusion_manual_distribution" default="" type="text" size="30" label="Manual Item Distribution" description="comma seperated count of rows in each column, eg: 4, 2, 3" />
+                <field name="fusion_dropdown_width" type="text" size="10" label="Drop-Down Width (px)" description="width of any dropdown column in px, eg: 400"/>
+                <field name="fusion_column_widths" type="text" size="30" label="Column Widths (px)" description="comma seperated columns, eg: 100, 150, 300"/>
+                <field name="fusion_children_group" type="radio" default="0" label="Group Child Items" description="Select this to group children under menu item rather than treating as a submenu">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="fusion_moduletypejs" type="moduletypejs"/>
+                <field name="fusion_children_type" type="radio" default="menuitems" label="Child Item Type" description="Select this to group children under menu item rather than treating as a submenu">
+                    <option value="menuitems">Menu Items</option>
+                    <option value="modules">Modules</option>
+                    <option value="modulepos">Module Positions</option>
+                </field>
+                <field name="fusion_modules" type="modules" label="Child Modules"/>
+                <field name="fusion_module_positions" type="moduleposition" label="Child Module Positions"/>
+            </fieldset>
+        </fields>
+    </config>
+</form>

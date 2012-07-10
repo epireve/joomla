@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" method="upgrade" client="site">
+	<name>RokStats</name>
+	<creationDate>December 20, 2011</creationDate>
+	<author>RocketTheme, LLC</author>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2011 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>2.2</version>
+	<description>MC_RS_ROKUSERSTATS_DESC</description>
+	<files>
+		<filename module="mod_rokstats">mod_rokstats.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl/</folder>
+		<folder>language/</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="sessiontime" type="text" default="" label="MC_SESSION_TIME" description="MC_SESSION_TIME_DESC" />
+				<field name="showcurrentactiveusers" type="radio" default="1" label="MC_RS_SHOW_CAU" description="">
+					<option value="0">MC_RS_NO</option>
+					<option value="1">MC_RS_YES</option>
+				</field>
+				<field name="showactiveguests" type="radio" default="1" label="MC_RS_SHOW_AG" description="">
+					<option value="0">MC_RS_NO</option>
+					<option value="1">MC_RS_YES</option>
+				</field>
+				<field name="showactiveregistered" type="radio" default="1" label="MC_RS_SHOW_AR" description="">
+					<option value="0">MC_RS_NO</option>
+					<option value="1">MC_RS_YES</option>
+				</field>
+				<field name="showregisteredusernames" type="radio" default="0" label="MC_RS_SHOW_RU" description="">
+					<option value="0">MC_RS_NO</option>
+					<option value="1">MC_RS_YES</option>
+				</field>
+				<field name="showuniqueviststoday" type="radio" default="1" label="MC_RS_SHOW_UVT" description="">
+					<option value="0">MC_RS_NO</option>
+					<option value="1">MC_RS_YES</option>
+				</field>
+				<field name="showuniquevistsyesterday" type="radio" default="1" label="MC_RS_SHOW_UVY" description="">
+					<option value="0">MC_RS_NO</option>
+					<option value="1">MC_RS_YES</option>
+				</field>
+				<field name="showvisitsthisweek" type="radio" default="1" label="MC_RS_SHOW_VTW" description="">
+					<option value="0">MC_RS_NO</option>
+					<option value="1">MC_RS_YES</option>
+				</field>
+				<field name="showvisitspreviousweek" type="radio" default="1" label="MC_RS_SHOW_VPW" description="">
+					<option value="0">MC_RS_NO</option>
+					<option value="1">MC_RS_YES</option>
+				</field>
+				<field name="showtotalarticles" type="radio" default="0" label="MC_RS_SHOW_TA" description="">
+					<option value="0">MC_RS_NO</option>
+					<option value="1">MC_RS_YES</option>
+				</field>
+				<field name="shownewarticlesthisweek" type="radio" default="0" label="MC_RS_SHOW_NATW" description="">
+					<option value="0">MC_RS_NO</option>
+					<option value="1">MC_RS_YES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

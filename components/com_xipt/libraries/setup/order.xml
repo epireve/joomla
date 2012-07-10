@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules name="pluginorder">
+	<rule name="xiptplugin" title="Essential Settings" type="error"/>
+	<rule name="ptmigration" title="Profiletype Migration" type="warning"/>
+	<rule name="createprofiletypes" title="Profiletype Validation" type="error"/>
+	<rule name="defaultprofiletype" title="Default Profiletype" type="error"/>
+<!--	<rule name="jsfields" title="Custom Fields" type="error"/>-->
+<!--	<rule name="patchfiles" title="File Patching" type="error"/>-->
+	<rule name="syncupusers" title="Sync-Up User" type="error"/>
+	<rule name="aecmi" title="AEC Micro Integration" type="error"/>
+	<rule name="jsversion" title="JomSocial Version" type="warning"/>		
+	<rule name="adminapproval" title="Admin Approval" type="warning"/>
+	<rule name="payplans" title="PayPlans" type="error"/>
+	<!--<rule name="seturipath" title="Set All Path in URI Formate" type="error"/>-->
+</rules>

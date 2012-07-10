@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<params addpath="/administrator/components/com_xipt/elements" >
+	<param name="other_profiletype" type="profiletypes" addall="true" default="" label="COM_XIPT_OTHER_PROFILETYPE_USERS_TO_ADD_AS_FRIEND_LABLE" description="COM_XIPT_OTHER_PROFILETYPE_TO_ADD_AS_FRIEND_DESC" />
+    <param name="addasfriends_limit" type="text" default="" label="COM_XIPT_TOTAL_FRIENDS_LIMIT_LABEL" description="COM_XIPT_NO_OF_TOTAL_FRIENDS_MAXIMUM_LIMIT_DESC" />
+</params>
+</config>

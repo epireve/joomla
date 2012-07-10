@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params addpath="/components/com_xipt/elements">
+		<param name="demo" type="watermarkpreview" default="" label="COM_XIPT_DEMO" description="COM_XIPT_DEMO_ACCORDING_TO_SET_WATERMARK_PARAMS" />
+		<param name="enableWaterMark" type="xiradio" label="COM_XIPT_ENABLE_WATER_MARK" default="0" description="COM_XIPT_ENABLE_WATER_MARK_DESC">
+			<option value="0">No</option>
+  			<option value="1">Yes</option>		
+		</param>
+		<param name="typeofwatermark" type="xiradio" label="COM_XIPT_TYPE_OF_WATERMARK" default="0" description="COM_XIPT_ENABLE_WATER_MARK_DESC">
+			<option value="0">COM_XIPT_TEXT</option>
+  			<option value="1">COM_XIPT_IMAGE</option>		
+		</param>
+		<param name="xiImage" type ="uploadfile" label="COM_XIPT_UPLOAD_IMAGE" description="COM_XIPT_UPLOAD_IMAGE_DESC"/>
+		<param name="xiText" type="text" default="P" label="COM_XIPT_DISPLAY_TEXT" description="COM_XIPT_ENTER_WATERMARK_DISPLAY_TEXT_DESC" />		
+		<param name="xiWidth" type="text" default="40" label="COM_XIPT_WIDTH" description="COM_XIPT_SET_WIDTH_DESC"/>
+		<param name="xiHeight" type="text" default="40" label="COM_XIPT_HEIGHT" description="COM_XIPT_HEIGHT_DESC"/>
+		<param name="xiThumbWidth" type="text" default="20" label="COM_XIPT_WIDTH_OF_THUMB" description="COM_XIPT_WIDTH_OF_THUMB_DESC"/>
+		<param name="xiThumbHeight" type="text" default="20" label="COM_XIPT_HEIGHT_OF_THUMB" description="COM_XIPT_HEIGHT_OF_THUMB_DESC"/>
+						
+		<param name="xiFontName" type="xifonts" default="monofont"  label="COM_XIPT_FONT" description="COM_XIPT_FONT_DESC"/>
+		<param name="xiFontSize" type="text" default="26" label="COM_XIPT_FONT_SIZE" description="COM_XIPT_FONT_SIZE_DESC" />
+		<param name="xiTextColor" type="colorbox" default="FFFFFF"  label="COM_XIPT_TEXT_COLOR" description="COM_XIPT_TEXT_COLOR_DESC"/>
+		<param name="xiBackgroundColor"  type="colorbox" default="9CD052"  label="COM_XIPT_FILL_BAR_COLOR" description="COM_XIPT_FILL_BAR_COLOR_DESC"/>
+		<param name="xiWatermarkPosition"  type="watermarkposition" default="rightbottom"  label="COM_XIPT_WATER_MARK_POSITION" description="COM_XIPT_WATER_MARK_POSITION_DESC"/>
+	</params>
+</config>
+

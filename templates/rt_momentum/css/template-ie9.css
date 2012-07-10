@@ -1,0 +1,21 @@
+/**
+ * @package   Momentum Template - RocketTheme
+ * @version   1.3 October 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+
+/* Navigation */
+.menutop li.active.root:before, .menutop li.active.root:after, .menutop li.active.root > .item span:after, .menutop li.active.root > .item span:before {display: none !important;}
+
+/* RokTabs */
+.roktabs-wrapper .roktabs-links ul li span {-ms-user-select: none;}
+
+/* Typography */
+#rt-accessibility:hover {zoom: 1;}
+.ext-rokcandy-block h3 span, .ext-rokpad-block h3 span, .ext-rokgzipper-block h3 span, .ext-rokbox-block h3 span {display: block !important;}
+
+/* load transition */
+#rt-transition.rt-hidden {opacity: 0;}
+#rt-transition.rt-visible {opacity: 1;-ms-transition: opacity 0.5s ease-out;transition: opacity 0.5s ease-out;}

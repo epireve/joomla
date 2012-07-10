@@ -1,0 +1,118 @@
+ /**
+ * New toolbar styling
+ */
+#community-wrap .cToolbar {
+	background-image:  url(../images/toolbar-blue.png);
+}
+
+/* 1.5 Compatibility. Remove when not used */
+body #community-wrap .cToolbar#cToolbarNav {
+	background: url(../images/toolbar-blue.png) no-repeat scroll 0 0 transparent !important;	
+}
+
+	#community-wrap .cToolbar ul li {
+		background-image: url(../images/toolbar-blue.png);
+	}
+	
+	/* 1.5 Compatibility. Remove when not used */
+	#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li {
+		background: url(../images/toolbar-blue.png) no-repeat scroll 0 -97px transparent !important;
+	}
+		#community-wrap .cToolbar ul li a {
+			background-image: url(../images/toolbar-blue.png);			
+		}
+		/* 1.5 Compatibility. Remove when not used */
+		#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li a {
+			background-image: url(../images/toolbar-blue.png);			
+		}
+		
+		#community-wrap .cToolbar ul li.toolbar-active a {
+
+			background-image: url(../images/toolbar-blue.png);
+		}
+
+		/* 1.5 Compatibility. Remove when not used */
+		#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li.toolbar-active a {
+			background: url(../images/toolbar-blue.png) no-repeat scroll 100% -60px transparent !important;
+		}
+
+#community-wrap #cToolbarNav.cToolbar ul#cToolbarNavList li.toolbar-active div a {
+    background: none repeat scroll 0 0 #2f84c9 !important;
+    border-bottom: 1px solid #1f67a2 !important;
+}
+
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active div a:hover {
+	background: #49a2ea !important;
+}
+
+#community-wrap .cToolbar ul li.toolbar-active div a {
+		background: 		#2f84c9 !important;
+		border-bottom: 		solid 1px #1f67a2;
+	}
+	/* 1.5 Compatibility. Remove when not used */
+	#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li.toolbar-active div a {
+		background: 		#2f84c9 !important;
+	}
+
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active div a:link,
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active div a:visited {
+	background: #2f84c9 !important;
+}
+
+#community-wrap .cToolbar ul li.toolbar-active div a:hover {
+	background: 		#49a2ea;
+}
+/* 1.5 Compatibility. Remove when not used */
+#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li.toolbar-active div a:hover {
+	background: 		#49a2ea !important;
+}
+				
+
+
+#community-wrap .app-box-header {
+	background: transparent url(../images/app-box-header-blue.png) no-repeat 0 0;
+	}    
+
+#community-wrap .app-box-menu-icon {
+	background-image: url(../images/app-box-menu-icon-blue.png);
+	}
+
+#community-wrap .app-box-title {
+	color: #125a94;
+}
+
+#community-wrap .cModule h3 {
+	color: #125a94;
+}
+
+#community-wrap .cModule.searchbox .input_wrap {
+ 	background: transparent url(../images/searchbox-blue.png) no-repeat 0 0;
+}
+
+#community-wrap .cModule.searchbox .input_wrap .search_button {
+	background: transparent url(../images/searchbox-blue.png) no-repeat 100% 0;
+}
+
+#jsMenu{background:url("../images/bar-bg-blue.png") repeat-x center bottom #ECEFF5 !important;}
+#jsMenu .jsMenuBar{border-color:#637193 !important;}
+#jsMenu .jsMenuBar a{border-color:#94a3c4 !important}
+#jsMenu .jsMenuBar li:hover a:hover,
+#jsMenu .jsMenuBar li ul a:hover{background:#556282 !important}
+#jsMenu .jsMenuBar li:hover a{background:#637193 !important;border-color:#3c4969 !important}
+#jsMenu .jsMenuBar li ul,
+#jsMenu .jsMenuBar li li{border-color:#3c4969 !important}
+#jsMenu .jsIr.isActive{background-color:#d0d7e5 !important}
+#jsMenu .jsMenuBar li a.active{
+	background:#4e6190;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4e6190',endColorstr='#3c4969') !important;
+	background:-webkit-gradient(linear,left top,left bottom,from(#4e6190),to(#3c4969)) !important;
+	background:-moz-linear-gradient(top,#4e6190,#3c4969) !important;
+	}
+
+#jsMenu .jsHome{background: url("../images/home-blue.png") no-repeat 3px 3px !important}
+#jsMenu .jsGlobalsNot{background: url("../images/noti-blue.png") no-repeat 3px 3px !important}
+#jsMenu .jsFriendsNot{background: url("../images/friend-blue.png") no-repeat 2px 0 !important}
+#jsMenu .jsMesaggeNot{background: url("../images/mail-blue.png") no-repeat 3px 3px !important}
+#jsMenu .jsLogOff a{background: url("../images/power-blue.png") no-repeat 2px 1px !important}
+#jsMenu .jsIr:hover{background-color:#ccd4e5 !important}
+#jsMenu .jsMenuBar li a.active{background:#637193 !important;border-color:#3c4969 !important}

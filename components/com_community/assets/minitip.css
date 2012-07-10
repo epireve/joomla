@@ -1,0 +1,97 @@
+/* CSS Document */
+#cMinitip{position:absolute;z-index:10000;display:block}
+#cMinitip.new{display:none}
+#cMinitip #cwin_close_btn:link,#cMinitip #cwin_close_btn:visited{height:30px;width:30px;text-indent:-9999px;outline-style:none;background-color:transparent;background-repeat:no-repeat;background-position:0 0;position:absolute;top:0;right:0;z-index:1000;margin:0}
+#cMinitip #cwin_close_btn:hover{background-color:transparent;background-repeat:no-repeat;background-position:0 0}
+#cMinitip #cwin_logo{color:#FFF;font-weight:700;font-size:16px;height:30px;line-height:30px;margin-left:8px;position:absolute;top:0;left:0;z-index:999}
+body #cwin-wait,#cMinitip #cwin-wait{width:43px;height:11px;background:transparent url(minitip/wait.gif) no-repeat;display:none}
+#cMinitipContentOuter{float:left;overflow:visible;position:relative;background:#none}
+#cMinitipContentTop{height:30px;background:#333;overflow:hidden}
+#cMinitipContentWrap{overflow:visible;background:#fff;position:relative}
+#cMinitipContentWrap.resizing{overflow:hidden}
+#cMinitipContent.resizing{overflow:hidden;position:absolute}
+#cMinitipContent{font-size:12px;margin:0;padding:10px;text-align:center}
+#cMinitipContent .success{color:green}
+#cMinitipContent .failed{color:red}
+#cMinitipContentWrap.loading{background-image:url(minitip/wait.gif);background-position:center center;background-repeat:no-repeat}
+#cMinitipAction{background:#CCC url(minitip/wait.gif) no-repeat -43px -11px;height:30px;text-align:right;position:absolute;width:100%;left:0}
+#cMinitipAction.loading{background-position:10px 10px}
+#cMinitipAction .button{font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:10px;font-weight:700;color:#CCC;height:21px;margin-top:4px;margin-right:5px;background:#333;border:1px outset #888;cursor:pointer}
+#cMinitipAction .button:hover{background:#333;border:1px outset #888;color:#FFF}
+body #cMinitipAction input,body #cMinitipAction text area,body #cMinitipAction select,body #cMinitipAction label{margin:0 0 5px}
+#cMinitipContent dl{margin:0;padding:0}
+#cMinitipContent .col-left{width:23%;line-height:25px;text-indent:10px;font-size:11px;font-weight:700;color:#666;float:left;display:block;clear:both;margin:0 0 5px;padding:0}
+#cMinitipContent .col-right{float:left;display:block;width:70%;line-height:22px;margin:0 0 5px;padding:0}
+#cMinitipContent .col-right .text{width:100%}
+#cMinitipContent .composeForm{padding:20px 10px}
+#cMinitip.dialog #cwin_close_btn:link,#cMinitip.dialog #cwin_close_btn:visited{background-position:-60px -40px;background-color:#333}
+#cMinitip.dialog #cwin_close_btn:hover{background-position:-60px -69px}
+#cMinitip.warning #cMinitipContentTop{height:30px;background:#993;border-bottom:solid 1px #660}
+#cMinitip.warning #cwin_logo{height:30px;font-size:16px;font-weight:700;line-height:30px;color:#fff;background-position:-60px -161px;margin:0 0 0 3px;padding:0 0 0 32px}
+#cMinitip.warning #cwin_close_btn:link,#cMinitip.warning #cwin_close_btn:visited{background-color:#993;background-position:-120px -39px}
+#cMinitip.warning #cwin_close_btn:hover{background-position:-120px -68px}
+
+/* Error Styles */
+#cMinitip.error #cMinitipContentTop{height:30px;background:#930;border-bottom:solid 1px #600}
+#cMinitip.error #cwin_logo{height:30px;font-size:16px;font-weight:700;line-height:30px;color:#fff;background-position:-60px -132px;margin:0 0 0 3px;padding:0 0 0 32px}
+#cMinitip.error #cwin_close_btn:link,#cMinitip.error #cwin_close_btn:visited{background-color:#930;background-position:-90px -39px}
+#cMinitip.error #cwin_close_btn:hover{background-position:-90px -68px}
+
+/* Blank Styles*/
+#cMinitip.blank #cMinitipContent{padding:0}
+#cMinitip.blank #cwin_close_btn:link,#cMinitip.blank #cwin_close_btn:visited{background-position:-60px -40px;background-color:#333}
+#cMinitip.blank #cwin_close_btn:hover{background-position:-60px -69px}
+
+/**
+ * Avoid this style override by template style
+ */ 
+#cMinitip .video-provider{background:transparent; float:left; line-height:150%; list-style-type:disc; width:48%; margin:0; padding:0}
+/**
+ * We need to reset most of HTML element for cMinitip
+ * because some template define it, it'll break the layout
+ */
+
+#cMinitip h1, #cMinitip h2, #cMinitip h3, #cMinitip h4, #cMinitip h5, #cMinitip h6, #cMinitip p { margin: 0; padding: 0;}
+#cMinitip p {font-size: 12px; line-height: 14px;}
+#cMinitip h2 {margin: 0 0 20px;}
+#cMinitip ul li {line-height: normal;} 
+#cMinitip{width:490px;height:170px;top:0}
+#cMinitip #cMinitipContentOuter{width:450px;height:130px}
+#cMinitip #cwin_™,#cMinitip #cwin_bm{width:450px}
+#cMinitip #cwin_ml,#cMinitip #cwin_mr{height:130px}
+#cMinitip #cMinitipContentWrap{height:100px}
+#cMinitip .cMinitipForm{width:100%}
+#cMinitip .cMinitipForm td{vertical-align:top;padding:5px}
+#cMinitip td.cMinitipFormKey{font-weight:700;text-align:right;width:130px}
+#cMinitip td.cMinitipFormVal {}
+#cMinitip tr.noLabel td.cMinitipFormKey{border:none;background:none}
+#cMinitip tr. hidden td{display:none}
+.subject { border-bottom: 2px solid #aaa; font-weight: bold; padding: 2px 1px; }
+.inbox-read .subject, .inbox-unread .subject { border: none; padding: 0; }
+.inbox-unread .small { padding: 0; margin: 0; line-height: 14px; }
+.inbox-unread td { vertical-align: top; }
+.mini-profile { border-bottom: 1px dotted #bbb; padding: 5px 5px 2px !important; }
+body #community-wrap .inbox-read td,body #community-wrap .inbox-unread td{vertical-align:top}
+#cMinitipContent input,#cMinitipContent textarea{color:#000;border:1px inset #CCC}
+#cMinitipContent input[type=checkbox]{margin-right:4px}
+
+/*------New Tooltip------*/
+#cMinitipContentOuter{clear:none}
+#cMinitipContentOuter:after{display:block;visibility:hidden;clear:both;height:0;content:" ";font-size:0}
+#cMinitipContentWrap {
+	background:#fff; width: 235px; margin:0 0 12px -210px; text-align:left; line-height:1.5; display:block; visibility:visible; opacity:1;
+	text-shadow:0 1px 0 rgba(255,255,255,0.3); border:solid 1px #999; z-index:999; position:relative; left:50%; right:auto; bottom:auto;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 1px 2px rgba(255,255,255,0.5) inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 1px 2px rgba(255,255,255,0.5) inset;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 1px 2px rgba(255,255,255,0.5) inset;
+	-moz-transition:all 0.4s linear; -webkit-transition:all 0.4s linear; -o-transition:all 0.4s linear; transition:all 0.4s linear;
+ 
+}
+#cMinitipContentWrap:before, #cMinitipContentWrap:after {
+	width:0; height:0; position:absolute; bottom:0; margin:0 0 -20px 10px; border:solid 10px; border-color:transparent; display:table-cell; content:"";
+	left:40%; right:auto;
+}
+#cMinitipContentWrap:before {margin:0 0 -24px 8px; border:solid 12px; border-color:transparent; z-index:-1; border-top-color:#999; /**tip border color**/ }
+#cMinitipContentWrap:after {border-top-color:#fff; /**tip bg color**/}
+#thumbnail-container {width: 220px;}
+#thumbnail-container h4 {margin-bottom: 5px;}

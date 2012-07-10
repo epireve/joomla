@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<params>
+<param name="upload_avatar_at_registration" type="xiradio" default="0" label="COM_XIPT_FORCE_TO_UPLOAD_USER_AVATAR_AT_REGISTRATION_TIME" description="COM_XIPT_FORCE_TO_UPLOAD_USER_AVATAR_AT_REGISTRATION_TIME_DESC">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</param>
+</params>
+</config>

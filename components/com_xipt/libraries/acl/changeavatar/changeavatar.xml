@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<params>
+<param name="restrict_user_at_registration" type="xiradio" default="0" label="COM_XIPT_RESTRICT_USER_AT_REGISTRATION_TIME" description="">
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</param>
+</params>
+</config>

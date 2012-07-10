@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<gantrytips>
+
+	<tip label="Backgrounds" id="background"><![CDATA[The Background picker allow you to select a background image for your main page background.]]></tip>
+	
+	<tip label="Main Colors" id="main"><![CDATA[Main colors configuration panel. This allows you to configure color and overlay settings for the main background area of the template.]]></tip>
+	
+	<tip label="Page Colors" id="page"><![CDATA[Page colors configuration panel. This allows you to configure color and overlay settings for the page surround and main content areas of the template.]]></tip>
+	
+	<tip label="Showcase Colors" id="showcaseblock"><![CDATA[Showcase colors configuration panel. This allows you to configure color and overlay settings for the header and showcase areas of the template.]]></tip>
+	
+	<tip label="Primary Colors" id="primary"><![CDATA[Primary colors configuration panel. This allows you to configure color and overlay settings for the primary and accent colors used throughout the template.]]></tip>
+	
+	<tip label="Bottom Colors" id="bottomblock"><![CDATA[Bottom colors configuration panel. This allows you to configure color and overlay settings for the copyright areas of the template.]]></tip>
+	
+	<tip label="Read More Style" id="readonstyle"><![CDATA[<strong>The Read More Style</strong> setting allows you to select an available style type for the display of read more links in the template.]]></tip>
+	
+	<tip label="Load Transition" id="loadtransition"><![CDATA[Enable or disable the page loading transition animation effects.]]></tip>
+		
+	<tip label="WebFonts" id="webfonts"><![CDATA[This setting allows you to use <strong>3rd party WebFonts</strong> from providers such as Google. You must first set WebFonts to show and then save your changes, then the available WebFonts will appear in the Font Settings dropdown from where they can be selected.]]></tip>
+	
+	<tip label="Font Settings" id="font"><![CDATA[A selection of fonts to be applied to your site's frontend is available from the <strong>Font Settings</strong> dropdown. It is also possible to set the <strong>Font Size</strong> according to your preference.]]></tip>
+	
+</gantrytips>

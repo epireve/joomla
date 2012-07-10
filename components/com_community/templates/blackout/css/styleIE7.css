@@ -1,0 +1,64 @@
+img.avatar { -ms-interpolation-mode: bicubic; }
+
+#community-wrap .app-box {
+ 	height: 1%;
+}
+
+body #community-wrap div.column-main {
+	margin-right: 200px;
+}
+body #community-wrap #profile-header {
+	background: #2C2E35 none repeat scroll 0 0;
+	float: left;
+	margin: 0 0 10px;
+	padding: 0;
+	width: 100%;
+}
+body #community-wrap #profile-header #profile-header-inner {
+	padding: 10px 20px 20px;
+}
+body #community-wrap div.column-main {
+	margin-right: 250px;
+}
+body #community-wrap ul.profile-info,
+body #community-wrap ul.updates {
+	margin-left: 0;
+}
+
+body #community-wrap div.greybox h1 {
+	margin-top: 10px;
+}
+
+body #community-wrap {
+	display: inline-block;
+	width: auto !important;
+}
+
+/** To remove RT Input Styling **/
+html #community-wrap .rokradios,
+html #community-wrap .rokchecks {
+	background: none !important;
+}
+html #community-wrap .rokradios input, html #community-wrap .rokchecks input {
+	position: relative !important;
+	left: auto !important;
+	visibility: visible !important;
+	z-index: 9999px !important;
+}
+
+.clrfix {
+	min-height: 1%;
+    zoom: 1;     /* triggers hasLayout */
+}  /* Only IE can see inside the conditional comment
+    and read this CSS rule. Don't ever use a normal HTML
+    comment inside the CC or it will close prematurely. */
+    
+#community-wrap .app-box-content,
+#community-wrap .app-box-content_inner {
+	zoom: 1;
+}    
+
+
+#community-wrap .wall-coc-form textarea {
+ 	margin: 0 0 0 -68px;
+}

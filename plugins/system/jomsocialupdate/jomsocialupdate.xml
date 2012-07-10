@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>Jomsocial Update</name>
+	<author>AzrulStudio</author>
+	<creationDate>March 2011</creationDate>
+	<copyright>Copyright (C) 2010. All rights reserved.</copyright>
+	<license>http://www.azrul.com</license>
+	<authorEmail>support@azrul.com</authorEmail>
+	<authorUrl>www.azrul.com</authorUrl>
+	<version>2.4.1</version>
+	<description>Provides legacy support for older version of Joomla!</description>
+	<files>
+		<filename plugin="jomsocialupdate">jomsocialupdate.php</filename>
+	</files>
+	<params>
+		<param name="lastcheck" type="text" default="0" label="Last check date" description="Jomsocial update last check">
+		</param>
+	</params>
+</install>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<gantrytips>
+
+	<tip label="Logo" id="logo"><![CDATA[This setting allows you to enable/disable the display the Logo as well as pick a position for the Logo to display in.  The auto-size toggle enables the Logo feature to automatically set the logo dimensions based on the size of the logo image.<br /><br />By default the Logo feature uses the image located in <strong>{template_name}/images/logo/style#/logo.png</strong>, so replacing this image is the simplest way to update the logo.]]></tip>
+	
+	<tip label="Content Top Scroller" id="scrollingcontent-top"><![CDATA[This setting allows you to enable/disable scrolling modules functionality in the <strong>content-top</strong> positions as well as configure the animation settings for the scrolling action.]]></tip>
+	
+	<tip label="Content Bottom Scroller" id="scrollingcontent-bottom"><![CDATA[This setting allows you to enable/disable scrolling modules functionality in the <strong>content-bottom</strong> positions as well as configure the animation settings for the scrolling action.]]></tip>
+
+	<tip label="Date" id="date"><![CDATA[With this setting you can choose whether or not to display the Date, pick a position for the Date to display in and decide on which format to use for the display. There is also a toggle to enable/disable the ability for the date to use the client-side data rather than the server date.]]></tip>
+
+	<tip label="Font-Sizer" id="fontsizer"><![CDATA[The Font-Sizer allows your users to increase or decrease the font-size according to their preference. This is a handy usability aid that can be quite helpful to people who have difficulty reading smaller text. Choose to enable/disable the display of the font-sizer option as well as choose a position for it to display in.]]></tip>
+	
+	<tip label="Login Panel" id="login"><![CDATA[Choose to show the login panel button and pick a position. Also you can select what text to display in this button. Make sure to have both RokBox plugins installed and enabled in your plugin manager. The login module you would like to display needs to be published in the module manager and assigned to the login module position. Also make sure to assign this module to all pages in order for it to work properly.]]></tip>
+	
+	<tip label="Popup Panel" id="popup"><![CDATA[Choose to show the popup panel button and pick a position. Also you can select what text to display in this button. Make sure to have both RokBox plugins installed and enabled in your plugin manager. The module you would like to display needs to be published in the module manager and assigned to the popup module position. Also make sure to assign this module to all pages in order for it to work properly.]]></tip>
+	
+	<tip label="Branding" id="branding"><![CDATA[This feature allows you to enable/disable the RocketTheme logo branding as well as specify the desired display position.]]></tip>
+
+	<tip label="Copyright" id="copyright"><![CDATA[With this setting you can choose whether or not to display the Copyright information and pick a position for it to display in. You can change the copyright text by simply modifying the text field.]]></tip>
+
+	<tip label="SmartLoad" id="smartload"><![CDATA[<strong>The SmartLoad functionality</strong> allows to load images only in the viewport of the browser. As you scroll the page up or down it will start loading the needed images. Extremely useful to save some bandwidth, especially on pages with many images. A comma separated list of css rules can be provided under XPath Ignores where SmartLoad should not be used.]]></tip>
+	
+	<tip label="More Articles" id="morearticles"><![CDATA[With this setting you can enable/disable the Ajax driven more articles feature as well configure the option text and pagination.]]></tip>
+
+	<tip label="To-Top Scroller" id="totop"><![CDATA[The To-Top Scroller allows for smooth scrolling from the bottom of the template back to the top. You can also select your own text to be displayed on the link.]]></tip>
+
+	<tip label="System Messages" id="systemmessages"><![CDATA[Joomla outputs System Messages, such as an error message when trying to log in with an invalid user/password combination, saving from the front-end, reset your password, etc. With this setting you can choose whether or not to display these messages and in which position they should show.]]></tip>
+
+	<tip label="Reset Settings" id="resetsettings"><![CDATA[The Reset Settings link allows to clear all cookies and settings set by the frontend user during their session. An example would be if the user has used the font-sizer or changed the preset via a URL, and wants to return to the default settings.]]></tip>
+
+	<tip label="Google Analytics" id="analytics"><![CDATA[Google Analytics is a web analytics solution that gives you insights into your website traffic and marketing effectiveness. Several features let you see and analyze your traffic data. Use this setting to enable or disable Google Analytics, when enabling make sure to enter a valid API.]]></tip>
+	
+</gantrytips>

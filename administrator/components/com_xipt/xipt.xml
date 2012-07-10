@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.6.0" method="upgrade">
+	<name>XIPT</name>
+	<creationDate>2009-08-01</creationDate>
+	<author>Team JoomlaXi</author>
+	<authorEmail>shyam@joomlaxi.com</authorEmail>
+	<authorUrl>http://www.joomlaxi.com</authorUrl>
+	<copyright>All rights reserved</copyright>
+	<license>GNU GPL v2.0</license>
+	<version>3.3.745</version>
+	<description>JSPT (code name is XIPT) is a component to setup multiple user profile types in JomSocial</description>
+	<installfile>install/install.php</installfile>
+	<uninstallfile>install/uninstall.php</uninstallfile>
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>xipt.php</filename>
+		<filename>includes.php</filename>
+		<filename>api.xipt.php</filename>
+		<filename>defines.php</filename>
+		<filename>license.txt</filename>
+		<filename>router.php</filename>
+		<filename>ini.php</filename>
+		<folder>helpers</folder>			
+		<folder>controllers</folder>
+		<folder>models</folder>
+		<folder>tables</folder>		
+		<folder>libraries</folder>
+		<folder>assets</folder>
+		<folder>views</folder>
+		<folder>elements</folder>
+		<folder>form</folder>
+
+	</files>
+
+	<languages>
+		<language tag="en-GB">languages/site/en-GB.com_xipt.ini</language>
+	</languages>
+
+	<administration>
+		<menu link="option=com_xipt" img="../components/com_xipt/images/icon-profiletypes.gif">JomSocial Profile Types</menu>
+		<submenu>
+			<menu view="cpanel" 		img="../components/com_xipt/assets/images/icon-cpanel.png">Home</menu>
+			<menu view="setup" 			img="../components/com_xipt/assets/images/icon-setup.gif">Setup</menu>
+			<menu view="settings" 		img="../components/com_xipt/assets/images/icon-jspt-settings.png">Settings</menu>
+			<menu view="profiletypes" 	img="../components/com_xipt/assets/images/icon-profiletypes.gif">Profile Types</menu>
+			<menu view="configuration" 	img="../components/com_xipt/assets/images/icon-jspt-config.gif">JS Configuration</menu>
+			<menu view="jstoolbar" 		img="../components/com_xipt/assets/images/icon-jstoolbar.png">JS Toolbar</menu>
+			<menu view="aclrules" 		img="../components/com_xipt/assets/images/icon-aclrules.gif">Access Control</menu>
+			<menu view="profilefields" 	img="../components/com_xipt/assets/images/icon-profilefields.gif">Profile Fields</menu>
+			<menu view="applications" 	img="../components/com_xipt/assets/images/icon-applications.gif">Applications</menu>
+		</submenu>
+	
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>xipt.php</filename>
+			<filename>includes.php</filename>
+			<filename>toolbar.xipt.php</filename>
+			<folder>controllers</folder>
+			<folder>views</folder>
+			<folder>hacks</folder>
+			<folder>install</folder>
+		</files>
+		
+		<files>
+			<folder>install</folder>
+		</files>
+
+		<languages>
+			<language tag="en-GB">languages/admin/en-GB.com_xipt.ini</language>
+		</languages>
+	</administration>
+	
+	
+
+	<install>
+                <sql>
+                        <file driver="mysql" charset="utf8">install/install.sql</file>
+                </sql>
+        </install>
+
+	 <uninstall>
+                <sql>
+                        <file driver="mysql" charset="utf8">install/uninstall.sql</file>
+                </sql>
+        </uninstall>
+
+	<plugins>
+		<plugin plugin="xipt_system" publish="true" group="system" />
+	</plugins>
+</install>

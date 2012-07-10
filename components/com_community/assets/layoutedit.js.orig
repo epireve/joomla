@@ -1,0 +1,130 @@
+joms.extend({
+	editLayout: {
+		sortElements: '.connectedSortable',
+
+		start: function( activityId ){
+
+			// IF connected sortable height is less than certain value, fix it
+			// cannot applied to all since it seems to messed up some smaller div
+			// joms.jQuery('.app-position').each(function(index, element){
+			// 	if(joms.jQuery(element).height() < 10)
+			// 		joms.jQuery(element).css('min-height', 64);
+			// });
+			
+			// add move cursor to moveabale object header
+			// joms.jQuery('div.app-position > div:not(.app-core) > div.app-box-header').css('cursor', 'move');
+			
+			joms.jQuery('.app-position').sortable({
+				cursor: 'move',
+				connectWith: '.app-position',
+				placeholder: 'dragPlaceholder',
+				items: '.app-item',
+				start: function(event, ui) {
+					
+					// Maybe we can have an extra class called .app-title instead.
+					// var appTitle  = ui.item.find('.app-box-title').html() || ui.item.find('.app-widget-header').html();
+					//ui.item.addClass('onDrag').prepend('<div class="dragOverlay"><strong>'+appTitle+'</strong></div>');
+			
+					// the placeholder size must match content size
+					joms.jQuery('div.dragPlaceholder').height(ui.item.height() - 10);
+					joms.jQuery('div.dragOverlay').height(ui.item.innerHeight());
+					joms.jQuery('div.dragOverlay').width(ui.item.innerWidth());
+					
+					// Hide  main content for widgets
+					// ui.item.find('.app-widget-header').hide();
+					// ui.item.find('.app-widget-content').hide();
+					
+					// Save previous position
+					ui.item.data('previousPosition', ui.item.parent('.app-position').attr('id'));					
+				},
+				stop: function(event, ui) {					
+											
+					// This determines whether the app has been dragged to a different position
+					if (ui.item.data('previousPosition')!=ui.item.parent('.app-position').attr('id'))
+					{
+						jQuery(ui.item).html('<div class="ajax-wait" style="background-repeat:no-repeat; width:100%; background-position: center center;">&nbsp;</div>');					
+						var currentApp = jQuery(ui.item).attr('id').split('-');
+						
+						jax.call('community', 'apps,ajaxRefreshLayout', currentApp[1], ui.item.parent('.app-position').attr('id'));
+					}
+					
+					// add move cursor to moveabale object header
+					joms.jQuery('div.app-position > div:not(.app-core) > div.app-box-header').css('cursor', 'move');
+					joms.jQuery('div.app-position > div:not(.app-core)  div.app-widget-header').css('cursor', 'move');
+					
+					
+					var inputs = [];
+					var val = [];
+					
+					ui.item.removeClass('onDrag');
+					
+					// Remove the overlay
+					joms.jQuery('div.dragOverlay').remove();
+					
+					// Store
+					joms.jQuery('#apps-sortable .app-box').each( function() {				
+						var appid = joms.jQuery(this).attr('id').split('-');
+						inputs.push('app-list[]=' + appid[1]);
+					});
+
+					// Show  main content for widgets
+					ui.item.find('.app-widget-header').show();
+					ui.item.find('.app-widget-content').show();
+
+				},
+				over: function(event, ui) {
+					ui.item.removeClass('onNoDrag');
+				},
+				out: function(event, ui) 
+				{
+					ui.item.addClass('onNoDrag');
+				}
+
+			});
+
+		},
+		stop: function( activityId , content ){
+			
+			joms.jQuery('.page-action#editLayout-start').show();
+			joms.jQuery('.page-action#editLayout-stop').hide();
+			
+			// Show the activity stream back			
+			joms.jQuery('#activity-stream-container').show();
+			
+			try{ console.log('stop editable layout'); } catch(err){}
+			
+			// Disable drag&drop
+			joms.jQuery( joms.editLayout.sortElements ).sortable('destroy');
+			
+			// Disable drag cursor
+			joms.jQuery('div.app-position > div:not(.app-core) > div.app-box-header').css('cursor', 'auto');
+			joms.jQuery('div.app-position > div:not(.app-core) div.app-widget-header').css('cursor', 'auto');
+						
+			joms.editLayout.save('content'			, '#apps-sortable');
+			joms.editLayout.save('sidebar-top'		, '#apps-sortable-side-top');
+			joms.editLayout.save('sidebar-bottom'	, '#apps-sortable-side-bottom');
+			
+			// Restore min height, css
+			joms.jQuery('.app-position').each(function(index, element){
+				joms.jQuery(element).css('min-height', 'auto');
+			});
+			
+		},
+		
+		updateApp: function( appid , position ){
+			
+		},
+		
+		save: function( position , containerId ){
+			// Go through all the list and save them
+			var items = [];
+			
+			// Start with the main content
+			joms.jQuery(containerId).children().each(function() {				
+				var appid = jQuery(this).attr('id').split('-');
+				items.push('app-list[]=' + appid[1]);
+			});
+			jax.call('community', 'apps,ajaxSavePosition', position, items.join('&'));
+		}
+	}
+});

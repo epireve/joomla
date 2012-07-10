@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form name="template-options">
+	<fieldset name="toolbar-panel" label="TOOLBAR">
+	    <field name="presets" type="preset" mode="scroller" default="preset1" setbyurl="true" setinoverride="false" panel_position="left" show_label="false"/>
+	</fieldset>
+    <fieldset name="overview" label="OVERVIEW">
+		<field name="overviewtips" type="tips" tab="overview" panel_position="right" show_label="false" />
+        <field name="overview" type="file" path="/template-overview.php" show_label="false"/>
+    </fieldset>
+	<fieldset name="style" label="STYLE">
+		<field name="master" type="hidden" value="false" default="true"/>
+	        <field name="current_id" type="hidden" value="false" default="true"/>
+	        <field name="gantry" type="gantry" value="" panel_position="hiddens"/>
+	        <field name="template_full_name" type="hidden" default="Momentum"/>
+	        <field name="grid_system" type="hidden" default="12"/>
+	        <field name="template_prefix" type="hidden" default="momentum-"/>
+	        <field name="cookie_time" type="hidden" default="31536000"/>
+	        <field name="name" type="hidden" default="Preset1" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" />
+
+	        <field name="copy_lang_files_if_diff" type="hidden" default="1"/>
+	        <field name="stylesettings" type="html" panel_position="right" show_label="false">
+            <html><![CDATA[
+            <h2>Style Settings</h2>
+
+            <p>The Style Settings panel in the Gantry based theme administration interface provides several options for configuring the main built in stylistic aspects of the template.</p>
+            ]]></html>
+        </field>
+        <field name="styletips" type="tips" tab="style" panel_position="right" show_label="false"/>
+        
+		<fields name="background" type="chain" label="BACKGROUND_PICKER">
+			<field name="enabled" type="toggle" default="1" label="ENABLE" enabler="true" />
+			<field name="image" type="imagepicker" default="" label="PICKER" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" />
+		</fields>
+
+        <fields name="main" type="columns" label="MAIN_CHOOSER">
+			<field name="background" type="colorchooser" default="#313131" position="left" label="COLOR" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+			<field name="pattern" type="selectbox" default="dustnscratches" position="left" class="rokradios" label="PATTERN" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" setclassbytag="rt-bg-pattern">
+			    <option value="carbon">Carbon</option>
+			    <option value="carbonfiber">Carbon-Fiber</option>
+			    <option value="cardboard">Cardboard</option>
+			    <option value="circles">Circles</option>
+			    <option value="dustnscratches">Dust-n-Scratches</option>
+			    <option value="grunge">Grunge</option>
+			    <option value="leather">Leather</option>
+			    <option value="lines">Lines</option>
+			    <option value="paper">Paper</option>
+			    <option value="projectpaper">Project-Paper</option>
+			    <option value="rubber">Rubber</option>
+			    <option value="textile">Textile</option>
+			    <option value="waves">Waves</option>
+			    <option value="wood">Wood</option>
+			    <option value="woven">Woven</option>
+			    <option value="none">NONE</option>
+			</field>
+			<field name="overlay" type="selectbox" default="dark" position="left" class="rokradios" label="OVERLAY" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true">
+			    <option value="light">LIGHT</option>
+			    <option value="dark">DARK</option>
+			</field>
+			<field name="text" type="colorchooser" default="#fff" position="right" label="TEXT" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+			<field name="link" type="colorchooser" default="#3881EA" position="right" label="LINK" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+		</fields>
+		
+		<fields name="page" type="columns" label="PAGE_CHOOSER">
+			<field name="background" type="colorchooser" default="#eee" position="left" label="COLOR" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+			<field name="overlay" type="selectbox" default="light" position="left" class="rokradios" label="OVERLAY" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true" setclassbytag="rt-page-surround">
+			    <option value="light">LIGHT</option>
+			    <option value="dark">DARK</option>
+			</field>
+			<field name="content" type="selectbox" default="light" position="left" class="rokradios" label="OVERLAY" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true" setclassbytag="rt-main-column">
+			    <option value="light">LIGHT</option>
+			    <option value="dark">DARK</option>
+			</field>
+			<field name="accent" type="colorchooser" default="#fff" position="right" label="ACCENT" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+			<field name="text" type="colorchooser" default="#444" position="right" label="TEXT" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+			<field name="link" type="colorchooser" default="#2358A6" position="right" label="LINK" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+		</fields>
+		
+		<fields name="showcaseblock" type="columns" label="SHOW_CHOOSER">
+			<field name="overlay" type="selectbox" default="light" position="left" class="rokradios" label="OVERLAY" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true" setclassbytag="rt-showcase">
+			    <option value="light">LIGHT</option>
+			    <option value="dark">DARK</option>
+			</field>
+			<field name="text" type="colorchooser" default="#fff" position="right" label="TEXT" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+			<field name="link" type="colorchooser" default="#fff" position="right" label="LINK" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+		</fields>
+		
+		<fields name="primary" type="columns" label="PRIMARY_CHOOSER">
+			<field name="color" type="colorchooser" default="#2358A6" position="left" label="COLOR" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+			<field name="overlay" type="selectbox" default="dark" position="left" class="rokradios" label="OVERLAY" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true">
+			    <option value="light">LIGHT</option>
+			    <option value="dark">DARK</option>
+			</field>
+			<field name="text" type="colorchooser" default="#fff" position="right" label="TEXT" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+			<field name="link" type="colorchooser" default="#B0CEF5" position="right" label="LINK" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+		</fields>
+		
+		<fields name="bottomblock" type="columns" label="BOTTOM_CHOOSER">
+			<field name="background" type="colorchooser" default="#181818" position="left" label="COLOR" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+			<field name="overlay" type="selectbox" default="dark" position="left" class="rokradios" label="OVERLAY" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true" setclassbytag="rt-copyright">
+			    <option value="light">LIGHT</option>
+			    <option value="dark">DARK</option>
+			</field>
+			<field name="text" type="colorchooser" default="#aaa" position="right" label="TEXT" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+			<field name="link" type="colorchooser" default="#3881EA" position="right" label="LINK" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+		</fields>
+
+		<field name="readonstyle" type="selectbox" default="button" label="READON_STYLE" isbodyclass="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+			<option value="button">BUTTON</option>
+            <option value="link">LINK</option>
+        </field>
+
+		<field name="articlestyle" type="hidden" default="" label="ARTICLE_STYLE" />
+		
+		<field name="loadtransition" type="toggle" default="1" label="LOAD_TRANSITION" />
+		
+		<fields name="webfonts" type="chain" label="WEBFONTS">
+            <field name="enabled" type="toggle" default="0" label="SHOW" />
+            <field name="source" type="selectbox" default="google" label="WEBFONTS_SOURCE">
+                <option value="google">Google Font Directory</option>
+            </field>
+        </fields>
+
+        <fields name="font" type="chain" label="FONT_SETTINGS">
+            <field name="family" type="fonts" default="momentum" label="FONT_FAMILY" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+	       <option value="momentum">Momentum</option>
+	       <option value="geneva">Geneva</option>
+	       <option value="georgia">Georgia</option>
+	       <option value="helvetica">Helvetica</option>
+	       <option value="lucida">Lucida</option>
+	       <option value="optima">Optima</option>
+	       <option value="palatino">Palatino</option>
+	       <option value="trebuchet">Trebuchet</option>
+            </field>
+            <field name="size" type="hidden" default="default" setbyurl="true"/>
+            <field name="size-is" type="selectbox" default="default" label="FONT_SIZE" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true">
+                <option value="xsmall">F_XSMALL</option>
+                <option value="small">F_SMALL</option>
+                <option value="default">F_DEFAULT</option>
+                <option value="large">F_LARGE</option>
+                <option value="xlarge">F_XLARGE</option>
+            </field>
+        </fields>
+	</fieldset>
+	<fieldset name="features" label="FEATURES">
+		<field name="viewswitcher-priority" type="hidden" default="1"/>
+	    <field name="logo-priority" type="hidden" default="2"/>
+	    <field name="copyright-priority" type="hidden" default="3"/>
+	    <field name="styledeclaration-priority" type="hidden" default="4"/>
+	    <field name="iphonegradients-priority" type="hidden" default="5"/>
+	    <field name="date-priority" type="hidden" default="6"/>
+	    <field name="fontsizer-priority" type="hidden" default="7"/>
+	    <field name="totop-priority" type="hidden" default="8"/>
+	    <field name="systemmessages-priority" type="hidden" default="9"/>
+	    <field name="inactive-priority" type="hidden" default="10"/>
+	    <field name="iphoneimages-priority" type="hidden" default="11"/>
+	    <field name="morearticles-priority" type="hidden" default="12"/>
+	    <field name="smartload-priority" type="hidden" default="13"/>
+	    <field name="pagesuffix-priority" type="hidden" default="14"/>
+	    <field name="resetsettings-priority" type="hidden" default="15"/>
+	    <field name="analytics-priority" type="hidden" default="16"/>
+	    <field name="belatedpng-priority" type="hidden" default="17"/>
+	    <field name="fusionmenu-priority" type="hidden" default="18"/>
+	    <field name="ie6splash-priority" type="hidden" default="19"/>
+	    <field name="jstools-priority" type="hidden" default="21"/>
+	    <field name="moduleoverlays-priority" type="hidden" default="22"/>
+	    <field name="rtl-priority" type="hidden" default="23"/>
+	    <field name="splitmenu-priority" type="hidden" default="24"/>
+	    <field name="splicemenu-priority" type="hidden" default="25"/>
+	    <field name="touchmenu-priority" type="hidden" default="26"/>
+	    <field name="webfonts-priority" type="hidden" default="27"/>
+	    
+	    <field name="styledeclaration-enabled" type="hidden" default="1" />
+	    <field name="featuressettings" type="html" panel_position="right" show_label="false">
+            <html><![CDATA[
+            <h2>Feature Settings</h2>
+
+            <p>The Features Settings allow you to control the built-in features available in this template. Check out the help information below for a more detailed description on what each feature provides and how to configure them.</p>
+            ]]></html>
+	    </field>
+	    
+	    <field name="featurestips" type="tips" tab="features" panel_position="right" show_label="false"/>
+	    
+	    <fields name="logo" type="chain" label="LOGO">
+            <field name="enabled" type="toggle" default="1" label="SHOW" />
+            <field name="position" type="position" default="logo" label="POSITION" />
+			<field name="autosize" type="toggle" default="1" label="AUTO_SIZE" />
+            <field name="perstyle" type="hidden" default="1" />
+            <field name="style" type="selectbox" default="dark" position="left" class="rokradios" label="BACKGROUND" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true">
+                <option value="light">LIGHT</option>
+                <option value="dark">DARK</option>
+            </field>
+            <field name="css" type="hidden" default="body #rt-logo" />
+        </fields>
+
+        <fields name="date" type="chain" label="DATE">
+            <field name="enabled" type="toggle" default="0" label="SHOW" />
+            <field name="position" type="position" default="utility-a" label="POSITION" />
+			<field name="clientside" type="toggle" default="0" label="DATE_CLIENTSIDE" />
+			<field name="formats" type="dateformats" default="%A, %B %d, %Y" label=" ">
+					<option value="%A, %B %d, %Y" />
+					<option value="%B %d, %Y" />
+					<option value="%d %h, %Y" />
+					<option value="%d %h, %y" />
+					<option value="%a, %h %d, %Y" />
+					<option value="%a, %h %d, %y" />
+			</field>
+        </fields>
+
+        <fields name="fontsizer" type="chain" label="FONTSIZE" >
+            <field name="enabled" type="toggle" default="0" label="SHOW" />
+            <field name="position" type="position" default="utility-b" label="POSITION" />
+        </fields>
+
+		<fields name="login" type="chain" label="LOGIN">
+            <field name="enabled" type="toggle" default="0" label="SHOW" />
+            <field name="position" type="position" default="utility-c" label="POSITION" />
+			<field name="text" type="text" default="Member Login" label="LOGIN_TEXT" class="text-medium" />
+			<field name="logouttext" type="text" default="Logout" label="LOGOUT_TEXT" class="text-medium" />
+        </fields>
+
+		<fields name="popup" type="chain" label="POPUP">
+            <field name="enabled" type="toggle" default="0" label="SHOW" />
+            <field name="position" type="position" default="utility-d" label="POSITION" />
+			<field name="text" type="text" default="Popup Module" label="POPUP_TEXT" class="text-medium" />
+			<field name="width" type="text" default="250" label="POPUP_WIDTH" class="text-medium" />
+			<field name="height" type="text" default="235" label="POPUP_HEIGHT" class="text-medium" />
+        </fields>
+
+		<fields name="branding" type="chain" label="BRANDING">
+            <field name="enabled" type="toggle" default="1" label="SHOW" />
+            <field name="position" type="position" default="copyright-c" label="POSITION" />
+        </fields>
+
+        <fields name="copyright" type="chain" label="COPYRIGHT">
+            <field name="enabled" type="toggle" default="1" label="SHOW" />
+            <field name="position" type="position" default="copyright-a" label="POSITION" />
+            <field name="text" type="text" default="Designed by RocketTheme" label="" class="text-long" />
+        </fields>
+
+		<fields name="smartload" type="chain" label="SMARTLOAD">
+			<field name="enabled" type="toggle" default="1" label="SHOW" />
+			<field name="text" type="text" default="200" label="Offset Y" class="text-short" />
+            <field name="ignores" type="text" default="com_community,com_contact,com_k2,com_tienda,com_weblinks" label="Component Ignores" class="text-medium" />
+			<field name="exclusion" type="text" default="" label="XPath Ignores" class="text-medium" />
+		</fields>
+
+		<fields name="morearticles" type="chain" label="MOREARTICLES">
+			<field name="enabled" type="toggle" default="0" label="ENABLE" />
+			<field name="text" type="text" default="Load More Articles" label="" class="text-medium" />
+			<field name="pagination" type="toggle" default="1" label="HIDE_PAGINATION" />
+		</fields>
+
+		<fields name="totop" type="chain" label="TOTOP">
+			<field name="enabled" type="toggle" default="1" label="SHOW" />
+			<field name="position" type="position" default="copyright" label="POSITION" />
+			<field name="text" type="text" default="Back to Top" label="" class="text-long" />
+		</fields>
+
+		<fields name="systemmessages" type="chain" label="SYSMESSAGE" >
+		    <field name="enabled" type="toggle" default="1" label="SHOW" />
+		    <field name="position" type="position" default="drawer" label="POSITION" />
+		</fields>
+
+		<fields name="resetsettings" type="chain" label="RESETSETTINGS">
+			<field name="enabled" type="toggle" default="0" label="SHOW" />
+			<field name="position" type="position" default="footer-b" label="POSITION" />
+			<field name="text" type="text" default="Reset Settings" label="" class="text-long" />
+		</fields>
+
+        <fields name="analytics" type="chain" label="ANALYTICS" >
+            <field name="enabled" type="toggle" default="0" label="ANALYTICS_ENABLE" />
+            <field name="code" type="text" default="" label="ANALYTICS_CODE" class="text-long" />
+            <field name="position" type="hidden" default="analytics" />
+        </fields>
+	</fieldset>
+	<fieldset name="menu" label="MENU">
+		<field name="menusettings" type="html" panel_position="right" show_label="false">
+            <html><![CDATA[
+				<h2>Menu Settings</h2>
+
+				<p>The Menu settings available in this interface allow you to control the style and functionality of the RokNavMenu system which is a powerful feature included in the Gantry Framework. For more detailed information on each settings and how it is being used, please refer to the help information below.</p>
+				]]></html>
+	    </field>
+	    <field name="menutips" type="tips" tab="menu" panel_position="right" show_label="false"/>
+	    <fields name="menu" type="selectedset" label="MENU_CTRL">
+	        <field name="enabled" type="toggle" default="1" label="SHOW" enabler="true" />
+	        <field name="type" type="selectbox" selector="true" default="fusionmenu" label="TYPE" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+            <fields type="set" name="fusionmenu" label="FUSION">
+                <field name="menutype" type="menus" default="mainmenu" label="MENU_SELECT" />
+                <field name="position" type="position" translation="false" default="navigation" label="POSITION" />
+                <field name="enable_js" type="toggle" default="1" label="ENABLE_JS" />
+                <field name="opacity" type="text" default="1" label="MENU_OPACITY" class="text-short" />
+                <field name="effect" type="selectbox" default="slidefade" label="MENU_EFFECT">
+                    <option value="slide">SLIDE</option>
+                    <option value="slidefade">SLIDEFADE</option>
+                </field>
+                <field name="hidedelay" type="text" default="500" label="MENU_DELAY" class="text-short" />
+                <field name="menu-animation" type="animation" default="Circ.easeOut" label="MENU_ANIMATION" />
+                <field name="menu-duration" type="text" default="300" label="MENU_DURATION" class="text-short" />
+                <field name="centered-offset" type="hidden" default="0" label="CENTERED_DROPDOWN" />
+                <field name="tweak-initial-x" type="hidden" default="-10" label="X_OFFSET" class="text-short" />
+                <field name="tweak-initial-y" type="hidden" default="-10" label="Y_OFFSET" class="text-short" />
+                <field name="tweak-subsequent-x" type="hidden" default="0" label="X_OFFSET" class="text-short" />
+                <field name="tweak-subsequent-y" type="hidden" default="0" label="Y_OFFSET" class="text-short" />
+                <field name="tweak-width" type="hidden" default="20" />
+                <field name="tweak-height" type="hidden" default="20" />
+
+                <field name="enable-current-id" type="toggle" default="0" label="ENABLE_ID" />
+                <field name="theme" type="hidden" default="gantry-fusion"/>
+                <field name="limit_levels" type="hidden" default="0"/>
+                <field name="startLevel" type="hidden" default="0"/>
+                <field name="showAllChildren" type="hidden" default="1"/>
+                <field name="class_sfx" type="hidden" default="top"/>
+                <field name="cache" type="hidden" default="0"/>
+                <field name="module_cache" type="hidden" default="1"/>
+            </fields>
+            <fields type="set" name="splitmenu" label="SPLITMENU">
+            	<field name="roknavmenu_fusion_enable-current-id" type="toggle" default="0" label="ENABLE_ID" />
+                <field name="menutype" type="menus" default="mainmenu" label="MENU_SELECT" />
+                <field name="theme" type="hidden" default="gantry-splitmenu"/>
+                <field name="cache" type="hidden" default="0"/>
+                <field name="module_cache" type="hidden" default="1"/>
+
+                <field name="mainmenu-position" type="position" translation="false" default="navigation" label="MAINMENU_POS" />
+                <field name="mainmenu-limit_levels" type="hidden" default="1"/>
+                <field name="mainmenu-startLevel" type="hidden" default="0"/>
+                <field name="mainmenu-endLevel" type="hidden" default="0"/>
+                <field name="mainmenu-class_sfx" type="hidden" default="top"/>
+
+                <field name="submenu-position" type="position" translation="false" default="sidebar-a" label="SUBMENU_POS" />
+                <field name="submenu-limit_levels" type="hidden" default="1"/>
+                <field name="submenu-startLevel" type="hidden" default="1"/>
+                <field name="submenu-endLevel" type="hidden" default="9"/>
+                <field name="submenu-class_sfx" type="text" default="" label="SIDEMENU_CLASS_SFX" class="text-short" />
+            </fields>
+	    </fields>
+	</fieldset>
+	
+	<fieldset name="layouts" label="LAYOUTS">
+		<field name="layoutsettings" type="html" panel_position="right" show_label="false">
+        	<html><![CDATA[
+				<h2>Layouts Settings</h2>
+
+				<p>Through the power of the Gantry Framework, you have complete control over the layout of your pages. Each position element can be configured for the number of sets of published widgets in that position.  If you have 3 sets of widgets (i.e. widgets separated by 2 dividers), click the number <b>3</b> and then move the slider to the desired ratio for the layout you are trying to achieve.</p>
+				]]></html>
+    	</field>
+    	<field name="layoutstips" type="tips" tab="layouts" panel_position="right" show_label="false"/>
+    	
+    	<fields name="top" type="position" label="TOP_POS">
+            <field name="layout" type="positions" default="5,7" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="header" type="position" label="HEADER_POS">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="showcase" type="position" label="SHOWCASE_POS">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="feature" type="position" label="FEATURE_POS">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="utility" type="position" label="UTILITY_POS">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="maintop" type="position" label="MAINTOP_POS">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <field name="mainbodyPosition" type="positions" default="6,3,3" label="MAINBODY_POS">
+            <schemas>1,2,3,4</schemas>
+            <words>sa,sb,sc,mb</words>
+            <type>custom</type>
+        </field>
+
+        <fields name="mainbottom" type="position" label="MAINBOTTOM_POS">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="bottom" type="position" label="BOTTOM_POS">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="footer" type="position" label="FOOTER_POS">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+        
+        <fields name="copyright" type="position" label="COPYRIGHT_POS">
+            <field name="layout" type="positions" default="3,3,3,3" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+	</fieldset>
+	
+	<fieldset name="mobile" label="MOBILE">
+		<field name="iphonesettings" type="html" panel_position="right" show_label="false">
+            <html><![CDATA[
+				<h2>Mobile Settings</h2>
+
+				<p>The mobile settings available in this interface allow you to control the style and functionality of the mobile custom theme which is a powerful feature included in the Gantry Framework. For more detailed information on each settings and how it is being used, please refer to the help information below.</p>
+				]]></html>
+	    </field>
+		<field name="iphonetips" type="tips" tab="mobile" panel_position="right" show_label="false"/>
+		
+		<field name="iphone-enabled" enabler="true" type="toggle" default="1" label="IPHONE_ENABLED" />
+		<field name="android-enabled" enabler="true" type="toggle" default="1" label="ANDROID_ENABLED" />
+		<field name="iphone-scalable" type="toggle" default="0" label="IPHONE_SCALABLE" />
+		<fields name="iphone-switcher" type="chain" label="IPHONE_STANDARD">
+			<field name="enabled" enabler="true" type="toggle" default="1" label="ENABLE" />
+			<field name="position" type="position" translation="false" default="mobile-copyright" label="POSITION" />
+		</fields>
+		<fields name="touchmenu" type="chain" label="IPHONE_MENU">
+		    <field name="menutype" type="menus" default="mainmenu" label="MENU_SELECT" />
+			<field name="enabled" type="hidden" default="1" />
+		    <field name="position" type="hidden" default="mobile-navigation"/>
+		    <field name="theme" default="touch" type="hidden"/>
+			<field name="animation" type="selectbox" default="cube" label="IPHONE_TOUCHANIMATION">
+				<option value="slide">Slide</option>
+				<option value="fade">Fade</option>
+				<option value="dissolve">Dissolve</option>
+				<option value="flip">Flip</option>
+				<option value="vflip">Vertical Flip</option>
+				<option value="slideup">Slide</option>
+				<option value="swap">Swap</option>
+				<option value="cube">Cube</option>
+				<option value="pop">Pop</option>
+			</field>
+		    <field name="cache" type="hidden" default="0"/>
+		    <field name="module_cache" type="hidden" default="1"/>
+			<field name="startLevel" type="hidden" default="0" />
+			<field name="endLevel" type="hidden" default="20" />
+			<field name="showAllChildren" type="hidden" default="1" />
+		</fields>
+		<fields name="iphoneimages" type="chain" default="" label="IPHONE_IMAGES">
+			<field name="enabled" enabler="true" type="toggle" default="1" label="ENABLED" />
+			<field name="minWidth" default="80" type="text" class="text-short" label="MIN_WIDTH" />
+			<field name="percentage" default="25" type="selectbox" label="PERCENTAGE_RESIZE">
+				<option value="75">75%</option>
+				<option value="50">50%</option>
+				<option value="33">33%</option>
+				<option value="25">25%</option>
+				<option value="12">12%</option>
+			</field>
+		</fields>
+		<fields name="mobile" type="columns" label="IPHONE_ALIASES">
+			<field name="drawer" type="alias" default="drawer" label="DRAWER" show_label="false" position="left" translation="false"/>
+			<field name="top" type="alias" default="header-a" label="TOP" show_label="false" position="left" translation="false"/>
+			<field name="header" type="alias" default="header-c" label="HEADER" show_label="false" position="left" translation="false"/>
+			<field name="navigation" type="alias" default="mobile-navigation" label="NAVIGATION" show_label="false" position="left" translation="false"/>
+			<field name="showcase" type="alias" default="mobile-showcase" label="SHOWCASE" show_label="false" position="left" translation="false"/>
+			<field name="feature" type="alias" default="content-top-a" label="FEATURE" show_label="false" position="left" translation="false"/>
+			<field name="bottom" type="alias" default="bottom-b" label="BOTTOM" show_label="false" position="left" translation="false"/>
+			<field name="footer" type="alias" default="footer-a" label="FOOTER" show_label="false" position="left" translation="false"/>
+			<field name="copyright" type="alias" default="copyright-a" label="COPYRIGHT" show_label="false" position="left" translation="false"/>
+		</fields>
+	</fieldset>
+	
+	<fieldset name="advanced" label="ADVANCED">
+        <field name="advancedsettings" type="html" panel_position="right" show_label="false">
+            <html><![CDATA[
+				<h2>Advanced Settings</h2>
+
+				<p>The Advanced Settings panel in the Gantry based theme administration interface includes a variety of powerful features that you can take advantage off within your WordPress site. Please refer to the help information below to find out further details on what every setting is used for.</p>
+				]]></html>
+        </field>
+        <field name="advancedtips" type="tips" tab="advanced" panel_position="right" show_label="false"/>
+        
+        <fields name="cache" type="chain" label="GANTRY_CACHE" setinoverride="false">
+            <field name="enabled" type="toggle" default="1" label="ENABLED" setinoverride="false"/>
+            <field name="time" type="text" default="900" label="CACHE_TIME" class="text-short" setinoverride="false"/>
+        </fields>
+        
+        <fields name="gzipper" type="chain" label="GANTRY_GZIPPER" setinoverride="false">
+            <field name="enabled" type="toggle" default="0" label="ENABLED" setinoverride="false"/>
+            <field name="time" type="text" default="600" label="CACHE_TIME" class="text-short" setinoverride="false"/>
+            <field name="expirestime" type="text" default="1440" label="EXPIRES_TIME" class="text-short" setinoverride="false"/>
+            <field name="stripwhitespace" type="toggle" default="1" label="STRIP_WHITESPACE" setinoverride="false"/>
+        </fields>
+        
+        <fields name="inputstyling" type="chain" label="INPUT_STYLING">
+            <field name="enabled" type="toggle" default="1" label="ENABLED" isbodyclass="true"/>
+            <field name="exclusions" type="text" default="'.content_vote','\#rt-popup','\#rt-popuplogin','\#contact-form','\#vmMainPage'" label="EXCLUSIONS" class="text-long" />
+        </fields>
+        
+        <field name="file-inline-js-enabled" type="toggle" default="0" label="FILE_INLINE_JS" />
+        
+        <field name="component-enabled" type="toggle" default="1" label="COMPONENT" />
+        
+        <field name="mainbody-enabled" type="toggle" default="1" label="MAINBODY" />
+        
+        <field name="rtl-enabled" type="toggle" default="1" label="RTL" setinoverride="false"/>
+        
+        <field name="buildspans-enabled" type="toggle" default="1" label="TITLESPANS" />
+        
+        <field name="moduleoverlays-enabled" type="toggle" default="1" label="MODULEOVERLAYS" />
+        
+        <field name="pagesuffix-enabled" type="toggle" default="1" label="PAGESUFFIX" />
+        
+        <fields name="typography" type="chain" label="RT_TYPOGRAPHY">
+            <field name="enabled" type="toggle" default="1" label="ENABLED" />
+            <field name="style" type="selectbox" default="light" label="RT_TYPOGRAPHY_STYLE" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true">
+            	<option value="dark">DARK</option>
+            	<option value="light">LIGHT</option>
+            </field>
+        </fields>
+	
+		<field name="extensions" type="toggle" default="1" label="RT_EXTENSIONS" />
+        
+        <fields name="inactive" type="chain" label="INACTIVE" setinoverride="false">
+            <field name="enabled" type="toggle" default="1" label="ENABLED" setinoverride="false"/>
+            <field name="menuitem" type="menuitem" label="SELECT_MENU_ITEM" setinoverride="false"/>
+        </fields>
+        
+        <field name="ie6splash-enabled" type="toggle" default="1" label="IE6SPLASH" />
+	</fieldset>
+	
+	<fieldset name="assignment" label="ASSIGNMENTS">
+        <field name="assignments" type="assignments" panel_position="left" setinoverride="false"/>
+        <field name="stylesettings" type="html" panel_position="right" show_label="false">
+            <html><![CDATA[
+            <h2>Menu Assignments</h2>
+
+            <p>If a particular template style is set to <b>"Default"</b> in the <b>Template Manager: Styles</b>, you will see that style throughout the site.  However if you have another template style that you wish to display on certain pages, you can do so by selecting the relevant menu items in this tab.<br /><br />
+            
+            The <b>Toggle Selection</b> button will invert the current menu item selection.</p>
+            ]]></html>
+        </field>
+    </fieldset>
+</form>

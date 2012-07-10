@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toolbar>
+	<items>
+		<item>
+			<name>Profile</name>
+			<alias>profile</alias>
+			<link><![CDATA[index.php?option=com_community&view=profile]]></link>
+			<childs>
+				<item>
+					<name>Change Profile Picture</name>
+					<alias>change-profile-picture</alias>
+					<link><![CDATA[index.php?option=com_community&view=profile&task=uploadAvatar]]></link>
+				</item>
+				<item>
+					<name>Change Profile Video</name>
+					<alias>change-profile-video</alias>
+					<link><![CDATA[index.php?option=com_community&view=profile&task=linkVideo]]></link>
+				</item>
+				<item>
+					<name>Edit Profile</name>
+					<alias>edit-profile</alias>
+					<link><![CDATA[index.php?option=com_community&view=profile&task=edit]]></link>
+				</item>
+				<item>
+					<name>Edit Details</name>
+					<alias>edit-details</alias>
+					<link><![CDATA[index.php?option=com_community&view=profile&task=editDetails]]></link>
+				</item>
+				<item>
+					<name>Privacy</name>
+					<alias>privacy</alias>
+					<link><![CDATA[index.php?option=com_community&view=profile&task=privacy]]></link>
+				</item>
+				<item>
+					<name>Preferences</name>
+					<alias>preferences</alias>
+					<link><![CDATA[index.php?option=com_community&view=profile&task=preferences]]></link>
+				</item>
+				<item>
+					<name>Customize My Page</name>
+					<alias>customize-my-page</alias>
+					<link><![CDATA[index.php?option=com_community&view=profile&task=editPage]]></link>
+				</item>
+			</childs>
+		</item>
+		<item>
+			<name>Friends</name>
+			<alias>friends</alias>
+			<link><![CDATA[index.php?option=com_community&view=friends]]></link>
+			<childs>
+				<item>
+					<name>Show All</name>
+					<alias>show-all</alias>
+					<link><![CDATA[index.php?option=com_community&view=friends]]></link>
+				</item>
+				<item>
+					<name>Search</name>
+					<alias>search</alias>
+					<link><![CDATA[index.php?option=com_community&view=search]]></link>
+				</item>
+				<item>
+					<name>Advanced Search</name>
+					<alias>advanced-search</alias>
+					<link><![CDATA[index.php?option=com_community&view=search&task=advancesearch]]></link>
+				</item>
+				<item>
+					<name>Invite Friends</name>
+					<alias>invite-friends</alias>
+					<link><![CDATA[index.php?option=com_community&view=friends&task=invite]]></link>
+				</item>
+				<item>
+					<name>Request Sent</name>
+					<alias>request-sent</alias>
+					<link><![CDATA[index.php?option=com_community&view=friends&task=sent]]></link>
+				</item>
+				<item>
+					<name>Pending my approval</name>
+					<alias>pending-my-approval</alias>
+					<link><![CDATA[index.php?option=com_community&view=friends&task=pending]]></link>
+				</item>
+			</childs>
+		</item>
+		<item>
+			<name>Groups</name>
+			<alias>groups</alias>
+			<link><![CDATA[index.php?option=com_community&view=groups&task=mygroups]]></link>
+		</item>
+		<item>
+			<name>Photos</name>
+			<alias>photos</alias>
+			<link><![CDATA[index.php?option=com_community&view=photos&task=myphotos]]></link>
+		</item>
+		<item>
+			<name>Videos</name>
+			<alias>videos</alias>
+			<link><![CDATA[index.php?option=com_community&view=videos&task=myvideos]]></link>
+		</item>
+		<item>
+			<name>Events</name>
+			<alias>events</alias>
+			<link><![CDATA[index.php?option=com_community&view=events&task=myevents]]></link>
+		</item>
+	</items>
+</toolbar>

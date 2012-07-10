@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<gantrytips>
+
+	<tip label="Menu Control" id="menu"><![CDATA[Choose whether or not to use the built-in menu capabilities, and what kind of menu to display.  When you select a menu type the relevant settings will display below.]]></tip>
+
+	<tip label="Select a Menu" id="menu-fusionmenu-menutype"><![CDATA[Pick the Joomla menu to display using the menu type.  This can be any of the already configured menus that you've setup via Joomla.]]></tip>
+
+	<tip label="Position" id="menu-fusionmenu-position"><![CDATA[The position defines where the menu will be displayed.  The space the menu occupies depends on what is displayed around the menu, so pay attention to other modules and features assigned in similar positions.]]></tip>
+
+	<tip label="Enable Javascript" id="menu-fusionmenu-enable-js"><![CDATA[Enabling Javascript with the Fusion Menu provides additional animations and features.  For example you can take advantage of animation types, as well as the delay to determine how long the menu stays active after you mouse away.]]></tip>
+	
+	<tip label="Menu Opacity" id="menu-fusionmenu-opacity"><![CDATA[When JavaScript is enabled for the Fusion Menu, this is the menu maximum opacity. Valid values range from 0.1 to 1]]></tip>
+
+	<tip label="Menu Effect" id="menu-fusionmenu-effect"><![CDATA[The Menu Effect option for Fusion menu allows you to choose the animation effect.  <b>Slide+Fade</b> is the default value.]]></tip>
+
+	<tip label="Menu Delay" id="menu-fusionmenu-hidedelay"><![CDATA[The time in milliseconds that the menu is active after you mouse-off]]></tip>
+
+	<tip label="Menu Animation" id="menu-fusionmenu-menu-animation"><![CDATA[The animation effect for the Fusion Menu.  There are many options available here, so the best bet is to try them out and see which you like best.]]></tip>
+
+	<tip label="Menu Duration" id="menu-fusionmenu-menu-duration"><![CDATA[The speed of the animation effect for the drop-down menu. Effectively this is the duration of the animation.]]></tip>
+
+	<tip label="Enable ID" id="menu-fusionmenu-enable-current-id"><![CDATA[Joomla default menu uses an Active ID that can cause CSS invalidation.  It is not used by the fusion menu.]]></tip>
+	
+	<tip label="Select a Menu" id="menu-splitmenu-menutype"><![CDATA[Pick the Joomla menu to display using the menu type.  This can be any of the already configured menus that you've setup via Joomla.]]></tip>
+	
+	<tip label="Main Menu Position" id="menu-splitmenu-mainmenu-position"><![CDATA[Module position for the main horizontal section of the menu. This is usually a primary horizontal navigation.]]></tip>
+	
+	<tip label="Sub Menu Position" id="menu-splitmenu-submenu-position"><![CDATA[Module position for the sub navigation section of the menu. This is usually a side navigation and should be positioned in a sidebar for best effect.]]></tip>
+	
+	<tip label="Sub Menu Class Suffix" id="menu-splitmenu-submenu-class_sfx"><![CDATA[Add a class suffix to the sub menu navigation for special styling needs.]]></tip>
+	
+	<tip label="Side Menu Position" id="menu-splitmenu-sidemenu-position"><![CDATA[Module position for the side navigation section of the menu. This is usually a side navigation and should be positioned in a sidebar for best effect.]]></tip>
+	
+	<tip label="Side Menu Class Suffix" id="menu-splitmenu-sidemenu-class_sfx"><![CDATA[Add a class suffix to the side menu navigation for special styling needs.]]></tip>
+	
+</gantrytips>

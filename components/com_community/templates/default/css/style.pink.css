@@ -1,0 +1,113 @@
+ /**
+ * New toolbar styling
+ */
+#community-wrap .cToolbar {
+	background-image:  url(../images/toolbar-pink.png);
+}
+
+/* 1.5 Compatibility. Remove when not used */
+body #community-wrap .cToolbar#cToolbarNav {
+	background: url(../images/toolbar-pink.png) no-repeat scroll 0 0 transparent !important;	
+}
+
+	#community-wrap .cToolbar ul li {
+		background-image: url(../images/toolbar-pink.png);
+	}
+	
+	/* 1.5 Compatibility. Remove when not used */
+	#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li {
+		background: url(../images/toolbar-pink.png) no-repeat scroll 0 -97px transparent !important;
+	}
+		#community-wrap .cToolbar ul li a {
+			background-image: url(../images/toolbar-pink.png);			
+		}
+		/* 1.5 Compatibility. Remove when not used */
+		#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li a {
+			background-image: url(../images/toolbar-pink.png);			
+		}
+		
+		#community-wrap .cToolbar ul li.toolbar-active a {
+
+			background-image: url(../images/toolbar-pink.png);
+			text-shadow:		0 1px 0 #ef98df;
+		}
+
+		/* 1.5 Compatibility. Remove when not used */
+		#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li.toolbar-active a {
+			background: url(../images/toolbar-pink.png) no-repeat scroll 100% -60px transparent !important;
+		}
+
+#community-wrap #cToolbarNav.cToolbar ul#cToolbarNavList li.toolbar-active div a {
+    background: none repeat scroll 0 0 #ef98df !important;
+    border-bottom: 1px solid #e475d0 !important;
+}
+
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active div a:hover {
+	background: #f5b0e8 !important;
+}
+
+#community-wrap .cToolbar ul li.toolbar-active div a {
+		background: 		#ef98df !important;
+		border-bottom: 		solid 1px #e475d0;
+	}
+	/* 1.5 Compatibility. Remove when not used */
+	#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li.toolbar-active div a {
+		background: 		#ef98df !important;
+	}
+
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active div a:link,
+body #community-wrap #cToolbarNav ul#cToolbarNavList li.toolbar-active div a:visited {
+	background: #ef98df !important;
+}
+
+#community-wrap .cToolbar ul li.toolbar-active div a:hover {
+	background: 		#f5b0e8;
+}
+/* 1.5 Compatibility. Remove when not used */
+#community-wrap .cToolbar#cToolbarNav ul#cToolbarNavList li.toolbar-active div a:hover {
+	background: 		#f5b0e8 !important;
+}
+				
+
+
+#community-wrap .app-box-header {
+	background: transparent url(../images/app-box-header-pink.png) no-repeat 0 0;
+	}    
+
+#community-wrap .app-box-menu-icon {
+	background-image: url(../images/app-box-menu-icon-pink.png);
+	}
+
+#community-wrap .app-box-title {
+	color: #ee69d5;
+}
+
+#community-wrap .cModule h3 {
+	color: #ee69d5;
+}
+
+#community-wrap .cModule.searchbox .input_wrap {
+ 	background: transparent url(../images/searchbox-pink.png) no-repeat 0 0;
+}
+
+#community-wrap .cModule.searchbox .input_wrap .search_button {
+	background: transparent url(../images/searchbox-pink.png) no-repeat 100% 0;
+}
+
+
+#jsMenu{background:url('../images/bar-bg-pink.png') bottom repeat-x #f6e6f9 !important;}
+#jsMenu .jsMesaggeNot{background:url('../images/mail-pink.png') 3px 3px no-repeat !important}
+#jsMenu .jsLogOff a{background:url('../images/power-pink.png') 2px 1px no-repeat !important;}
+#jsMenu .jsGlobalsNot{background:url('../images/noti-pink.png') 3px 3px no-repeat !important}
+#jsMenu .jsFriendsNot{background:url('../images/friend-pink.png') 2px 0 no-repeat !important}
+#jsMenu .jsHome{background:url('../images/home-pink.png') 2px 2px no-repeat !important}
+#jsMenu .jsIr.isActive{background-color:#fff !important}
+#jsMenu .jsIr:hover{background-color:#fff !important}
+
+#jsMenu .jsMenuBar li ul{background:#ee69d5 !important;}
+#jsMenu .jsMenuBar li:hover a{background:#ee69d5 !important; color: #fff !important;}
+#jsMenu .jsMenuBar li ul a:hover{background:#cf28b0 !important; color: #fff !important;}
+#jsMenu .jsMenuBar li li{border-top: 1px solid #cf28b0 !important;}
+#jsMenu .jsMenuBar li ul {border-color: #cf28b0 !important;}
+
+#jsMenu .jsMenuBar li a.active{background:#cf28b0;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee69d5',endColorstr='#cf28b0');background:-webkit-gradient(linear,left top,left bottom,from(#ee69d5),to(#cf28b0));background:-moz-linear-gradient(top,#ee69d5,#cf28b0)}

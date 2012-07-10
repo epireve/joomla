@@ -1,0 +1,22 @@
+/**
+ * @version   3.2.11 September 8, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+body .fltrt {float: none !important;}
+body input, body select {border: none;}
+.chain-label {display: inline-block !important;}
+.gantrytips {background-color: #f0f0f0;}
+#gantry-tabs li span {display: inline-block;}
+#gantry-tabs li.active span.outer {background-color: #fafafa;}
+#gantry-tabs .presets-involved, #gantry-tabs .overrides-involved, .preset-info {background-color: #fc562f;}
+#gantry-tabs .overrides-involved {background-color: #2facfc;}
+#gantry-tabs .menuitems-involved {background-color: #90c322;}
+#diagnostic {background-color: #efffac;}
+#updater {background-color: #d0f2ff;}
+#assignments-panel .assignments-block {background-color: #fff;}
+#assignments-panel .gantry-panel-right .assignments-block  {background-color: #f0f0f0;}
+#assignments-panel .gantry-panel-right .assignments-block li {background-color: #ededed;}
+#overrides-first {background-color: #fff;}
+input.toggle {visibility: visible;left:-10000px;}

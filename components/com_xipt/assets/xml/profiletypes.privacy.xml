@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params addpath="/components/com_xipt/elements">
+	
+		<param name="jsPrivacyController" type="xiradio" label="COM_XIPT_PRIVACY_CONTROLLER" default="1" description="COM_XIPT_PRIVACY_CONTROLLER_TIP">
+			<option value="1">Admin</option>
+  			<option value="0">End-User</option>	
+		</param>
+	
+		<param name="privacyProfileView" type="xiradio" label="COM_XIPT_PROFILE_PRIVACY" default="30" description="COM_XIPT_PROFILE_PRIVACY_TIPS">
+			<option value="0">public</option>
+  			<option value="20">member</option>
+  			<option value="30">friend</option>	
+		</param>
+	
+		<param name="privacyFriendsView" type="xiradio" label="COM_XIPT_FRIENDS_PRIVACY" default="0" description="COM_XIPT_FRIENDS_PRIVACY_TIPS">
+			<option value="0">public</option>
+  			<option value="20">member</option>
+  			<option value="30">friend</option>	
+  			<option value="40">self</option>		
+		</param>
+	
+		<param name="privacyPhotoView" type="xiradio" label="COM_XIPT_PHOTOS_PRIVACY" default="0" description="COM_XIPT_PHOTOS_PRIVACY_TIPS">
+			<option value="0">public</option>
+  			<option value="20">member</option>
+  			<option value="30">friend</option>	
+  			<option value="40">self</option>		
+		</param>
+
+		<param name="privacyVideoView" type="xiradio" label="COM_XIPT_VIDEO_PRIVACY" default="0" description="COM_XIPT_VIDEO_PRIVACY_TIPS">
+			<option value="0">public</option>
+  			<option value="20">member</option>
+  			<option value="30">friend</option>
+  			<option value="40">self</option>
+		</param>
+
+		<param name="notifyEmailSystem" type="xiradio" label="COM_XIPT_RECEIVE_SYSTEM_MAIL" default="0" description="COM_XIPT_RECEIVE_SYSTEM_MAIL_TIPS">
+			<option value="0">No</option>
+  			<option value="1">Yes</option>		
+		</param>
+	
+		<param name="notifyEmailApps" type="xiradio" label="COM_XIPT_ALLOW_APPLICATIONS" default="0" description="COM_XIPT_ALLOW_APPLICATIONS_TIPS">
+			<option value="0">No</option>
+  			<option value="1">Yes</option>		
+		</param>
+	
+		<param name="notifyWallComment" type="xiradio" label="COM_XIPT_RECEIVE_WALL_COMMENT_NOTIFICATION" default="0" description="COM_XIPT_RECEIVE_WALL_COMMENT_NOTIFICATION_TIPS">
+			<option value="0">No</option>
+  			<option value="1">Yes</option>		
+		</param>
+	
+	
+	</params>
+</config>

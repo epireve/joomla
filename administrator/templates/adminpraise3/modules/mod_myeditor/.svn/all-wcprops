@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/adminpraise/!svn/ver/48/trunk/administrator/templates/adminpraise3/modules/mod_myeditor
+END
+mod_myeditor.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/adminpraise/!svn/ver/12/trunk/administrator/templates/adminpraise3/modules/mod_myeditor/mod_myeditor.php
+END
+helper.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/adminpraise/!svn/ver/12/trunk/administrator/templates/adminpraise3/modules/mod_myeditor/helper.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/adminpraise/!svn/ver/12/trunk/administrator/templates/adminpraise3/modules/mod_myeditor/index.html
+END
+mod_myeditor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/adminpraise/!svn/ver/12/trunk/administrator/templates/adminpraise3/modules/mod_myeditor/mod_myeditor.xml
+END

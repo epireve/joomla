@@ -1,0 +1,60 @@
+/**
+ * @package   Momentum Template - RocketTheme
+ * @version   1.3 October 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+
+/* Structure */
+#rt-bg-image {left: 49% !important;}
+
+/* Menus */
+.menutop #form-login .input .inputbox {width: 100%;}
+#rt-navigation {zoom: 1;}
+.menutop li.active.root:before, .menutop li.active.root:after, .menutop li.active.root > .item span:after, .menutop li.active.root > .item span:before {display: none !important;}
+.fusion-submenu-wrapper {margin-left: 1px;}
+/* Modules */
+#rt-content-bottom .module-title .title {word-wrap: break-word;}
+.module-content ul.menu li {list-style-type: none !important;}
+.module-content ul.menu .subtext em {padding-left: 0;}
+form#form-login ul {padding: 5px 0 0;}
+
+/* Typography */
+.rokchecks.roksubscribe {display: inline-block;}
+#form-login .remember {zoom: 1;}
+.readon {zoom: 1;position: relative;border: none !important;}
+.readon .button {zoom: 1;border: none !important;}
+fieldset legend {color: inherit;}
+body .rt-articleinfo {zoom:1;}
+.ext-rokcandy-block h3 span, .ext-rokpad-block h3 span, .ext-rokgzipper-block h3 span, .ext-rokbox-block h3 span {display: block !important;}
+
+/* Joomla */
+.component-content .icon .hasTip img {display: none;}
+.component-content .icon .hasTip a {display: block;width: 16px;height: 16px;}
+.component-content .contact .rt-joomla-table img {width: 16px !important;height: 16px !important;}
+.component-content .rt-article-icons .edit img {filter: alpha(opacity=0); zoom: 1;}
+
+/* RokMiniEvents */
+.rokminievents-item:hover {margin: 0 15px;}
+
+/* RokGallery */
+.rg-detail-file-info, .rg-detail-slice-info, .rg-detail-file-main {zoom: 1;}
+.rg-detail-file-main {width: 13%;}
+.rg-detail-info-table {width: 90%;}
+
+/* Additional Fixes */
+.roktabs-wrapper .roktabs-links ul li span {-ms-user-select: none;}
+
+/* RTL */
+body.rtl span.inset-right-title, body.rtl span.inset-left-title {zoom: 1;position: relative;}
+body.rtl .rt-article-content p, body.rtl blockquote, body.rtl blockquote p, body.rtl .dropcap {direction: ltr;text-align: right;}
+body.rtl .fusion-submenu-wrapper li {text-align: right;}
+body.rtl ol li {direction: ltr;text-align: right;}
+body.rtl .title {direction: ltr;text-align: right;}
+body.rtl .module-content p {direction: ltr;text-align: right;}
+body.rtl #form-login .inputbox {text-align: right;}
+body.rtl #form-login .input p {direction: ltr;}
+body.rtl .rt-demo-typo-block {direction: ltr;text-align: right;}
+body.rtl .rt-demo-grid-4 p {direction: ltr;text-align: right;}
+body.rtl p.nomarginbottom {direction: ltr;text-align: right;}

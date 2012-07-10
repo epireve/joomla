@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<gantrytips>
+	
+	<tip label="Blog Category"><![CDATA[In the Blog Category setting you can enter the <strong>Category ID</strong> that you would like to use for your <strong>Blog Page.</strong> It is possible to enter multiple ID's separated by comma or exclude certain categories by adding "minus" in front of the ID, such as -6 to exclude the category with ID 6.]]></tip>
+	
+	<tip label="Blog Query Type"><![CDATA[This option lets you to specify what type of content should your <strong>Blog Query</strong> return.]]></tip>
+	
+	<tip label="Blog Content"><![CDATA[You have 2 choices from the dropdown on how you would like to display the Blog Content: 1. Content, which will show your <strong>blog posts content up to 'Read More' tag</strong> and 2. Excerpt, which is a <strong>condensed description</strong> of your blog post and refers to the summary entered in the Excerpt field of the post.]]></tip>
+	
+	<tip label="Blog Order"><![CDATA[There are many possible choices available for you to select the order in which your posts will be shown. Some examples are <strong>Author, Comment Count, Date, Parent and Random</strong> to only name a few. Use the dropdown to select which order suits your needs best.]]></tip>
+	
+	<tip label="Page Title"><![CDATA[This setting allows you to display the <strong>Page Title</strong> above all your posts on the blog page. Leaving this field empty will remove that title.]]></tip>
+	
+	<tip label="Blog Title"><![CDATA[With this setting you can select whether or not to show the titles of your posts in the blog page.]]></tip>
+	
+	<tip label="Blog Title Link"><![CDATA[With this setting you can select whether or not to have the titles of your posts in the blog page linked.]]></tip>
+
+	<tip label="Blog Author Meta Data"><![CDATA[If you would like to display the <strong>Author</strong> along with your blog posts, enable this setting.]]></tip>
+
+	<tip label="Blog Date Meta Data"><![CDATA[If you would like to display the <strong>Date</strong> along with your blog posts, enable this setting.]]></tip>
+
+	<tip label="Blog Modified Date Meta Data"><![CDATA[If you would like to display the <strong>Modified Date</strong> along with your blog posts, enable this setting.]]></tip>
+
+	<tip label="Blog Comments Meta Data"><![CDATA[If you would like to display the <strong>Number of Comments</strong> along with your blog posts, enable this setting.]]></tip>
+
+	<tip label="Blog Link Comments"><![CDATA[If you would like to <strong>Link the Number of Comments</strong> to your comments on blog posts, enable this setting.]]></tip>
+
+	<tip label="Blog Custom Query"><![CDATA[Here you can create the <strong>Custom Query</strong> that's used to generate the blog page content on your site. You can use different parameters specified in the WordPress query_posts function, but you need to maintain the proper syntax ie. <strong>author=1&tag=tag1&year=2009</strong>. Please see this link for list of possible parameters : http://codex.wordpress.org/Function_Reference/query_posts]]></tip>
+    
+	<tip label="Page Title"><![CDATA[With this setting you can select whether or not to show the title of your page in the page view.]]></tip>
+
+	<tip label="Page Author Meta Data"><![CDATA[If you would like to display the <strong>Author</strong> along with your page content, enable this setting.]]></tip>
+
+	<tip label="Page Date Meta Data"><![CDATA[If you would like to display the <strong>Date</strong> along with your page content, enable this setting.]]></tip>
+
+	<tip label="Page Modified Meta Data"><![CDATA[If you would like to display the <strong>Modified Date</strong> along with your page content, enable this setting.]]></tip>
+
+	<tip label="Page Comments Meta Data"><![CDATA[If you would like to display the <strong>Number of Comments</strong> along with your page content, enable this setting.]]></tip>
+
+	<tip label="Page Comments Form"><![CDATA[If you would like to display the <strong>Add New Comment Form</strong> inside of your page content, enable this setting.]]></tip>
+    
+	<tip label="Post Title"><![CDATA[With this setting you can select whether or not to show the title of your post in the single post view.]]></tip>
+
+	<tip label="Post Author Meta Data"><![CDATA[If you would like to display the <strong>Author</strong> along with your post content, enable this setting.]]></tip>
+
+	<tip label="Post Date Meta Data"><![CDATA[If you would like to display the <strong>Date</strong> along with your post content, enable this setting.]]></tip>
+
+	<tip label="Post Modified Meta Data"><![CDATA[If you would like to display the <strong>Modified Date</strong> along with your post content, enable this setting.]]></tip>
+
+	<tip label="Post Comments Meta Data"><![CDATA[If you would like to display the <strong>Number of Comments</strong> along with your post content, enable this setting.]]></tip>
+
+	<tip label="Post Tags"><![CDATA[If you would like to display the <strong>Tags</strong> under your post content, enable this setting.]]></tip>
+    
+	<tip label="Post Footer"><![CDATA[If you would like to display the <strong>Post Footer</strong> under your post content, enable this setting.]]></tip>
+
+	<tip label="Post Comments Form"><![CDATA[If you would like to display the <strong>Add New Comment Form</strong> inside of your post content, enable this setting.]]></tip>
+    
+	<tip label="Category Post Count"><![CDATA[Here you can type the number of results per page that the <strong>Category</strong> page will display.]]></tip>
+
+	<tip label="Category Content"><![CDATA[You have 2 choices from the dropdown on how you would like to display the Category Content: 1. Content, which will show your <strong>blog posts content up to 'Read More' tag</strong> and 2. Excerpt, which is a <strong>condensed description</strong> of your blog post and refers to the summary entered in the Excerpt field of the post.]]></tip>
+	
+	<tip label="Category Page Title"><![CDATA[Here you can enable or disable displaying of the page title ie. <strong>"Category : ..."</strong>, <strong>"Archive for ..."</strong> etc.]]></tip>
+
+	<tip label="Category Title"><![CDATA[With this setting you can select whether or not to show the titles of your posts in the category page.]]></tip>
+
+	<tip label="Category Title Link"><![CDATA[With this setting you can select whether or not to have the titles of your posts in the category page linked.]]></tip>
+
+	<tip label="Category Author Meta Data"><![CDATA[If you would like to display the <strong>Author</strong> along with your category posts, enable this setting.]]></tip>
+
+	<tip label="Category Date Meta Data"><![CDATA[If you would like to display the <strong>Date</strong> along with your category posts, enable this setting.]]></tip>
+
+	<tip label="Category Modified Meta Data"><![CDATA[If you would like to display the <strong>Modified Date</strong> along with your category posts, enable this setting.]]></tip>
+
+	<tip label="Category Comments Meta Data"><![CDATA[If you would like to display the <strong>Number of Comments</strong> along with your category posts, enable this setting.]]></tip>
+
+	<tip label="Category Link Comments"><![CDATA[If you would like to <strong>Link the Number of Comments</strong> to your comments on category posts, enable this setting.]]></tip>
+
+    <tip label="Archive Post Count"><![CDATA[Here you can type the number of results per page that the <strong>Archive</strong> page will display.]]></tip>
+
+	<tip label="Archive Content"><![CDATA[You have 2 choices from the dropdown on how you would like to display the Archive Content: 1. Content, which will show your <strong>blog posts content up to 'Read More' tag</strong> and 2. Excerpt, which is a <strong>condensed description</strong> of your blog post and refers to the summary entered in the Excerpt field of the post.]]></tip>
+	
+	<tip label="Archive Page Title"><![CDATA[Here you can enable or disable displaying of the page title ie. <strong>"Category : ..."</strong>, <strong>"Archive for ..."</strong> etc.]]></tip>
+
+	<tip label="Archive Title"><![CDATA[With this setting you can select whether or not to show the titles of your posts in the archive page.]]></tip>
+
+	<tip label="Archive Title Link"><![CDATA[With this setting you can select whether or not to have the titles of your posts in the archive page linked.]]></tip>
+
+	<tip label="Archive Author Meta Data"><![CDATA[If you would like to display the <strong>Author</strong> along with your archive posts, enable this setting.]]></tip>
+
+	<tip label="Archive Date Meta Data"><![CDATA[If you would like to display the <strong>Date</strong> along with your archive posts, enable this setting.]]></tip>
+
+	<tip label="Archive Modified Meta Data"><![CDATA[If you would like to display the <strong>Modified Date</strong> along with your archive posts, enable this setting.]]></tip>
+
+	<tip label="Archive Comments Meta Data"><![CDATA[If you would like to display the <strong>Number of Comments</strong> along with your archive posts, enable this setting.]]></tip>
+
+	<tip label="Archive Link Comments"><![CDATA[If you would like to <strong>Link the Number of Comments</strong> to your comments on archive posts, enable this setting.]]></tip>
+
+    <tip label="Tags Post Count"><![CDATA[Here you can type the number of results per page that the <strong>Tag</strong> page will display.]]></tip>
+
+	<tip label="Tags Content"><![CDATA[You have 2 choices from the dropdown on how you would like to display the Tag Content: 1. Content, which will show your <strong>blog posts content up to 'Read More' tag</strong> and 2. Excerpt, which is a <strong>condensed description</strong> of your blog post and refers to the summary entered in the Excerpt field of the post.]]></tip>
+	
+	<tip label="Tags Page Title"><![CDATA[Here you can enable or disable displaying of the page title ie. <strong>"Category : ..."</strong>, <strong>"Archive for ..."</strong> etc.]]></tip>
+
+	<tip label="Tags Title"><![CDATA[With this setting you can select whether or not to show the titles of your posts in the tag page.]]></tip>
+
+	<tip label="Tags Title Link"><![CDATA[With this setting you can select whether or not to have the titles of your posts in the tag page linked.]]></tip>
+
+	<tip label="Tags Author Meta Data"><![CDATA[If you would like to display the <strong>Author</strong> along with your tagged posts, enable this setting.]]></tip>
+
+	<tip label="Tags Date Meta Data"><![CDATA[If you would like to display the <strong>Date</strong> along with your tagged posts, enable this setting.]]></tip>
+
+	<tip label="Tags Modified Meta Data"><![CDATA[If you would like to display the <strong>Modified Date</strong> along with your tagged posts, enable this setting.]]></tip>
+
+	<tip label="Tags Comments Meta Data"><![CDATA[If you would like to display the <strong>Number of Comments</strong> along with your tagged posts, enable this setting.]]></tip>
+
+	<tip label="Tags Link Comments"><![CDATA[If you would like to <strong>Link the Number of Comments</strong> to your comments on tagged posts, enable this setting.]]></tip>
+
+    <tip label="Search Post Count"><![CDATA[Here you can type the number of results per page that the <strong>Search</strong> page will display.]]></tip>
+
+	<tip label="Search Content"><![CDATA[You have 2 choices from the dropdown on how you would like to display the Search Content: 1. Content, which will show your <strong>blog posts content up to 'Read More' tag</strong> and 2. Excerpt, which is a <strong>condensed description</strong> of your blog post and refers to the summary entered in the Excerpt field of the post.]]></tip>
+	
+	<tip label="Search Page Title"><![CDATA[Here you can enable or disable displaying of the page title ie. <strong>"Category : ..."</strong>, <strong>"Archive for ..."</strong> etc.]]></tip>
+
+	<tip label="Search Title"><![CDATA[With this setting you can select whether or not to show the titles of your posts in the search page.]]></tip>
+
+	<tip label="Search Title Link"><![CDATA[With this setting you can select whether or not to have the titles of your posts in the search page linked.]]></tip>
+
+	<tip label="Search Author Meta Data"><![CDATA[If you would like to display the <strong>Author</strong> along with your searched posts, enable this setting.]]></tip>
+
+	<tip label="Search Date Meta Data"><![CDATA[If you would like to display the <strong>Date</strong> along with your searched posts, enable this setting.]]></tip>
+
+	<tip label="Search Modified Meta Data"><![CDATA[If you would like to display the <strong>Modified Date</strong> along with your searched posts, enable this setting.]]></tip>
+
+	<tip label="Search Comments Meta Data"><![CDATA[If you would like to display the <strong>Number of Comments</strong> along with your searched posts, enable this setting.]]></tip>
+
+	<tip label="Search Link Comments"><![CDATA[If you would like to <strong>Link the Number of Comments</strong> to your comments on searched posts, enable this setting.]]></tip>
+
+</gantrytips>

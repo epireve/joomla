@@ -1,0 +1,85 @@
+/**
+ * @package		JomSocial
+ * @subpackage 	Template 
+ * @copyright 	(C) 2011 by Slashes & Dots Sdn Bhd - All rights reserved!
+ * @license		GNU/GPL, see LICENSE.php
+ */
+
+/*
+* COMMUNITY : 3RD PARTY THEME FIX
+* This is some fixes to theme overrides by some 3rd party and default joomla themes!
+*/
+
+/* Beez 2.0 on Joomla! 1.6 and 1.7 */
+#community-wrap.on-beez_20 .app-box-footer a,
+#community-wrap.on-beez_20 #community-wrap .app-box-footer a:hover {
+	color: #095197;
+}
+
+#community-wrap.on-beez_20 .cFeed .newsfeed-avatar a:hover {
+	background-color: transparent;
+}
+
+#community-wrap.on-beez_20 .small-button a:hover,
+#community-wrap.on-beez_20 .miniheader a:hover {
+	background-color: transparent;
+}
+
+body #community-wrap.on-beez_20 tr,
+body #community-wrap.on-beez_20 td {
+	border: 0px none;
+}
+
+/** fix rt_affinity */
+body #community-wrap .leftColContainer {
+	overflow: hidden;
+}
+
+/** To integrate RT Input Styling **/
+body #community-wrap .button {
+	cursor: pointer;
+}
+html #community-wrap .rokradios,
+html #community-wrap .rokchecks {
+	cursor: pointer;
+	-moz-user-select: none;
+}
+html #community-wrap .formtable .value .rokradios,
+html #community-wrap .formtable .value .rokchecks {
+	padding: 0 0 0 20px;
+}
+.on-rt_somaxiom_j15 .cModule.latest-groups li.featured a {
+	float: none !important;
+	display: block !important;
+}
+body #rt-main #community-wrap .cModule h3.title {
+	font-size: 16px !important;
+	line-height: 18px;
+	padding: 0;
+	margin: 0;
+	border: none !important;
+}
+
+/* RocketTheme Template Override (Fixes) */
+body #community-wrap.on-rt_tachyon_j15 .video-item .video-thumb {
+	margin: 10px auto;
+}
+body #community-wrap.on-rt_tachyon_j15 .button {
+	height: 24px;
+}
+body #community-wrap.on-rt_tachyon_j15 .cModule h3 {
+	font-size: 12px;
+}
+body #community-wrap.on-rt_tachyon_j15 .event-admin-info {
+	margin-left: 60px;
+	padding-top: 4px;
+}
+body #community-wrap.on-rt_tachyon_j15 .filterlink a {
+	padding: 0 3px;
+	font-weight: normal;
+	text-align: center;
+	margin-left: -2px;
+}
+body #community-wrap.on-rt_tachyon_j15 a.active-state {
+	font-weight: bold;
+}

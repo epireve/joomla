@@ -1,0 +1,136 @@
+body #community-wrap img.avatar { -ms-interpolation-mode: bicubic; }
+
+body #community-wrap div.app-box h2.collapse,
+body #community-wrap div.app-box h2.expand {
+	margin: 0;
+}
+body #community-wrap ul.application-group-avatars li a,
+body #community-wrap ul.friend-right-info li a {
+	text-decoration: none;
+}
+body #community-wrap div.greybox {
+	width: 100%;
+	margin: 0 0 10px;
+}
+
+body #community-wrap #cToolbarNav {
+	height: 50px;
+	margin: 0 0 10px;
+}
+body #community-wrap #cToolbarNavInner {
+	height: 50px;
+}
+body #community-wrap #cToolbarNav ul {
+	height: 50px;
+	padding: 0 0 0 10px;
+    margin: 0;
+    float: left;
+}
+body #community-wrap #cToolbarNav div.toolbar-myname {
+	display: inline;
+	float: right;
+}
+
+body #community-wrap .toolbar-box-r h1 {
+	margin-top:-10px;
+}
+
+body #community-wrap .toolbar-box-l {
+	margin: 0 0 10px;
+}
+body #community-wrap .toolbar-icon-front {
+	margin: -10px 0 0;
+}
+
+body #community-wrap div.profile-avatar {
+	float: left;
+}
+body #community-wrap div#profile-status {
+	border-bottom: 1px dotted #ECEBEB;
+	color: #666666;
+	font-size: 11px;
+	margin: 0;
+	width: 100%;
+}
+
+
+body #community-wrap .toolbar-box-l {
+    margin: 0px;
+}
+
+/** Photo **/
+body #community-wrap #community-photo-items li a {
+	text-decoration: none;
+}
+/** Photo **/
+
+
+body #community-wrap .app-box,
+body #community-wrap .app-box-content {
+	/* Content dissapears after collapsing and expanding again */
+	position: relative;
+	zoom: 1;
+}
+
+
+body #community-wrap {
+	display: inline-block;
+	width: auto !important;
+}
+
+.clrfix {
+    zoom: 1;     /* triggers hasLayout */
+}  /* Only IE can see inside the conditional comment
+    and read this CSS rule. Don't ever use a normal HTML
+    comment inside the CC or it will close prematurely. */
+    
+    
+#community-wrap .cToolbar,
+#community-wrap .cToolbar ul,
+#community-wrap .cToolbar ul li,
+#community-wrap .cToolbar ul li div,
+#community-wrap .cToolbar ul li div a {
+	z-index:			99999999;	/* make sure it always on top of everything */
+}
+
+#community-wrap .cModule {
+ 	hasLayout: 1;
+ 	zoom: 1;
+}
+
+/** To remove RT Input Styling **/
+html #community-wrap .rokradios,
+html #community-wrap .rokchecks {
+	background: none !important;
+}
+html #community-wrap .rokradios input, html #community-wrap .rokchecks input {
+	position: relative !important;
+	left: auto !important;
+	visibility: visible !important;
+	z-index: 9999px !important;
+}
+
+#community-wrap .wall-coc-form textarea {
+ 	margin: 0 0 0 -68px;
+ 	float: none;
+}
+
+#community-wrap .profile-box {
+	overflow: hidden;
+}
+
+#community-wrap .featured-items .avatar {
+	display: inline !important;
+}
+
+body #community-wrap .albums {
+	margin: 0;
+	}
+
+body #community-wrap div.video-item{
+	width: 24%;
+}
+
+.community-events-results-item, .community-groups-results-item, #community-wrap div.mini-profile {
+	display:inline-block;
+}

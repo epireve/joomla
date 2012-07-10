@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0" method="upgrade">
+	<name>Community</name>
+	<creationDate>July 2011</creationDate>
+	<author>JomSocial Team</author>
+	<authorEmail>support@azrul.com</authorEmail>
+	<authorUrl>http://www.jomsocial.com</authorUrl>
+	<copyright>Copyright 2008 by Slashes &amp; Dots Sdn Bhd. All rights reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>2.4.2</version>
+	<description>JomSocial is a social networking component for Joomla!</description>
+	<installfile>install.community.php</installfile>
+	<uninstallfile>uninstall.community.php</uninstallfile>
+	<files folder="site">
+		<filename>azrul.zip</filename>
+		<filename>frontend.zip</filename>
+		<filename>templates.zip</filename>
+		<filename>ai_plugin.zip</filename>
+	</files>
+	<administration>
+		<menu view="community" img="components/com_community/assets/icons/community-favicon.png">COM_COMMUNITY</menu>
+		<submenu>
+			<menu view="configuration" img="components/com_community/assets/icons/configuration-favicon.gif">COM_COMMUNITY_MENU_CONFIGURATION</menu>
+			<menu view="users" img="components/com_community/assets/icons/edit-user-favicon.gif">COM_COMMUNITY_MENU_CATEGORY_USERS</menu>
+			<menu view="multiprofile" img="components/com_community/assets/icons/multiprofile-favicon.gif">COM_COMMUNITY_MENU_MULTIPROFILE</menu>
+			<menu view="profiles" img="components/com_community/assets/icons/profiles-favicon.gif">COM_COMMUNITY_MENU_CUSTOM_PROFILES</menu>
+			<menu view="groups" img="components/com_community/assets/icons/groups-favicon.gif">COM_COMMUNITY_MENU_GROUPS</menu>
+			<menu view="groupcategories" img="components/com_community/assets/icons/groupcategories-favicon.gif">COM_COMMUNITY_MENU_GROUPS_CATEGORY</menu>
+			<menu view="videoscategories" img="components/com_community/assets/icons/videos-favicon.gif">COM_COMMUNITY_MENU_VIDEOS_CATEGORY</menu>
+			<menu view="events" img="components/com_community/assets/icons/event-favicon.gif">COM_COMMUNITY_MENU_EVENTS</menu>
+			<menu view="eventcategories" img="components/com_community/assets/icons/eventcategories-favicon.gif">COM_COMMUNITY_MENU_EVENTS_CATEGORY</menu>
+			<menu view="templates" img="components/com_community/assets/icons/templates-favicon.gif">COM_COMMUNITY_MENU_TEMPLATES</menu>
+			<menu view="mailqueue" img="components/com_community/assets/icons/mailq-favicon.gif">COM_COMMUNITY_MENU_MAIL_QUEUE</menu>
+			<menu link="option=com_plugins&amp;filter_type=community&amp;filter_folder=community" view="applications" img="components/com_community/assets/icons/applications-favicon.gif">COM_COMMUNITY_MENU_APPLICATIONS</menu>
+			<menu view="userpoints" img="components/com_community/assets/icons/userpoints-favicon.gif">COM_COMMUNITY_MENU_USER_POINTS</menu>
+			<menu view="messaging" img="components/com_community/assets/icons/message-favicon.gif">COM_COMMUNITY_MENU_MASS_MESSAGING</menu>
+			<menu view="activities" img="components/com_community/assets/icons/activities-favicon.gif">COM_COMMUNITY_MENU_ACTIVITIES</menu>
+			<menu view="memberlist" img="components/com_community/assets/icons/memberlist-favicon.gif">COM_COMMUNITY_MENU_MEMBERLIST</menu>
+                        <menu view="reports" img="components/com_community/assets/icons/reports-favicon.gif">COM_COMMUNITY_MENU_REPORTINGS</menu>
+			<menu view="about" img="components/com_community/assets/icons/about-favicon.gif">COM_COMMUNITY_MENU_ABOUT</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>box.jpg</filename>
+			<filename>backend.zip</filename>
+			<filename>admin.community.php</filename>
+			<filename>installer.helper.php</filename>
+			<filename>defaultItems.php</filename>
+			<filename>installer.template.php</filename>
+		</files>
+		<languages>
+			<language tag="en-GB">languages/admin/en-GB.com_community.ini</language>
+			<language tag="en-GB">languages/admin/en-GB.com_community.menu.ini</language>
+			<language tag="en-GB">languages/admin/en-GB.com_community.sys.ini</language>
+			<language tag="en-GB">languages/admin/en-GB.community.sys.ini</language>
+		</languages>
+	</administration>
+	<languages>
+		<language tag="en-GB">languages/site/en-GB.com_community.ini</language>
+	</languages>
+</install>

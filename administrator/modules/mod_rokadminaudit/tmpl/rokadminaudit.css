@@ -1,0 +1,10 @@
+/**
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+#rok-audit ul{margin:15px 0 0;padding:0;list-style:none}#rok-audit li{padding:5px;margin:0;background:#f9f9f9;margin-bottom:2px}#rok-audit .rok-audit-user{display:block;float:right;line-height:20px;height:20px}
+#rok-audit .rok-audit-user img{vertical-align:middle;margin-left:4px}#rok-audit .rok-audit-date{display:inline-block;line-height:20px;height:20px;color:#999}
+#rok-audit .rok-audit-details{display:block;padding-top:5px;font-size:12px}#rok-audit .rok-more{margin-top:10px;overflow:hidden}#rok-audit .rok-more .mc-button{float:right}
+#rok-audit .loader{background:url(images/spinner-16.gif) no-repeat;width:16px;height:16px;float:left;display:none}#rok-audit .rok-audit-filter{float:right}
+#rok-audit .rok-audit-filter span{color:#999;font-size:11px}

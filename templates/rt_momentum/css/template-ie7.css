@@ -1,0 +1,159 @@
+/**
+ * @package   Momentum Template - RocketTheme
+ * @version   1.3 October 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+
+/* Structure */
+#rt-debug, #rt-feature, #rt-utility, #rt-copyright, #rt-header, #rt-showcase, #rt-maintop, #rt-mainbottom, #rt-bottom, ul.menutop, #rt-navigation, #rt-navigation2, #rt-logo, #rt-bottom, #rt-footer, #form-login, .rt-article-inner, #developed-by, #gantry-totop, .controls, #rt-footer, #rt-top .rt-container, .controls, .controls .up, .controls .down, .rt-module-inner, .module-title, .module-inner, .module-content, .rt-pollbuttons .readon input, #rt-top-surround, #rt-content-top, #rt-content-bottom, h3, .rt-container-bg, .rt-menubar {zoom: 1;}
+.font-family-momentum h3, .font-family-momentum .menutop li > .item, .font-family-momentum .module-title .title, .font-family-momentum .rt-date-feature, .font-family-momentum #rt-accessibility .rt-desc, .font-family-momentum .rt-date-feature span, .font-family-momentum #rt-popup-button .buttontext, .font-family-momentum .module-content ul.menu li a, .font-family-momentum .module-content ul.menu li .separator, .font-family-momentum .module-content ul.menu li .item, .font-family-momentum .roknewspager .roknewspager-title, .readonstyle-button.font-family-momentum .readon span, .readonstyle-button.font-family-momentum .readon .button {font-weight: bold;}
+h3 a {float: left;}
+#rt-body-surround, #rt-header-surround, #rt-footer-surround {zoom: 1;}
+.rt-ie-zindex-body {position: relative;z-index: 2;}
+.rt-ie-zindex {position: relative;z-index: 1;}
+#rt-page-surround {position: relative;}
+#rt-bg-image {left: 49% !important;}
+.clear {display: inline !important;}
+
+/* Menus */
+#rt-navigation {z-index: 300;position: relative;}
+.module-content ul.menu li {zoom: 1;}
+.module-content ul.menu a, .module-content ul.menu .separator, .module-content ul.menu .item {text-indent: 0 !important;display: inline-block;zoom: 1;}
+.menutop ul li:hover, .menutop li.f-menuparent-itemfocus, .menutop .fusion-grouped ol li:hover, .menutop .fusion-grouped ol li.f-menuparent-itemfocus {zoom: 1;}
+.menutop li.parent.root .item span .daddyicon, .menutop li.root .daddy.item .daddyicon {zoom: 1;width: 13px !important;}
+.menutop .fusion-submenu-wrapper {zoom: 1;}
+.fusion-grouped ol li .item, .menutop ul li, .fusion-grouped ol {zoom: 1;}
+.menutop ul li:hover, .menutop li.f-menuparent-itemfocus, .menutop .fusion-grouped ol li:hover, .menutop .fusion-grouped ol li.f-menuparent-itemfocus {zoom: 1;}
+.menutop ul li > .daddy span, body .menutop li > .item {zoom: 1;}
+.fusion-submenu-wrapper li > .item span {line-height: 120%;}
+.fusion-submenu-wrapper .columns2 .item:hover {zoom: 1;}
+.fusion-submenu-wrapper {margin-right: 1px;}
+body .menutop ul.columns2 li {margin-left: 0;}
+.module-content ul.menu .subtext em {padding-left: 0;}
+.menutop li > .item span {width: auto !important;}
+.menutop .item, .menutop .item span, .menutop li {zoom: 1;}
+.menutop #form-login .input .inputbox {width: 100%;}
+.module-content ul.menu {zoom: 1;}
+
+/* Typography */
+.readon {display: inline !important;zoom: 1;border: none !important;}
+.readon .button {background-color: transparent !important;float: left !important;border: none !important;}
+.rt-pollbuttons .readon {margin-right: 5px;}
+.bullet-c, .bullet-c li {list-style-type: decimal !important;}
+.dropcap {vertical-align: top;}
+.phrase .inputbox {vertical-align: middle;}
+fieldset legend {color: #666;line-height: normal;}
+.rt-breadcrumb-surround {display: inline;zoom: 1;position: relative;}
+.rt-breadcrumb-surround .no-link, .rt-breadcrumb-surround .pathway{zoom: 1;position: relative;}
+#email {margin-bottom: -9px !important;}
+.ext-rokcandy-block h3 span, .ext-rokpad-block h3 span, .ext-rokgzipper-block h3 span, .ext-rokbox-block h3 span {display: block !important;}
+.dropcap2 {float: left;zoom: 0;}
+.dropcap2 a, span.heading1 {zoom: 1;}
+.dropcap2, span.heading1 {margin-top: 5px !important;}
+.typography-style-light p.dropcap2:first-letter {background: #555555 !important;}
+
+/* Joomla Stuff */
+.component-content .rt-article-icons {display: inline-block;zoom: 1;width: auto;padding: 0px !important;}
+.component-content .rt-joomla-table {margin-top: 40px;display: block;background: none;}
+.component-content .rt-articleinfo {zoom: 1;z-index: 10;position: relative;}
+.component-content ol {margin-left: 10px;}
+.component-content .user legend {margin-left: -9px;}
+.component-content .rt-blog .module-content {display: inline;zoom: 1;position: relative;}
+#system-message dd ul {zoom: 1;}
+.module-content p, .contentbox1, .contentbox2, .contentbox3, .contentbox4 {zoom: 1;}
+#rt-accessibility #rt-buttons {margin-top:2px;}
+#rt-header #form-login-remember, .horizontal #form-login-remember {padding-top: 2px;padding-bottom: 2px;}
+.component-content .rt-article-icons .edit img {filter: alpha(opacity=0); zoom: 1;}
+
+/* Module Variations */
+.title2 .rt-block .module-content {padding-bottom: 0px;}
+
+/* RokMiniEvents */
+.rokminievents-wrapper, .rokminievents-container, .rominievents {zoom: 1;}
+
+/* RokNewsPager */
+.roknewspager, .roknewspager-li, .roknewspager-li.active, .roknewspager-h3 {zoom: 1;}
+.roknewspager-content {zoom: 1;}
+.roknewspager-numbers li {display: inline !important;zoom: 1;margin-top: 0 !important; margin-right: 3px;}
+.roknewspager-pages {zoom: 1;}
+.article-rating {width: 160px !important;text-align:right !important;}
+
+/* RokAjaxSearch */
+.rokajaxsearch {zoom: 1;position: relative;height: 28px;}
+#roksearch_results .container-wrapper {position: relative;zoom: 1;}
+#roksearch_results .container-scroller {position: relative;zoom: 1;}
+#roksearch_results span.small span {display: inline-block;margin-top: 0;margin-bottom: 0;font-size: 10px;}
+.search_result .display {clear: both;}
+.rokajaxsearch {zoom: 1;position: relative;display: inline-block;padding-bottom: 10px;}
+body .roksearch_header {zoom: 1;}
+.roksearch_wrapper1, .roksearch_wrapper2, .roksearch_wrapper3, .roksearch_wrapper4 {zoom: 1;}
+#roksearch_search_str {zoom: 1;}
+.roksearch_results .png {zoom: 1;}
+
+/* RokTabs */
+.roktabs-wrapper .roktabs-links ul.roktabs-top li.active span {zoom: 1;}
+.roktabs-wrapper .roktabs-links li span {white-space: nowrap !important;}
+.roktabs-wrapper .roktabs .active-arrows {z-index: 2;}
+.roktabs-wrapper .roktabs .roktabs-container-inner, #rt-showcase .roktabs-wrapper .active-arrows {z-index: 1;}
+.roktabs-wrapper .roktabs-links ul li span {-ms-user-select: none;}
+#rt-showcase .roktabs-wrapper {position: relative;min-height: 0;zoom: 1;float: left;}
+#rt-showcase .roktabs-wrapper .roktabs-links, #rt-showcase .roktabs-wrapper .active-arrows {zoom: 1;}
+#rt-showcase .tablocation-bottom {zoom: 1;}
+
+/* RokTwittie */
+.roktwittie li, .roktwittie .roktwittie-text {zoom: 1;}
+.roktwittie li, .roktwittie-text .roktwittie-date {display: inline;}
+body #roktwittie .status ul li {width: 100%;}
+.roktwittie-m1 {zoom: 1;}
+body #roktwittie li {overflow: hidden;}
+.twittie {padding-bottom: 43px;}
+
+/* RokFeatureTable */
+body .featuretable-col, body .featuretable-cell {zoom: 1;}
+.rokminievents-item:hover {margin: 0 15px;}
+
+/* RokGallery */
+.rg-grid .rg-grid-thumb {display: inline !important;}
+#slideshow-spacer {zoom: 1;}
+
+/* Popup */
+#rt-popuplogin p {margin-right: 3px !important;}
+
+/* RTL */
+body.rtl .menutop li.root .item span img {zoom: 1;float: none !important;}
+body.rtl .fusion-grouped ol li .item {background-position: 97% 50% !important;padding-right: 15px !important;}
+body.rtl .menutop li.root:hover > .fusion-submenu-wrapper {left: auto;right: 0;}
+body.rtl .menutop .fusion-submenu-wrapper {zoom: 1;}
+body.rtl .menutop li.root {zoom: 1;}
+body.rtl .menutop li.root .item span {zoom: 1;}
+body.rtl .menutop li.root .item {zoom: 1;}
+body.rtl .menutop {direction: ltr;}
+body.rtl #rt-navigation .menu {direction: ltr;}
+body.rtl .menutop ul li, body.rtl ul.columns2 li {text-align: right;}
+body.menu-type-splitmenu.rtl .menutop li, body.rtl #rt-navigation .menu li {zoom: 1;}
+body.menu-type-splitmenu.rtl .menutop li .item span, body.rtl #rt-navigation .menu li .item span {zoom: 1;}
+body.menu-type-splitmenu.rtl .menutop li .item, body.rtl #rt-navigation .menu li .item {zoom: 1;}
+body.rtl .rt-fusion-readon span {float: left;}
+body.rtl .module-content ul.menu .item.image  {direction: ltr;text-align:right;}
+body.rtl .component-content .search_result .phrase {direction: ltr;text-align: right;}
+body.rtl .component-content .search_result .phrase legend {float: right;}
+body.rtl .module-content .rt-tab-image {float: right !important;zoom: 1;display: inline-block;}
+body.rtl .rt-articleinfo {clear: both;}
+body.rtl #form-login ul li a, body.rtl #com-form-login ul li a, body.rtl ul.rt-more-articles li a, body.rtl .rt-section-list ul li a, body.rtl ul.mostread li a, body.rtl ul.latestnews li a, body.rtl .weblinks ul li a {zoom: 1;}
+body.rtl .rokchecks {zoom: 1;position: relative;}
+body.rtl .module-content .readon {zoom: 1;}
+body.rtl .module-content #emailForm .readon {width: 60px;zoom: 1;}
+body.rtl .module-content .readon span, body.rtl .module-content input.button {zoom:1;}
+body.rtl .typo-icon  {zoom: 1;padding-bottom: 8px !important;}
+body.rtl span.inset-right-title, body.rtl span.inset-left-title {zoom: 1;position: relative;}
+body.rtl .component-content .icon {position: relative;float: left;}
+body.rtl #rt-breadcrumbs {direction: ltr;text-align: right;}
+body.rtl ul li a.category {zoom: 1;}
+body.rtl .roktabs-wrapper .roktabs-links ul.roktabs-top li.active span {zoom: 1;}
+body.rtl .title {position: relative;direction: ltr;text-align: right;}
+body.rtl #com-form-login label {float: right;}
+
+/* demo */
+.rt-demo-grid-6 {zoom: 1;}

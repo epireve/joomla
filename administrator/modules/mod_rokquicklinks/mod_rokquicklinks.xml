@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" method="upgrade" client="administrator">
+	<name>RokQuickLinks</name>
+	<creationDate>December 20, 2011</creationDate>
+	<author>RocketTheme, LLC</author>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2011 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>2.2</version>
+	<description>MC_RQL_ROKQUICKLINKS_DESC</description>
+	<files>
+		<filename module="mod_rokquicklinks">mod_rokquicklinks.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+        <folder>fields</folder>
+        <folder>admin</folder>
+        <folder>language/</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/modules/mod_rokquicklinks/fields">
+				<field name="quickfields" type="rokquickfields" label="" default="[{'icon':'newspaper_add.png','link':'index.php?option=com_content&amp;task=article.edit','title':'Add Article'},{'icon':'images.png','link':'index.php?option=com_media','title':'Media Manager'},{'icon':'drawer_open.png','link':'index.php?option=com_categories&amp;section=com_content','title':'Category Manager'},{'icon':'cog.png','link':'index.php?option=com_config','title':'Configuration'},{'icon':'brick.png','link':'index.php?option=com_installer','title':'Install New'},{'icon':'color_management.png','link':'index.php?option=com_templates','title':'Templates'}]" directory="/administrator/modules/mod_rokquicklinks/tmpl/icons/" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

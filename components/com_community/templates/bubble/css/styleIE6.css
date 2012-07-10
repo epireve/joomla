@@ -1,0 +1,11 @@
+/* Import default template CSS */
+@import url("../../default/css/styleIE6.css");
+
+body #community-wrap a.app-title-link {
+	margin: 2px 8px 0 0;
+}
+
+body #community-wrap #profile-header ul.actions li {
+	margin-top: -1px;
+	line-height: 11px;
+}

@@ -1,0 +1,237 @@
+/**
+* Window : Design and details for cWindow layout;
+*
+* use in: Invitation, Notification stream
+*/
+#community-wrap .community-form-validate .invalid {
+	border-color: #FF0000 !important;
+}
+#cWindowContent #community-invitation-list {
+	padding: 0;
+	width: 100%;
+	display:inline-block;
+}
+#cWindowContent #community-invitation-list li.invitation-item {
+	background: none;
+	margin: 0;
+	padding: 3px;
+	border: 1px solid #fff;
+	list-style: none;
+	width: 30%;
+	margin-right: 1%;
+	margin-bottom: 10px;
+	float: left;
+}
+#cWindowContent #community-invitation-list li.invitation-item-invited div.invitation-checkbox {
+	display: block !important;
+}
+
+#cWindowContent .friendSearchWrap {padding:10px;}
+#cWindowContent .friendSearchWrap input[type=text]{ width:98%;border:none;padding:5px;outline:none; }
+#cWindowContent .head-note {
+	height: 20px;
+	line-height: 20px;
+	background: #eee;
+	border-bottom: 1px solid #ccc;
+	padding: 5px 8px;
+	margin: 0;
+}
+
+/* Invitation Tab Navigation */
+#cWindowContent .cInvitationTab {
+	margin-top: 10px;
+	padding: 0;
+	list-style: none;
+	height: 25px; /*--Set height of tabs--*/
+	border-bottom: 1px solid #CCC;
+	padding-left:10px;
+}
+
+#cWindowContent .cInvitationTab li {
+	display:inline-block;
+	padding: 2px 10px;
+	height: 20px; /*--Subtract 1px from the height of the unordered list--*/
+	line-height: 20px; /*--Vertically aligns the text within the tab--*/
+	border: 1px solid #999;
+	margin-bottom: -1px; /*--Pull the list item down 1px--*/
+	background: #808080;
+	overflow:hidden;
+	position:relative;
+	margin-right:5px;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	color:white;
+	cursor:pointer;
+}
+
+#cWindowContent #cInvitationTabContainer div.active{display:block;}
+
+#cWindowContent .cInvitationTab li a {
+	text-decoration:none;
+	color:white;
+}
+#cWindowContent .cInvitationTab li a:hover {
+	background:none;
+}
+
+#cWindowContent .cInvitationTab .active {
+	background:#424242;
+}
+
+#cWindowContent .cInvitationTab .active a {
+	background:#424242;
+	outline:none;
+}
+
+#cWindowContent .invitation-option .textarea-label-right a {
+	background:#808080;
+	color:white;
+	text-decoration:none;
+	padding:5px 10px;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	font-size:12px;
+}
+
+#cWindowContent .invitation-option .textarea-label-right a:hover {
+	background:#424242;
+}
+
+#cWindowContent #community-invitation {
+	height: 200px;
+	overflow: auto;
+	background: #fff;
+	padding: 10px 0 0 10px;
+}
+
+#cWindowContent #cInvitationTabContainer {
+	margin:0;
+	height:210px;
+}
+
+#cWindowContent #community-invited {
+	height: 200px;
+	overflow: auto;
+	background: #fff;
+	padding: 10px 0 0 10px;
+}
+
+#cWindowContent #community-invitation-list,
+#cWindowContent #community-invitation-list li, #cWindowContent #community-invited-list li {
+	list-style: none;
+	background: none;
+	border: none;
+}
+#cWindowContent #community-invitation-list li, #cWindowContent #community-invited-list li {
+	float: left;
+	margin-right: 1%;
+	margin-bottom: 5px;
+	width: 32%;
+}
+
+#cWindowContent .invitation-wrap { padding: 5px; height: 40px; }
+#cWindowContent .invitation-avatar {float: left; width: 40px; height: 40px;}
+#cWindowContent .invitation-detail {
+	margin-left: 50px;
+}
+#cWindowContent .invitation-name {
+	font-size: 12px;
+	line-height: 1.1;
+	padding-bottom: 3px;
+	max-height: 25px;
+	overflow: hidden;
+}
+#cWindowContent .invitation-check .small {
+	font-size: 11px;
+}
+#cWindowContent .invitation-check label,
+#cWindowContent .invitation-check input {
+	display: inline;
+	float: left;
+	margin-left: 0;
+	margin-right: 5px;
+	outline: none;
+	font-size: 11px;
+}
+
+#cWindowContent .invitation-check {
+	display: none;
+}
+
+#cWindowContent li:hover .invitation-check {
+	display: block;
+}
+
+#cWindowContent li.invitation-item-invited .invitation-wrap {
+	background: #fdffef;
+}
+
+#cWindowContent li.invitation-item-invited .invitation-check {
+	display: block;
+}
+
+#cWindowContent #community-invitation-loadmore { background:white; text-align:center; height:35px; line-height:35px; margin-left:-10px; }
+#cWindowContent #community-invitation-loadmore:hover { background:#fdffef; }
+#cWindowContent #community-invitation-loadmore a:hover { background:#fdffef; color:#7BA428;}
+
+#cWindowContent li:hover .invitation-wrap {background: #f7f7f7;}
+#cWindowContent .invitation-option {
+	border-top: 1px solid #ccc;
+	padding: 0 10px;
+}
+
+#cWindowContent .invitation-option #emailToggle 
+{ margin-top:10px; cursor:pointer; text-decoration:underline; }
+#cWindowContent .invitation-option #messageToggle { margin-top:-10px;}
+#cWindowContent .invitation-option #messageContainer { margin-bottom:10px;}
+#cWindowContent .invitation-option .option {
+	padding: 10px 0 0;
+}
+#cWindowContent .textarea-label {
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px !important;
+	padding-bottom: 5px;
+	position: relative;
+}
+#cWindowContent .textarea-label-right {
+	position: absolute;
+	line-height: 20px;
+	height: 20px;
+	top: 0;
+	right: 0;
+	text-align: right;
+}
+#cWindowContent .textarea-wrap {
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 5px;
+	margin: 0;
+	overflow: hidden;
+}
+#cWindowContent .textarea-wrap textarea {
+	border: none;
+	background: #fff transparent;
+	overflow: none;
+	margin: 0;
+	padding: 0;
+	height: 60px;
+	font: 12px/20px Tahoma,Arial,sans-serif;
+}
+#cWindowContent .invitation-bg {
+	margin: -10px;
+	background: #eee;
+	padding-bottom: 10px;
+}
+#cWindowContent #invitation-error {
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	height: 20px;
+	line-height: 20px;
+	color: #c00;
+	margin-left: 10px;
+	margin-top:20px;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Groups">
+		<message>
+			<![CDATA[
+				Groups view
+			]]>
+		</message>
+		<options var="task">
+ 			<default name="All Groups" msg="Displays all groups from the site" />
+			<option value="mygroups" name="- My Groups" msg="Displays groups from specific users" />
+			<option value="myinvites" name="- Pending Invitations" msg="Displays invitations from other users" />
+			<option value="search" name="- Search Groups" msg="Search for a group from the site" />
+			<option value="create" name="- Create Group" msg="Create a group layout" />
+ 		</options>
+	</view>
+	<state>
+		<name>Groups Layout</name>
+		<description>Groups listings</description>
+	</state>
+</metadata>

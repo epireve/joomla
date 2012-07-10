@@ -1,0 +1,63 @@
+/**
+ * @package   Momentum Template - RocketTheme
+ * @version   1.3 October 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+
+/* RokAjaxSearch */
+body.rtl .rokajaxsearch {direction: ltr;text-align: right;}
+body.rtl .roksearch_option {float: right !important;}
+body.rtl .search_options {float: right;}
+body.rtl .search_options label {margin-right: 0 !important;margin-left: 15px !important;}
+body.rtl #rokajaxsearch #roksearch_search_str {background-position: 5px 4px !important;text-align: right;}
+body.rtl #rokajaxsearch #roksearch_search_str.loading {background-position: 5px 50% !important;}
+body.rtl #roksearch_results {direction: ltr;text-align: right;}
+body.rtl #roksearch_results .viewall {float: right;}
+body.rtl #roksearch_results .estimated_res, body.rtl #roksearch_results .pagination_res {float: right;}
+body.rtl #roksearch_results a#roksearch_link {float: left;padding-right: 0;margin-left: 5px;}
+body.rtl #roksearch_results .container-arrows {float: right;margin-right: 0;margin-left: 5px;}
+body.rtl #roksearch_results span.small {direction: rtl;}
+body.rtl #rokajaxsearch .roksearch-wrapper {background-position: 7px 6px;}
+
+/* RokTabs */
+body.rtl .roktabs-wrapper {direction: ltr;text-align: right;}
+body.rtl .roktabs-wrapper .roktabs-links ul li {float: right;margin-right: 0;margin-left: 0;}
+body.rtl .roktabs-wrapper .tab-icon {margin-right: 0;margin-left: 8px;float: right;margin-top: 0;}
+body.rtl .roktabs-wrapper .roktabs-links ul {text-align: right;}
+
+/* RokNewsPager */
+body.rtl .roknewspager-li .roknewspager-content {background-position: 90% 0;}
+.primary-overlay-dark.rtl .roknewspager-li .roknewspager-h3 {background-image: url(../images/overlays/dark/newspager-title-bar-rtl.png);}
+.primary-overlay-light.rtl .roknewspager-li .roknewspager-h3 {background-image: url(../images/overlays/light/newspager-title-bar-rtl.png);}
+body.rtl .roknewspager-h3 {padding: 10px 48px 5px 5px;background-position: 100% 50%;}
+body.rtl .roknewspager .roknewspager-overlay {left: 10px;right: inherit;}
+body.rtl .roknewspager-toggle, body.rtl .roknewspager-toggle-active {left: 10px;right: inherit;}
+body.rtl .roknewspager-pages {right: inherit;left: 15px;}
+body.rtl .roknewspager-spinner {left: inherit;right: 25px;}
+body.rtl .article-rating {float: right;}
+body.rtl .article-rating .rating-bar {float: right;text-align: right;}
+body.rtl .roknewspager-toggle {background-position: 0 -399px;}
+body.rtl .active .roknewspager-toggle-active {background-position: 0 -800px;}
+body.rtl .roknewspager-next, body.rtl .roknewspager-next-disabled {right: inherit;left: 5px;background-position: 0 -399px;}
+body.rtl .roknewspager-prev, body.rtl .roknewspager-prev-disabled {left: inherit;right: 5px;background-position: 0 0;}
+
+/* RokTwittie */
+body.rtl #roktwittie .info {margin-left: 0;margin-right: 58px;}
+body.rtl #roktwittie .status .header .avatar {float: right;}
+body.rtl #roktwittie .status ul li .title {float: right;text-align: left;}
+body.rtl #roktwittie .status ul li .content {margin-left: 0;margin-right: 66px;padding: 5px 17px 5px 5px;}
+body.rtl #roktwittie .user .feed a {float: right;padding-right: 0;padding-left: 20px;}
+body.rtl #roktwittie .roktwittie-avatar {margin-right: 0;margin-left: .5em;float: right;padding-left: 0;padding-right: 8px;}
+body.rtl #roktwittie div.roktwittie-infos .roktwittie-date {float: left;}
+body.rtl #roktwittie .roktwittie-surround {padding-left: 0;padding-right: 5px;margin-left: 0 !important;}
+body.rtl #roktwittie .roktwittie-t1 {left: inherit;right: -16px;background-position: 0 -19px !important;}
+
+/* RokGallery */
+body.rtl .rg-sort {float: right;}
+body.rtl .rg-sort .desc, body.rtl .rg-view-selector .desc {float: right;margin-right: auto;margin-left: 10px;}
+body.rtl .rg-view-selector {float: left;}
+body.rtl .rg-grid-view .gallery-data span {float: right;}
+body.rtl .rg-view-pagination .prev {left: inherit;right: 25px;}
+body.rtl .rg-view-pagination .next {right: inherit;left: 25px;}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<params>
+	<param name="addphotos_limit" type="text" default="" label="COM_XIPT_TOTAL_PHOTOS_LIMIT_LABEL" description="COM_XIPT_NO_OF_TOTAL_PHOTOS_MAXIMUM_LIMIT_DESC" />
+</params>
+</config>

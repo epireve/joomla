@@ -1,0 +1,179 @@
+/**
+ * @package   Momentum Template - RocketTheme
+ * @version   1.3 October 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+
+/* Main Patterns */
+.main-pattern-carbon {background: url(../images/overlays/patterns/carbon.png) 50% 0;}
+.main-pattern-carbonfiber {background: url(../images/overlays/patterns/carbonfiber.png) 50% 0;}
+.main-pattern-cardboard {background: url(../images/overlays/patterns/cardboard.png) 50% 0;}
+.main-pattern-circles {background: url(../images/overlays/patterns/circles.png) 50% 0;}
+.main-pattern-dustnscratches {background: url(../images/overlays/patterns/dustnscratches.png) 50% 0;}
+.main-pattern-grunge {background: url(../images/overlays/patterns/grunge.png) 50% 0;}
+.main-pattern-leather {background: url(../images/overlays/patterns/leather.png) 50% 0;}
+.main-pattern-lines {background: url(../images/overlays/patterns/lines.png) 50% 0;}
+.main-pattern-paper {background: url(../images/overlays/patterns/paper.png) 50% 0;}
+.main-pattern-projectpaper {background: url(../images/overlays/patterns/projectpaper.png) 50% 0;}
+.main-pattern-rubber {background: url(../images/overlays/patterns/rubber.png) 50% 0;}
+.main-pattern-textile {background: url(../images/overlays/patterns/textile.png) 50% 0;}
+.main-pattern-waves {background: url(../images/overlays/patterns/waves.png) 50% 0;}
+.main-pattern-wood {background: url(../images/overlays/patterns/wood.png) 50% 0;}
+.main-pattern-woven {background: url(../images/overlays/patterns/woven.png) 50% 0;}
+
+/* Logo - DARK */
+.primary-overlay-dark #rt-logo {background: url(../images/logo/dark/logo.png) 0 0 no-repeat;}
+.primary-overlay-dark #rt-logo-surround {background-image: url(../images/overlays/dark/diag-lines2.png);}
+
+/* Logo - LIGHT */
+.primary-overlay-light #rt-logo {background: url(../images/logo/light/logo.png) 0 0 no-repeat;}
+.primary-overlay-light #rt-logo-surround {background-image: url(../images/overlays/light/diag-lines2.png);}
+
+/* Navigation - DARK */
+.page-overlay-dark #rt-navigation .rt-fusionmenu, .page-overlay-dark #rt-navigation .rt-splitmenu {background: url(../images/overlays/global/light-15.png);}
+.primary-overlay-dark .menutop ul li {background-image: url(../images/overlays/dark/menu-arrows.png);}
+.pmimary-overlay-dark .menutop ul li:hover > .item {background: url(../images/overlays/global/light-20.png);}
+.primary-overlay-dark .menutop li.parent.root .item span .daddyicon, .primary-overlay-dark .menutop li.root .daddy.item .daddyicon, .menutop .primary-overlay-dark ul li > .daddy span {background-image: url(../images/overlays/dark/menu-arrows.png);}
+.fusion-submenu-wrapper.primary-overlay-dark ul li.active > .item, .fusion-submenu-wrapper.primary-overlay-dark ul li > .item:hover, .fusion-submenu-wrapper.primary-overlay-dark li.f-menuparent-itemfocus > .item {background-image: url(../images/overlays/dark/diag-lines2.png);}
+.primary-overlay-dark .menutop .fusion-submenu-wrapper, .primary-overlay-dark .menutop li.active.root, .primary-overlay-dark .menutop li.root:hover, .primary-overlay-dark .menutop li.f-mainparent-itemfocus, .primary-overlay-dark .rt-splitmenu .menutop li.active, .primary-overlay-dark .rt-splitmenu .menutop li:hover {background-image: url(../images/overlays/dark/diag-lines2.png);}
+
+/* Navigation - LIGHT */
+.page-overlay-light #rt-navigation .rt-fusionmenu, .page-overlay-light #rt-navigation .rt-splitmenu {background: url(../images/overlays/global/dark-70.png);}
+.primary-overlay-light .menutop ul li {background-image: url(../images/overlays/light/menu-arrows.png);}
+.pmimary-overlay-light .menutop ul li:hover > .item {background: url(../images/overlays/global/light-20.png);}
+.primary-overlay-light .menutop li.parent.root .item span .daddyicon, .primary-overlay-light .menutop li.root .daddy.item .daddyicon, .menutop .primary-overlay-light ul li > .daddy span {background-image: url(../images/overlays/light/menu-arrows.png);}
+.fusion-submenu-wrapper.primary-overlay-light ul li.active > .item, .fusion-submenu-wrapper.primary-overlay-light ul li > .item:hover, .fusion-submenu-wrapper.primary-overlay-light li.f-menuparent-itemfocus > .item {background-image: url(../images/overlays/light/diag-lines2.png);background-color: rgba(0,0,0,0.1);}
+.primary-overlay-light .menutop .fusion-submenu-wrapper, .primary-overlay-light .menutop li.active.root, .primary-overlay-light .menutop li.root:hover, .primary-overlay-light .menutop li.f-mainparent-itemfocus, .primary-overlay-light .rt-splitmenu .menutop li.active, .primary-overlay-light .rt-splitmenu .menutop li:hover {background-image: url(../images/overlays/light/diag-lines2.png);}
+
+/* Side Menus - DARK */
+.primary-overlay-dark .module-content ul.menu {background-image: url(../images/overlays/dark/diag-lines2.png);}
+.primary-overlay-dark .module-content ul.menu li {background-image: url(../images/overlays/dark/horz-line.png);}
+.primary-overlay-dark .module-content ul.menu li a span, .primary-overlay-dark .module-content ul.menu li .item span, .primary-overlay-dark .module-content ul.menu li .separator span {background-image: url(../images/overlays/dark/menu-arrows.png);}
+.primary-overlay-dark .module-content ul.menu li.parent li a span, .primary-overlay-dark .module-content ul.menu li.parent li .item span, .primary-overlay-dark .module-content ul.menu li.parent li .separator span {background-image: url(../images/overlays/dark/arrow-accent.png);}
+.primary-overlay-dark .module-content ul.menu a:hover, .primary-overlay-dark .module-content ul.menu li.active a, .primary-overlay-dark .module-content ul.menu li li.active a, .primary-overlay-dark .module-content ul.menu .item:hover, .primary-overlay-dark .module-content ul.menu li.active .item, .primary-overlay-dark .module-content ul.menu li li.active .item, .primary-overlay-dark .module-content ul.menu .separator:hover, .primary-overlay-dark .module-content ul.menu li.active .separator, .primary-overlay-dark .module-content ul.menu li li.active .separator {background-image: url(../images/overlays/dark/menu-bg.png);}
+
+/* Side Menus - LIGHT */
+.primary-overlay-light .module-content ul.menu {background-image: url(../images/overlays/light/diag-lines2.png);}
+.primary-overlay-light .module-content ul.menu li {background-image: url(../images/overlays/light/horz-line.png);}
+.primary-overlay-light .module-content ul.menu li a span, .primary-overlay-light .module-content ul.menu li .item span, .primary-overlay-light .module-content ul.menu li .separator span {background-image: url(../images/overlays/light/menu-arrows.png);}
+.primary-overlay-light .module-content ul.menu li.parent li a span, .primary-overlay-light .module-content ul.menu li.parent li .item span, .primary-overlay-light .module-content ul.menu li.parent li .separator span {background-image: url(../images/overlays/light/arrow-accent.png);}
+.primary-overlay-light .module-content ul.menu a:hover, .primary-overlay-light .module-content ul.menu li.active a, .primary-overlay-light .module-content ul.menu li li.active a, .primary-overlay-light .module-content ul.menu .item:hover, .primary-overlay-light .module-content ul.menu li.active .item, .primary-overlay-light .module-content ul.menu li li.active .item, .primary-overlay-light .module-content ul.menu .separator:hover, .primary-overlay-light .module-content ul.menu li.active .separator, .primary-overlay-light .module-content ul.menu li li.active .separator {background-image: url(../images/overlays/light/menu-bg.png);}
+
+/* Page Container - DARK */
+.page-content-dark .component-block, .page-content-dark #rt-content-top, .page-content-dark #rt-content-bottom, .page-content-dark #rt-content-top .rt-block, .page-content-dark #rt-content-bottom .rt-block {background-color: #303030;}
+.page-content-dark .component-content .rt-article-icons .icon, .page-content-dark .component-content .rt-article-icons ul li a {background-image: url(../images/overlays/dark/article-icons.png);}
+.readonstyle-button .page-content-dark .component-content .readon span, .readonstyle-button .page-content-dark .component-content .readon .button {color: #303030;}
+
+/* Page Container - LIGHT */
+.page-content-light .component-block, .page-content-light #rt-content-top, .page-content-light #rt-content-bottom {background-color: #fff;}
+.page-content-light .component-content .rt-article-icons .icon, .page-content-light .component-content .rt-article-icons ul li a {background-image: url(../images/overlays/light/article-icons.png);}
+.readonstyle-button .page-content-light .component-content .readon span, .readonstyle-button .page-content-light .component-content .readon .button {color: #fff;}
+
+/* Content Top - Content Bottom - DARK */
+.primary-overlay-dark .ribbon .module-surround {background-image: url(../images/overlays/dark/menu-bg.png);}
+.primary-overlay-dark #rt-content-top .ribbon .module-title, .primary-overlay-dark #rt-content-bottom .ribbon .module-title {background-image: url(../images/overlays/dark/twitter-icon.png);}
+.page-content-dark .ribbon-l {background-image: url(../images/overlays/dark/ribbon-l.png);}
+.page-content-dark .ribbon-r {background-image: url(../images/overlays/dark/ribbon-r.png);}
+
+/* Content Top - Content Bottom - LIGHT */
+.primary-overlay-light .ribbon .module-surround {background-image: url(../images/overlays/light/menu-bg.png);}
+.primary-overlay-light #rt-content-top .ribbon .module-title, .primary-overlay-light #rt-content-bottom .ribbon .module-title {background-image: url(../images/overlays/light/twitter-icon.png);}
+.page-content-light .ribbon-l {background-image: url(../images/overlays/light/ribbon-l.png);}
+.page-content-light .ribbon-r {background-image: url(../images/overlays/light/ribbon-r.png);}
+
+/* Modules - DARK */
+.page-overlay-dark .block-shadow, .page-overlay-dark .component-block {box-shadow: 4px 4px 0 rgba(0,0,0,0.8);}
+
+/* Modules - LIGHT */
+.page-overlay-light .block-shadow, .page-overlay-light .component-block {box-shadow: 4px 4px 0 rgba(0,0,0,0.1);}
+
+/* Module Variations - Box */
+.box3 .rt-block {background-image: url(../images/overlays/dark/menu-bg.png);}
+.title1 .module-title, .main-overlay-light .main-bg .title .module-title {background-image: url(../images/overlays/light/menu-arrows.png);}
+.main-overlay-dark .main-bg .title1 .module-title {background-image: url(../images/overlays/dark/menu-arrows.png);}
+.title3 .title {background: url(../images/overlays/global/dark-30.png);}
+
+/* Module Variations - Global */
+.dark10 .rt-block {background: url(../images/overlays/global/dark-10.png);}
+.dark15 .rt-block {background: url(../images/overlays/global/dark-15.png);}
+.dark20 .rt-block {background: url(../images/overlays/global/dark-20.png);}
+.dark25 .rt-block {background: url(../images/overlays/global/dark-25.png);}
+.dark30 .rt-block {background: url(../images/overlays/global/dark-30.png);}
+.dark35 .rt-block {background: url(../images/overlays/global/dark-35.png);}
+.dark40 .rt-block {background: url(../images/overlays/global/dark-40.png);}
+.dark45 .rt-block {background: url(../images/overlays/global/dark-45.png);}
+.dark50 .rt-block {background: url(../images/overlays/global/dark-50.png);}
+.dark55 .rt-block {background: url(../images/overlays/global/dark-55.png);}
+.dark60 .rt-block {background: url(../images/overlays/global/dark-60.png);color: #fff;}
+.dark65 .rt-block {background: url(../images/overlays/global/dark-65.png);color: #fff;}
+.dark70 .rt-block {background: url(../images/overlays/global/dark-70.png);color: #fff;}
+.dark75 .rt-block {background: url(../images/overlays/global/dark-75.png);color: #fff;}
+.dark80 .rt-block {background: url(../images/overlays/global/dark-80.png);color: #fff;}
+.dark85 .rt-block {background: url(../images/overlays/global/dark-85.png);color: #fff;}
+.dark90 .rt-block {background: url(../images/overlays/global/dark-90.png);color: #fff;}
+.dark95 .rt-block {background: url(../images/overlays/global/dark-95.png);color: #fff;}
+.light10 .rt-block {background: url(../images/overlays/global/light-10.png);}
+.light15 .rt-block {background: url(../images/overlays/global/light-15.png);}
+.light20 .rt-block {background: url(../images/overlays/global/light-20.png);}
+.light25 .rt-block {background: url(../images/overlays/global/light-25.png);}
+.light30 .rt-block {background: url(../images/overlays/global/light-30.png);}
+.light35 .rt-block {background: url(../images/overlays/global/light-35.png);}
+.light40 .rt-block {background: url(../images/overlays/global/light-40.png);}
+.light45 .rt-block {background: url(../images/overlays/global/light-45.png);}
+.light50 .rt-block {background: url(../images/overlays/global/light-50.png);}
+.light55 .rt-block {background: url(../images/overlays/global/light-55.png);}
+.light60 .rt-block {background: url(../images/overlays/global/light-60.png);color: #000;}
+.light65 .rt-block {background: url(../images/overlays/global/light-65.png);color: #000;}
+.light70 .rt-block {background: url(../images/overlays/global/light-70.png);color: #000;}
+.light75 .rt-block {background: url(../images/overlays/global/light-75.png);color: #000;}
+.light80 .rt-block {background: url(../images/overlays/global/light-80.png);color: #000;}
+.light85 .rt-block {background: url(../images/overlays/global/light-85.png);color: #000;}
+.light90 .rt-block {background: url(../images/overlays/global/light-90.png);color: #000;}
+.light95 .rt-block {background: url(../images/overlays/global/light-95.png);color: #000;}
+
+/* Buttons and Inputs - DARK */
+.main-overlay-dark .main-bg .rokradios, .main-overlay-dark .main-bg .rokchecks, .main-overlay-dark .main-bg .rokradios-active, .main-overlay-dark .main-bg .rokchecks-active, .page-overlay-dark .rokradios, .page-overlay-dark .rokchecks, .page-overlay-dark .rokradios-active, .page-overlay-dark .rokchecks-active, .bottomblock-overlay-dark .rokradios, .bottomblock-overlay-dark .rokchecks, .bottomblock-overlay-dark .rokradios-active, .bottomblock-overlay-dark .rokchecks-active, .primary-overlay-dark .box2 .rokradios, .primary-overlay-dark .box2 .rokchecks, .primary-overlay-dark .box2 .rokradios-active, .primary-overlay-dark .box2 .rokchecks-active, .primary-overlay-dark .box3 .rokradios, .primary-overlay-dark .box3 .rokchecks, .primary-overlay-dark .box3 .rokradios-active, .primary-overlay-dark .box3 .rokchecks-active {background-image: url(../images/overlays/dark/rokinputs.png);}
+.inputbox, #form-login .inputbox, #com-form-login .inputbox, #josForm .inputbox, .component-content .search_result .inputbox, .component-content .contact .inputbox, .component-content .user input#email, .component-content .user input#name, .component-content .user input#username, .component-content .user input#password, .component-content .user input#passwd, .component-content .user input#password2, #rokajaxsearch .inputbox {background: url(../images/overlays/global/dark-10.png);box-shadow: 4px 4px 0 rgba(0,0,0,0.2);}
+.basic .inputbox, .basic #form-login .inputbox, .basic #rokajaxsearch .inputbox {background: url(../images/overlays/global/light-90.png);box-shadow: 4px 4px 0 rgba(0,0,0,0.1);}
+.main-overlay-dark.readonstyle-button .main-bg a.readon:hover, .readonstyle-button .page-overlay-dark .readon:hover, .main-overlay-dark.readonstyle-button #rt-page-surround .box1 .readon:hover, .readonstyle-button .bottomblock-overlay-dark .readon:hover, .primary-overlay-dark.readonstyle-button .box2 .readon, .primary-overlay-dark.readonstyle-button .box3 .readon {background-color: #fff;}
+.primary-overlay-dark.readonstyle-button .main-bg .box2 .readon:hover, .primary-overlay-dark.readonstyle-button .main-bg .box3 .readon:hover {background-color: #000;}
+.main-overlay-dark.readonstyle-button .main-bg .readon:hover span, .main-overlay-dark.readonstyle-button .main-bg .readon:hover .button, .readonstyle-button .page-overlay-dark .readon:hover span, .readonstyle-button .page-overlay-dark .readon:hover .button, .main-overlay-dark.readonstyle-button #rt-page-surround .box1 .readon:hover span, .main-overlay-dark.readonstyle-button #rt-page-surround .box1 .readon:hover .button, .bottomblock-overlay-dark .readon:hover span, .bottomblock-overlay-dark .readon:hover .button, .primary-overlay-dark.readonstyle-button .box2 .readon span, .primary-overlay-dark.readonstyle-button .box2 .readon .button, .primary-overlay-dark.readonstyle-button .box3 .readon span, .primary-overlay-dark.readonstyle-button .box3 .readon .button {color: #000;}
+.primary-overlay-dark.readonstyle-button .box2 .readon:hover span, .primary-overlay-dark.readonstyle-button .box2 .readon:hover .button, .primary-overlay-dark.readonstyle-button .box3 .readon:hover span, .primary-overlay-dark.readonstyle-button .box3 .readon:hover .button {color: #fff;}
+
+/* Buttons and Inputs - LIGHT */
+.main-overlay-light .main-bg .rokradios, .main-overlay-light .main-bg .rokchecks, .main-overlay-light .main-bg .rokradios-active, .main-overlay-light .main-bg .rokchecks-active, .page-overlay-light .rokradios, .page-overlay-light .rokchecks, .page-overlay-light .rokradios-active, .page-overlay-light .rokchecks-active, .bottomblock-overlay-light .rokradios, .bottomblock-overlay-light .rokchecks, .bottomblock-overlay-light .rokradios-active, .bottomblock-overlay-light .rokchecks-active, .primary-overlay-light .box2 .rokradios, .primary-overlay-light .box2 .rokchecks, .primary-overlay-light .box2 .rokradios-active, .primary-overlay-light .box2 .rokchecks-active, .primary-overlay-light .box3 .rokradios, .primary-overlay-light .box3 .rokchecks, .primary-overlay-light .box3 .rokradios-active, .primary-overlay-light .box3 .rokchecks-active {background-image: url(../images/overlays/light/rokinputs.png);}
+.inputbox, #form-login .inputbox, #com-form-login .inputbox, #josForm .inputbox, .component-content .search_result .inputbox, .component-content .contact .inputbox, .component-content .user input#email, .component-content .user input#name, .component-content .user input#username, .component-content .user input#password, .component-content .user input#passwd, .component-content .user input#password2, #rokajaxsearch .inputbox {background: url(../images/overlays/global/dark-10.png);box-shadow: 4px 4px 0 rgba(0,0,0,0.2);}
+.basic .inputbox, .basic #form-login .inputbox, .basic #rokajaxsearch .inputbox {background: url(../images/overlays/global/light-90.png);box-shadow: 4px 4px 0 rgba(0,0,0,0.1);}
+.main-overlay-light.readonstyle-button .main-bg a.readon:hover, .readonstyle-button .page-overlay-light .readon:hover, .main-overlay-light.readonstyle-button #rt-page-surround .box1 .readon:hover, .readonstyle-button .bottomblock-overlay-light .readon:hover, .primary-overlay-light.readonstyle-button .box2 .readon, .primary-overlay-light.readonstyle-button .box3 .readon {background-color: #000;}
+.primary-overlay-light.readonstyle-button .main-bg .box2 .readon:hover, .primary-overlay-light.readonstyle-button .main-bg .box3 .readon:hover {background-color: #fff;}
+.main-overlay-light.readonstyle-button .main-bg .readon:hover span, .main-overlay-light.readonstyle-button .main-bg .readon:hover .button, .readonstyle-button .page-overlay-light .readon:hover span, .readonstyle-button .page-overlay-light .readon:hover .button, .main-overlay-light.readonstyle-button #rt-page-surround .box1 .readon:hover span, .main-overlay-light.readonstyle-button #rt-page-surround .box1 .readon:hover .button, .bottomblock-overlay-light .readon:hover span, .bottomblock-overlay-light .readon:hover .button, .primary-overlay-light.readonstyle-button .box2 .readon span, .primary-overlay-light.readonstyle-button .box2 .readon .button, .primary-overlay-light.readonstyle-button .box3 .readon span, .primary-overlay-light.readonstyle-button .box3 .readon .button {color: #fff;}
+.primary-overlay-light.readonstyle-button .box2 .readon:hover span, .primary-overlay-light.readonstyle-button .box2 .readon:hover .button, .primary-overlay-light.readonstyle-button .box3 .readon:hover span, .primary-overlay-light.readonstyle-button .box3 .readon:hover .button {color: #000;}
+
+/* Typography - DARK */
+.main-overlay-dark .main-bg #form-login ul li a, .main-overlay-dark .main-bg .rt-section-list ul li a, .main-overlay-dark .main-bg ul.mostread li a, .main-overlay-dark .main-bg ul.latestnews li a, .main-overlay-dark .main-bg .weblinks ul li a, .main-overlay-dark .main-bg ul.newsfeed li a, .showcaseblock-overlay-dark #rt-feature #form-login ul li a, .showcaseblock-overlay-dark #rt-feature .rt-section-list ul li a, .showcaseblock-overlay-dark #rt-feature ul.mostread li a, .showcaseblock-overlay-dark #rt-feature ul.latestnews li a, .showcaseblock-overlay-dark #rt-feature .weblinks ul li a, .showcaseblock-overlay-dark #rt-feature ul.newsfeed li a, .page-overlay-dark #form-login ul li a, .page-overlay-dark #com-form-login ul li a, .page-overlay-dark ul.rt-more-articles li a, .page-overlay-dark .rt-section-list ul li a, .page-overlay-dark ul.mostread li a, .page-overlay-dark ul.latestnews li a, .page-overlay-dark .weblinks ul li a, .page-overlay-dark ul.newsfeed li a, .page-overlay-dark .component-content .category-list ul li a, .primary-overlay-dark #form-login ul li a, .primary-overlay-dark .rt-section-list ul li a, .primary-overlay-dark ul.mostread li a, .primary-overlay-dark ul.latestnews li a, .primary-overlay-dark .weblinks ul li a, .primary-overlay-dark ul.newsfeed li a, .bottomblock-overlay-dark #form-login ul li a, .bottomblock-overlay-dark .rt-section-list ul li a, .bottomblock-overlay-dark ul.mostread li a, .bottomblock-overlay-dark ul.latestnews li a, .bottomblock-overlay-dark .weblinks ul li a, .bottomblock-overlay-dark ul.newsfeed li a {background-image: url(../images/overlays/dark/arrow-accent.png);}
+.bottomblock-overlay-dark #rocket {background: url(../images/overlays/dark/rocket.png) 0 0 no-repeat;}
+.bottomblock-overlay-dark #gantry-totop {background-image: url(../images/overlays/dark/to-top.png);}
+.main-overlay-dark #rt-accessibility a.small .button, .main-overlay-dark #rt-accessibility a.large .button {background-image: url(../images/overlays/dark/text-buttons.png);}
+.showcaseblock-overlay-dark ul.bullet li, .main-overlay-dark ul.bullet li, .page-content-dark ul.bullet li, .bottomblock-overlay-dark ul.bullet li {background-image: url(../images/overlays/light/round-bullet.png);}
+.page-content-dark .contentbox1 {background: url(../images/overlays/global/light-10.png);}
+.page-content-dark .contentbox2 {background: url(../images/overlays/global/light-15.png);}
+.page-content-dark .contentbox3 {background: url(../images/overlays/global/light-20.png);}
+.page-content-dark .contentbox4 {background: url(../images/overlays/global/light-25.png);}
+.page-content-dark .component-content .rt-articleinfo {border-bottom: 1px dashed #666;}
+
+/* Typography - LIGHT */
+.main-overlay-light .main-bg #form-login ul li a, .main-overlay-light .main-bg .rt-section-list ul li a, .main-overlay-light .main-bg ul.mostread li a, .main-overlay-light .main-bg ul.latestnews li a, .main-overlay-light .main-bg .weblinks ul li a, .main-overlay-light .main-bg ul.newsfeed li a, .showcaseblock-overlay-light #rt-feature #form-login ul li a, .showcaseblock-overlay-light #rt-feature .rt-section-list ul li a, .showcaseblock-overlay-light #rt-feature ul.mostread li a, .showcaseblock-overlay-light #rt-feature ul.latestnews li a, .showcaseblock-overlay-light #rt-feature .weblinks ul li a, .showcaseblock-overlay-light #rt-feature ul.newsfeed li a, .page-overlay-light #form-login ul li a, .page-overlay-light #com-form-login ul li a, .page-overlay-light ul.rt-more-articles li a, .page-overlay-light .rt-section-list ul li a, .page-overlay-light ul.mostread li a, .page-overlay-light ul.latestnews li a, .page-overlay-light .weblinks ul li a, .page-overlay-light ul.newsfeed li a, .page-overlay-light .component-content .category-list ul li a, .primary-overlay-light #form-login ul li a, .primary-overlay-light .rt-section-list ul li a, .primary-overlay-light ul.mostread li a, .primary-overlay-light ul.latestnews li a, .primary-overlay-light .weblinks ul li a, .primary-overlay-light ul.newsfeed li a, .bottomblock-overlay-light #form-login ul li a, .bottomblock-overlay-light .rt-section-list ul li a, .bottomblock-overlay-light ul.mostread li a, .bottomblock-overlay-light ul.latestnews li a, .bottomblock-overlay-light .weblinks ul li a, .bottomblock-overlay-light ul.newsfeed li a {background-image: url(../images/overlays/light/arrow-accent.png);}
+.bottomblock-overlay-light #rocket {background: url(../images/overlays/light/rocket.png) 0 0 no-repeat;}
+.bottomblock-overlay-light #gantry-totop {background-image: url(../images/overlays/light/to-top.png);}
+.main-overlay-light #rt-accessibility a.small .button, .main-overlay-light #rt-accessibility a.large .button {background-image: url(../images/overlays/dark/text-buttons.png);}
+.page-content-light .contentbox1 {background: url(../images/overlays/global/dark-10.png);}
+.page-content-light .contentbox2 {background: url(../images/overlays/global/dark-15.png);}
+.page-content-light .contentbox3 {background: url(../images/overlays/global/dark-20.png);}
+.page-content-light .contentbox4 {background: url(../images/overlays/global/dark-25.png);}
+.page-content-light .component-content .rt-articleinfo {border-bottom: 1px dashed #ccc;}
+
+/* RTL */
+.primary-overlay-dark.rtl #rt-logo {background: url(../images/logo/dark/rtl/logo.png) 0 0 no-repeat;}
+.primary-overlay-light.rtl #rt-logo {background: url(../images/logo/light/rtl/logo.png) 0 0 no-repeat;}

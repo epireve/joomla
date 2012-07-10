@@ -1,0 +1,277 @@
+body #community-wrap {
+	padding: 5px;
+	overflow: hidden;
+	width: 98%;
+}
+
+div.app-box h2.collapse,
+div.app-box h2.expand {
+	margin: 0;
+}
+body #community-wrap ul.application-group-avatars li a,
+body #community-wrap ul.friend-right-info li a {
+	text-decoration: none;
+}
+
+
+
+body #community-wrap div.center {
+}
+body #community-wrap h3.frontTitle {
+	margin: 0;
+	padding: 10px 0;
+}
+
+body #community-wrap div.greybox {
+	width: 100%;
+	margin: 0 0 10px;
+}
+
+/** Profile Section **/
+div.profile-right {
+	float: right;
+	display: block;
+	width: 160px;
+    color: #666;
+}
+div.profile-main {
+	margin: 0;
+	overflow: hidden;
+	margin: 0 0 0;
+	float: left;
+}
+div.profile-info {
+	margin: 0 0 0 190px;
+	width: 55%;
+	overflow: hidden;
+}
+
+
+/** Carousel **/
+#recentMembers div.jCarouselLite {
+	width: 650px;
+}
+
+
+/** Main Toolbar **/
+#cToolbarNav {
+	margin: 0 0 10px;
+}
+#cToolbarNav ul li div {
+	background: none;
+}
+#cToolbarNav ul li.toolbar-active div {
+	background: none;
+}
+
+
+
+/** buttons **/
+body #community-wrap a.remove:link,
+body #community-wrap a.remove:visited {
+	margin: 0 10px 0 10px;
+	position: static;
+}
+
+/**
+ * Browse
+ */
+body #community-wrap div.mini-profile {
+	padding: 10px 0;
+	border: solid 1px #ccc;
+	margin: 0 0 5px;
+	background: #fff;
+}
+
+/** frontpage **/
+body #community-wrap div.rightColContainer {
+	float: right;
+	display: block;
+	width: 230px;
+}
+body #community-wrap div.leftColContainer {
+	margin: 0;
+	overflow: hidden;
+	margin: 0 15px 0 0;
+	float: left;
+}
+
+/** Write Message Elements **/
+.col-left {
+	clear: both;
+}
+.composeForm dl {
+	width: 90%;
+	margin: 0 200px 0 0;
+}
+#writeMessageForm .receiverList {
+	float: right;
+	width: 150px;
+	margin: 0;
+}
+
+
+/* add button */
+body #community-wrap a.add:link,
+body #community-wrap a.add:visited {
+	top: 0;
+	left: 0;
+}
+
+/** Photo **/
+#community-photo-items li a {
+	text-decoration: none;
+}
+/** Photo **/
+
+body #community-wrap div.mini-profile,
+body #community-wrap div.see-all {
+	position: fixed;
+}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li#toolbar-item-notify {
+	position: fixed;
+	width: 55px;
+}
+body #community-wrap #cToolbarNav ul#cToolbarNavList li#toolbar-item-notify a span {
+	cursor: pointer;
+}
+
+body #community-wrap .group-info .clabel {
+	margin-left: -150px;
+}
+
+body #community-wrap .video-title {
+	white-space: normal;
+	height: 16px; /* Alter to your Joomla! template's line-height where necessary */
+}
+
+body #community-wrap .album-name {
+	white-space: normal;
+	height: 16px; /* Alter to your Joomla! template's line-height where necessary */
+}
+
+body #community-wrap .app-box,
+body #community-wrap .app-box-content {
+	/* Content dissapears after collapsing and expanding again */
+	position: relative;
+	zoom: 1;
+}
+
+
+#cWindowContentOuter {
+	border: 1px solid black;
+}
+/* cWindow PNG */
+#cWindow #cwin_close_btn:link,
+#cWindow #cwin_close_btn:visited {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/components/com_community/assets/window/dialog/closebox-normal.png'), sizingMethod='scale');
+}
+#cWindow #cwin_close_btn:hover {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/components/com_community/assets/window/dialog/closebox-hover.png'), sizingMethod='scale');
+}
+#cWindow.dialog {}
+#cWindow.dialog #cwin_close_btn:link,
+#cWindow.dialog #cwin_close_btn:visited {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/components/com_community/assets/window/dialog/closebox-normal.png'), sizingMethod='scale');
+}
+#cWindow #cwin_close_btn:hover {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/components/com_community/assets/window/dialog/closebox-hover.png'), sizingMethod='scale');
+}
+#cWindow.warning #cwin_close_btn:link,
+#cWindow.warning #cwin_close_btn:visited {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/components/com_community/assets/window/warning/closebox-normal.png'), sizingMethod='scale');
+}
+#cWindow.warning #cwin_close_btn:hover {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/components/com_community/assets/window/warning/closebox-hover.png'), sizingMethod='scale');
+}
+#cWindow.error #cwin_close_btn:link,
+#cWindow.error #cwin_close_btn:visited {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/components/com_community/assets/window/error/closebox-normal.png'), sizingMethod='scale');
+}
+#cWindow.error #cwin_close_btn:hover {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/components/com_community/assets/window/error/closebox-hover.png'), sizingMethod='scale');
+}
+#cWindow #cwin_tl {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/components/com_community/assets/window/tl.png'), sizingMethod='scale');
+}
+#cWindow #cwin_tm {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/components/com_community/assets/window/ie/tm.png'), sizingMethod='crop');
+}
+#cWindow #cwin_tr {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/components/com_community/assets/window/tr.png'), sizingMethod='scale');
+}
+#cWindow #cwin_bl {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/components/com_community/assets/window/bl.png'), sizingMethod='scale');
+}
+#cWindow #cwin_bm {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/components/com_community/assets/window/ie/bm.png'), sizingMethod='crop');
+}
+#cWindow #cwin_br {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/components/com_community/assets/window/br.png'), sizingMethod='scale');
+}
+#cWindow #cwin_ml {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/components/com_community/assets/window/ie/ml.png'), sizingMethod='crop');
+}
+#cWindow #cwin_mr {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/components/com_community/assets/window/ie/mr.png'), sizingMethod='crop');
+}
+
+#cGallery .photoTagAction._cancel {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/components/com_community/assets/window/dialog/closebox-normal.png'), sizingMethod='crop');
+}
+
+
+.clrfix {
+  	height: 1%;
+  	overflow: visible;
+    zoom: 1;     /* triggers hasLayout */
+}  /* Only IE can see inside the conditional comment
+    and read this CSS rule. Don't ever use a normal HTML
+    comment inside the CC or it will close prematurely. */
+    
+#community-wrap .cModule {
+ 	hasLayout: 1;
+ 	zoom: 1;
+}
+
+#cToolbar_inner li a {
+	float: left !important;
+}
+
+#cToolbar_inner li div {
+	top: 28px !important;
+}
+
+#cToolbar_inner li#toolbar-item-notify {
+	width: auto !important;
+}
+
+#community-wrap .cToolbar,
+#community-wrap .cToolbar ul,
+#community-wrap .cToolbar ul li,
+#community-wrap .cToolbar ul li div,
+#community-wrap .cToolbar ul li div a {
+   z-index: 99999999;
+}
+
+#community-wrap .cMain {
+	float: left !important;
+	margin-right: 15px !important;
+}

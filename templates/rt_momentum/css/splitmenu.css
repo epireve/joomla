@@ -1,0 +1,30 @@
+/**
+ * @package   Momentum Template - RocketTheme
+ * @version   1.3 October 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+
+/* Global */
+.menutop li {height: auto;margin: 0;padding: 0;position: relative;list-style: none;}
+.menutop em {font-size: 80%;font-weight: normal;display: block;font-style: normal;}
+.menutop li .item, .menutop li.active .item {display: block;margin: 0;text-decoration: none;float: none;width: auto;}
+
+/* Root Items */
+.menutop {list-style: none;margin: 0;padding: 0;position: relative;display: inline-block;}
+.menutop li {float: left;margin: 0 0 0 1px;padding: 0;transition: background-color 0.3s linear;}
+.menutop li .item {white-space: nowrap;display: block;font-size: 1.5em;line-height: 45px;z-index: 100;cursor: pointer;position: relative;padding: 0;margin: 0;outline: none;font-weight: normal;letter-spacing: 1px;}
+.menutop li > span.item {cursor: default;}
+.menutop li .subtext {line-height: 24px;}
+.menutop li .item span {display: block;outline: none;padding: 0 10px;height: 45px;width: auto;}
+.menutop li .subtext span {padding: 0 10px;line-height: 35px;}
+.menutop li .item em {font-size: 10px;display: block;font-style: normal;line-height: 100%;text-align: left;text-transform: none;letter-spacing: normal;margin-top: -8px;}
+.menutop li.active:before, .menutop li.active .item:before, .menutop li.active .item span:before {content: '';position: absolute;bottom: 0;left: -8px;width: 8px;height: 25px;background-position: 0 100%;background-repeat: no-repeat;}
+.menutop li.active:after, .menutop li.active .item:after, .menutop li.active .item span:after {content: '';position: absolute;bottom: 0;right: -8px;width: 8px;height: 25px;background-position: 0 100%;background-repeat: no-repeat;}
+.menutop li.active .item span, .menutop li:hover .item span {background-position: 50% 100%;background-repeat: no-repeat;}
+.menutop li.active .item span span {background: none !important;}
+
+/* RTL */
+body.rtl .menutop li {float: right;margin: 0 1px 0 0;}
+body.rtl .menutop li .item em {text-align: right;}

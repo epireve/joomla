@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<!-- PROFILETYPE SETTINGS -->
+	<params group="basicPtypeSettings" addpath="/components/com_xipt/elements">
+		<param name="defaultProfiletypeID" type="profiletypes" default="0" label="COM_XIPT_DEFAULT_PROFILETYPE_ID" description="COM_XIPT_DEFAULT_PROFILETYPE_ID_DESC" />
+		<param name="guestProfiletypeID" type="profiletypes" default="0" label="COM_XIPT_GUEST_PROFILETYPE_ID" description="COM_XIPT_GUEST_PROFILETYPE_ID_DESC" />
+	</params>
+	<params group="advPtypeSettings" addpath="/components/com_xipt/elements">
+		<param name="allow_user_to_change_ptype_after_reg" type="xiradio" default="1" label="COM_XIPT_ALLOW_USER_TO_CHANGE_PROFILE_TYPE_AFTER_REGISTRATION" description="COM_XIPT_ALLOW_USER_TO_CHANGE_PROFILE_TYPE_AFTER_REGISTRATION_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>	
+	</params>
+	
+	<!-- INTEGRATION SETTINGS -->
+	<params group="basicIntegrationSettings" addpath="/components/com_xipt/elements">
+		<param name="show_ptype_during_reg" type="xiradio" default="1" label="COM_XIPT_INTEGRATE_JSPT_WITH_REGISTRATION" description="COM_XIPT_INTEGRATE_JSPT_WITH_REGISTRATION_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="subscription_integrate" type="xiradio" default="0" label="COM_XIPT_INTEGRATE_SUBS" description="COM_XIPT_INTEGRATE_SUBS_DESC" onClick="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="integrate_with" type="xiradio" default="payplans" label="COM_XIPT_INTEGRATE_WITH" description="COM_XIPT_INTEGRATE_WITH_DESC">
+			<option value="aec">AEC</option>
+			<option value="payplans">&lt;a href='http://www.jpayplans.com' &gt;PayPlans&lt;/a&gt;</option>
+		</param>			
+	</params>
+	
+	
+	<!-- REGISTRATIN SETTINGS -->	
+	<params group="advRegistrationSettings" addpath="/components/com_xipt/elements">
+		<param name="jspt_show_radio" type="xiradio" default="1" label="COM_XIPT_DURING_REGISTRATION_SHOW_CHOOSE_ACCOUNT_TYPE_AS" description="COM_XIPT_DURING_REGISTRATION_SHOW_CHOOSE_ACCOUNT_TYPE_AS_DESC">
+			<option value="0">Select Box</option>
+			<option value="1">Image Options</option>
+		</param>
+		<param name="jspt_fb_show_radio" type="xiradio" default="0" label="COM_XIPT_DURING_FACEBOOK_CONNECTIVITY_SHOW_CHOOSE_ACCOUNT_TYPE_AS" description="COM_XIPT_DURING_FACEBOOK_CONNECTIVITY_SHOW_CHOOSE_ACCOUNT_TYPE_AS_DESC">
+			<option value="0">Select Box</option>
+			<option value="1">Radio Options</option>
+		</param>
+		<param name="user_reg" type="xiradio" default="jomsocial" label="COM_XIPT_AFTER_PROFILETYPE_SELECTION_GO_TO_REGISTRATION" description="COM_XIPT_AFTER_PROFILETYPE_SELECTION_GO_TO_REGISTRATION_DESC">
+               <option value="jomsocial">JomSocial</option>
+               <option value="joomla">Joomla</option>
+       </param>	
+	</params>
+	
+	<!-- APPLICATION SETTINGS -->
+	<params group="advAppsSettings" addpath="/components/com_xipt/elements">
+		<param name="jspt_block_dis_app" type="xiradio" default="0" label="COM_XIPT_BLOCK_DISPLAY_APPLICATION" description="COM_XIPT_BLOCK_DISPLAY_APPLICATION_WHEN_VISITING_OTHERS_PROFILE_DESC">
+				<option value="0">Owner</option>
+				<option value="1">Visitor</option>
+				<option value="2">Both</option>
+		</param>
+	</params>
+		
+	<!-- SUBSCRIPTION SETTINGS -->
+	<params group="advSubsSettings" addpath="/components/com_xipt/elements">		
+		<param name="subscription_message" type="xiradio" default="b" label="COM_XIPT_DISPLAY_MESSAGE_AFTER_PLAN_SELECTION" description="COM_XIPT_DISPLAY_MESSAGE_AFTER_PLAN_SELECTION_DESC">
+			<option value="b">Both, Plan and Profiletype</option>
+			<option value="pl">Only Plan</option>
+			<option value="pt">Only Profiletype</option>
+			<option value="no">None</option>
+		</param>			
+	</params>
+	
+	<!-- OTHERS -->
+	<params group="others" addpath="/components/com_xipt/elements"> 		
+		<param name="restrict_advancesearchfield" type="xiradio" default="0" label="COM_XIPT_ENABLE_RESTRICT_PROFILEFIELD_IN_ADVANCE_SEARCH" description="COM_XIPT_ENABLE_RESTRICT_ADVANCE_SEARCH_FIELD_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>			
+	</params>
+	
+</config>

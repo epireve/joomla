@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Messages">
+		<message>
+			<![CDATA[
+				Messages view
+			]]>
+		</message>
+		<options var="task">
+ 			<default name="Inbox" msg="Displays all personal messages" />
+ 			<option value="sent" name="- Sent Messages" msg="Displays sent messages" />
+ 			<option value="write" name="- Write Message" msg="Compose a message to another user" />
+ 		</options>
+	</view>
+	<state>
+		<name>Message Layout</name>
+		<description>Message listings layout</description>
+	</state>
+</metadata>

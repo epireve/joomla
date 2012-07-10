@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules name="pluginorder">
+<group name="event" title="Event">	
+	<rule name="accessevent" 
+		  title="Can not Access Event" 
+		  description="Restrict users to Access Event" 
+		  example="Suppose you want Profile Type1 users cannot access event of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />
+		  
+	<rule name="createvent"
+		  title="Can not Create Events"
+   		  description="Restrict users to Create Events" 
+   		  example="Suppose you want Profile Type1 users Can not Create Events of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />
+   		  
+   	<rule name="deletevent"
+		  title="Can not Delete Events"
+    	  description="Restrict users to Delete Events" 
+    	  example="Suppose you want Profile Type1 users Can not Delete Events of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />
+    	  
+    <rule name="joinevent"
+		  title="Can not Join Events"
+		  description="Restrict users to Join Events"
+		  example="Suppose you want Profile Type1 users Can not Join Events / 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Maximum Events-> Write maximum event user can join /Event Category-> Select Category which is restricted for user " />
+		  
+    <rule name="accesseventcategory"
+		  title="Can Access Events Category"
+		  description="Allow users to Access Events Category"
+		  example="Suppose you want Profile Type1 users Can Access Events Category / 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Select Event Category -> Select Event Category " />
+    	  
+</group>
+
+<group name="groups" title="Groups">
+	<rule name="accessgroup" 
+		  title="Can not Access Group"
+		  description="Restrict users to Access Group"
+		  example="Suppose you want Profile Type1 users Can not Access Group of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />
+	
+	<rule name="deletegroup"
+		  title="Can not Delete Groups"
+		  description="Restrict users to Delete Groups" 
+		  example="Suppose you want Profile Type1 users Can not Delete Groups of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />
+		  
+	<rule name="creategroup"
+		  title="Can not Create Groups"
+		  description="Restrict users to Create Groups" 
+		  example="Suppose you want Profile Type1 users Can not Create Groups of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />
+		  
+	<rule name="joingroup"
+		  title="Can not Join Groups"
+		  description="Restrict users to Join Groups"
+		  example="Suppose you want Profile Type1 users Can not Join Groups of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />
+	
+	<rule name="leavegroup"
+		  title="Can not Leave Groups"
+		  description="Restrict users to Leave Groups"
+		  example="Suppose you want Profile Type1 users Can not Leave Groups/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 / " />
+
+	<rule name="accessgroupcategory"
+		  title="Can Access Groups Category"
+		  description="Allow users to Access Groups Category"
+		  example="Suppose you want Profile Type1 users Can Access Groups Category / 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Select Group Category -> Select Group Category " />
+
+	<rule name="creatediscussion"
+		  title="Can not Create Discussion"
+		  description="Restrict users to Create Discussion"
+		  example="Suppose you want Profile Type1 users Can not Create Discussion / 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 / " />
+
+	<rule name="createbulletin"
+		  title="Can not Create Bulletin"
+		  description="Restrict users to Create Bulletin"
+		  example="Suppose you want Profile Type1 users Can not Create Bulletin / 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 / " />
+
+	<rule name="sendemail"
+		  title="Can not Send Email"
+		  description="Restrict users to Send Email"
+		  example="Suppose you want Profile Type1 users Can not send email / 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 / " />
+		  
+	<rule name="invitefriends"
+		  title="Can not Invite Friends"
+		  description="Restrict users to Invite Friends"
+		  example="Suppose you want Profile Type1 users Can not Invite Friends / 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 / " />
+		  
+</group>	
+	  
+<group name="albums" title="Albums">
+	<rule name="addalbums" 
+		  title="Can not Add Albums"
+          description="Restrict users to Add  Albums" 
+          example="Suppose you want Profile Type1 users Can not Add Albums of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />
+</group>
+	
+<group name="videos" title="Videos">
+	<rule name="accessvideo" 
+		  title="Can not Access Videos"
+		  description="Restrict users to Access Videos" 
+		  example="Suppose you want Profile Type1 users Can not Access Videos of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />
+		  
+	<rule name="addvideos"
+		  title="Can not Add Videos"
+	 	  description="Restrict users to Add Videos" 
+	 	  example="Suppose you want Profile Type1 users Can not Add Videos of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />
+		 <rule name="accessvideocategory" 
+		  title="Can Access Videos Category"
+		  description="Allow users to Access Videos Category" 
+		  example="Suppose you want Profile Type1 users Can Access Videos Category/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Video Category -> Select Video Category " />
+</group>
+	
+<group name="profileVideos" title="Profile Videos">
+	<rule name="accessprofilevideo"	
+		  title="Can not Access Profile Video"
+		  description="Restrict users to Access Profile Video" 
+		  example="Suppose you want Profile Type1 users Can not Access Profile Video of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />
+	
+	<rule name="addprofilevideo"
+		  title="Can not Add Profile Videos"
+		  description="Restrict users to Add Profile Videos" 
+		  example="Suppose you want Profile Type1 users Can not Add Profile Videos of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />
+		  
+	<rule name="deleteprofilevideo"
+		  title="Can not Delete Profile Video"
+		  description="Restrict users to Delete Profile Video" 
+		  example="Suppose you want Profile Type1 users Can not Delete Profile Video of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />
+</group>
+		  
+
+<group name="application" title="Application">
+	<rule name="addapplication" 
+		  title="Can not Add Applications"
+          description="Restrict users to Add Applications"
+          example="Suppose you want Profile Type1 users Can not Add Applications of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />		  
+</group>
+		  
+<group name="Friend" title="Friend">
+	<rule name="addasfriends"
+	      title="Can not Add Friends"
+		  description="Restrict users to Add Friends" 
+		  example="Suppose you want Profile Type1 users Can not Add Friends of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />	
+</group>
+	
+<group name="photos" title="Photos">
+	<rule name="addphotos"
+		  title="Can not Add Photos"
+		  description="Restrict users to Add Photos" 
+		  example="Suppose you want Profile Type1 users Can not Add Photos of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />
+	<rule name="accessphoto" 
+		  title="Can not Access Photos"
+          description="Restrict users to Access Albums" 
+          example="Suppose you want Profile Type1 users Can not Add Albums of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />          
+</group>
+
+<group name="profile" title="Profile">
+	<rule name="cantviewotherprofile"
+		  title="Can not view Other's Profile"
+		  description="Restrict users to view Other's Profile" 
+		  example="Suppose you want Profile Type1 users Can not view Other's Profile of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />
+	
+	<rule name="editselfprofile"
+		  title="Can not Edit Self Profile"
+		  description="Restrict users to Edit Self Profile" 
+		  example="Suppose you want Profile Type1 users Can not Edit Self Profile/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /" />
+		  
+	<rule name="editselfprofiledetails"
+		  title="Can not Edit Self Profile Details"
+		  description="Restrict users to Edit Self Profile Details"
+		  example="Suppose you want Profile Type1 users Can not Edit Self Profile Details of profile type2/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /2.Rule Parameters-> Other profiletype users to apply rule -> Select Profile Type2 " />
+	
+	<rule name="statusbox"
+		  title="Change Status Message"
+		  description="Restrict users to Change Status Message"/>
+		  
+	<rule name="profilefield"
+		  title="Can not view Other's ProfileFields"
+		  description="Restrict users to view ProfileFields"/>
+		  
+	<rule name="deleteprofile"
+		  title="Can not Delete Profile"
+		  description="Restrict users to Delete Self Profile" 
+		  example="Suppose you want Profile Type1 users Can not Delete Self Profile/ 1.General Parameter-> Self Profiletype to apply rule -> Select Profile Type1 /" />
+		  
+</group>	
+	
+<group name="avatar" title="Avatar">
+	<rule name="changeavatar"
+		  title="Can not Change Avatar"
+		  description="Restrict users to Change Avatar" />
+	<rule name="uploadavatar"
+		  title="Force to Upload-Avatar"
+		  description="Force to users for upload avatar." />
+</group>
+	
+<group name="privacy" title="Privacy">
+	<rule name="changeprivacy"
+	  	  title="Can not Change Privacy"
+		  description="Restrict users to Change Privacy" />
+</group>	
+
+<group name="other" title="Others">
+	<rule name="aecredirect"
+		  title="Redirect to AEC URL"
+		  description="Redirect Users to AEC Subscription Page" />
+		
+	<rule name="redirect"
+		  title="Redirect to Custom URL"
+		  description="Redirect Users to Custom URL Page"/>
+	
+	<rule name="writemessages"
+		  title="Can not Send Message"
+		  description="Restrict Users to Send Message" />
+		  
+	<rule name="readmessage"
+		  title="Can not Read Message"
+		  description="Restrict Users to Read Message" />
+</group>
+<group name="likedislike" title="LikeDisLike">
+	<rule name="likephotos"
+		  title="Can not Like Dislike Photos"
+		  description="Restrict User to Like Dislike Photos" />
+		  
+	<rule name="likevideo"
+		  title="Can not Like Dislike Video"
+		  description="Restrict User to Like Dislike Video" />
+		  
+	<rule name="likegroup"
+		  title="Can not Like Dislike Group"
+		  description="Restrict User to Like Dislike Group" />
+		  
+	<rule name="likeprofile"
+		  title="Can not Like Dislike Profile"
+		  description="Restrict User to Like Dislike Profile" />
+		  
+	<rule name="likeevent"
+		  title="Can not Like Dislike Event"
+		  description="Restrict User to Like Dislike event" />
+</group>		
+</rules>

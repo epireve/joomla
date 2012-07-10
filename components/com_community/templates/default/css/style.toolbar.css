@@ -1,0 +1,409 @@
+/**
+* @package JomSocial
+* @subpackage Template
+* @copyright (C) 2011 by Slashes & Dots Sdn Bhd - All rights reserved!
+* @license GNU/GPL, see LICENSE.php
+*
+*
+* style.toolbar.css - Contains styles for JomSocial Toolbar, JomSocial Submenu and most of JomSocial's navigation systems
+*/
+
+/**
+* New toolbar menu
+**/
+#community-wrap #jsMenu,
+#jsMenu {
+	background: url('../images/bar-bg.png') bottom repeat-x #d1d1b0;
+	font-size: 12px;
+	position: relative;
+	padding: 10px 0 6px;
+	margin-bottom: 15px;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	z-index: 11;
+	text-shadow: 0px 0px 0px transparent;
+}
+#jsMenu .jsMenuLft {
+	margin-right: 30px;
+	height: 29px;
+}
+#jsMenu .jsMenuRgt {
+	position: absolute;
+	right: 0;
+	top: 15px;
+}
+#jsMenu .jsIr {
+	display: block;
+	width: 19px;
+	height: 19px;
+	text-indent: -9999px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #e8e8d8;
+}
+#jsMenu .jsIr:hover {
+	background-color: #e8e8d8 !important;
+}
+#jsMenu .jsHome {
+	position: absolute;
+	left: 8px;
+	top: 13px;
+	background: url('../images/home.png') 3px 3px no-repeat !important;
+	z-index: 2;
+}
+#jsMenu .jsMenuBar {
+	margin-left: 35px;
+	margin-right: -20px;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	display: block;
+	float: left;
+}
+#jsMenu .jsMenuBar ul li {
+	float: left;
+	display: inline;
+}
+#jsMenu .jsMenuBar a {
+	display: block;
+	color: #fff;
+	padding: 8px 8px 7px 8px;
+	font-weight: 700;
+	line-height: 14px;
+	background: #404040;
+	text-decoration: none;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+#jsMenu .jsMenuBar a:hover {
+	text-decoration: none;
+	color: #fff !important;
+}
+#community-wrap #jsMenu .jsMenuBar li,
+#jsMenu .jsMenuBar li {
+	position: relative;
+	margin-right: 3px;
+	overflow: visible !important;
+}
+#jsMenu .jsMenuBar li a.active {
+	background: #647F29;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7c9d35',endColorstr='#647F29');
+	background: -webkit-gradient(linear,left top,left bottom,from(#7c9d35),to(#647F29));
+	background: -moz-linear-gradient(top,#7c9d35,#647F29);
+}
+#jsMenu .jsMenuBar li ul {
+	display: none;
+	background: #4f661d;
+	border: 1px solid #31420D;
+	border-top: 0;
+	width: 170px;
+	height: auto;
+	position: absolute;
+	left: 0;
+	z-index: 15;
+	-moz-border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+#jsMenu .jsMenuBar li ul a {
+	border: 0 !important;
+	font-weight: 100;
+	font-size: 90%;
+	padding: 5px;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+#jsMenu .jsMenuBar li:hover a:hover,
+#jsMenu .jsMenuBar li ul a:hover,
+#jsMenu .jsMenuBar li ul a:focus {
+	background: #445917;
+}
+#jsMenu .jsMenuBar li li {
+	width: 100%;
+	margin-right: 0;
+	border-top: 1px solid #31420D;
+}
+#jsMenu .jsMenuBar li:hover ul {
+	display: block !important;
+}
+#jsMenu .jsMenuBar li:hover a {
+	background: #4f661d;
+}
+#jsMenu .jsIr.isActive {
+	background-color: #e2e2c5;
+}
+#jsMenu .jsGlobalsNot {
+	background: url('../images/noti.png') 3px 3px no-repeat !important;
+}
+#jsMenu .jsFriendsNot {
+	background: url('../images/friend.png') 2px 0 no-repeat !important;
+}
+
+#jsMenu + #miniheader {
+	margin-top: -15px;
+}
+#jsMenu .jsMesaggeNot {
+	background: url('../images/mail.png') 3px 3px no-repeat !important;
+}
+#jsMenu .jsLogOff a {
+	background: url('../images/power.png') 2px 1px no-repeat !important;
+	float: right;
+	display: inline-block;
+	margin-right: 8px;
+}
+#jsMenu .jsMenuIcon {
+	display: block;
+	left: 22px;
+	position: relative;
+	top: 4px;
+	height: 29px;
+	float: left;
+	z-index: 2;
+}
+#jsMenu .jsMenuIcon div {
+	position: relative;
+	float: left;
+	display: inline-block;
+	margin-left: 8px;
+}
+#jsMenu .jsMenuIcon span {
+	background-color: #ea0000;
+	position: absolute;
+	left: 6px;
+	top: -6px;
+	height: 14px;
+	min-width: 10px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #fff;
+	text-align: center;
+	text-indent: 0;
+	padding: 0 2px;
+	border-bottom: 1px solid #111;
+	display: block;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+
+/**
+* COMMUNITY :SUBMENU TOOLBAR
+* this class is reusable across the JomSocial application
+*/
+#community-wrap .cSubmenu {
+	height: 25px;
+	background: #eee;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	margin: 0 0 10px
+}
+#community-wrap .submenu {
+	height: 25px
+}
+#community-wrap .submenu li {
+	font-size: 11px;
+	float: left;
+	line-height: 25px;
+	position: relative
+}
+#community-wrap .submenu li a,
+#community-wrap .submenu li span {
+	text-decoration: none;
+	height: 25px;
+	line-height: 25px;
+	border-right: 1px solid #ccc;
+	padding: 0 6px
+}
+#community-wrap .submenu li span {
+	color: #555
+}
+#community-wrap .cSubmenu li a {
+	color: #095197;
+}
+#community-wrap .cSubmenu li a:hover {
+	color: #000;
+	text-decoration: underline;
+	background-color: transparent;
+}
+#community-wrap .submenu li.action {
+	float: right;
+	margin-right: -1px
+}
+#community-wrap .submenu .action+.action a {
+	border-right: 1px solid #ccc!important
+}
+#community-wrap .submenu li .active {
+	text-decoration: underline;
+	color: #000
+}
+#community-wrap .hasChildItem {
+	position: relative
+}
+#community-wrap .hasChildItem li {
+	width: 150px;
+	margin: 0;
+	padding: 5px
+}
+#community-wrap .submenu li ul li a {
+	border: 0
+}
+#community-wrap .submenu.jsApSbMn li a,
+#community-wrap .submenu.jsApSbMn li span {
+	float: left;
+	display: inline-block;
+	line-height: 25px;
+	border-right: 1px dotted #aaa;
+	margin: 5px
+}
+#community-wrap .submenu .jsApIcn {
+	padding-left: 20px
+}
+#community-wrap .jsTogSearch {
+	position: absolute;
+	background: #eee;
+	border: 1px solid #CACACA;
+	border-top: 0;
+	z-index: 1000;
+	display: none;
+	top: 25px;
+	margin: 0;
+	padding: 0
+}
+#community-wrap .jsTogSearch a {
+	border-right: 0!important;
+	border-top: 1px dotted #ccc;
+	margin-top: 5px;
+	float: left;
+	width: 100%;
+	padding: 3px 0!important
+}
+#community-wrap .jsTogSearch .inputbox {
+	width: 144px!important;
+	font-size: 11px!important;
+	border: 1px solid #ccc;
+	padding: 2px
+}
+#community-wrap .jsPhRotL {
+	background: url(../images/action/rotateL.png) no-repeat 0 2px
+}
+#community-wrap .jsPhRotR {
+	background: url(../images/action/rotateR.png) no-repeat 0 2px
+}
+#community-wrap a.jsPhRotL:hover {
+	background-image: url(../images/action/rotateL.png) !important;
+	background-position: 0 2px !important;
+	background-repeat: no-repeat !important;
+}
+#community-wrap a.jsPhRotR:hover {
+	background-image: url(../images/action/rotateR.png) !important;
+	background-position: 0 2px !important;
+	background-repeat: no-repeat !important;
+}
+
+
+/**
+* COMMUNITY : TABS BAR
+* this class is reusable across the JomSocial application
+
+Sample code:
+
+<div class="cTabsBar">
+<ul class="cResetList">
+<li>Normal</li>
+<li class="cTabCurrent"><a>Current</a></li>
+<li class="cTabDisabled"><a>Disabled Tab</a></li>
+<li><a>Tab with notification bubble<span>3</span></a></li>
+</ul>
+<div class="clr"></div>
+</div>
+
+*/
+
+#community-wrap .cTabsBar {
+	border-bottom: 1px solid #999;
+	position: relative;
+	margin-bottom: 8px;
+	padding: 0px 4px;
+}
+#community-wrap .cTabsBar ul {
+}
+#community-wrap .cTabsBar ul li {
+	display: block;
+	float: left;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+#community-wrap .cTabsBar ul li + li {
+	margin: 0 0 0 4px !important;
+}
+#community-wrap .cTabsBar ul li a {
+	display: block;
+	line-height: 18px !important;
+	padding: 4px 8px;
+	margin: 0;
+	color: #333;
+	border: 1px solid #eee;
+	border-bottom: 0px none;
+	-moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+#community-wrap .cTabsBar ul li a:hover, #community-wrap .cTabsBar ul li a:focus {
+	background: transparent !important;
+	color: #333 !important;
+	border-color: #bbb;
+}
+#community-wrap .cTabsBar ul li.cTabCurrent a {
+	border-color: #999;
+	font-weight: bold;
+	margin-bottom: -1px;
+	border-bottom: 1px solid #fff;
+	box-shadow: 0px -1px 1px rgba(0,0,0,0.2);
+}
+#community-wrap .cTabsBar ul li.cTabDisabled a {
+	color: #999;
+}
+#community-wrap .cTabsBar ul li.cTabDisabled a:hover, .cTabsBar ul li.cTabDisabled a:focus {
+	border-color: transparent;
+	color: #999 !important;
+}
+
+/* for notifications, i.e unread items, etc */
+#community-wrap .cTabsBar ul li span {
+	display: block;
+	width: 9px;
+	height: 9px;
+	position: absolute;
+	background: transparent url(../images/newstar.png) no-repeat 50% 50%;
+	z-index: 1;
+	top: 2px;
+	right: 2px;
+	overflow: hidden;
+}
+#community-wrap .cTabsBar ul li.cTabDisabled span {
+	background: transparent url(../images/newstar-d.png) no-repeat 50% 50%;
+}
+
+/* Tab Contents */
+#community-wrap .cTabsContentWrap {
+}
+#community-wrap .cTabsContent {
+	display: none;
+}
+#community-wrap .cTabsContentCurrent {
+	display: block;
+}
+
+/* classes added to main cTabsBar to extend some specific styles */
+#community-wrap .cTabsBar-Inbox {
+	margin-right: 185px;
+	padding-top: 7px;
+}

@@ -1,0 +1,16 @@
+span.album-photo-delete
+{
+	background: transparent url(images/photo-uploads/delete.png) no-repeat scroll 0 2px;
+	padding: 3px 3px 3px 20px;
+}
+
+span.album-photo-default
+{
+	background: transparent url(images/photo-uploads/upload.png) no-repeat scroll 0 2px;
+	padding: 3px 3px 3px 20px;
+}
+
+img.selected
+{
+	border: 1px solid brown;
+}
